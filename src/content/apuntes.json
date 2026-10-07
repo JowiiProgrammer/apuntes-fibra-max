@@ -1,5 +1,5 @@
 {
-  "version": 11,
+  "version": 12,
   "title": "Apuntes de Recepción",
   "sections": [
     {
@@ -693,7 +693,8 @@
           "matricula": true,
           "values": {
             "mensual": 66.5
-          }
+          },
+          "note": "Horario completo: entre semana 6–23 h · fines de semana 9–21 h y festivos"
         },
         {
           "id": "fitness-unlimited-familias",
@@ -702,7 +703,8 @@
           "matricula": true,
           "values": {
             "mensual": 49
-          }
+          },
+          "note": "Horario completo: entre semana 6–23 h · fines de semana 9–21 h y festivos"
         },
         {
           "id": "padel-player-familias",
@@ -711,7 +713,8 @@
           "matricula": true,
           "values": {
             "mensual": 39
-          }
+          },
+          "note": "Horario completo: entre semana 6–23 h · fines de semana 9–21 h y festivos"
         }
       ],
       "updatedAt": "2026-10-07",
