@@ -1,5 +1,5 @@
 {
-  "version": 3,
+  "version": 4,
   "title": "Apuntes de Recepción",
   "sections": [
     {
@@ -756,7 +756,8 @@
           "values": {
             "precio": 36.4
           },
-          "matricula": true
+          "matricula": true,
+          "note": "Horario Sunrise (entre semana 6–17 h · fines de semana 9–21 h y festivos) · incluye pádel en ese horario"
         },
         {
           "id": "voley-ballbona",
