@@ -1,5 +1,5 @@
 {
-  "version": 8,
+  "version": 9,
   "title": "Apuntes de Recepción",
   "sections": [
     {
@@ -96,24 +96,40 @@
           "title": "Familias",
           "blocks": [
             {
+              "id": "familias-requisito",
+              "type": "callout",
+              "variant": "warning",
+              "title": "Requisito",
+              "md": "Tienen que apuntarse **mínimo 3 familiares de la misma unidad familiar**."
+            },
+            {
               "id": "precios-familias",
               "type": "prices",
               "tableId": "familias"
             }
           ],
-          "children": []
+          "children": [],
+          "updatedAt": "2026-10-07"
         },
         {
           "id": "tarifas-empresas",
           "title": "Empresas",
           "blocks": [
             {
+              "id": "empresas-requisito",
+              "type": "callout",
+              "variant": "warning",
+              "title": "Requisito",
+              "md": "Tiene que haber **mínimo 5 personas de la misma empresa** apuntadas."
+            },
+            {
               "id": "precios-empresas",
               "type": "prices",
               "tableId": "empresas"
             }
           ],
-          "children": []
+          "children": [],
+          "updatedAt": "2026-10-07"
         },
         {
           "id": "tarifas-funcionarios",
@@ -698,7 +714,8 @@
           }
         }
       ],
-      "updatedAt": "2026-10-07"
+      "updatedAt": "2026-10-07",
+      "footnote": "Mínimo 3 familiares de la misma unidad familiar."
     },
     {
       "id": "empresas",
@@ -738,7 +755,8 @@
           }
         }
       ],
-      "updatedAt": "2026-10-07"
+      "updatedAt": "2026-10-07",
+      "footnote": "Mínimo 5 personas de la misma empresa apuntadas."
     },
     {
       "id": "funcionarios",
