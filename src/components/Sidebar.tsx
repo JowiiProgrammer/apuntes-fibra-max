@@ -46,8 +46,9 @@ export function Sidebar({ activeId, num, open, onClose }: Props) {
     <>
       <aside className={`sidebar ${open ? 'is-open' : ''}`} data-search-skip>
         <div className="brand">
-          <svg className="brand__mark" viewBox="0 0 24 32" aria-hidden>
-            <path d="M14 1 3 18h7l-2 13L21 12h-7z" fill="currentColor" />
+          {/* Símbolo de Fibra Max: tres láminas diagonales, redibujado del Cuadro de mando */}
+          <svg className="brand__mark" viewBox="3 2 20 38" aria-hidden>
+            <path d="M22.5 2.5V9l-19 19v-6.5zM20.5 13.5V20l-12 12v-6.5zM17.5 26.5V33l-6 6v-6.5z" fill="currentColor" />
           </svg>
           <div>
             <p className="brand__name">FIBRA <span>MAX</span></p>
