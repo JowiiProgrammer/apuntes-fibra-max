@@ -1,5 +1,5 @@
 {
-  "version": 10,
+  "version": 11,
   "title": "Apuntes de Recepción",
   "sections": [
     {
@@ -734,7 +734,8 @@
           "matricula": true,
           "values": {
             "mensual": 59
-          }
+          },
+          "note": "Entre semana 6–23 h · fines de semana 9–21 h y festivos"
         },
         {
           "id": "fitness-unlimited-empresas",
@@ -743,7 +744,8 @@
           "matricula": true,
           "values": {
             "mensual": 45
-          }
+          },
+          "note": "Entre semana 6–23 h · fines de semana 9–21 h y festivos"
         },
         {
           "id": "fitness-sunrise-empresas",
@@ -752,7 +754,8 @@
           "matricula": true,
           "values": {
             "mensual": 31.4
-          }
+          },
+          "note": "Entre semana 6–17 h · fines de semana 9–21 h y festivos"
         }
       ],
       "updatedAt": "2026-10-07",
