@@ -1,0 +1,600 @@
+{
+  "version": 1,
+  "title": "Apuntes de Recepción",
+  "sections": [
+    {
+      "id": "cuotas",
+      "title": "Cuotas Fibra Max",
+      "group": "Comercial",
+      "blocks": [
+        {
+          "id": "cuotas-speech",
+          "type": "speech",
+          "title": "Cómo arrancar",
+          "md": "«¿En qué horario sueles entrenar?» — con la respuesta eliges la cuota que encaja y presentas solo esa."
+        },
+        {
+          "id": "precios-cuotas",
+          "type": "prices",
+          "tableId": "cuotas"
+        }
+      ],
+      "children": [
+        {
+          "id": "cuota-h-6-17",
+          "title": "Horario 6–17h, fines de semana (9–21h) y festivos",
+          "blocks": [
+            {
+              "id": "cuota-h-6-17-pendiente",
+              "type": "pending"
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": "cuota-h-6-23",
+          "title": "Horario 6–23h, fines de semana (9–21h) y festivos",
+          "blocks": [
+            {
+              "id": "cuota-h-6-23-pendiente",
+              "type": "pending"
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": "cuota-h-finde",
+          "title": "Fines de semana (9–21h) y festivos",
+          "blocks": [
+            {
+              "id": "cuota-h-finde-pendiente",
+              "type": "pending"
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": "entradas-puntuales",
+          "title": "Entradas puntuales",
+          "blocks": [
+            {
+              "id": "precios-entradas",
+              "type": "prices",
+              "tableId": "entradas"
+            },
+            {
+              "id": "entradas-puntuales-pendiente",
+              "type": "pending"
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": "bonos",
+          "title": "Bonos",
+          "blocks": [
+            {
+              "id": "precios-bonos",
+              "type": "prices",
+              "tableId": "bonos"
+            },
+            {
+              "id": "bonos-pendiente",
+              "type": "pending"
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": "convenios-granollers",
+          "title": "Convenios empresas – Granollers",
+          "blocks": [
+            {
+              "id": "convenios-granollers-pendiente",
+              "type": "pending"
+            }
+          ],
+          "children": []
+        }
+      ],
+      "lead": "Empieza siempre el speech preguntando el horario de entrenamiento."
+    },
+    {
+      "id": "tarifas",
+      "title": "Tarifas",
+      "group": "Comercial",
+      "blocks": [
+        {
+          "id": "precios-tarifas",
+          "type": "prices",
+          "tableId": "tarifas"
+        },
+        {
+          "id": "tarifas-pendiente",
+          "type": "pending"
+        }
+      ],
+      "children": [],
+      "lead": "Formas de pago anticipado de cada cuota."
+    },
+    {
+      "id": "altas",
+      "title": "Altas",
+      "group": "Abonados",
+      "blocks": [],
+      "children": [
+        {
+          "id": "altas-normales",
+          "title": "Altas normales",
+          "blocks": [
+            {
+              "id": "altas-normales-pendiente",
+              "type": "pending"
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": "altas-web",
+          "title": "Altas web",
+          "blocks": [
+            {
+              "id": "altas-web-pendiente",
+              "type": "pending"
+            }
+          ],
+          "children": []
+        }
+      ]
+    },
+    {
+      "id": "bajas",
+      "title": "Bajas",
+      "group": "Abonados",
+      "blocks": [],
+      "children": [
+        {
+          "id": "bajas-anunciadas",
+          "title": "Bajas anunciadas",
+          "blocks": [
+            {
+              "id": "bajas-anunciadas-pendiente",
+              "type": "pending"
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": "bajas-directas",
+          "title": "Bajas directas (recibos devueltos)",
+          "blocks": [
+            {
+              "id": "bajas-directas-pendiente",
+              "type": "pending"
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": "baja-medica",
+          "title": "Baja médica (pausar)",
+          "blocks": [
+            {
+              "id": "baja-medica-pendiente",
+              "type": "pending"
+            }
+          ],
+          "children": []
+        }
+      ]
+    },
+    {
+      "id": "cambio-cuota",
+      "title": "Cambio de cuota",
+      "group": "Abonados",
+      "blocks": [
+        {
+          "id": "cambio-cuota-pendiente",
+          "type": "pending"
+        }
+      ],
+      "children": []
+    },
+    {
+      "id": "cuota-mantenimiento",
+      "title": "Cuota de mantenimiento",
+      "group": "Abonados",
+      "blocks": [
+        {
+          "id": "precios-otros",
+          "type": "prices",
+          "tableId": "otros"
+        },
+        {
+          "id": "cuota-mantenimiento-pendiente",
+          "type": "pending"
+        }
+      ],
+      "children": []
+    },
+    {
+      "id": "aforo",
+      "title": "Aforo",
+      "group": "Operativa",
+      "blocks": [
+        {
+          "id": "aforo-pendiente",
+          "type": "pending"
+        }
+      ],
+      "children": []
+    },
+    {
+      "id": "stock",
+      "title": "Stock",
+      "group": "Operativa",
+      "blocks": [
+        {
+          "id": "stock-pendiente",
+          "type": "pending"
+        }
+      ],
+      "children": []
+    },
+    {
+      "id": "pedido-suplementacion",
+      "title": "Hacer pedido de suplementación",
+      "group": "Operativa",
+      "blocks": [],
+      "children": [
+        {
+          "id": "pedido-big",
+          "title": "BIG",
+          "blocks": [
+            {
+              "id": "pedido-big-pendiente",
+              "type": "pending"
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": "pedido-life-pro",
+          "title": "Life Pro",
+          "blocks": [
+            {
+              "id": "pedido-life-pro-pendiente",
+              "type": "pending"
+            }
+          ],
+          "children": []
+        }
+      ]
+    },
+    {
+      "id": "entrada-cambio",
+      "title": "Traen / entrada de cambio o dinero",
+      "group": "Caja",
+      "blocks": [
+        {
+          "id": "entrada-cambio-pendiente",
+          "type": "pending"
+        }
+      ],
+      "children": []
+    },
+    {
+      "id": "salida-dinero",
+      "title": "Salida de dinero",
+      "group": "Caja",
+      "blocks": [
+        {
+          "id": "salida-dinero-pendiente",
+          "type": "pending"
+        }
+      ],
+      "children": []
+    },
+    {
+      "id": "facturacion",
+      "title": "Facturación",
+      "group": "Caja",
+      "blocks": [],
+      "children": [
+        {
+          "id": "apertura",
+          "title": "Apertura",
+          "blocks": [
+            {
+              "id": "apertura-pendiente",
+              "type": "pending"
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": "arqueo",
+          "title": "Arqueo",
+          "blocks": [
+            {
+              "id": "arqueo-pendiente",
+              "type": "pending"
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": "cierre",
+          "title": "Cierre",
+          "blocks": [
+            {
+              "id": "cierre-pendiente",
+              "type": "pending"
+            }
+          ],
+          "children": []
+        }
+      ]
+    },
+    {
+      "id": "tareas",
+      "title": "Tareas según turno o calendario",
+      "group": "Turnos",
+      "blocks": [],
+      "children": [
+        {
+          "id": "calendario",
+          "title": "Calendario",
+          "blocks": [
+            {
+              "id": "cal-1-15",
+              "type": "checklist",
+              "title": "Del 1 al 15",
+              "items": []
+            },
+            {
+              "id": "cal-15-25",
+              "type": "checklist",
+              "title": "Del 15 al 25",
+              "items": []
+            },
+            {
+              "id": "cal-25-fin",
+              "type": "checklist",
+              "title": "Del 25 a final de mes",
+              "items": []
+            },
+            {
+              "id": "calendario-pendiente",
+              "type": "pending"
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": "turno-mananas",
+          "title": "Mañanas",
+          "blocks": [
+            {
+              "id": "mananas-check",
+              "type": "checklist",
+              "title": "Turno de mañana",
+              "items": []
+            },
+            {
+              "id": "turno-mananas-pendiente",
+              "type": "pending"
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": "turno-tardes",
+          "title": "Tardes",
+          "blocks": [
+            {
+              "id": "tardes-check",
+              "type": "checklist",
+              "title": "Turno de tarde",
+              "items": []
+            },
+            {
+              "id": "turno-tardes-pendiente",
+              "type": "pending"
+            }
+          ],
+          "children": []
+        }
+      ]
+    },
+    {
+      "id": "extraordinarias",
+      "title": "Situaciones extraordinarias",
+      "group": "Incidencias",
+      "blocks": [],
+      "children": [
+        {
+          "id": "problema-pedido",
+          "title": "Problema con pedido de suplementación",
+          "blocks": [
+            {
+              "id": "problema-pedido-pendiente",
+              "type": "pending"
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": "pago-pendientes",
+          "title": "Abonado viene a pagar pendientes (recibos devueltos)",
+          "blocks": [
+            {
+              "id": "pago-pendientes-pendiente",
+              "type": "pending"
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": "excel-cambios",
+          "title": "Excel de cambios",
+          "blocks": [
+            {
+              "id": "excel-cambios-pendiente",
+              "type": "pending"
+            }
+          ],
+          "children": []
+        }
+      ]
+    }
+  ],
+  "priceTables": [
+    {
+      "id": "cuotas",
+      "title": "Cuotas mensuales",
+      "columns": [
+        {
+          "key": "mensual",
+          "label": "Mensual"
+        }
+      ],
+      "rows": [
+        {
+          "id": "h-6-17",
+          "label": "Horario 6–17h, fines de semana (9–21h) y festivos",
+          "values": {
+            "mensual": null
+          }
+        },
+        {
+          "id": "h-6-23",
+          "label": "Horario 6–23h, fines de semana (9–21h) y festivos",
+          "values": {
+            "mensual": null
+          }
+        },
+        {
+          "id": "h-finde",
+          "label": "Fines de semana (9–21h) y festivos",
+          "values": {
+            "mensual": null
+          }
+        }
+      ],
+      "footnote": "Precios por mes, IVA incluido."
+    },
+    {
+      "id": "tarifas",
+      "title": "Pago anticipado",
+      "columns": [
+        {
+          "key": "trimestral",
+          "label": "Trimestral"
+        },
+        {
+          "key": "semestral",
+          "label": "Semestral"
+        },
+        {
+          "key": "anual",
+          "label": "Anual"
+        }
+      ],
+      "rows": [
+        {
+          "id": "h-6-17",
+          "label": "Horario 6–17h, fines de semana (9–21h) y festivos",
+          "values": {
+            "trimestral": null,
+            "semestral": null,
+            "anual": null
+          }
+        },
+        {
+          "id": "h-6-23",
+          "label": "Horario 6–23h, fines de semana (9–21h) y festivos",
+          "values": {
+            "trimestral": null,
+            "semestral": null,
+            "anual": null
+          }
+        },
+        {
+          "id": "h-finde",
+          "label": "Fines de semana (9–21h) y festivos",
+          "values": {
+            "trimestral": null,
+            "semestral": null,
+            "anual": null
+          }
+        }
+      ],
+      "footnote": "Importe total a cobrar por el periodo."
+    },
+    {
+      "id": "entradas",
+      "title": "Entradas puntuales",
+      "columns": [
+        {
+          "key": "precio",
+          "label": "Precio"
+        }
+      ],
+      "rows": [
+        {
+          "id": "entrada-dia",
+          "label": "Entrada de un día",
+          "values": {
+            "precio": null
+          }
+        }
+      ]
+    },
+    {
+      "id": "bonos",
+      "title": "Bonos",
+      "columns": [
+        {
+          "key": "precio",
+          "label": "Precio"
+        }
+      ],
+      "rows": [
+        {
+          "id": "bono-1",
+          "label": "Bono (nombre pendiente)",
+          "values": {
+            "precio": null
+          }
+        }
+      ]
+    },
+    {
+      "id": "otros",
+      "title": "Otros importes",
+      "columns": [
+        {
+          "key": "precio",
+          "label": "Precio"
+        }
+      ],
+      "rows": [
+        {
+          "id": "matricula",
+          "label": "Matrícula",
+          "values": {
+            "precio": 50
+          }
+        },
+        {
+          "id": "mantenimiento",
+          "label": "Cuota de mantenimiento",
+          "values": {
+            "precio": null
+          }
+        }
+      ]
+    }
+  ]
+}
