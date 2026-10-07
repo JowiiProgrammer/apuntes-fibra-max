@@ -1,5 +1,5 @@
 {
-  "version": 2,
+  "version": 3,
   "title": "Apuntes de Recepción",
   "sections": [
     {
@@ -25,7 +25,7 @@
           "type": "callout",
           "variant": "info",
           "title": "Matrícula y pago anticipado",
-          "md": "- La **matrícula** solo se cobra en el pago **mensual**. Trimestral, semestral y anual van **sin matrícula**.\n- Debajo de cada pago anticipado tienes lo que sale **al mes**: es el argumento de venta."
+          "md": "- La **matrícula** es siempre de **50 €** y solo se cobra en el pago **mensual**. Trimestral, semestral y anual van **sin matrícula**.\n- Debajo de cada pago anticipado tienes lo que sale **al mes**: es el argumento de venta."
         }
       ],
       "children": [
@@ -105,7 +105,7 @@
         },
         {
           "id": "tarifas-colectivos",
-          "title": "Colectivos",
+          "title": "Convenios y colectivos",
           "blocks": [
             {
               "id": "precios-colectivos",
@@ -123,17 +123,6 @@
           "children": []
         },
         {
-          "id": "convenios-granollers",
-          "title": "Convenios empresas – Granollers",
-          "blocks": [
-            {
-              "id": "convenios-granollers-pendiente",
-              "type": "pending"
-            }
-          ],
-          "children": []
-        },
-        {
           "id": "entradas-puntuales",
           "title": "Entradas puntuales",
           "blocks": [
@@ -141,10 +130,6 @@
               "id": "precios-entradas",
               "type": "prices",
               "tableId": "entradas"
-            },
-            {
-              "id": "entradas-puntuales-pendiente",
-              "type": "pending"
             }
           ],
           "children": []
@@ -157,10 +142,6 @@
               "id": "precios-bonos",
               "type": "prices",
               "tableId": "bonos"
-            },
-            {
-              "id": "bonos-pendiente",
-              "type": "pending"
             }
           ],
           "children": []
@@ -736,7 +717,7 @@
     },
     {
       "id": "colectivos",
-      "title": "Colectivos",
+      "title": "Convenios y colectivos",
       "columns": [
         {
           "key": "precio",
@@ -844,29 +825,65 @@
           "id": "entrada-dia",
           "label": "Entrada de un día",
           "values": {
-            "precio": null
+            "precio": 15
           }
         }
-      ]
+      ],
+      "updatedAt": "2026-10-07"
     },
     {
       "id": "bonos",
       "title": "Bonos",
       "columns": [
         {
-          "key": "precio",
-          "label": "Precio"
+          "key": "oferta",
+          "label": "Oferta"
+        },
+        {
+          "key": "normal",
+          "label": "Precio normal"
         }
       ],
       "rows": [
         {
           "id": "bono-1",
-          "label": "Bono (nombre pendiente)",
+          "label": "Bono 1 semana",
+          "note": "Fitness ilimitado",
           "values": {
-            "precio": null
+            "oferta": 30,
+            "normal": 40
+          }
+        },
+        {
+          "id": "bono-2",
+          "label": "Bono 2 semanas",
+          "note": "Fitness ilimitado",
+          "values": {
+            "oferta": 45,
+            "normal": 60
+          }
+        },
+        {
+          "id": "bono-3",
+          "label": "Bono 3 semanas",
+          "note": "Fitness ilimitado",
+          "values": {
+            "oferta": 55,
+            "normal": 75
+          }
+        },
+        {
+          "id": "bono-4",
+          "label": "Bono 4 semanas",
+          "note": "Fitness ilimitado",
+          "values": {
+            "oferta": 60,
+            "normal": 80
           }
         }
-      ]
+      ],
+      "footnote": "Precios de la web: ahora mismo todos los bonos están en oferta.",
+      "updatedAt": "2026-10-07"
     },
     {
       "id": "otros",
