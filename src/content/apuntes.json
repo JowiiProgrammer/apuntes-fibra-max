@@ -1,5 +1,5 @@
 {
-  "version": 5,
+  "version": 6,
   "title": "Apuntes de Recepción",
   "sections": [
     {
@@ -131,13 +131,6 @@
               "id": "precios-colectivos",
               "type": "prices",
               "tableId": "colectivos"
-            },
-            {
-              "id": "colectivos-revisar",
-              "type": "callout",
-              "variant": "warning",
-              "title": "Pendientes de revisar",
-              "md": "**Cuota Voleibol Ballbona** y **Cuota Dara / Baccum** están marcadas como *pendiente revisar* en el catálogo: confirma el precio antes de cobrarlas."
             }
           ],
           "children": []
@@ -801,15 +794,6 @@
           }
         },
         {
-          "id": "cuota-voleibol-ballbona",
-          "label": "Cuota Voleibol Ballbona",
-          "centros": "—",
-          "values": {
-            "precio": 33.67
-          },
-          "review": true
-        },
-        {
           "id": "futbol-canovelles",
           "label": "Fútbol Canovelles",
           "centros": "Granollers",
@@ -832,15 +816,6 @@
           "values": {
             "precio": 28
           }
-        },
-        {
-          "id": "cuota-dara-baccum",
-          "label": "Cuota Dara / Baccum",
-          "centros": "—",
-          "values": {
-            "precio": 27.94
-          },
-          "review": true
         }
       ],
       "updatedAt": "2026-10-07"
