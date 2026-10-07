@@ -1,5 +1,5 @@
 {
-  "version": 7,
+  "version": 8,
   "title": "Apuntes de Recepción",
   "sections": [
     {
@@ -13,12 +13,24 @@
           "id": "tarifas-speech",
           "type": "speech",
           "title": "Cómo arrancar",
-          "md": "«¿En qué horario sueles entrenar?»\n\nCon la respuesta eliges la modalidad que encaja y presentas solo esa."
+          "md": "1. «¿En qué horario sueles entrenar?»\n2. «¿Estudias o trabajas?»\n\nCon las dos respuestas eliges la modalidad que encaja y presentas solo esa."
         },
         {
           "id": "tarifas-horarios",
           "type": "text",
           "md": "| Si entrena… | Modalidad |\n|---|---|\n| De 6 a 17 h entre semana + fines de semana (9–21 h) y festivos | **Sunrise** |\n| De 6 a 23 h entre semana + fines de semana (9–21 h) y festivos | **Unlimited** |\n| Solo fines de semana (9–21 h) y festivos | **Weekend** |"
+        },
+        {
+          "id": "tarifas-perfil",
+          "type": "text",
+          "md": "| Si responde… | Ofrece |\n|---|---|\n| Trabaja en una empresa o centro del que ya tenemos **mínimo 5 personas** | Cuota **Empresas** |\n| Es **funcionario** | Cuota **Funcionarios** (horario Sunrise con pádel incluido) |\n| Es **policía, mosso o similar** y el horario de funcionarios no le va bien | Cuota **Fepol** |\n| Ninguna de las anteriores | La modalidad según su horario (tabla de arriba) |"
+        },
+        {
+          "id": "tarifas-fepol",
+          "type": "callout",
+          "variant": "warning",
+          "title": "Fepol",
+          "md": "Para darle la cuota Fepol tiene que estar **inscrito en FEPOL**."
         },
         {
           "id": "tarifas-matricula",
