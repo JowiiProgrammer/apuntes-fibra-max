@@ -1,5 +1,5 @@
 {
-  "version": 6,
+  "version": 7,
   "title": "Apuntes de Recepción",
   "sections": [
     {
@@ -743,7 +743,7 @@
           "label": "Fitness Funcionarios",
           "centros": "Todos",
           "values": {
-            "precio": 36.4
+            "mensual": 36.4
           },
           "matricula": true,
           "note": "Horario Sunrise: entre semana 6–17 h · fines de semana 9–21 h y festivos"
