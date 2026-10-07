@@ -1,5 +1,5 @@
 {
-  "version": 9,
+  "version": 10,
   "title": "Apuntes de Recepción",
   "sections": [
     {
@@ -120,7 +120,7 @@
               "type": "callout",
               "variant": "warning",
               "title": "Requisito",
-              "md": "Tiene que haber **mínimo 5 personas de la misma empresa** apuntadas."
+              "md": "La empresa o centro de trabajo tiene que tener **mínimo 5 personas** apuntadas.\n\nSi ya las tiene, **cualquier persona nueva** de ese mismo sitio entra también con la cuota Empresas."
             },
             {
               "id": "precios-empresas",
@@ -756,7 +756,7 @@
         }
       ],
       "updatedAt": "2026-10-07",
-      "footnote": "Mínimo 5 personas de la misma empresa apuntadas."
+      "footnote": "Para empresas o centros de trabajo con mínimo 5 personas apuntadas; las nuevas altas de ese sitio entran con la misma cuota."
     },
     {
       "id": "funcionarios",
