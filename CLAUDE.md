@@ -11,9 +11,14 @@ Vite + React 19 + TypeScript, sin backend. Ver `docs/blueprint.md` para PRD y pl
   ve el aviso de que hay versión nueva.
 - Precios: nunca inventar. Lo que no se sabe va como `null` (se muestra "Pendiente").
 - Las tablas de precios están en `priceTables` y se referencian por `tableId`; una tabla puede
-  aparecer en varios apartados.
+  aparecer en varios apartados. En `values`: `null` = pendiente, clave ausente = esa forma de
+  pago no existe ("—"). Columnas con `months` muestran el equivalente €/mes. Filas con
+  `centros`, `matricula` y `review` (pendiente revisar).
+- Fuente de las tarifas: catálogo de tarifas del Cuadro de mando (capturas de Joel).
 - Capturas en `public/capturas/`, anotaciones en % (x, y, w, h) sobre la imagen.
 - Marca: tokens en `:root` de `src/styles.css` (negro `--side`, rojo `--red`, crema `--bg`,
   Montserrat). Mismo lenguaje visual que el Cuadro de mando de Fibra Max.
 - Texto de UI y contenido en español de España, tuteando.
 - Antes de commitear: `npm run build` sin errores.
+
+Última actualización: 2026-10-07

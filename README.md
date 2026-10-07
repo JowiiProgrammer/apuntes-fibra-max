@@ -26,4 +26,3 @@ Para publicarlos: *Modo edición → Exportar* y sustituir `src/content/apuntes.
 archivo descargado (o pedírselo a Claude). Las capturas definitivas van en `public/capturas/`
 y se referencian como `/capturas/nombre.png`.
 
-`scripts/seed-estructura.mjs` regenera la estructura inicial del índice (sobrescribe el JSON).

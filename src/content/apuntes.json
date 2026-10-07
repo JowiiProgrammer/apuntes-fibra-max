@@ -1,53 +1,133 @@
 {
-  "version": 1,
+  "version": 2,
   "title": "Apuntes de Recepción",
   "sections": [
     {
-      "id": "cuotas",
-      "title": "Cuotas Fibra Max",
+      "id": "tarifas",
+      "title": "Tarifas Fibra Max",
       "group": "Comercial",
+      "lead": "Empieza siempre el speech preguntando el horario de entrenamiento.",
+      "updatedAt": "2026-10-07",
       "blocks": [
         {
-          "id": "cuotas-speech",
+          "id": "tarifas-speech",
           "type": "speech",
           "title": "Cómo arrancar",
-          "md": "«¿En qué horario sueles entrenar?» — con la respuesta eliges la cuota que encaja y presentas solo esa."
+          "md": "«¿En qué horario sueles entrenar?»\n\nCon la respuesta eliges la modalidad que encaja y presentas solo esa."
         },
         {
-          "id": "precios-cuotas",
-          "type": "prices",
-          "tableId": "cuotas"
+          "id": "tarifas-horarios",
+          "type": "text",
+          "md": "| Si entrena… | Modalidad |\n|---|---|\n| De 6 a 17 h entre semana + fines de semana (9–21 h) y festivos | **Sunrise** |\n| De 6 a 23 h entre semana + fines de semana (9–21 h) y festivos | **Unlimited** |\n| Solo fines de semana (9–21 h) y festivos | **Weekend** |"
+        },
+        {
+          "id": "tarifas-matricula",
+          "type": "callout",
+          "variant": "info",
+          "title": "Matrícula y pago anticipado",
+          "md": "- La **matrícula** solo se cobra en el pago **mensual**. Trimestral, semestral y anual van **sin matrícula**.\n- Debajo de cada pago anticipado tienes lo que sale **al mes**: es el argumento de venta."
         }
       ],
       "children": [
         {
-          "id": "cuota-h-6-17",
-          "title": "Horario 6–17h, fines de semana (9–21h) y festivos",
+          "id": "tarifas-fitness",
+          "title": "Fitness",
           "blocks": [
             {
-              "id": "cuota-h-6-17-pendiente",
-              "type": "pending"
+              "id": "precios-fitness",
+              "type": "prices",
+              "tableId": "fitness"
             }
           ],
           "children": []
         },
         {
-          "id": "cuota-h-6-23",
-          "title": "Horario 6–23h, fines de semana (9–21h) y festivos",
+          "id": "tarifas-fitness-padel",
+          "title": "Fitness + Pádel",
           "blocks": [
             {
-              "id": "cuota-h-6-23-pendiente",
-              "type": "pending"
+              "id": "fp-cabrera",
+              "type": "callout",
+              "variant": "warning",
+              "title": "Solo en Cabrera",
+              "md": "El pádel solo está en el centro de **Cabrera**. Si el abonado entrena en otro centro, no se le puede ofrecer."
+            },
+            {
+              "id": "precios-fitness-padel",
+              "type": "prices",
+              "tableId": "fitness-padel"
             }
           ],
           "children": []
         },
         {
-          "id": "cuota-h-finde",
-          "title": "Fines de semana (9–21h) y festivos",
+          "id": "tarifas-padel",
+          "title": "Pádel",
           "blocks": [
             {
-              "id": "cuota-h-finde-pendiente",
+              "id": "padel-cabrera",
+              "type": "callout",
+              "variant": "warning",
+              "title": "Solo en Cabrera",
+              "md": "El pádel solo está en el centro de **Cabrera**. Si el abonado entrena en otro centro, no se le puede ofrecer."
+            },
+            {
+              "id": "precios-padel",
+              "type": "prices",
+              "tableId": "padel"
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": "tarifas-familias",
+          "title": "Familias",
+          "blocks": [
+            {
+              "id": "precios-familias",
+              "type": "prices",
+              "tableId": "familias"
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": "tarifas-empresas",
+          "title": "Empresas",
+          "blocks": [
+            {
+              "id": "precios-empresas",
+              "type": "prices",
+              "tableId": "empresas"
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": "tarifas-colectivos",
+          "title": "Colectivos",
+          "blocks": [
+            {
+              "id": "precios-colectivos",
+              "type": "prices",
+              "tableId": "colectivos"
+            },
+            {
+              "id": "colectivos-revisar",
+              "type": "callout",
+              "variant": "warning",
+              "title": "Pendientes de revisar",
+              "md": "**Cuota Voleibol Ballbona** y **Cuota Dara / Baccum** están marcadas como *pendiente revisar* en el catálogo: confirma el precio antes de cobrarlas."
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": "convenios-granollers",
+          "title": "Convenios empresas – Granollers",
+          "blocks": [
+            {
+              "id": "convenios-granollers-pendiente",
               "type": "pending"
             }
           ],
@@ -84,38 +164,8 @@
             }
           ],
           "children": []
-        },
-        {
-          "id": "convenios-granollers",
-          "title": "Convenios empresas – Granollers",
-          "blocks": [
-            {
-              "id": "convenios-granollers-pendiente",
-              "type": "pending"
-            }
-          ],
-          "children": []
         }
-      ],
-      "lead": "Empieza siempre el speech preguntando el horario de entrenamiento."
-    },
-    {
-      "id": "tarifas",
-      "title": "Tarifas",
-      "group": "Comercial",
-      "blocks": [
-        {
-          "id": "precios-tarifas",
-          "type": "prices",
-          "tableId": "tarifas"
-        },
-        {
-          "id": "tarifas-pendiente",
-          "type": "pending"
-        }
-      ],
-      "children": [],
-      "lead": "Formas de pago anticipado de cada cuota."
+      ]
     },
     {
       "id": "altas",
@@ -451,8 +501,162 @@
   ],
   "priceTables": [
     {
-      "id": "cuotas",
-      "title": "Cuotas mensuales",
+      "id": "fitness",
+      "title": "Fitness",
+      "columns": [
+        {
+          "key": "mensual",
+          "label": "Mensual"
+        },
+        {
+          "key": "trimestral",
+          "label": "Trimestral",
+          "months": 3
+        },
+        {
+          "key": "semestral",
+          "label": "Semestral",
+          "months": 6
+        },
+        {
+          "key": "anual",
+          "label": "Anual",
+          "months": 12
+        }
+      ],
+      "footnote": "La matrícula solo se cobra en el pago mensual.",
+      "rows": [
+        {
+          "id": "fitness-unlimited",
+          "label": "Fitness Unlimited",
+          "centros": "Todos",
+          "matricula": true,
+          "values": {
+            "mensual": 62,
+            "trimestral": 175,
+            "semestral": 300,
+            "anual": 500
+          },
+          "note": "Entre semana 6–23 h · fines de semana 9–21 h y festivos"
+        },
+        {
+          "id": "fitness-sunrise",
+          "label": "Fitness Sunrise",
+          "centros": "Todos",
+          "matricula": true,
+          "values": {
+            "mensual": 52,
+            "trimestral": 150,
+            "semestral": 250,
+            "anual": 400
+          },
+          "note": "Entre semana 6–17 h · fines de semana 9–21 h y festivos"
+        },
+        {
+          "id": "fitness-weekend",
+          "label": "Fitness Weekend",
+          "centros": "Todos",
+          "matricula": true,
+          "values": {
+            "mensual": 29,
+            "anual": 250
+          },
+          "note": "Fines de semana 9–21 h y festivos"
+        }
+      ],
+      "updatedAt": "2026-10-07"
+    },
+    {
+      "id": "fitness-padel",
+      "title": "Fitness + Pádel",
+      "columns": [
+        {
+          "key": "mensual",
+          "label": "Mensual"
+        },
+        {
+          "key": "anual",
+          "label": "Anual",
+          "months": 12
+        }
+      ],
+      "footnote": "La matrícula solo se cobra en el pago mensual.",
+      "rows": [
+        {
+          "id": "fp-unlimited",
+          "label": "Fitness & Pádel Unlimited",
+          "centros": "Cabrera",
+          "matricula": true,
+          "values": {
+            "mensual": 85.5,
+            "anual": 650
+          }
+        },
+        {
+          "id": "fp-sunrise",
+          "label": "Fitness & Pádel Sunrise",
+          "centros": "Cabrera",
+          "matricula": true,
+          "values": {
+            "mensual": 55.5,
+            "anual": 450
+          }
+        },
+        {
+          "id": "fp-weekend",
+          "label": "Fitness & Pádel Weekend",
+          "centros": "Cabrera",
+          "matricula": true,
+          "values": {
+            "mensual": 45.5,
+            "anual": 350
+          }
+        }
+      ],
+      "updatedAt": "2026-10-07"
+    },
+    {
+      "id": "padel",
+      "title": "Pádel",
+      "columns": [
+        {
+          "key": "mensual",
+          "label": "Mensual"
+        },
+        {
+          "key": "anual",
+          "label": "Anual",
+          "months": 12
+        }
+      ],
+      "footnote": "La matrícula solo se cobra en el pago mensual.",
+      "rows": [
+        {
+          "id": "unlimited-player",
+          "label": "Unlimited Player",
+          "centros": "Cabrera",
+          "matricula": true,
+          "values": {
+            "mensual": 49,
+            "anual": 400
+          }
+        },
+        {
+          "id": "sunrise-player",
+          "label": "Sunrise Player",
+          "centros": "Cabrera",
+          "matricula": true,
+          "values": {
+            "mensual": 39,
+            "anual": 300
+          }
+        }
+      ],
+      "updatedAt": "2026-10-07"
+    },
+    {
+      "id": "familias",
+      "title": "Familias",
       "columns": [
         {
           "key": "mensual",
@@ -461,76 +665,170 @@
       ],
       "rows": [
         {
-          "id": "h-6-17",
-          "label": "Horario 6–17h, fines de semana (9–21h) y festivos",
+          "id": "fp-familias",
+          "label": "Fitness & Pádel Familias",
+          "centros": "Cabrera",
+          "matricula": true,
           "values": {
-            "mensual": null
+            "mensual": 66.5
           }
         },
         {
-          "id": "h-6-23",
-          "label": "Horario 6–23h, fines de semana (9–21h) y festivos",
+          "id": "fitness-unlimited-familias",
+          "label": "Fitness Unlimited Familias",
+          "centros": "Todos",
+          "matricula": true,
           "values": {
-            "mensual": null
+            "mensual": 49
           }
         },
         {
-          "id": "h-finde",
-          "label": "Fines de semana (9–21h) y festivos",
+          "id": "padel-player-familias",
+          "label": "Pádel Player Familias",
+          "centros": "Cabrera",
+          "matricula": true,
           "values": {
-            "mensual": null
+            "mensual": 39
           }
         }
       ],
-      "footnote": "Precios por mes, IVA incluido."
+      "updatedAt": "2026-10-07"
     },
     {
-      "id": "tarifas",
-      "title": "Pago anticipado",
+      "id": "empresas",
+      "title": "Empresas",
       "columns": [
         {
-          "key": "trimestral",
-          "label": "Trimestral"
-        },
-        {
-          "key": "semestral",
-          "label": "Semestral"
-        },
-        {
-          "key": "anual",
-          "label": "Anual"
+          "key": "mensual",
+          "label": "Mensual"
         }
       ],
       "rows": [
         {
-          "id": "h-6-17",
-          "label": "Horario 6–17h, fines de semana (9–21h) y festivos",
+          "id": "fp-unlimited-empresas",
+          "label": "Fitness & Pádel Unlimited Empresas",
+          "centros": "Cabrera",
+          "matricula": true,
           "values": {
-            "trimestral": null,
-            "semestral": null,
-            "anual": null
+            "mensual": 59
           }
         },
         {
-          "id": "h-6-23",
-          "label": "Horario 6–23h, fines de semana (9–21h) y festivos",
+          "id": "fitness-unlimited-empresas",
+          "label": "Fitness Unlimited Empresas",
+          "centros": "Todos",
+          "matricula": true,
           "values": {
-            "trimestral": null,
-            "semestral": null,
-            "anual": null
+            "mensual": 45
           }
         },
         {
-          "id": "h-finde",
-          "label": "Fines de semana (9–21h) y festivos",
+          "id": "fitness-sunrise-empresas",
+          "label": "Fitness Sunrise Empresas",
+          "centros": "Todos",
+          "matricula": true,
           "values": {
-            "trimestral": null,
-            "semestral": null,
-            "anual": null
+            "mensual": 31.4
           }
         }
       ],
-      "footnote": "Importe total a cobrar por el periodo."
+      "updatedAt": "2026-10-07"
+    },
+    {
+      "id": "colectivos",
+      "title": "Colectivos",
+      "columns": [
+        {
+          "key": "precio",
+          "label": "Precio base"
+        }
+      ],
+      "rows": [
+        {
+          "id": "fepol",
+          "label": "Fepol",
+          "centros": "Todos",
+          "values": {
+            "precio": 45
+          }
+        },
+        {
+          "id": "camping",
+          "label": "Camping",
+          "centros": "Blanes",
+          "values": {
+            "precio": 45
+          }
+        },
+        {
+          "id": "celesti-ballera",
+          "label": "Celestí Ballera",
+          "centros": "Granollers",
+          "values": {
+            "precio": 45
+          }
+        },
+        {
+          "id": "fitness-funcionarios",
+          "label": "Fitness Funcionarios",
+          "centros": "Todos",
+          "values": {
+            "precio": 36.4
+          },
+          "matricula": true
+        },
+        {
+          "id": "voley-ballbona",
+          "label": "Voley Ballbona",
+          "centros": "Granollers",
+          "values": {
+            "precio": 35
+          }
+        },
+        {
+          "id": "cuota-voleibol-ballbona",
+          "label": "Cuota Voleibol Ballbona",
+          "centros": "—",
+          "values": {
+            "precio": 33.67
+          },
+          "review": true
+        },
+        {
+          "id": "futbol-canovelles",
+          "label": "Fútbol Canovelles",
+          "centros": "Granollers",
+          "values": {
+            "precio": 31.4
+          }
+        },
+        {
+          "id": "cocoa",
+          "label": "Cocoa",
+          "centros": "Cabrera",
+          "values": {
+            "precio": 31.4
+          }
+        },
+        {
+          "id": "dara",
+          "label": "Dara",
+          "centros": "Granollers",
+          "values": {
+            "precio": 28
+          }
+        },
+        {
+          "id": "cuota-dara-baccum",
+          "label": "Cuota Dara / Baccum",
+          "centros": "—",
+          "values": {
+            "precio": 27.94
+          },
+          "review": true
+        }
+      ],
+      "updatedAt": "2026-10-07"
     },
     {
       "id": "entradas",

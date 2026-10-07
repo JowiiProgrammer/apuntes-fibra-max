@@ -37,13 +37,21 @@ export interface Section {
 export interface PriceColumn {
   key: string
   label: string
+  /** Meses que cubre el pago (3, 6, 12…). Si es >1 se muestra el equivalente €/mes. */
+  months?: number
 }
 
 export interface PriceRow {
   id: string
   label: string
   note?: string
-  /** null = precio pendiente de rellenar. */
+  /** Centros donde se vende (ej. "Todos", "Cabrera"). */
+  centros?: string
+  /** Lleva matrícula al darse de alta. */
+  matricula?: boolean
+  /** Precio marcado como "Pendiente revisar" en el catálogo. */
+  review?: boolean
+  /** null = precio pendiente de rellenar · clave ausente = no existe esa modalidad ("—"). */
   values: Record<string, number | null>
 }
 
