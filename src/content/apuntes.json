@@ -1,5 +1,5 @@
 {
-  "version": 4,
+  "version": 5,
   "title": "Apuntes de Recepción",
   "sections": [
     {
@@ -102,6 +102,26 @@
             }
           ],
           "children": []
+        },
+        {
+          "id": "tarifas-funcionarios",
+          "title": "Funcionarios",
+          "blocks": [
+            {
+              "id": "funcionarios-padel",
+              "type": "callout",
+              "variant": "tip",
+              "title": "Incluye pádel",
+              "md": "Mismo horario que **Fitness Sunrise**, pero con el **pádel incluido** dentro de ese horario."
+            },
+            {
+              "id": "precios-funcionarios",
+              "type": "prices",
+              "tableId": "funcionarios"
+            }
+          ],
+          "children": [],
+          "updatedAt": "2026-10-07"
         },
         {
           "id": "tarifas-colectivos",
@@ -716,6 +736,29 @@
       "updatedAt": "2026-10-07"
     },
     {
+      "id": "funcionarios",
+      "title": "Funcionarios",
+      "columns": [
+        {
+          "key": "mensual",
+          "label": "Mensual"
+        }
+      ],
+      "rows": [
+        {
+          "id": "fitness-funcionarios",
+          "label": "Fitness Funcionarios",
+          "centros": "Todos",
+          "values": {
+            "precio": 36.4
+          },
+          "matricula": true,
+          "note": "Horario Sunrise: entre semana 6–17 h · fines de semana 9–21 h y festivos"
+        }
+      ],
+      "updatedAt": "2026-10-07"
+    },
+    {
       "id": "colectivos",
       "title": "Convenios y colectivos",
       "columns": [
@@ -748,16 +791,6 @@
           "values": {
             "precio": 45
           }
-        },
-        {
-          "id": "fitness-funcionarios",
-          "label": "Fitness Funcionarios",
-          "centros": "Todos",
-          "values": {
-            "precio": 36.4
-          },
-          "matricula": true,
-          "note": "Horario Sunrise (entre semana 6–17 h · fines de semana 9–21 h y festivos) · incluye pádel en ese horario"
         },
         {
           "id": "voley-ballbona",
