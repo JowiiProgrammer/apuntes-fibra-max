@@ -14,7 +14,7 @@ export type Block =
   | { id: string; type: 'text'; md: string }
   | { id: string; type: 'callout'; variant: CalloutVariant; title?: string; md: string }
   | { id: string; type: 'speech'; title?: string; md: string }
-  | { id: string; type: 'steps'; items: { title: string; md: string }[] }
+  | { id: string; type: 'steps'; /** Nº del primer paso (para continuar tras una captura). */ start?: number; items: { title: string; md: string }[] }
   | { id: string; type: 'checklist'; title?: string; items: string[] }
   | { id: string; type: 'prices'; tableId: string }
   | { id: string; type: 'screenshot'; src: string; alt: string; caption?: string; annotations: Annotation[] }

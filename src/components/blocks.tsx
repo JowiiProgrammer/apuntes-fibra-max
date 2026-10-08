@@ -40,7 +40,7 @@ export function BlockView({ block }: { block: Block }) {
 
     case 'steps':
       return (
-        <ol className="steps">
+        <ol className="steps" style={{ counterReset: `step ${(block.start ?? 1) - 1}` }}>
           {block.items.map((s, i) => (
             <li key={i}>
               <p className="steps__title">{s.title}</p>

@@ -15,10 +15,13 @@ Vite + React 19 + TypeScript, sin backend. Ver `docs/blueprint.md` para PRD y pl
   pago no existe ("—"). Columnas con `months` muestran el equivalente €/mes. Filas con
   `centros`, `matricula` y `review` (pendiente revisar).
 - Fuente de las tarifas: catálogo de tarifas del Cuadro de mando (capturas de Joel).
-- Capturas en `public/capturas/`, anotaciones en % (x, y, w, h) sobre la imagen.
+- Capturas en `public/capturas/`, anotaciones en % (x, y, w, h) sobre la imagen. Antes de subir
+  una captura, borra datos personales de clientes (la web es pública).
+- Los bloques `steps` tienen `start` para continuar la numeración tras una captura.
+- Logo: `public/logo-fibra.png` (oficial, blanco sobre transparente), favicon en `public/`.
 - Marca: tokens en `:root` de `src/styles.css` (negro `--side`, rojo `--red`, crema `--bg`,
   Montserrat). Mismo lenguaje visual que el Cuadro de mando de Fibra Max.
 - Texto de UI y contenido en español de España, tuteando.
 - Antes de commitear: `npm run build` sin errores.
 
-Última actualización: 2026-10-07
+Última actualización: 2026-10-08

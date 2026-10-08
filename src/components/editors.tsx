@@ -110,6 +110,15 @@ function BlockForm({ block, save }: { block: Block; save: (b: Block) => void }) 
     case 'steps':
       return (
         <>
+          <label className="check">
+            Empieza en el paso nº
+            <input
+              className="input input--sm input--months"
+              inputMode="numeric"
+              value={block.start ?? 1}
+              onChange={(e) => save({ ...block, start: Math.max(1, Number(e.target.value) || 1) })}
+            />
+          </label>
           {block.items.map((s, i) => (
             <div key={i} className="sub-item">
               <span className="sub-item__n">{i + 1}</span>
