@@ -1,5 +1,5 @@
 {
-  "version": 25,
+  "version": 26,
   "title": "Apuntes de Recepción",
   "sections": [
     {
@@ -1124,18 +1124,61 @@
               "items": [
                 {
                   "title": "Fecha de baja",
-                  "md": "En la pantalla que se abre, selecciona la **fecha del último día del mes que no caiga en fin de semana**. Por ejemplo, si el último día del mes es sábado o domingo, pon el día anterior que no sea fin de semana."
+                  "md": "En la pantalla que se abre, selecciona la **fecha** (**1** en la captura de abajo): el **último día del mes que no caiga en fin de semana**. Por ejemplo, si el último día del mes es sábado o domingo, pon el día anterior que no sea fin de semana."
                 },
                 {
                   "title": "Motivo",
-                  "md": "En **Motivo** pon el que haya elegido el abonado en el Excel y pulsa **Aceptar**."
+                  "md": "En **Motivo** (**2**) pon el que haya elegido el abonado en el Excel y pulsa **Aceptar** (**3**)."
                 }
               ]
             },
             {
-              "id": "b-a-pend-captura",
-              "type": "pending",
-              "note": "Falta la captura de la pantalla que se abre (fecha y motivo)."
+              "id": "b-a-shot-baja",
+              "type": "screenshot",
+              "src": "/capturas/bajas-3-pantalla-baja.png",
+              "alt": "Pantalla de baja con fecha, motivo y botón Aceptar",
+              "caption": "Pantalla de baja: fecha, motivo y Aceptar.",
+              "annotations": [
+                {
+                  "kind": "box",
+                  "x": 29.48,
+                  "y": 17.14,
+                  "w": 9.39,
+                  "h": 9.71
+                },
+                {
+                  "kind": "marker",
+                  "n": 1,
+                  "x": 26.75,
+                  "y": 21.71
+                },
+                {
+                  "kind": "box",
+                  "x": 29.48,
+                  "y": 30.0,
+                  "w": 21.83,
+                  "h": 9.14
+                },
+                {
+                  "kind": "marker",
+                  "n": 2,
+                  "x": 26.75,
+                  "y": 34.57
+                },
+                {
+                  "kind": "box",
+                  "x": 51.31,
+                  "y": 86.57,
+                  "w": 6.33,
+                  "h": 9.71
+                },
+                {
+                  "kind": "marker",
+                  "n": 3,
+                  "x": 54.48,
+                  "y": 82.29
+                }
+              ]
             },
             {
               "id": "b-a-6",
@@ -1144,7 +1187,7 @@
               "items": [
                 {
                   "title": "Regístrala en la app de FM",
-                  "md": "Ve a **nuestra aplicación de FM** y registra la baja en el apartado de **Bajas**: motivo **«centro»** y marca que es una **baja programada**."
+                  "md": "Ve a **nuestra aplicación de FM** y registra la baja en el apartado de **Bajas**: marca el **motivo** y el **centro**, y que es una **baja programada**."
                 },
                 {
                   "title": "Seguimiento",
@@ -1213,18 +1256,13 @@
                 },
                 {
                   "title": "En la app de FM",
-                  "md": "Registra la baja en el apartado de **Bajas** como **directa**, con el motivo **recibos devueltos**."
+                  "md": "Registra la baja en el apartado de **Bajas** como **directa**: marca el **motivo** (**recibos devueltos**) y el **centro**."
                 },
                 {
-                  "title": "Sin seguimiento",
-                  "md": "El **seguimiento** es solo para bajas programadas: en una baja directa no se hace."
+                  "title": "Sin seguimiento ni WhatsApp",
+                  "md": "El **seguimiento** y el **WhatsApp de seguimiento** son solo para bajas programadas: en una baja directa no se hacen."
                 }
               ]
-            },
-            {
-              "id": "b-d-pend",
-              "type": "pending",
-              "note": "Por confirmar: en las bajas directas, ¿se envía también el WhatsApp y hay que apuntar algo en el Excel?"
             }
           ],
           "children": [],
@@ -1245,7 +1283,7 @@
                 },
                 {
                   "title": "Cambia el abono a baja médica",
-                  "md": "En el perfil de la persona, ve a **Abonos**, pulsa el **lápiz** y cambia el abono a la **cuota de baja médica**."
+                  "md": "En el perfil de la persona, ve a **Abonos** y pulsa el **lápiz**. En **Tipo de abono** (**1** en la captura de abajo) cambia el abono a la **cuota de baja médica**."
                 }
               ]
             },
@@ -1272,12 +1310,67 @@
               "items": [
                 {
                   "title": "Vuelve a poner la fecha de próximo pago",
-                  "md": "**Importante:** al cambiar la cuota **se modifica la fecha de próximo pago**. Tienes que **volver a ponerla correctamente**."
+                  "md": "**Importante:** al cambiar la cuota **se modifica la fecha de próximo pago** (**2**). Tienes que **volver a ponerla correctamente**."
                 },
                 {
                   "title": "Guardar cambios",
-                  "md": "Pulsa **Guardar cambios**."
+                  "md": "Pulsa **Guardar** (o **Guardar y Cerrar**) para guardar los cambios (**3**)."
+                }
+              ]
+            },
+            {
+              "id": "b-m-shot-abono",
+              "type": "screenshot",
+              "src": "/capturas/bajas-2-editar-abono.png",
+              "alt": "Pantalla de edición del abono con tipo de abono, fecha de próxima cuota y botones de guardar",
+              "caption": "Edición del abono (captura de ejemplo): tipo de abono, fecha de próxima cuota y guardar.",
+              "annotations": [
+                {
+                  "kind": "box",
+                  "x": 36.42,
+                  "y": 29.66,
+                  "w": 20.37,
+                  "h": 3.94
                 },
+                {
+                  "kind": "marker",
+                  "n": 1,
+                  "x": 34.48,
+                  "y": 31.63
+                },
+                {
+                  "kind": "box",
+                  "x": 36.42,
+                  "y": 74.51,
+                  "w": 6.42,
+                  "h": 4.06
+                },
+                {
+                  "kind": "marker",
+                  "n": 2,
+                  "x": 34.48,
+                  "y": 76.48
+                },
+                {
+                  "kind": "box",
+                  "x": 44.78,
+                  "y": 93.97,
+                  "w": 11.34,
+                  "h": 4.06
+                },
+                {
+                  "kind": "marker",
+                  "n": 3,
+                  "x": 50.45,
+                  "y": 91.31
+                }
+              ]
+            },
+            {
+              "id": "b-m-5",
+              "type": "steps",
+              "start": 5,
+              "items": [
                 {
                   "title": "Excel de solicitud de cambio",
                   "md": "Ve otra vez al **Excel de solicitud de cambio** y **marca el check**."
@@ -1300,12 +1393,7 @@
               "type": "callout",
               "variant": "warning",
               "title": "Caso excepcional: tiene varios meses pagados",
-              "md": "Si ya tiene pagados varios meses y se da de baja médica:\n\n- Si sabe **exactamente** que va a estar **2 meses o más**, le **avanzamos 2 meses el próximo pago**. Además, ponemos la **cuota de baja médica**.\n- Si **no sabe exactamente** cuánto va a estar (aunque pongamos una previsión de vuelta), le configuramos la **cuota de baja médica** y, **a la vuelta, le damos los meses que no haya disfrutado**."
-            },
-            {
-              "id": "b-m-pend",
-              "type": "pending",
-              "note": "Falta la captura de la pantalla de edición del abono (cambio a cuota de baja médica y fecha de próximo pago)."
+              "md": "Si ya tiene pagados varios meses y se da de baja médica:\n\n- Si sabe **exactamente** cuánto va a estar (**2 meses o más**), le **avanzamos el próximo pago tantos meses como vaya a estar**. Además, ponemos la **cuota de baja médica**.\n- Si **no sabe exactamente** cuánto va a estar (aunque pongamos una previsión de vuelta), le configuramos la **cuota de baja médica** y, **a la vuelta, le damos los meses que no haya disfrutado**."
             }
           ],
           "children": [],
