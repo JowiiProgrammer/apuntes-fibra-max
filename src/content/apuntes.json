@@ -1,5 +1,5 @@
 {
-  "version": 19,
+  "version": 20,
   "title": "Apuntes de Recepción",
   "sections": [
     {
@@ -313,16 +313,23 @@
             {
               "id": "mp-shot-info",
               "type": "screenshot",
-              "src": "/capturas/altas-5-menu-ficha-cliente.png",
-              "alt": "Menú izquierdo de la ficha del cliente con Información Adicional resaltado",
-              "caption": "Menú de la ficha del cliente: Información Adicional.",
+              "src": "/capturas/altas-6-informacion-adicional.png",
+              "alt": "Pantalla Información Adicional con el menú y el desplegable Tipo de cliente resaltados",
+              "caption": "Información Adicional → Tipo de cliente: «Entrada puntual».",
               "annotations": [
                 {
                   "kind": "box",
-                  "x": 0.0,
-                  "y": 13.94,
-                  "w": 19.11,
-                  "h": 11.52
+                  "x": 0.38,
+                  "y": 8.01,
+                  "w": 11.75,
+                  "h": 6.97
+                },
+                {
+                  "kind": "box",
+                  "x": 43.38,
+                  "y": 47.56,
+                  "w": 41.0,
+                  "h": 8.01
                 }
               ]
             },
@@ -340,16 +347,16 @@
             {
               "id": "mp-shot-bonos-menu",
               "type": "screenshot",
-              "src": "/capturas/altas-5-menu-ficha-cliente.png",
+              "src": "/capturas/menu-ficha-cliente.png",
               "alt": "Menú izquierdo de la ficha del cliente con Bonos resaltado",
               "caption": "Menú de la ficha del cliente: Bonos.",
               "annotations": [
                 {
                   "kind": "box",
-                  "x": 0.0,
-                  "y": 87.27,
-                  "w": 20.67,
-                  "h": 10.3
+                  "x": 1.86,
+                  "y": 58.78,
+                  "w": 93.02,
+                  "h": 7.35
                 }
               ]
             },
@@ -540,16 +547,16 @@
             {
               "id": "altas-shot-menu-info",
               "type": "screenshot",
-              "src": "/capturas/altas-5-menu-ficha-cliente.png",
-              "alt": "Menú izquierdo de la ficha del cliente con Información Adicional resaltado",
-              "caption": "Menú de la ficha del cliente: Información Adicional.",
+              "src": "/capturas/altas-6-informacion-adicional.png",
+              "alt": "Ficha del cliente, pantalla Información Adicional, con la opción del menú resaltada",
+              "caption": "Ficha del cliente: Información Adicional.",
               "annotations": [
                 {
                   "kind": "box",
-                  "x": 0.0,
-                  "y": 13.94,
-                  "w": 19.11,
-                  "h": 11.52
+                  "x": 0.38,
+                  "y": 8.01,
+                  "w": 11.75,
+                  "h": 6.97
                 }
               ]
             },
@@ -582,6 +589,29 @@
                   "w": 10.1,
                   "h": 32.65,
                   "label": "Según formulario"
+                }
+              ]
+            },
+            {
+              "id": "altas-n-tipo-cliente",
+              "type": "callout",
+              "variant": "warning",
+              "title": "Cuota de empresa: un paso más",
+              "md": "En algunas cuotas hay un paso más. Por ejemplo, en una cuota de **Empresas**: en **Información adicional**, además de los checks, marca en **Tipo de cliente** la **empresa**."
+            },
+            {
+              "id": "altas-shot-tipo-cliente",
+              "type": "screenshot",
+              "src": "/capturas/altas-6-informacion-adicional.png",
+              "alt": "Pantalla Información Adicional con el desplegable Tipo de cliente resaltado",
+              "caption": "Información Adicional → Tipo de cliente.",
+              "annotations": [
+                {
+                  "kind": "box",
+                  "x": 43.38,
+                  "y": 47.56,
+                  "w": 41.0,
+                  "h": 8.01
                 }
               ]
             },
