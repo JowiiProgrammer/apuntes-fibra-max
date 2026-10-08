@@ -1,5 +1,5 @@
 {
-  "version": 28,
+  "version": 29,
   "title": "Apuntes de Recepción",
   "sections": [
     {
@@ -428,7 +428,7 @@
               "items": [
                 {
                   "title": "Añade el grupo «todo el día»",
-                  "md": "Ve a **General** (menú de la izquierda), baja hasta **Grupos** y pulsa **Añadir Grupo**. Selecciona **todo el día**; en **Desde** pon la fecha de **hoy** y en **Hasta** cuenta las semanas del bono (4, 3, 2 o 1) hasta el **mismo día de la semana**.\n\nPor ejemplo, si hoy es miércoles y es un bono de 4 semanas, hasta el miércoles de dentro de 4 semanas."
+                  "md": "Ve a **General** (menú de la izquierda), baja hasta **Grupos** y pulsa **Añadir Grupo**. Selecciona **todo el día** (en Matchpoint: «TODO EL DIA/ENTRADA PUNTUAL»); en **Desde** pon la fecha de **hoy** y en **Hasta** cuenta las semanas del bono (4, 3, 2 o 1) hasta el **mismo día de la semana**.\n\nPor ejemplo, si hoy es miércoles y es un bono de 4 semanas, hasta el miércoles de dentro de 4 semanas.\n\nEsto permite que la persona entre y salga con su QR."
                 }
               ]
             },
@@ -532,6 +532,13 @@
               "alt": "Ficha de cliente nuevo en Matchpoint, vacía",
               "caption": "Ficha de cliente nuevo, vacía.",
               "annotations": []
+            },
+            {
+              "id": "altas-n-ficha-revisar",
+              "type": "callout",
+              "variant": "info",
+              "title": "Revisa en la ficha",
+              "md": "- Rellena **todos los datos**, añade la **foto** y guarda el **teléfono**.\n- Usa **Observaciones** para anotar promoción, baja médica, pago en efectivo u otra información útil.\n- Revisa **Acceso Usuario**: el **email** tiene que ser correcto.\n- Si cambias el email: cámbialo en la hoja **General**, ve a **Información adicional**, quita el acceso y vuelve a darlo con el email correcto."
             },
             {
               "id": "altas-n-pasos-4",
@@ -686,7 +693,7 @@
               "items": [
                 {
                   "title": "Selecciona el tipo de abono",
-                  "md": "Rellena los datos del abono. Empieza por el **Tipo de abono** (**1** en la captura de abajo): el que corresponda a la tarifa que ha contratado."
+                  "md": "Rellena los datos del abono. Empieza por el **Tipo de abono** (**1** en la captura de abajo): el que corresponda a la tarifa que ha contratado. Revisa también la **fecha de inicio**: si no empieza hoy, cámbiala."
                 },
                 {
                   "title": "Tarifa aplicada: MENSUAL",
@@ -694,7 +701,7 @@
                 },
                 {
                   "title": "Fecha comienzo paso resto de cuotas",
-                  "md": "Cambia la **Fecha comienzo paso resto de cuotas** (**3**): es la fecha de su **próximo pago**. Si lleva promo, coincide con la que has puesto en el Excel de final de promo."
+                  "md": "Cambia la **Fecha comienzo paso resto de cuotas** (**3**): es la fecha de su **próximo pago**. Si lleva promo, coincide con la que has puesto en el Excel de final de promo. Hazlo **antes de tocar el importe**."
                 },
                 {
                   "title": "Configura el importe",
@@ -781,11 +788,25 @@
               ]
             },
             {
+              "id": "altas-n-forma-pago",
+              "type": "callout",
+              "variant": "info",
+              "title": "Forma de pago",
+              "md": "Normalmente es **Banco**. Si el número de cuenta no es correcto, pon forma de pago **tarjeta** y reclama el número de cuenta al abonado."
+            },
+            {
               "id": "altas-n-tarifa-mensual",
               "type": "callout",
               "variant": "danger",
               "title": "Tarifa aplicada: MENSUAL",
               "md": "Es importante que en el abono la **Tarifa aplicada** esté en **MENSUAL**."
+            },
+            {
+              "id": "altas-n-pago-anticipado",
+              "type": "callout",
+              "variant": "warning",
+              "title": "Alta con pago anticipado un día cualquiera",
+              "md": "Si se da de alta con un **pago anticipado** (trimestral, semestral o anual) un día cualquiera, por ejemplo el **día 6**, paga **solo el importe del pago anticipado** (por ejemplo, 165 €), **sin la parte proporcional del mes**. Su próximo pago es **el mismo día 6, dentro de esos meses** (3 meses si es trimestral).\n\nSi luego quiere darse de baja, tiene que avisar **5 días antes** de esa fecha."
             },
             {
               "id": "altas-n-speech-link",
@@ -798,7 +819,7 @@
               "title": "Después de cobrar",
               "items": [
                 "Agrega el contacto del cliente al teléfono",
-                "Escanea el alta y guárdala en la carpeta de OneDrive correspondiente",
+                "Escanea toda la documentación (formulario, contrato y SEPA) con CamScanner, compártela en «Escritorio» y guárdala con nombre y apellidos en OneDrive → Altas escaneadas → carpeta del mes",
                 "Tritura el alta"
               ]
             }
@@ -924,7 +945,7 @@
                   "title": "Después de cobrar",
                   "items": [
                     "Agrega el contacto del cliente al teléfono",
-                    "Escanea el alta y guárdala en la carpeta de OneDrive correspondiente",
+                    "Escanea toda la documentación (formulario, contrato y SEPA) con CamScanner, compártela en «Escritorio» y guárdala con nombre y apellidos en OneDrive → Altas escaneadas → carpeta del mes",
                     "Tritura el alta"
                   ]
                 }
@@ -972,7 +993,7 @@
                 },
                 {
                   "title": "Fijar la cuota de mantenimiento o darse de baja",
-                  "md": "Para fijar la cuota de mantenimiento o darse de baja, hay que **avisar antes del día 25 del mes anterior** al que quiere solicitarlo, para poder gestionarlo. Más en [Bajas](#bajas)."
+                  "md": "Para fijar la cuota de mantenimiento o darse de baja, hay que **avisar antes del día 25 del mes anterior** al que quiere solicitarlo (si su próximo pago cae en el día 1). Si cae en **otro día**, hay que avisar **5 días antes** de esa fecha. Para poder gestionarlo. Más en [Bajas](#bajas)."
                 },
                 {
                   "title": "Si se da de baja",
@@ -1045,6 +1066,13 @@
           "id": "b-respuestas",
           "type": "text",
           "md": "**Según la respuesta que nos dé:**\n\n| Si nos dice… | Hacemos… |\n|---|---|\n| Que es por un tema de **salud** | Enviamos el **formulario de baja médica** y le pedimos un **documento médico**. [Baja médica](#baja-medica) |\n| «Voy a estar unos meses», «quiero la cuota de mantenimiento» | Enviamos el **formulario para solicitar la cuota de mantenimiento**. [Cuota de mantenimiento](#cuota-mantenimiento) |\n| Que quiere darse de baja | Enviamos el **formulario para darse de baja**. [Bajas anunciadas](#bajas-anunciadas) |"
+        },
+        {
+          "id": "b-plazo",
+          "type": "callout",
+          "variant": "warning",
+          "title": "Plazo para avisar",
+          "md": "El formulario hay que rellenarlo **antes del día 25** (del mes anterior) si su próximo pago cae en el día **1**.\n\nSi su próximo pago cae en **otro día** (por ejemplo, un pago anticipado que empezó el día 6), tiene que avisar **5 días antes** de esa fecha.\n\nEn general les decimos **antes del día 20**, así avisan con más margen."
         }
       ],
       "children": [
@@ -1413,7 +1441,7 @@
           "type": "callout",
           "variant": "info",
           "title": "Cómo llega",
-          "md": "Le enviamos el **formulario de solicitud de cambio de cuota**. Cuando lo rellena, llega al **Excel de solicitud de cambios**: ahí miramos a la persona y qué proceso seguimos."
+          "md": "Le enviamos el **formulario de solicitud de cambio de cuota** (lo tienes en **Missatges Compartits**). Cuando lo rellena, llega al **Excel de solicitud de cambios**: ahí miramos a la persona y qué proceso seguimos."
         },
         {
           "id": "cc-pasos-1",
@@ -1452,8 +1480,12 @@
           "start": 3,
           "items": [
             {
-              "title": "Fecha de próximo pago y guardar",
-              "md": "Igual que en la [baja médica](#baja-medica): al cambiar la cuota **se modifica la fecha de próximo pago**. **Vuelve a ponerla correctamente** y pulsa **Guardar**."
+              "title": "Aplica la tarifa",
+              "md": "Revisa que sea la correcta."
+            },
+            {
+              "title": "Revisa el próximo pago y guarda",
+              "md": "**Ojo con la fecha:** después de cambiar una cuota, revisa siempre **Próximo Pago**, porque la fecha puede desconfigurarse. Fecha e importe deben quedar bien configurados. Pulsa **Guardar**. Igual que en la [baja médica](#baja-medica)."
             }
           ]
         },
@@ -1462,14 +1494,7 @@
           "type": "callout",
           "variant": "info",
           "title": "Cambio para el mes que viene",
-          "md": "Se le configura la cuota nueva y ya está."
-        },
-        {
-          "id": "cc-mismo-mes",
-          "type": "callout",
-          "variant": "warning",
-          "title": "Cambio para este mismo mes",
-          "md": "Si lo quiere para el **mes en curso**, además de configurar la cuota hay que **añadir el grupo**:\n\n- Ve a **General → Grupos → Añadir Grupo** y elige el grupo del horario nuevo. Por ejemplo, si tenía de mañana, añade el **horario completo**.\n- **Desde:** el día en que le gestionas el cambio. **Hasta:** el último día del mes.\n- Tiene que **pagar la diferencia de cuota**."
+          "md": "El mes actual ya está pagado con su cuota de siempre. Como ya le gestionamos el cambio, hay que **añadir el grupo de la cuota que tiene ahora**: por ejemplo, si tiene la cuota de mañanas, se le añade el grupo de mañanas.\n\n- Ve a **General → Grupos → Añadir Grupo**.\n- **Desde:** el día en que le gestionas el cambio. **Hasta:** el último día del mes."
         },
         {
           "id": "cc-shot-grupos",
@@ -1488,9 +1513,16 @@
           ]
         },
         {
-          "id": "cc-pasos-4",
+          "id": "cc-mismo-mes",
+          "type": "callout",
+          "variant": "warning",
+          "title": "Cambio para este mismo mes (efecto inmediato)",
+          "md": "Tiene que **pagar la diferencia de cuota**. Hazle el cambio en el mes en curso:\n\n1. **Actualiza Matchpoint:** cambia tipo de abono, tarifa y próximo pago.\n2. **Calcula la diferencia** con la app FibraMax, en el apartado **Altas**: se recomienda configurar el parámetro **«Sin promoción»**, escoger la cuota y restar al importe los **50 € de matrícula**: eso es lo que pagaría ese día de parte proporcional.\n3. **Genera la venta:** Facturación y Cobro → Añadir nueva venta → Insertar (más en [Nueva venta en el perfil](#nueva-venta)).\n4. **Cobra la diferencia** en efectivo o tarjeta."
+        },
+        {
+          "id": "cc-pasos-5",
           "type": "steps",
-          "start": 4,
+          "start": 5,
           "items": [
             {
               "title": "Marca el check del Excel",
@@ -1513,7 +1545,7 @@
           "type": "callout",
           "variant": "info",
           "title": "Cuota de mantenimiento: 10 € al mes",
-          "md": "Por ejemplo, si se va de viaje un mes. Si es **dentro de los meses que tiene pagados**, viniendo **antes del día 25 del mes anterior** al que quiere solicitarlo y pagando los 10 €, se le **retrasa la fecha de próximo pago**.\n\nPara fijarla hay que **avisar antes del día 25** del mes anterior."
+          "md": "Por ejemplo, si se va de viaje un mes. Si es **dentro de los meses que tiene pagados**, viniendo **antes del día 25 del mes anterior** al que quiere solicitarlo y pagando los 10 €, se le **retrasa la fecha de próximo pago**.\n\nPara fijarla hay que **avisar antes del día 25** del mes anterior (si su próximo pago cae en el día 1). Si cae en otro día, **5 días antes** de esa fecha."
         },
         {
           "id": "cm-pasos",
