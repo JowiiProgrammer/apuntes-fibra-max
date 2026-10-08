@@ -1,5 +1,5 @@
 {
-  "version": 27,
+  "version": 28,
   "title": "Apuntes de Recepción",
   "sections": [
     {
@@ -1529,15 +1529,41 @@
               "md": "Es el mismo proceso que en [Cambio de cuota](#cambio-cuota): en **Abonos → lápiz**, cambia el **Tipo de abono** a la **cuota de mantenimiento**."
             },
             {
-              "title": "Marca el check del Excel",
-              "md": "Cuando lo hayas gestionado, vuelve al **Excel de solicitud de cambios** y **marca el check**."
+              "title": "Cóbrala si tiene meses pagados",
+              "md": "Si es dentro de los meses que tiene pagados, hay que hacer una **nueva venta en su perfil** por los 10 €. Cómo y por qué motivos, en [Nueva venta en el perfil del abonado](#nueva-venta)."
+            },
+            {
+              "title": "Retrasa la fecha de próximo pago",
+              "md": "En el propio abono (lápiz), modifica la **Fecha Próxima Cuota** para **retrasarla**."
             }
           ]
         },
         {
-          "id": "cm-pend",
-          "type": "pending",
-          "note": "Por completar: cómo se cobra y se retrasa la fecha de próximo pago cuando está dentro de los meses pagados."
+          "id": "cm-shot-fecha",
+          "type": "screenshot",
+          "src": "/capturas/bajas-2-editar-abono.png",
+          "alt": "Pantalla de edición del abono con el campo Fecha Próxima Cuota resaltado",
+          "caption": "Edición del abono (captura de ejemplo): Fecha Próxima Cuota.",
+          "annotations": [
+            {
+              "kind": "box",
+              "x": 36.42,
+              "y": 74.51,
+              "w": 6.42,
+              "h": 4.06
+            }
+          ]
+        },
+        {
+          "id": "cm-pasos-5",
+          "type": "steps",
+          "start": 5,
+          "items": [
+            {
+              "title": "Marca el check del Excel",
+              "md": "Cuando lo hayas gestionado, vuelve al **Excel de solicitud de cambios** y **marca el check**."
+            }
+          ]
         }
       ],
       "children": [],
@@ -1772,8 +1798,30 @@
             }
           ],
           "children": []
+        },
+        {
+          "id": "nueva-venta",
+          "title": "Nueva venta en el perfil del abonado",
+          "lead": "Cuando hay que cobrar algo al abonado fuera de su cuota normal.",
+          "blocks": [
+            {
+              "id": "nv-motivos",
+              "type": "callout",
+              "variant": "info",
+              "title": "Cuándo hay que hacerla",
+              "md": "Hay que hacer una **nueva venta en su perfil**. Puede ser por varios motivos:\n\n- **Cuota de mantenimiento**, porque tiene meses pagados.\n- **Diferencia de cuota**. Por ejemplo, ha estado pagando la cuota de mantenimiento, vuelve a su cuota y paga la **diferencia del mes** de su cuota.\n- **Otros casos.**"
+            },
+            {
+              "id": "nv-pend",
+              "type": "pending",
+              "note": "Por completar: proceso paso a paso de la nueva venta en Matchpoint."
+            }
+          ],
+          "children": [],
+          "updatedAt": "2026-10-08"
         }
-      ]
+      ],
+      "updatedAt": "2026-10-08"
     }
   ],
   "priceTables": [
