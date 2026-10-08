@@ -73,6 +73,7 @@ export function newBlock(type: BlockType): Block {
     case 'checklist': return { id, type, title: '', items: [''] }
     case 'prices': return { id, type, tableId: '' }
     case 'screenshot': return { id, type, src: '', alt: '', caption: '', annotations: [] }
+    case 'message': return { id, type, title: 'Mensaje', text: '' }
     case 'pending': return { id, type, note: '' }
   }
 }

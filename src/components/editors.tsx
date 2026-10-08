@@ -10,6 +10,7 @@ export const BLOCK_LABELS: Record<BlockType, string> = {
   text: 'Texto',
   callout: 'Aviso',
   speech: 'Guion / speech',
+  message: 'Mensaje',
   steps: 'Pasos',
   checklist: 'Checklist',
   prices: 'Tabla de precios',
@@ -166,6 +167,14 @@ function BlockForm({ block, save }: { block: Block; save: (b: Block) => void }) 
     case 'screenshot':
       return <ScreenshotEditor block={block} onChange={save} />
 
+    case 'message':
+      return (
+        <>
+          <Field value={block.title ?? ''} placeholder="Título (ej. Primer mensaje)" onCommit={(title) => save({ ...block, title })} />
+          <Field multiline value={block.text} placeholder="Texto tal cual se envía. Los [huecos] entre corchetes se resaltan." onCommit={(text) => save({ ...block, text })} />
+        </>
+      )
+
     case 'pending':
       return <Field value={block.note ?? ''} placeholder="Nota: qué falta por redactar (opcional)" onCommit={(note) => save({ ...block, note })} />
   }
@@ -175,7 +184,7 @@ function AddButton({ onClick, children }: { onClick: () => void; children: React
   return <button className="btn btn--ghost btn--sm" onClick={onClick}><Plus size={14} /> {children}</button>
 }
 
-const ADDABLE: BlockType[] = ['text', 'steps', 'screenshot', 'callout', 'speech', 'checklist', 'prices', 'pending']
+const ADDABLE: BlockType[] = ['text', 'steps', 'screenshot', 'callout', 'speech', 'message', 'checklist', 'prices', 'pending']
 
 export function AddBlockMenu({ sectionId }: { sectionId: string }) {
   const { addBlock } = useApuntes()

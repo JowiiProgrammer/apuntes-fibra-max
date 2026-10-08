@@ -1,4 +1,4 @@
-import { AlertTriangle, Info, Lightbulb, MessageSquareQuote, OctagonAlert, PencilLine } from 'lucide-react'
+import { AlertTriangle, Check, Copy, Info, Lightbulb, MessageSquareQuote, MessageSquareText, OctagonAlert, PencilLine } from 'lucide-react'
 import { useState } from 'react'
 import type { Block, CalloutVariant } from '../types'
 import { Markdown } from './Markdown'
@@ -59,6 +59,9 @@ export function BlockView({ block }: { block: Block }) {
     case 'screenshot':
       return <ScreenshotView block={block} />
 
+    case 'message':
+      return <MessageBlock title={block.title} text={block.text} />
+
     case 'pending':
       return (
         <div className="pending">
@@ -99,6 +102,50 @@ function Checklist({ title, items }: { title?: string; items: string[] }) {
           ))}
         </ul>
       )}
+    </div>
+  )
+}
+
+/** Copia al portapapeles; si el navegador lo bloquea, usa un textarea temporal. */
+async function copyText(text: string) {
+  try {
+    await navigator.clipboard.writeText(text)
+    return true
+  } catch {
+    const ta = document.createElement('textarea')
+    ta.value = text
+    ta.style.position = 'fixed'
+    ta.style.opacity = '0'
+    document.body.appendChild(ta)
+    ta.select()
+    const ok = document.execCommand('copy')
+    ta.remove()
+    return ok
+  }
+}
+
+// Los [huecos] entre corchetes se resaltan para que se vea qué hay que rellenar antes de enviar.
+function MessageBlock({ title, text }: { title?: string; text: string }) {
+  const [copied, setCopied] = useState(false)
+  const onCopy = async () => {
+    if (await copyText(text)) {
+      setCopied(true)
+      setTimeout(() => setCopied(false), 1800)
+    }
+  }
+  return (
+    <div className="msg">
+      <div className="msg__head">
+        <span className="msg__tag"><MessageSquareText size={14} /> {title || 'Mensaje'}</span>
+        <button className="btn btn--sm btn--ghost" onClick={onCopy} data-search-skip>
+          {copied ? <Check size={14} /> : <Copy size={14} />} {copied ? 'Copiado' : 'Copiar'}
+        </button>
+      </div>
+      <p className="msg__body">
+        {text.split(/(\[[^\]]+\])/g).map((part, i) =>
+          /^\[[^\]]+\]$/.test(part) ? <span key={i} className="ph">{part}</span> : part,
+        )}
+      </p>
     </div>
   )
 }

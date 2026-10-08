@@ -18,6 +18,8 @@ Vite + React 19 + TypeScript, sin backend. Ver `docs/blueprint.md` para PRD y pl
 - Capturas en `public/capturas/`, anotaciones en % (x, y, w, h) sobre la imagen. Antes de subir
   una captura, borra datos personales (nombres de clientes, IBAN…): la web es pública.
 - Los bloques `steps` tienen `start` para continuar la numeración tras una captura.
+- Los bloques `message` son textos para copiar (WhatsApp, email) con botón «Copiar»; los
+  `[huecos]` entre corchetes se resaltan para rellenarlos antes de enviar.
 - Logo: `public/logo-fibra.png` (oficial, blanco sobre transparente), favicon en `public/`.
 - Marca: tokens en `:root` de `src/styles.css` (negro `--side`, rojo `--red`, crema `--bg`,
   Montserrat). Mismo lenguaje visual que el Cuadro de mando de Fibra Max.

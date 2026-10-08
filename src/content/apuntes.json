@@ -1,5 +1,5 @@
 {
-  "version": 23,
+  "version": 24,
   "title": "Apuntes de Recepción",
   "sections": [
     {
@@ -1027,42 +1027,239 @@
       "id": "bajas",
       "title": "Bajas",
       "group": "Abonados",
-      "blocks": [],
+      "blocks": [
+        {
+          "id": "b-intro",
+          "type": "callout",
+          "variant": "info",
+          "title": "Cuando alguien solicita la baja",
+          "md": "Lo primero es enviarle un **primer mensaje** (este o similar) para conocer el motivo y recordarle las alternativas."
+        },
+        {
+          "id": "b-msg-1",
+          "type": "message",
+          "title": "Primer mensaje",
+          "text": "Hola,\n\nPodemos gestionar tu baja sin ningún problema. Antes de hacerlo, nos gustaría conocer el motivo de tu decisión, ya que nos ayuda a seguir mejorando nuestro servicio.\n\nEn cualquier caso, queremos recordarte que disponemos de la opción de cuota de mantenimiento por 10 € al mes, para el tiempo que necesites. Además, en caso de lesión o baja médica, podemos paralizar la cuota temporalmente.\n\nQuedamos atentos a tu respuesta.\n¡Muchas gracias!\n\n*Fibra Max*"
+        },
+        {
+          "id": "b-respuestas",
+          "type": "text",
+          "md": "**Según la respuesta que nos dé:**\n\n| Si nos dice… | Hacemos… |\n|---|---|\n| Que es por un tema de **salud** | Enviamos el **formulario de baja médica** y le pedimos un **documento médico**. [Baja médica](#baja-medica) |\n| «Voy a estar unos meses», «quiero la cuota de mantenimiento» | Enviamos el **formulario para solicitar la cuota de mantenimiento**. [Cuota de mantenimiento](#cuota-mantenimiento) |\n| Que quiere darse de baja | Enviamos el **formulario para darse de baja**. [Bajas anunciadas](#bajas-anunciadas) |"
+        }
+      ],
       "children": [
         {
           "id": "bajas-anunciadas",
-          "title": "Bajas anunciadas",
+          "title": "Bajas anunciadas (programadas)",
           "blocks": [
             {
-              "id": "bajas-anunciadas-pendiente",
-              "type": "pending"
+              "id": "b-a-1",
+              "type": "steps",
+              "start": 1,
+              "items": [
+                {
+                  "title": "Llega al Excel de solicitud de bajas",
+                  "md": "La baja programada nos llega al **Excel de solicitud de bajas**."
+                },
+                {
+                  "title": "Búscala en Matchpoint",
+                  "md": "Busca a la persona en Matchpoint con el **muñeco con lupa** y entra en su perfil."
+                }
+              ]
+            },
+            {
+              "id": "b-a-shot-lupa",
+              "type": "screenshot",
+              "src": "/capturas/altas-1-barra-matchpoint.png",
+              "alt": "Barra de iconos de Matchpoint con el muñeco con lupa",
+              "caption": "Matchpoint: el muñeco con lupa, para buscar al cliente.",
+              "annotations": [
+                {
+                  "kind": "circle",
+                  "x": 41.06,
+                  "y": 29.67,
+                  "w": 4.25,
+                  "h": 22.97
+                }
+              ]
+            },
+            {
+              "id": "b-a-3",
+              "type": "steps",
+              "start": 3,
+              "items": [
+                {
+                  "title": "Abonos → flecha roja",
+                  "md": "Ve a **Abonos** y pulsa la **flecha roja hacia abajo**."
+                }
+              ]
+            },
+            {
+              "id": "b-a-shot-abonos",
+              "type": "screenshot",
+              "src": "/capturas/bajas-1-abonos.png",
+              "alt": "Pestaña Abonos con la flecha roja hacia abajo",
+              "caption": "Abonos: flecha roja hacia abajo.",
+              "annotations": [
+                {
+                  "kind": "box",
+                  "x": 0.94,
+                  "y": 51.8,
+                  "w": 9.43,
+                  "h": 7.0
+                },
+                {
+                  "kind": "circle",
+                  "x": 91.88,
+                  "y": 39.6,
+                  "w": 2.72,
+                  "h": 10.4
+                }
+              ]
+            },
+            {
+              "id": "b-a-4",
+              "type": "steps",
+              "start": 4,
+              "items": [
+                {
+                  "title": "Fecha de baja",
+                  "md": "En la pantalla que se abre, selecciona la **fecha del último día del mes que no caiga en fin de semana**. Por ejemplo, si el último día del mes es sábado o domingo, pon el día anterior que no sea fin de semana."
+                },
+                {
+                  "title": "Motivo",
+                  "md": "En **Motivo** pon el que haya elegido el abonado en el Excel y pulsa **Aceptar**."
+                }
+              ]
+            },
+            {
+              "id": "b-a-pend-captura",
+              "type": "pending",
+              "note": "Falta la captura de la pantalla que se abre (fecha y motivo)."
+            },
+            {
+              "id": "b-a-6",
+              "type": "steps",
+              "start": 6,
+              "items": [
+                {
+                  "title": "Regístrala en la app de FM",
+                  "md": "Ve a **nuestra aplicación de FM** y registra la baja en el apartado de **Bajas**: motivo **«centro»** y marca que es una **baja programada**."
+                },
+                {
+                  "title": "Seguimiento",
+                  "md": "Haz el **seguimiento de la baja** (solo para bajas programadas): añade los datos que se piden en **seguimiento**."
+                },
+                {
+                  "title": "WhatsApp",
+                  "md": "Contacta por **WhatsApp** con este mensaje o similar (los [huecos] se rellenan):"
+                }
+              ]
+            },
+            {
+              "id": "b-msg-2",
+              "type": "message",
+              "title": "WhatsApp de seguimiento",
+              "text": "Hola [Nombre] 😊\n\n¿Qué tal? ¿Cómo te encuentras?\n\nSoy [persona que se pone en contacto] de Fibra Max Granollers 💪\n\nPrimero de todo, quería agradecerte el tiempo que has formado parte de Fibra 🙏🏼\n\nHe visto que el motivo de baja es [motivo]. No obstante, me encantaría que pudieras comentarme qué tal ha ido tu experiencia con nosotros y si hay algo que podríamos haber mejorado ✍️\n\nTe deseamos mucha suerte y esperamos verte de nuevo por aquí en un futuro 👋"
+            },
+            {
+              "id": "b-a-9",
+              "type": "steps",
+              "start": 9,
+              "items": [
+                {
+                  "title": "Anota la respuesta",
+                  "md": "Cuando responda, **anota la respuesta del abonado en el seguimiento**."
+                },
+                {
+                  "title": "Marca el check del Excel",
+                  "md": "Cuando hayas hecho todo el proceso, **marca el check del Excel** de solicitud de bajas."
+                }
+              ]
             }
           ],
-          "children": []
+          "children": [],
+          "updatedAt": "2026-10-08",
+          "lead": "La baja normal, a la que llamamos baja programada."
         },
         {
           "id": "bajas-directas",
           "title": "Bajas directas (recibos devueltos)",
           "blocks": [
             {
-              "id": "bajas-directas-pendiente",
-              "type": "pending"
+              "id": "b-d-intro",
+              "type": "callout",
+              "variant": "info",
+              "title": "Cuándo es una baja directa",
+              "md": "Normalmente es por **recibos devueltos**: cuando no sigue un recibo devuelto y el abonado no contesta. Las bajas directas se gestionan el día **25/26**. Pasado el día 25, sería una baja directa. Puede haber otros casos, pero normalmente es este."
+            },
+            {
+              "id": "b-d-igual",
+              "type": "text",
+              "md": "El proceso es **igual que el de la [baja programada](#bajas-anunciadas)**. Solo cambia esto:"
+            },
+            {
+              "id": "b-d-pasos",
+              "type": "steps",
+              "start": 1,
+              "items": [
+                {
+                  "title": "Fecha en Matchpoint",
+                  "md": "En la **fecha** pon el **día anterior al día en que haces la baja** (no el último día del mes)."
+                },
+                {
+                  "title": "Motivo en Matchpoint",
+                  "md": "En **Motivo** pon **recibos devueltos** y pulsa **Aceptar**."
+                },
+                {
+                  "title": "En la app de FM",
+                  "md": "Registra la baja en el apartado de **Bajas** como **directa**, con el motivo **recibos devueltos**."
+                },
+                {
+                  "title": "Sin seguimiento",
+                  "md": "El **seguimiento** es solo para bajas programadas: en una baja directa no se hace."
+                }
+              ]
+            },
+            {
+              "id": "b-d-pend",
+              "type": "pending",
+              "note": "Por confirmar: en las bajas directas, ¿se envía también el WhatsApp y hay que apuntar algo en el Excel?"
             }
           ],
-          "children": []
+          "children": [],
+          "updatedAt": "2026-10-08"
         },
         {
           "id": "baja-medica",
           "title": "Baja médica (pausar)",
           "blocks": [
             {
-              "id": "baja-medica-pendiente",
-              "type": "pending"
+              "id": "b-m-pasos",
+              "type": "steps",
+              "start": 1,
+              "items": [
+                {
+                  "title": "Envía el formulario",
+                  "md": "Si nos dice que es por un tema de **salud**, le enviamos el **formulario de baja médica**."
+                },
+                {
+                  "title": "Pide el documento médico",
+                  "md": "Le pedimos que nos envíe un **documento médico**."
+                }
+              ]
+            },
+            {
+              "id": "b-m-pend",
+              "type": "pending",
+              "note": "Por completar: cómo se pausa la cuota en Matchpoint."
             }
           ],
-          "children": []
+          "children": [],
+          "updatedAt": "2026-10-08"
         }
-      ]
+      ],
+      "updatedAt": "2026-10-08"
     },
     {
       "id": "cambio-cuota",

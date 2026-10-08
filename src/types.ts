@@ -18,6 +18,7 @@ export type Block =
   | { id: string; type: 'checklist'; title?: string; items: string[] }
   | { id: string; type: 'prices'; tableId: string }
   | { id: string; type: 'screenshot'; src: string; alt: string; caption?: string; annotations: Annotation[] }
+  | { id: string; type: 'message'; title?: string; /** Texto plano listo para copiar (WhatsApp, email). */ text: string }
   | { id: string; type: 'pending'; note?: string }
 
 export type BlockType = Block['type']
