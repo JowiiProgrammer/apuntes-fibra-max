@@ -1,5 +1,5 @@
 {
-  "version": 29,
+  "version": 31,
   "title": "Apuntes de Recepción",
   "sections": [
     {
@@ -1427,6 +1427,73 @@
           "children": [],
           "updatedAt": "2026-10-08",
           "lead": "Pausar la cuota por lesión o baja médica."
+        },
+        {
+          "id": "recibos-devueltos",
+          "title": "Recibos devueltos",
+          "blocks": [
+            {
+              "id": "rd-pasos",
+              "type": "steps",
+              "items": [
+                {
+                  "title": "Recibe el documento",
+                  "md": "Cuando recibimos el documento de administración con los recibos devueltos: descárgalo y guárdalo."
+                },
+                {
+                  "title": "Matchpoint → Devoluciones",
+                  "md": "Entra en MatchPoint: **Económicas → Devoluciones → Añadir**."
+                },
+                {
+                  "title": "Forma de pago y gastos",
+                  "md": "Comprueba que la forma de pago figure como **efectivo** o **tarjeta** y, en gastos a cargar a cada cliente, añade **6 €**."
+                },
+                {
+                  "title": "Inserta el documento",
+                  "md": "Inserta el documento y cárgalo. Expórtalo a Excel."
+                },
+                {
+                  "title": "Añádelo al control",
+                  "md": "Registra a los abonados en el Excel **Recibos Devueltos**."
+                },
+                {
+                  "title": "Primer aviso",
+                  "md": "Manda el mensaje de recibo devuelto al abonado (mail o WhatsApp)."
+                },
+                {
+                  "title": "Día 15: segundo aviso",
+                  "md": "Si sigue pendiente, envía el **segundo aviso** (está en Missatges Compartits)."
+                },
+                {
+                  "title": "Tercer aviso",
+                  "md": "Si sigue pendiente, envía el **tercer aviso**."
+                },
+                {
+                  "title": "Días 25-28: baja directa",
+                  "md": "Si continúa sin pagar, aplica la [baja directa](#bajas-directas)."
+                },
+                {
+                  "title": "Si viene a pagar después",
+                  "md": "Si viene a pagar después del 25-28, lo **reactivamos** y **deshacemos el proceso de baja**."
+                }
+              ]
+            },
+            {
+              "id": "rd-paga",
+              "type": "callout",
+              "variant": "info",
+              "title": "Cómo paga el abonado",
+              "md": "Tendrá que **venir a recepción** o **pagarlo por transferencia**. Por cada recibo devuelto hay unos gastos de comisión de **6 €**."
+            },
+            {
+              "id": "rd-pend",
+              "type": "pending",
+              "note": "Por confirmar: el manual dice tercer aviso el día 20 en un sitio y el día 24 en otro (calendario)."
+            }
+          ],
+          "children": [],
+          "updatedAt": "2026-10-08",
+          "lead": "Qué hacer cuando nos llega el documento de recibos devueltos."
         }
       ],
       "updatedAt": "2026-10-08"
@@ -1603,6 +1670,82 @@
       "updatedAt": "2026-10-08"
     },
     {
+      "id": "renovaciones",
+      "title": "Renovaciones",
+      "group": "Abonados",
+      "blocks": [
+        {
+          "id": "rn-cuando",
+          "type": "callout",
+          "variant": "info",
+          "title": "Cuándo",
+          "md": "Cuando un abonado con **pago adelantado** (trimestral, semestral o anual) renueva. Puede renovar viniendo **antes del día 25 del último mes** que tiene cubierto y haciendo el pago de nuevo."
+        },
+        {
+          "id": "rn-pasos",
+          "type": "steps",
+          "items": [
+            {
+              "title": "Busca su ficha",
+              "md": "En Matchpoint busca la ficha del abonado. Vas a registrar el cobro y adelantar los meses que correspondan."
+            },
+            {
+              "title": "Registra el cobro",
+              "md": "**Facturación y cobro → Nueva venta → Añadir**. En **concepto** pon «Anual», «Semestral» o «Trimestral», según la renovación. Cobra en tarjeta o efectivo."
+            },
+            {
+              "title": "Adelanta los meses",
+              "md": "**Abonos → lápiz** para editar. Configura **«Pagado hasta»** y **«Próximo pago»** en función de los meses que haya renovado."
+            },
+            {
+              "title": "Regístralo en el Excel",
+              "md": "Anota en el Excel **«Control Renovaciones»** al abonado que ha renovado, para llevar un control."
+            }
+          ]
+        },
+        {
+          "id": "rn-aviso",
+          "type": "callout",
+          "variant": "warning",
+          "title": "Aviso de fin de promo (días 1 a 10)",
+          "md": "Cada mes hay que avisar a quien termina su promo y gestionar las renovaciones:"
+        },
+        {
+          "id": "rn-aviso-pasos",
+          "type": "steps",
+          "items": [
+            {
+              "title": "Extrae el Excel de abonados",
+              "md": "**2 días antes de que acabe el mes**."
+            },
+            {
+              "title": "Filtra",
+              "md": "Filtra por **próximo pago del mes siguiente**."
+            },
+            {
+              "title": "Abre el Excel de control",
+              "md": "Búscalo en **Común Recepciones → carpeta del centro → Control Renovaciones**."
+            },
+            {
+              "title": "Nueva pestaña",
+              "md": "Crea una pestaña con los abonos a los que queremos avisar de que finaliza su promo. Ahí anotarás si renuevan o no."
+            },
+            {
+              "title": "Gestiónalo en Matchpoint",
+              "md": "**Facturación y cobro**, y aplaza **Próximo pago** y **Pagado hasta**."
+            },
+            {
+              "title": "Gestiónalo en la app FibraMax",
+              "md": "Apartado **«Altas»**: selecciona **«Renovaciones»**."
+            }
+          ]
+        }
+      ],
+      "children": [],
+      "updatedAt": "2026-10-08",
+      "lead": "Registrar la renovación de una tarifa con pago adelantado."
+    },
+    {
       "id": "aforo",
       "title": "Aforo",
       "group": "Operativa",
@@ -1620,25 +1763,85 @@
       "group": "Operativa",
       "blocks": [
         {
-          "id": "stock-pendiente",
-          "type": "pending"
+          "id": "st-pasos",
+          "type": "steps",
+          "items": [
+            {
+              "title": "Comprueba la factura",
+              "md": "Abre la factura y comprueba que esté todo correcto."
+            },
+            {
+              "title": "Busca cada artículo",
+              "md": "En Matchpoint: **Económicas → Control de Stock → Artículos**. Busca artículo por artículo."
+            },
+            {
+              "title": "Regulariza",
+              "md": "**Editar → lápiz → Stock → Regularizar Stock**. Escoge el almacén e introduce las unidades de los artículos que han llegado."
+            },
+            {
+              "title": "Marca en la factura",
+              "md": "El truco está en **ir marcando en la factura** todo lo que vas regularizando."
+            }
+          ]
+        },
+        {
+          "id": "st-ver",
+          "type": "text",
+          "md": "Cómo se hace el pedido: [Hacer pedido de suplementación](#pedido-suplementacion)."
         }
       ],
-      "children": []
+      "children": [],
+      "updatedAt": "2026-10-08",
+      "lead": "Regularizar el stock cuando llega un pedido."
     },
     {
       "id": "pedido-suplementacion",
       "title": "Hacer pedido de suplementación",
       "group": "Operativa",
-      "blocks": [],
+      "blocks": [
+        {
+          "id": "pe-llega",
+          "type": "callout",
+          "variant": "info",
+          "title": "Cuando llega el pedido",
+          "md": "Regulariza el stock: [Stock](#stock)."
+        },
+        {
+          "id": "pe-emails",
+          "type": "pending",
+          "note": "Por completar: direcciones de email de administración y del director del centro (no se publican aquí porque la web es pública)."
+        }
+      ],
       "children": [
         {
           "id": "pedido-big",
           "title": "BIG",
           "blocks": [
             {
-              "id": "pedido-big-pendiente",
-              "type": "pending"
+              "id": "pb-pasos",
+              "type": "steps",
+              "items": [
+                {
+                  "title": "Pide los precios",
+                  "md": "En WhatsApp busca el contacto del comercial de Big y pídele el **Excel de precios actualizados**. Marca las unidades de cada tipo de producto que queremos."
+                },
+                {
+                  "title": "Propuesta al director",
+                  "md": "Envía la propuesta de pedido al **director del centro** para que valide el presupuesto."
+                },
+                {
+                  "title": "Aviso a administración",
+                  "md": "Si el pedido es aceptado, envía una **captura de la cesta a administración** para que lo tenga en cuenta y coméntale que es un pedido **ya aprobado por el director**."
+                },
+                {
+                  "title": "Proforma",
+                  "md": "Confirma al comercial de Big que podemos tirar adelante la **proforma**. Te la enviará por email y la firmas."
+                },
+                {
+                  "title": "Llega el pedido",
+                  "md": "Envía la **factura a administración** y en copia al director del centro."
+                }
+              ]
             }
           ],
           "children": []
@@ -1648,13 +1851,61 @@
           "title": "Life Pro",
           "blocks": [
             {
-              "id": "pedido-life-pro-pendiente",
-              "type": "pending"
+              "id": "pl-pasos",
+              "type": "steps",
+              "items": [
+                {
+                  "title": "Elige los productos",
+                  "md": "Abre la web de **suplementos mayoristas** (portal de Life Pro). De cada categoría selecciona las unidades que queremos y añádelas a la cesta."
+                },
+                {
+                  "title": "Propuesta al director",
+                  "md": "Envía la propuesta de pedido al **director del centro** para que valide el presupuesto."
+                },
+                {
+                  "title": "Aviso a administración y confirmación",
+                  "md": "Si el pedido es aceptado, envía una **captura de la cesta a administración** y coméntale que es un pedido **ya aprobado por el director**. Confirma el pedido añadiendo la **dirección de entrega** y la **forma de pago a 30 días**."
+                },
+                {
+                  "title": "Llega el pedido",
+                  "md": "Envía la **factura a administración** y en copia al director del centro."
+                }
+              ]
             }
           ],
           "children": []
         }
-      ]
+      ],
+      "updatedAt": "2026-10-08",
+      "lead": "Dos proveedores: Big y Life Pro."
+    },
+    {
+      "id": "venta-suplementacion",
+      "title": "Venta de suplementación",
+      "group": "Operativa",
+      "blocks": [
+        {
+          "id": "vs-pasos",
+          "type": "steps",
+          "items": [
+            {
+              "title": "Abre el TPV",
+              "md": "En Matchpoint registra todas las ventas de suplementación, toallas y artículos varios. Para abrir el TPV: **Económicas → Ventas y facturación → TPV TÁCTIL**."
+            },
+            {
+              "title": "Busca el artículo",
+              "md": "Lo más eficaz es **«Buscar artículo»**. Fíjate bien en el envase, en los gramos y en la marca."
+            },
+            {
+              "title": "Cobra",
+              "md": "Selecciona el artículo y pulsa **COBRAR**, en efectivo o tarjeta."
+            }
+          ]
+        }
+      ],
+      "children": [],
+      "updatedAt": "2026-10-08",
+      "lead": "Registrar una venta de suplementación o de artículos varios."
     },
     {
       "id": "entrada-cambio",
@@ -1691,8 +1942,18 @@
           "title": "Apertura",
           "blocks": [
             {
-              "id": "apertura-pendiente",
-              "type": "pending"
+              "id": "ap-pasos",
+              "type": "steps",
+              "items": [
+                {
+                  "title": "Abre caja",
+                  "md": "En MatchPoint entra en **Económicas → Apertura de Caja**."
+                },
+                {
+                  "title": "Efectivo a 0 €",
+                  "md": "En el apartado **Efectivo** pon **0 €** y acepta la apertura."
+                }
+              ]
             }
           ],
           "children": []
@@ -1702,95 +1963,322 @@
           "title": "Arqueo",
           "blocks": [
             {
-              "id": "arqueo-pendiente",
-              "type": "pending"
+              "id": "aq-pasos",
+              "type": "steps",
+              "items": [
+                {
+                  "title": "Abre el arqueo",
+                  "md": "MatchPoint → **Económicas → Apertura de Caja → Arqueo**."
+                },
+                {
+                  "title": "Revisa lo cobrado",
+                  "md": "Sobre las **14:20**."
+                },
+                {
+                  "title": "Comprueba el TPV",
+                  "md": "Revisa el importe y acepta el arqueo."
+                },
+                {
+                  "title": "Actualiza Número de personas",
+                  "md": "Wellhub / Urban / Classpass."
+                },
+                {
+                  "title": "Anota la facturación",
+                  "md": "Apúntala en el **Excel de facturación**."
+                }
+              ]
             }
           ],
-          "children": []
+          "children": [],
+          "lead": "Antes de terminar el turno de mañana."
         },
         {
           "id": "cierre",
           "title": "Cierre",
           "blocks": [
             {
-              "id": "cierre-pendiente",
-              "type": "pending"
+              "id": "ci-pasos",
+              "type": "steps",
+              "items": [
+                {
+                  "title": "Abre Cierre de Caja",
+                  "md": "MatchPoint → **Económicas → Cierre de Caja**."
+                },
+                {
+                  "title": "Revisa la máquina de efectivo",
+                  "md": "Revisa el importe de la máquina de efectivo y pulsa el botón **«Cierre por valores iniciales»**. Abre la máquina. Sobre las **22:45**."
+                },
+                {
+                  "title": "Comprueba la retirada",
+                  "md": "Comprueba la retirada y cierra de nuevo la máquina. Los **billetes** van al sobre de retirada de efectivo. Las **monedas** vuelve a introducirlas pulsando el botón **«añadir cambio»** en el programa."
+                },
+                {
+                  "title": "Comprueba el TPV",
+                  "md": "Revisa el importe y acepta el cierre."
+                },
+                {
+                  "title": "Actualiza Facturación",
+                  "md": "Anota efectivo, tarjeta, domiciliación y retirada (en la retirada, **solo el importe de los billetes**)."
+                },
+                {
+                  "title": "Actualiza Número de personas",
+                  "md": "Wellhub / Urban / Classpass."
+                },
+                {
+                  "title": "Guarda la retirada",
+                  "md": "Pon el efectivo retirado en un **sobre con fecha, importe y centro** y déjalo en la caja fuerte."
+                }
+              ]
             }
           ],
-          "children": []
+          "children": [],
+          "lead": "Cierre de caja de la tarde."
+        },
+        {
+          "id": "cargos-periodicos",
+          "title": "Revisión de facturación de cargos periódicos",
+          "blocks": [
+            {
+              "id": "cp-que",
+              "type": "text",
+              "md": "Es uno de los controles principales de dirección. Aquí deben estar al día los **precios**, los **tipos de cuota**, los **próximos pagos**, las **altas** y las **bajas**."
+            },
+            {
+              "id": "cp-check",
+              "type": "checklist",
+              "title": "Qué hay que revisar",
+              "items": [
+                "Que los precios estén actualizados",
+                "Que el tipo coincida con la tabla de referencia",
+                "Que las fechas sean correctas",
+                "Que las altas estén añadidas",
+                "Que las bajas estén eliminadas o contabilizadas correctamente",
+                "Que el total de abonados cuadre con los movimientos del mes"
+              ]
+            },
+            {
+              "id": "cp-pend",
+              "type": "pending",
+              "note": "Por completar: cómo se prepara y revisa la remesa completa, quién la valida y qué controles se hacen antes de enviarla."
+            }
+          ],
+          "children": [],
+          "updatedAt": "2026-10-08",
+          "lead": "Para mantener al día cuotas y cobros."
         }
-      ]
+      ],
+      "updatedAt": "2026-10-08",
+      "lead": "Apertura, arqueo de mañana y cierre de tarde."
+    },
+    {
+      "id": "solicitud-facturas",
+      "title": "Solicitud de facturas",
+      "group": "Caja",
+      "blocks": [
+        {
+          "id": "sf-pasos",
+          "type": "steps",
+          "items": [
+            {
+              "title": "Recoge los datos",
+              "md": "Desde Matchpoint recoge: **nombre, apellido, email, dirección, DNI/NIE/CIF, abono y periodo pagado**."
+            },
+            {
+              "title": "Envíalos a administración",
+              "md": "Envía estos datos por email a **administración**."
+            },
+            {
+              "title": "Copia oculta al cliente",
+              "md": "Mejor si pones al cliente en **copia oculta**, porque le llegará la factura una vez realizada por administración."
+            }
+          ]
+        },
+        {
+          "id": "sf-pend",
+          "type": "pending",
+          "note": "Por completar: direcciones de email de administración (no se publican aquí porque la web es pública)."
+        }
+      ],
+      "children": [],
+      "updatedAt": "2026-10-08",
+      "lead": "Cuando un abonado nos pide factura de una entrada puntual o del abono pagado."
     },
     {
       "id": "tareas",
       "title": "Tareas según turno o calendario",
       "group": "Turnos",
-      "blocks": [],
+      "blocks": [
+        {
+          "id": "ta-cabrera",
+          "type": "pending",
+          "note": "Por completar: peculiaridades de Cabrera (apertura, cierre, luces…)."
+        }
+      ],
       "children": [
         {
           "id": "calendario",
           "title": "Calendario",
           "blocks": [
             {
-              "id": "cal-1-15",
-              "type": "checklist",
-              "title": "Del 1 al 15",
-              "items": []
+              "id": "cal-excel",
+              "type": "callout",
+              "variant": "info",
+              "title": "Dónde están los Excel",
+              "md": "En **SharePoint**: OneDrive **Fibra Team → Común Recepciones →** carpeta del centro."
             },
             {
-              "id": "cal-15-25",
+              "id": "cal-1-10",
               "type": "checklist",
-              "title": "Del 15 al 25",
-              "items": []
+              "title": "Del día 1 al 10",
+              "items": [
+                "Revisión y modificación del Excel Cambios (Excel Cambios y MatchPoint)",
+                "Cuotas de baja médica y mantenimiento: contacto (Excel de solicitud de cambio de cuota y WhatsApp)",
+                "Recibos devueltos: gestión y contacto (Excel Recibos Devueltos)",
+                "Gestión y solicitud de bajas (Excel de solicitud de bajas, Matchpoint, app Fibra Max: Bajas y Seguimiento)",
+                "Aviso de que finaliza la promo y gestión de renovaciones"
+              ]
             },
             {
-              "id": "cal-25-fin",
-              "type": "checklist",
-              "title": "Del 25 a final de mes",
-              "items": []
+              "id": "cal-renov",
+              "type": "callout",
+              "variant": "info",
+              "title": "Fin de promo y renovaciones",
+              "md": "Todo el proceso está en [Renovaciones](#renovaciones)."
             },
             {
-              "id": "calendario-pendiente",
-              "type": "pending"
+              "id": "cal-10-15",
+              "type": "checklist",
+              "title": "Del día 10 al 15",
+              "items": [
+                "Revisar abonados inactivos desde hace más de 15 días: contactar y hacer seguimiento",
+                "Contactar con ex abonados que han pasado 6 meses",
+                "Día 15: enviar el segundo aviso de recibo devuelto (está en Missatges Compartits)"
+              ]
+            },
+            {
+              "id": "cal-inactivos",
+              "type": "callout",
+              "variant": "info",
+              "title": "Abonados inactivos (más de 15 días)",
+              "md": "- En Matchpoint ve a **Información y Estadísticas → Abonos → 2.4 Clientes abonados no registran actividad**.\n- Exporta los datos y pásalos al Excel de la carpeta **Seguimiento abonados inactivos**.\n- Contacta por email y anota las respuestas que te den.\n- El mensaje está en **Missatges Compartits**: mensaje cercano y corto."
+            },
+            {
+              "id": "cal-exabonados",
+              "type": "callout",
+              "variant": "info",
+              "title": "Ex abonados de 6 meses",
+              "md": "- En Matchpoint ve a **Información y Estadísticas → Abonos → 2.13 Registro Altas y bajas de abonados**.\n- Filtra el mes que quieres revisar y contacta por email.\n- Hay una plantilla HTML guardada: abre el perfil de cualquier persona del staff y cambia su email por el de recepción. En MatchPoint ve a **Enviar Email**, elige formato **HTML** y copia el código.\n- Te llega el HTML por email y lo reenvías **con copia oculta** a todos los ex abonados de 6 meses."
+            },
+            {
+              "id": "cal-15-31",
+              "type": "checklist",
+              "title": "Del día 15 al 31",
+              "items": [
+                "Recibos devueltos: avisos y seguimientos",
+                "Bajas médicas y cuotas de mantenimiento",
+                "Día 24: enviar el tercer aviso de recibos devueltos",
+                "Días 25-28: tramitar las bajas directas de los recibos devueltos que sigan sin pagar",
+                "Reportar las entradas puntuales que se hayan anotado ya",
+                "Activar de nuevo los formularios de baja y de cambio de cuota",
+                "Revisión de bajas y cuotas a facturar para el próximo mes (equipo)"
+              ]
             }
           ],
-          "children": []
+          "children": [],
+          "updatedAt": "2026-10-08",
+          "lead": "Tareas que no se hacen cada día: revísalas según la fecha para que no se acumulen al final de mes."
         },
         {
           "id": "turno-mananas",
           "title": "Mañanas",
           "blocks": [
             {
-              "id": "mananas-check",
-              "type": "checklist",
-              "title": "Turno de mañana",
-              "items": []
+              "id": "tm-pasos",
+              "type": "steps",
+              "items": [
+                {
+                  "title": "Al llegar al centro",
+                  "md": "- **Abre el centro:** abre las puertas y desactiva la alarma.\n- **Pon el centro en marcha:** enciende los cuadros de luces.\n- **Ficha:** haz el fichaje de entrada.\n- **Pon la música:** enciende el equipo de música.\n- **Prepara recepción:** enciende el ordenador y deja el puesto listo."
+                },
+                {
+                  "title": "Abre la parte administrativa",
+                  "md": "- **Abre caja:** en MatchPoint, Económicas → Apertura de Caja (ver [Apertura](#apertura)).\n- **Revisa email, Feedback, Teams y Tareas:** mira si el turno anterior ha dejado algo pendiente."
+                },
+                {
+                  "title": "Durante la mañana",
+                  "md": "Atiendes la operativa normal de recepción. Cuando aparezca una de estas gestiones, sigue su procedimiento:\n\n- Alta de abonado → [Altas](#altas)\n- Baja de abonado → [Bajas](#bajas)\n- Cambio de cuota → [Cambio de cuota](#cambio-cuota)\n- Cuota de mantenimiento → [Cuota de mantenimiento](#cuota-mantenimiento)\n- Baja médica → [Baja médica](#baja-medica)\n- Recibo devuelto → [Recibos devueltos](#recibos-devueltos)\n- Escaneado y archivo de altas → [Altas normales](#altas-normales)\n- Entradas puntuales → [Entradas puntuales y bonos en Matchpoint](#tarifas-matchpoint)\n- Control de renovaciones → [Renovaciones](#renovaciones)\n- Venta de suplementación → [Venta de suplementación](#venta-suplementacion)\n- Pedido de suplementación Big/Life Pro y envío de factura → [Hacer pedido](#pedido-suplementacion)\n- Entrada de stock y regularización → [Stock](#stock)\n- Control de actitudes de abonados → [Control de actitudes](#control-actitudes)\n- Material pendiente de sala → lístalo en «Sugerencias de Sala» y regístralo en el Excel."
+                },
+                {
+                  "title": "Antes de terminar: arqueo",
+                  "md": "Haz el [arqueo de mañana](#arqueo)."
+                }
+              ]
             },
             {
-              "id": "turno-mananas-pendiente",
-              "type": "pending"
+              "id": "mananas-check",
+              "type": "checklist",
+              "title": "Antes de irte",
+              "items": [
+                "Fondo de caja comprobado",
+                "Revisa email, Feedback, Teams y Tareas",
+                "Gestiones del turno actualizadas",
+                "Arqueo realizado",
+                "TPV comprobado",
+                "Facturación de la mañana comunicada"
+              ]
             }
           ],
-          "children": []
+          "children": [],
+          "updatedAt": "2026-10-08",
+          "lead": "Orden de trabajo del turno de mañana."
         },
         {
           "id": "turno-tardes",
           "title": "Tardes",
           "blocks": [
             {
-              "id": "tardes-check",
-              "type": "checklist",
-              "title": "Turno de tarde",
-              "items": []
+              "id": "tt-pasos",
+              "type": "steps",
+              "items": [
+                {
+                  "title": "Al coger el turno",
+                  "md": "- Revisa **email, Feedback, Teams y Tareas**: mira lo que ha quedado pendiente de la mañana.\n- Revisa las **gestiones abiertas**: comprueba si hay algún alta, baja, cambio o incidencia a medias (WhatsApps y mails).\n- **Continúa la operativa:** durante la tarde aplica el procedimiento de cada gestión (altas, bajas, cambios de cuota, cuota de mantenimiento, baja médica, recibos devueltos, escaneado de altas y entradas puntuales)."
+                },
+                {
+                  "title": "Antes del cierre",
+                  "md": "Deja las gestiones del día actualizadas y prepara el cierre con tiempo."
+                },
+                {
+                  "title": "Cierre de caja",
+                  "md": "Haz el [cierre de caja](#cierre) (sobre las 22:45)."
+                },
+                {
+                  "title": "Cierre físico del centro",
+                  "md": "- **22:50** · Para la música: apaga el equipo.\n- **Revisa seguridad:** cierra las puertas de seguridad, revisa los vestuarios y cierra las puertas del parking.\n- **22:58** · Apaga las luces.\n- **Revisa la facturación:** comprueba que Facturación está actualizada y envía lo que corresponda con el botón **«ENVIAR»**.\n- **Ficha la salida:** haz el fichaje antes de marcharte.\n- **Activa la alarma y cierra:** activa la alarma y cierra la puerta con llave."
+                }
+              ]
             },
             {
-              "id": "turno-tardes-pendiente",
-              "type": "pending"
+              "id": "tardes-check",
+              "type": "checklist",
+              "title": "Antes de marcharte",
+              "items": [
+                "Caja cerrada y cuadrada",
+                "Facturación enviada",
+                "Retirada (solo billetes) guardada en la caja fuerte",
+                "Añadir cambio en la máquina de efectivo (las monedas de la retirada)",
+                "Vestuarios, parking y puertas revisados",
+                "Fichaje realizado",
+                "Alarma activada y puerta cerrada"
+              ]
             }
           ],
-          "children": []
+          "children": [],
+          "updatedAt": "2026-10-08",
+          "lead": "Orden de trabajo del turno de tarde."
         }
-      ]
+      ],
+      "updatedAt": "2026-10-08"
     },
     {
       "id": "extraordinarias",
@@ -1814,11 +2302,20 @@
           "title": "Abonado viene a pagar pendientes (recibos devueltos)",
           "blocks": [
             {
-              "id": "pago-pendientes-pendiente",
-              "type": "pending"
+              "id": "pp-info",
+              "type": "callout",
+              "variant": "info",
+              "title": "Si viene a pagar un recibo devuelto",
+              "md": "Puede **venir a recepción** o **pagarlo por transferencia**, con los gastos de **6 €** por recibo devuelto. Si viene después del 25-28, lo reactivamos y deshacemos el proceso de baja. Todo el proceso está en [Recibos devueltos](#recibos-devueltos)."
+            },
+            {
+              "id": "pp-pend",
+              "type": "pending",
+              "note": "Por completar: cómo se cobra en Matchpoint (nueva venta)."
             }
           ],
-          "children": []
+          "children": [],
+          "updatedAt": "2026-10-08"
         },
         {
           "id": "excel-cambios",
@@ -1854,6 +2351,147 @@
         }
       ],
       "updatedAt": "2026-10-08"
+    },
+    {
+      "id": "control-actitudes",
+      "title": "Control de actitudes y normativa de sala",
+      "group": "Incidencias",
+      "blocks": [
+        {
+          "id": "ca-pasos",
+          "type": "steps",
+          "items": [
+            {
+              "title": "Revisa el control de accesos",
+              "md": "En Matchpoint puedes revisar el **control de accesos** para estar pendiente del nombre y apellido."
+            },
+            {
+              "title": "Regístralo en el Excel",
+              "md": "En el Excel **Control actitudes abonados** anota: **nombre, fecha, incidencia y número de aviso**."
+            },
+            {
+              "title": "Avisos 2 y 3",
+              "md": "Cuando se registre el **aviso 2** o el **aviso 3**, el director de zona se pondrá en contacto con la persona para avisarla por escrito con la sanción correspondiente."
+            }
+          ]
+        },
+        {
+          "id": "ca-sistema",
+          "type": "callout",
+          "variant": "warning",
+          "title": "Sistema de avisos y sanciones",
+          "md": "1. **Recordatorio verbal** por parte del personal de sala.\n2. **Aviso formal por escrito**, emitido por el responsable o la dirección.\n3. **Sanción:** una semana sin acceso a ningún centro Fibra Max."
+        }
+      ],
+      "children": [],
+      "updatedAt": "2026-10-08",
+      "lead": "Para registrar una incidencia o el incumplimiento de la normativa por parte de un abonado."
+    },
+    {
+      "id": "protocolos",
+      "title": "Protocolos de incidencias y emergencias",
+      "group": "Emergencias",
+      "blocks": [
+        {
+          "id": "pr-pend",
+          "type": "pending",
+          "note": "Por completar: reclamaciones (el manual indica tener 5 hojas impresas en cada centro), cortes de luz, temperatura del agua de las duchas, abonado encerrado dentro, inundación, máquinas vending, incidente con máquina y abonado implicado, robos y mantenimiento de zonas. En el manual solo tienen la plantilla vacía."
+        }
+      ],
+      "children": [
+        {
+          "id": "pr-torno",
+          "title": "Incidencias con el torno de entrada o salida",
+          "blocks": [
+            {
+              "id": "pt-pasos",
+              "type": "steps",
+              "items": [
+                {
+                  "title": "Revisa el cuadro general",
+                  "md": "Ve al cuadro general a revisar si hay algún magneto bajado. Espera 1 minuto."
+                },
+                {
+                  "title": "Sube el magneto",
+                  "md": "En un cuadro hay un magneto que pone **«Control de accesos»**. Súbelo."
+                },
+                {
+                  "title": "Espera",
+                  "md": "Espera **10-15 minutos** a que se restablezca la conexión."
+                },
+                {
+                  "title": "Llama a MatchPoint",
+                  "md": "Si no funciona, llama a **MatchPoint** para que lo restablezcan ellos."
+                }
+              ]
+            }
+          ],
+          "children": [],
+          "updatedAt": "2026-10-08",
+          "lead": "Cuando falla el lector de QR, no da señal o se ha ido la luz."
+        },
+        {
+          "id": "pr-incendio",
+          "title": "Incendio y evacuación",
+          "blocks": [
+            {
+              "id": "pi-pasos",
+              "type": "steps",
+              "items": [
+                {
+                  "title": "Detección del incendio",
+                  "md": "Ya sea en nuestra instalación o en la instalación vecina, si puede afectar a la nuestra."
+                },
+                {
+                  "title": "Llama al responsable de emergencias",
+                  "md": "Llama al **director del centro**: él es quien llama al **112** e informa del incendio."
+                },
+                {
+                  "title": "Evacúa",
+                  "md": "Evacúa toda la instalación: avisa por megafonía y recorre la sala avisando a los abonados. Todos deben ir al **punto de control**."
+                },
+                {
+                  "title": "Cuenta a la gente",
+                  "md": "Cuenta desde Matchpoint cuánta gente hay en ese momento en el centro, para comprobar al llegar al punto de encuentro que está todo el mundo."
+                }
+              ]
+            },
+            {
+              "id": "pi-aviso",
+              "type": "callout",
+              "variant": "warning",
+              "title": "A quién avisamos",
+              "md": "Al **director del centro**. Si está de vacaciones o no está operativo, a la **directora de operaciones**."
+            },
+            {
+              "id": "pi-shot-112",
+              "type": "screenshot",
+              "src": "/capturas/emergencia-1-guion-112.png",
+              "alt": "Guion para la llamada de emergencia al 112, en catalán",
+              "caption": "Guion de la llamada de emergencia (a completar mientras se habla).",
+              "annotations": []
+            },
+            {
+              "id": "pi-shot-mapa",
+              "type": "screenshot",
+              "src": "/capturas/emergencia-2-punto-reunion-cabrera.webp",
+              "alt": "Mapa del punto de reunión de Cabrera de Mar",
+              "caption": "Punto de reunión: Cabrera de Mar.",
+              "annotations": []
+            },
+            {
+              "id": "pi-pend",
+              "type": "pending",
+              "note": "Por completar: puntos de encuentro de los demás centros."
+            }
+          ],
+          "children": [],
+          "updatedAt": "2026-10-08",
+          "lead": "Cuando hay un incendio en la instalación o en la vecina."
+        }
+      ],
+      "updatedAt": "2026-10-08",
+      "lead": "Qué hacer cuando pasa algo en el centro."
     }
   ],
   "priceTables": [
