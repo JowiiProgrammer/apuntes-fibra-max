@@ -1,5 +1,5 @@
 {
-  "version": 14,
+  "version": 15,
   "title": "Apuntes de Recepción",
   "sections": [
     {
@@ -356,20 +356,24 @@
               "start": 6,
               "items": [
                 {
-                  "title": "Rellena los datos del abono",
-                  "md": "Rellena los datos del abono (**1** en la captura de abajo). Lo importante: la **Tarifa aplicada** tiene que ser **MENSUAL**."
+                  "title": "Selecciona el tipo de abono",
+                  "md": "Rellena los datos del abono. Empieza por el **Tipo de abono** (**1** en la captura de abajo): el que corresponda a la tarifa que ha contratado."
+                },
+                {
+                  "title": "Tarifa aplicada: MENSUAL",
+                  "md": "En **Tarifa aplicada** elige siempre **MENSUAL** (**2**)."
                 },
                 {
                   "title": "Fecha comienzo paso resto de cuotas",
-                  "md": "Cambia la **Fecha comienzo paso resto de cuotas** (**2**): es la fecha de su **próximo pago**. Si lleva promo, coincide con la que has puesto en el Excel de final de promo."
+                  "md": "Cambia la **Fecha comienzo paso resto de cuotas** (**3**): es la fecha de su **próximo pago**. Si lleva promo, coincide con la que has puesto en el Excel de final de promo."
                 },
                 {
                   "title": "Configura el importe",
-                  "md": "Configura el importe (**3**): en **Primera cuota** pon lo que haya pagado el cliente, sea mensual o pago anticipado (por ejemplo, si ha pagado 165 €, pones 165 €).\n\nSi es **mensual**, la primera cuota es la mensualidad y en **Matrícula** pones **50 €**."
+                  "md": "En **Primera cuota** (**4**) pon lo que haya pagado el cliente, sea mensual o pago anticipado (por ejemplo, si ha pagado 165 €, pones 165 €).\n\nSi es **mensual**, la primera cuota es la mensualidad y en **Matrícula** pones **50 €**.\n\n**Resto de cuotas** no se toca: sale solo según el tipo de abono."
                 },
                 {
                   "title": "Dar de alta y cobrar",
-                  "md": "Pulsa **Dar de alta y cobrar** (**4**) y elige el método con el que ha pagado: **tarjeta** o **efectivo**."
+                  "md": "Pulsa **Dar de alta y cobrar** (**5**) y elige el método con el que ha pagado: **tarjeta** o **efectivo**."
                 }
               ]
             },
@@ -378,8 +382,21 @@
               "type": "screenshot",
               "src": "/capturas/altas-4-alta-abono.png",
               "alt": "Pantalla Alta de abono de Matchpoint con los campos y botones numerados",
-              "caption": "Alta de abono. Los números de la captura son los pasos 6 a 9.",
+              "caption": "Alta de abono. Los números de la captura son los pasos 6 a 10.",
               "annotations": [
+                {
+                  "kind": "box",
+                  "x": 37.55,
+                  "y": 15.59,
+                  "w": 18.78,
+                  "h": 3.87
+                },
+                {
+                  "kind": "marker",
+                  "n": 1,
+                  "x": 34.77,
+                  "y": 17.46
+                },
                 {
                   "kind": "box",
                   "x": 37.55,
@@ -389,7 +406,7 @@
                 },
                 {
                   "kind": "marker",
-                  "n": 1,
+                  "n": 2,
                   "x": 34.77,
                   "y": 22.94
                 },
@@ -402,7 +419,7 @@
                 },
                 {
                   "kind": "marker",
-                  "n": 2,
+                  "n": 3,
                   "x": 34.77,
                   "y": 61.97
                 },
@@ -411,13 +428,13 @@
                   "x": 37.55,
                   "y": 42.77,
                   "w": 24.83,
-                  "h": 10.22
+                  "h": 4.49
                 },
                 {
                   "kind": "marker",
-                  "n": 3,
+                  "n": 4,
                   "x": 34.77,
-                  "y": 47.88
+                  "y": 45.14
                 },
                 {
                   "kind": "box",
@@ -428,7 +445,7 @@
                 },
                 {
                   "kind": "marker",
-                  "n": 4,
+                  "n": 5,
                   "x": 65.99,
                   "y": 92.52
                 }
@@ -450,11 +467,6 @@
                 "Escanea el alta",
                 "Tritura el alta"
               ]
-            },
-            {
-              "id": "altas-n-pendiente",
-              "type": "pending",
-              "note": "Por completar: qué importe va en «Resto de cuotas»."
             }
           ],
           "children": [],
