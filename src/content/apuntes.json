@@ -1,5 +1,5 @@
 {
-  "version": 24,
+  "version": 25,
   "title": "Apuntes de Recepción",
   "sections": [
     {
@@ -1235,28 +1235,82 @@
           "title": "Baja médica (pausar)",
           "blocks": [
             {
-              "id": "b-m-pasos",
+              "id": "b-m-1",
               "type": "steps",
               "start": 1,
               "items": [
                 {
-                  "title": "Envía el formulario",
-                  "md": "Si nos dice que es por un tema de **salud**, le enviamos el **formulario de baja médica**."
+                  "title": "Formulario y documento médico",
+                  "md": "La baja médica nos llega por el **formulario de solicitud de cambio de cuota**. Cuando le hemos pasado el formulario de baja médica, necesitamos que nos facilite un **documento médico**."
                 },
                 {
-                  "title": "Pide el documento médico",
-                  "md": "Le pedimos que nos envíe un **documento médico**."
+                  "title": "Cambia el abono a baja médica",
+                  "md": "En el perfil de la persona, ve a **Abonos**, pulsa el **lápiz** y cambia el abono a la **cuota de baja médica**."
                 }
               ]
             },
             {
+              "id": "b-m-shot-lapiz",
+              "type": "screenshot",
+              "src": "/capturas/bajas-1-abonos.png",
+              "alt": "Pestaña Abonos con el lápiz verde para editar el abono",
+              "caption": "Abonos: el lápiz verde, para editar el abono.",
+              "annotations": [
+                {
+                  "kind": "circle",
+                  "x": 88.0,
+                  "y": 39.6,
+                  "w": 2.72,
+                  "h": 10.4
+                }
+              ]
+            },
+            {
+              "id": "b-m-3",
+              "type": "steps",
+              "start": 3,
+              "items": [
+                {
+                  "title": "Vuelve a poner la fecha de próximo pago",
+                  "md": "**Importante:** al cambiar la cuota **se modifica la fecha de próximo pago**. Tienes que **volver a ponerla correctamente**."
+                },
+                {
+                  "title": "Guardar cambios",
+                  "md": "Pulsa **Guardar cambios**."
+                },
+                {
+                  "title": "Excel de solicitud de cambio",
+                  "md": "Ve otra vez al **Excel de solicitud de cambio** y **marca el check**."
+                },
+                {
+                  "title": "Apartado de bajas médicas",
+                  "md": "En el mismo Excel hay un apartado de **bajas médicas**. Anota los datos de la persona, el **motivo** (la lesión o lo que sea) y la **fecha de previsión de vuelta**."
+                }
+              ]
+            },
+            {
+              "id": "b-m-prevision",
+              "type": "callout",
+              "variant": "info",
+              "title": "Para qué sirve la fecha de previsión de vuelta",
+              "md": "Cuando se acerca el mes de previsión de vuelta, hacemos un **seguimiento**: le enviamos un mensaje para saber cómo sigue y si necesita más tiempo. Si lo necesita, le **prorrogamos la cuota** de baja médica."
+            },
+            {
+              "id": "b-m-excepcion",
+              "type": "callout",
+              "variant": "warning",
+              "title": "Caso excepcional: tiene varios meses pagados",
+              "md": "Si ya tiene pagados varios meses y se da de baja médica:\n\n- Si sabe **exactamente** que va a estar **2 meses o más**, le **avanzamos 2 meses el próximo pago**. Además, ponemos la **cuota de baja médica**.\n- Si **no sabe exactamente** cuánto va a estar (aunque pongamos una previsión de vuelta), le configuramos la **cuota de baja médica** y, **a la vuelta, le damos los meses que no haya disfrutado**."
+            },
+            {
               "id": "b-m-pend",
               "type": "pending",
-              "note": "Por completar: cómo se pausa la cuota en Matchpoint."
+              "note": "Falta la captura de la pantalla de edición del abono (cambio a cuota de baja médica y fecha de próximo pago)."
             }
           ],
           "children": [],
-          "updatedAt": "2026-10-08"
+          "updatedAt": "2026-10-08",
+          "lead": "Pausar la cuota por lesión o baja médica."
         }
       ],
       "updatedAt": "2026-10-08"
