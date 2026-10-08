@@ -1,5 +1,5 @@
 {
-  "version": 13,
+  "version": 14,
   "title": "Apuntes de Recepción",
   "sections": [
     {
@@ -206,7 +206,7 @@
               "items": [
                 {
                   "title": "Excel «final de promo»",
-                  "md": "Si el alta **no** es *mensualidad + matrícula* (es decir, lleva promo), apúntala primero en el Excel de final de promo. Si es mensualidad + matrícula, sáltate este paso."
+                  "md": "Si el alta **no** es *mensualidad + matrícula* (lleva promo), apúntala primero en el Excel de final de promo: ahí se anota **cuándo es su próximo pago**. Si es mensualidad + matrícula, sáltate este paso."
                 }
               ]
             },
@@ -264,30 +264,55 @@
               "items": [
                 {
                   "title": "Información adicional: marca los checks",
-                  "md": "Ve a **Información adicional** y marca los checks **que el cliente haya marcado en el formulario**."
+                  "md": "Ve a **Información adicional** (menú de la izquierda de la ficha) y marca los checks de **Legal**."
+                }
+              ]
+            },
+            {
+              "id": "altas-shot-menu-info",
+              "type": "screenshot",
+              "src": "/capturas/altas-5-menu-ficha-cliente.png",
+              "alt": "Menú izquierdo de la ficha del cliente con Información Adicional resaltado",
+              "caption": "Menú de la ficha del cliente: Información Adicional.",
+              "annotations": [
+                {
+                  "kind": "box",
+                  "x": 0.0,
+                  "y": 13.94,
+                  "w": 19.11,
+                  "h": 11.52
                 }
               ]
             },
             {
               "id": "altas-n-checks-aviso",
               "type": "callout",
-              "variant": "warning",
-              "title": "Ojo con los dos últimos",
-              "md": "«Autorizo el uso de la imagen» y «Autorizo el envío de información comercial» pueden venir **ya marcados**. Déjalos marcados solo si el cliente los ha marcado en el formulario."
+              "variant": "info",
+              "title": "Qué marcar",
+              "md": "- **Siempre:** «Acepta condiciones legales» y «Acepta política privacidad».\n- **Según el formulario:** «Autorizo el uso de la imagen» y «Autorizo el envío de información comercial», solo si el cliente los ha marcado."
             },
             {
               "id": "altas-shot-legal",
               "type": "screenshot",
               "src": "/capturas/altas-3-legal.png",
               "alt": "Apartado Legal con los cuatro checks de aceptación y autorización",
-              "caption": "Checks legales de la ficha del cliente.",
+              "caption": "Captura de ejemplo. En un alta nueva, ningún check viene marcado.",
               "annotations": [
                 {
                   "kind": "box",
-                  "x": 76.22,
-                  "y": 20.41,
-                  "w": 5.21,
-                  "h": 76.53
+                  "x": 71.66,
+                  "y": 21.43,
+                  "w": 10.1,
+                  "h": 32.65,
+                  "label": "Siempre"
+                },
+                {
+                  "kind": "box",
+                  "x": 71.66,
+                  "y": 64.29,
+                  "w": 10.1,
+                  "h": 32.65,
+                  "label": "Según formulario"
                 }
               ]
             },
@@ -298,15 +323,49 @@
               "items": [
                 {
                   "title": "Abonos → Nuevo",
-                  "md": "Ve a **Abonos** y pulsa **Nuevo**. Rellena los datos del abono (**1** en la captura de abajo): lo importante es que la **Tarifa aplicada** sea **MENSUAL**."
+                  "md": "En el menú de la izquierda ve a **Abonos** y pulsa **Nuevo**."
+                }
+              ]
+            },
+            {
+              "id": "altas-shot-menu-abonos",
+              "type": "screenshot",
+              "src": "/capturas/altas-5-menu-ficha-cliente.png",
+              "alt": "Pestaña Abonos de la ficha del cliente con el botón Nuevo",
+              "caption": "Pestaña Abonos: pulsa Nuevo.",
+              "annotations": [
+                {
+                  "kind": "box",
+                  "x": 0.0,
+                  "y": 73.94,
+                  "w": 20.67,
+                  "h": 12.73
+                },
+                {
+                  "kind": "box",
+                  "x": 24.89,
+                  "y": 10.0,
+                  "w": 7.56,
+                  "h": 13.94
+                }
+              ]
+            },
+            {
+              "id": "altas-n-pasos-6",
+              "type": "steps",
+              "start": 6,
+              "items": [
+                {
+                  "title": "Rellena los datos del abono",
+                  "md": "Rellena los datos del abono (**1** en la captura de abajo). Lo importante: la **Tarifa aplicada** tiene que ser **MENSUAL**."
                 },
                 {
                   "title": "Fecha comienzo paso resto de cuotas",
-                  "md": "Cambia la **Fecha comienzo paso resto de cuotas** (**2**)."
+                  "md": "Cambia la **Fecha comienzo paso resto de cuotas** (**2**): es la fecha de su **próximo pago**. Si lleva promo, coincide con la que has puesto en el Excel de final de promo."
                 },
                 {
                   "title": "Configura el importe",
-                  "md": "Configura el importe: **matrícula**, **primera cuota** y **resto de cuotas** (**3**)."
+                  "md": "Configura el importe (**3**): en **Primera cuota** pon lo que haya pagado el cliente, sea mensual o pago anticipado (por ejemplo, si ha pagado 165 €, pones 165 €).\n\nSi es **mensual**, la primera cuota es la mensualidad y en **Matrícula** pones **50 €**."
                 },
                 {
                   "title": "Dar de alta y cobrar",
@@ -319,7 +378,7 @@
               "type": "screenshot",
               "src": "/capturas/altas-4-alta-abono.png",
               "alt": "Pantalla Alta de abono de Matchpoint con los campos y botones numerados",
-              "caption": "Alta de abono. Los números de la captura son los pasos 5 a 8.",
+              "caption": "Alta de abono. Los números de la captura son los pasos 6 a 9.",
               "annotations": [
                 {
                   "kind": "box",
@@ -395,7 +454,7 @@
             {
               "id": "altas-n-pendiente",
               "type": "pending",
-              "note": "Por completar: a qué fecha se cambia «Fecha comienzo paso resto de cuotas», cómo se calcula la matrícula y la primera cuota, y captura de la pestaña Abonos con el botón Nuevo."
+              "note": "Por completar: qué importe va en «Resto de cuotas»."
             }
           ],
           "children": [],
