@@ -1,5 +1,5 @@
 {
-  "version": 26,
+  "version": 27,
   "title": "Apuntes de Recepción",
   "sections": [
     {
@@ -1373,7 +1373,7 @@
               "items": [
                 {
                   "title": "Excel de solicitud de cambio",
-                  "md": "Ve otra vez al **Excel de solicitud de cambio** y **marca el check**."
+                  "md": "Ve otra vez al **Excel de solicitud de cambios** y **marca el check**."
                 },
                 {
                   "title": "Apartado de bajas médicas",
@@ -1409,11 +1409,99 @@
       "group": "Abonados",
       "blocks": [
         {
-          "id": "cambio-cuota-pendiente",
-          "type": "pending"
+          "id": "cc-llega",
+          "type": "callout",
+          "variant": "info",
+          "title": "Cómo llega",
+          "md": "Le enviamos el **formulario de solicitud de cambio de cuota**. Cuando lo rellena, llega al **Excel de solicitud de cambios**: ahí miramos a la persona y qué proceso seguimos."
+        },
+        {
+          "id": "cc-pasos-1",
+          "type": "steps",
+          "start": 1,
+          "items": [
+            {
+              "title": "Busca a la persona",
+              "md": "Mira en el **Excel de solicitud de cambios** qué cambio pide, búscala en Matchpoint con el **muñeco con lupa** y entra en su perfil."
+            },
+            {
+              "title": "Abonos → lápiz",
+              "md": "Ve a **Abonos**, pulsa el **lápiz** y cambia el **Tipo de abono** a la **cuota que pide** (la cuota nueva o la cuota de mantenimiento)."
+            }
+          ]
+        },
+        {
+          "id": "cc-shot-lapiz",
+          "type": "screenshot",
+          "src": "/capturas/bajas-1-abonos.png",
+          "alt": "Pestaña Abonos con el lápiz verde para editar el abono",
+          "caption": "Abonos: el lápiz verde, para editar el abono.",
+          "annotations": [
+            {
+              "kind": "circle",
+              "x": 88.0,
+              "y": 39.6,
+              "w": 2.72,
+              "h": 10.4
+            }
+          ]
+        },
+        {
+          "id": "cc-pasos-3",
+          "type": "steps",
+          "start": 3,
+          "items": [
+            {
+              "title": "Fecha de próximo pago y guardar",
+              "md": "Igual que en la [baja médica](#baja-medica): al cambiar la cuota **se modifica la fecha de próximo pago**. **Vuelve a ponerla correctamente** y pulsa **Guardar**."
+            }
+          ]
+        },
+        {
+          "id": "cc-mes-que-viene",
+          "type": "callout",
+          "variant": "info",
+          "title": "Cambio para el mes que viene",
+          "md": "Se le configura la cuota nueva y ya está."
+        },
+        {
+          "id": "cc-mismo-mes",
+          "type": "callout",
+          "variant": "warning",
+          "title": "Cambio para este mismo mes",
+          "md": "Si lo quiere para el **mes en curso**, además de configurar la cuota hay que **añadir el grupo**:\n\n- Ve a **General → Grupos → Añadir Grupo** y elige el grupo del horario nuevo. Por ejemplo, si tenía de mañana, añade el **horario completo**.\n- **Desde:** el día en que le gestionas el cambio. **Hasta:** el último día del mes.\n- Tiene que **pagar la diferencia de cuota**."
+        },
+        {
+          "id": "cc-shot-grupos",
+          "type": "screenshot",
+          "src": "/capturas/bonos-4-grupos.png",
+          "alt": "Sección Grupos de la pestaña General con el botón Añadir Grupo",
+          "caption": "General → Grupos → Añadir Grupo.",
+          "annotations": [
+            {
+              "kind": "box",
+              "x": 52.71,
+              "y": 12.06,
+              "w": 11.47,
+              "h": 29.79
+            }
+          ]
+        },
+        {
+          "id": "cc-pasos-4",
+          "type": "steps",
+          "start": 4,
+          "items": [
+            {
+              "title": "Marca el check del Excel",
+              "md": "Cuando hayas gestionado el cambio, vuelve al **Excel de solicitud de cambios** y **marca el check**."
+            }
+          ]
         }
       ],
-      "children": []
+      "children": [],
+      "lead": "Cuando un abonado quiere cambiar de cuota, por ejemplo para ampliar el horario.",
+      "updatedAt": "2026-10-08"
     },
     {
       "id": "cuota-mantenimiento",
@@ -1421,16 +1509,40 @@
       "group": "Abonados",
       "blocks": [
         {
-          "id": "precios-otros",
-          "type": "prices",
-          "tableId": "otros"
+          "id": "cm-que-es",
+          "type": "callout",
+          "variant": "info",
+          "title": "Cuota de mantenimiento: 10 € al mes",
+          "md": "Por ejemplo, si se va de viaje un mes. Si es **dentro de los meses que tiene pagados**, viniendo **antes del día 25 del mes anterior** al que quiere solicitarlo y pagando los 10 €, se le **retrasa la fecha de próximo pago**.\n\nPara fijarla hay que **avisar antes del día 25** del mes anterior."
         },
         {
-          "id": "cuota-mantenimiento-pendiente",
-          "type": "pending"
+          "id": "cm-pasos",
+          "type": "steps",
+          "start": 1,
+          "items": [
+            {
+              "title": "Formulario",
+              "md": "El abonado la pide con el **formulario para solicitar la cuota de mantenimiento**. Cuando lo rellena, llega al **Excel de solicitud de cambios**."
+            },
+            {
+              "title": "Cambia el abono",
+              "md": "Es el mismo proceso que en [Cambio de cuota](#cambio-cuota): en **Abonos → lápiz**, cambia el **Tipo de abono** a la **cuota de mantenimiento**."
+            },
+            {
+              "title": "Marca el check del Excel",
+              "md": "Cuando lo hayas gestionado, vuelve al **Excel de solicitud de cambios** y **marca el check**."
+            }
+          ]
+        },
+        {
+          "id": "cm-pend",
+          "type": "pending",
+          "note": "Por completar: cómo se cobra y se retrasa la fecha de próximo pago cuando está dentro de los meses pagados."
         }
       ],
-      "children": []
+      "children": [],
+      "lead": "Para quien no va a poder entrenar durante un tiempo.",
+      "updatedAt": "2026-10-08"
     },
     {
       "id": "aforo",
