@@ -1,5 +1,5 @@
 {
-  "version": 20,
+  "version": 21,
   "title": "Apuntes de Recepción",
   "sections": [
     {
@@ -758,6 +758,11 @@
               "md": "Es importante que en el abono la **Tarifa aplicada** esté en **MENSUAL**."
             },
             {
+              "id": "altas-n-speech-link",
+              "type": "text",
+              "md": "**Cuando cobres,** cuéntale al cliente qué le va a llegar: [Speech al terminar el alta](#altas-speech)."
+            },
+            {
               "id": "altas-n-despues",
               "type": "checklist",
               "title": "Después de cobrar",
@@ -879,6 +884,11 @@
                   ]
                 },
                 {
+                  "id": "aw-p-speech-link",
+                  "type": "text",
+                  "md": "**Cuando cobres,** cuéntale al cliente qué le va a llegar: [Speech al terminar el alta](#altas-speech)."
+                },
+                {
                   "id": "aw-p-despues",
                   "type": "checklist",
                   "title": "Después de cobrar",
@@ -894,6 +904,87 @@
             }
           ],
           "lead": "De momento hay dos vías de alta online.",
+          "updatedAt": "2026-10-08"
+        },
+        {
+          "id": "altas-speech",
+          "title": "Speech al terminar el alta",
+          "lead": "Lo que le contamos al cliente cuando el alta está cobrada.",
+          "blocks": [
+            {
+              "id": "as-cuando",
+              "type": "callout",
+              "variant": "info",
+              "title": "Cuándo se lo decimos",
+              "md": "Cuando ya ha rellenado todo, lo hemos verificado y ha **pagado**. Le comentamos que le llegarán **dos correos**."
+            },
+            {
+              "id": "as-correo1",
+              "type": "speech",
+              "title": "Correo 1 · Bienvenida",
+              "md": "«Te va a llegar un **correo de bienvenida** donde te recordamos las partes importantes del contrato.»"
+            },
+            {
+              "id": "as-pasos-1",
+              "type": "steps",
+              "items": [
+                {
+                  "title": "Pago anticipado",
+                  "md": "Si ha cogido una tarifa de **pago anticipado**: pasados esos meses **comenzará a pagar mensualmente**. Puede **renovar** viniendo **antes del día 25 del último mes** que tiene cubierto y haciendo el pago de nuevo. Si no nos comenta nada, empieza a pagar mensualmente."
+                },
+                {
+                  "title": "Mensual",
+                  "md": "En las **mensuales**, al mes siguiente sigue pagando mensualmente."
+                },
+                {
+                  "title": "Cuota de mantenimiento",
+                  "md": "Si un mes se va de viaje y no puede venir a entrenar, tenemos la **cuota de mantenimiento**: **10 €**. Si es dentro de los meses que tiene pagados, viniendo **antes del día 25 del mes anterior** al que quiere solicitarlo y haciendo el pago de los 10 €, se le **retrasa la fecha de próximo pago**. Más en [Cuota de mantenimiento](#cuota-mantenimiento)."
+                },
+                {
+                  "title": "Fijar la cuota de mantenimiento o darse de baja",
+                  "md": "Para fijar la cuota de mantenimiento o darse de baja, hay que **avisar antes del día 25 del mes anterior** al que quiere solicitarlo, para poder gestionarlo. Más en [Bajas](#bajas)."
+                },
+                {
+                  "title": "Normativa",
+                  "md": "En el correo de bienvenida también le recordamos la normativa:\n\n- Venir con **toalla** para poder entrenar.\n- **Calzado adecuado**.\n- Si carga una máquina, **la vuelve a descargar**.\n- Un poco de normativa básica."
+                }
+              ]
+            },
+            {
+              "id": "as-normativa-pendiente",
+              "type": "pending",
+              "note": "Por completar: el resto de la normativa básica que se recuerda en el correo."
+            },
+            {
+              "id": "as-correo2",
+              "type": "speech",
+              "title": "Correo 2 · Aplicación de acceso",
+              "md": "«Después te llegará **otro correo** para descargarte la aplicación de acceso. Se llama **Fibra Max** y está en cualquier tienda de aplicaciones.»"
+            },
+            {
+              "id": "as-pasos-2",
+              "type": "steps",
+              "items": [
+                {
+                  "title": "Descargar la app",
+                  "md": "Tiene que descargar la app **Fibra Max** (está en cualquier tienda de aplicaciones)."
+                },
+                {
+                  "title": "Iniciar sesión",
+                  "md": "Inicia sesión con su **correo** y una **contraseña que le llegará al correo**."
+                },
+                {
+                  "title": "Si no le llega la contraseña",
+                  "md": "Si la contraseña no le ha llegado de cara a mañana, que nos lo comente **la próxima vez que venga** y nosotros le **regeneramos la contraseña**."
+                },
+                {
+                  "title": "El QR de acceso",
+                  "md": "Una vez inicia sesión en la app, **arriba a mano derecha** tiene un **icono**. Al pulsarlo le sale un **QR** para poder escanear."
+                }
+              ]
+            }
+          ],
+          "children": [],
           "updatedAt": "2026-10-08"
         }
       ],
@@ -1631,10 +1722,11 @@
           "id": "mantenimiento",
           "label": "Cuota de mantenimiento",
           "values": {
-            "precio": null
+            "precio": 10
           }
         }
-      ]
+      ],
+      "updatedAt": "2026-10-08"
     }
   ]
 }
