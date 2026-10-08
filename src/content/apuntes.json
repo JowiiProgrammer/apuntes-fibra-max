@@ -1,5 +1,5 @@
 {
-  "version": 22,
+  "version": 23,
   "title": "Apuntes de Recepción",
   "sections": [
     {
@@ -975,15 +975,18 @@
                   "md": "Para fijar la cuota de mantenimiento o darse de baja, hay que **avisar antes del día 25 del mes anterior** al que quiere solicitarlo, para poder gestionarlo. Más en [Bajas](#bajas)."
                 },
                 {
+                  "title": "Si se da de baja",
+                  "md": "Por normativa, tiene que **esperar 6 meses** para poder volver a apuntarse.\n\nPero hay una **cláusula nueva**: puede apuntarse **antes de que pasen los 6 meses**, pagando a la vuelta los meses que haya estado de baja, **como si hubiera estado en cuota de mantenimiento**. Por ejemplo, si ha estado **3 meses** de baja, pagará **la inscripción más 30 €**."
+                },
+                {
+                  "title": "Recibo devuelto",
+                  "md": "Si en algún momento se le **devuelve un recibo**, tendrá que **venir a recepción** o **pagarlo por transferencia**. Por cada recibo devuelto hay unos **gastos de comisión de 6 €**."
+                },
+                {
                   "title": "Normativa",
-                  "md": "En el correo de bienvenida también le recordamos la normativa:\n\n- Venir con **toalla** para poder entrenar.\n- **Calzado adecuado**.\n- Si carga una máquina, **la vuelve a descargar**.\n- Un poco de normativa básica."
+                  "md": "En el correo de bienvenida también le recordamos la normativa. Estas son las **tres más importantes**, las que le mencionamos en el speech (hay más):\n\n- Venir con **toalla** para poder entrenar.\n- **Calzado adecuado**.\n- Si carga una máquina, **la vuelve a descargar**."
                 }
               ]
-            },
-            {
-              "id": "as-normativa-pendiente",
-              "type": "pending",
-              "note": "Por completar: el resto de la normativa básica que se recuerda en el correo."
             },
             {
               "id": "as-correo2",
@@ -1753,6 +1756,13 @@
           "label": "Cuota de mantenimiento",
           "values": {
             "precio": 10
+          }
+        },
+        {
+          "id": "recibo-devuelto",
+          "label": "Gastos por recibo devuelto",
+          "values": {
+            "precio": 6
           }
         }
       ],
