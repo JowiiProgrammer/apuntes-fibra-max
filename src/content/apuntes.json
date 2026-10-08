@@ -1,5 +1,5 @@
 {
-  "version": 16,
+  "version": 17,
   "title": "Apuntes de Recepción",
   "sections": [
     {
@@ -478,11 +478,134 @@
           "title": "Altas web",
           "blocks": [
             {
-              "id": "altas-web-pendiente",
-              "type": "pending"
+              "id": "altas-web-base",
+              "type": "text",
+              "md": "Los pasos son los de [Altas normales](#altas-normales). Aquí solo se explica **lo que cambia** en cada vía."
+            },
+            {
+              "id": "altas-web-resumen",
+              "type": "text",
+              "md": "| | Formulario de la web | Pago online con tarjeta |\n|---|---|---|\n| **Cómo llega** | Email con los datos | Excel o datos de la compra |\n| **Los datos** | Se copian y pegan desde el email | La persona viene a recepción y rellena el formulario presencial |\n| **Al terminar** | **Dar de alta** (el importe queda pendiente) | **Dar de alta y cobrar** por **transferencia** |"
             }
           ],
-          "children": []
+          "children": [
+            {
+              "id": "altas-web-formulario",
+              "title": "Alta por el formulario de la web",
+              "blocks": [
+                {
+                  "id": "aw-f-pasos",
+                  "type": "steps",
+                  "items": [
+                    {
+                      "title": "Copia los datos del email",
+                      "md": "La persona rellena el formulario de la web como si fuera presencial y los datos nos llegan por **email**. Es más fácil **copiarlos desde el email** que teclearlos."
+                    },
+                    {
+                      "title": "Haz el alta como una normal",
+                      "md": "Rellena la ficha copiando y pegando, y sigue **todo el proceso de una [alta normal](#altas-normales)**: ficha del cliente, Información adicional y abono."
+                    },
+                    {
+                      "title": "Dar de alta (sin cobrar)",
+                      "md": "Al final del abono pulsa **Dar de alta** en vez de *Dar de alta y cobrar*. El importe queda **pendiente de pago**."
+                    },
+                    {
+                      "title": "Apúntala en el Excel de altas web",
+                      "md": "Ve al **Excel de altas web** y apunta allí el alta."
+                    }
+                  ]
+                },
+                {
+                  "id": "aw-f-shot",
+                  "type": "screenshot",
+                  "src": "/capturas/altas-4-alta-abono.png",
+                  "alt": "Botón Dar de alta de la pantalla Alta de abono",
+                  "caption": "Alta por formulario web: pulsa «Dar de alta», no «Dar de alta y cobrar».",
+                  "annotations": [
+                    {
+                      "kind": "box",
+                      "x": 57.72,
+                      "y": 93.89,
+                      "w": 4.73,
+                      "h": 4.24,
+                      "label": "Dar de alta"
+                    }
+                  ]
+                },
+                {
+                  "id": "aw-f-pendiente",
+                  "type": "pending",
+                  "note": "Por completar: dónde está el Excel de altas web y a qué dirección llegan los emails del formulario."
+                }
+              ],
+              "children": [],
+              "updatedAt": "2026-10-08"
+            },
+            {
+              "id": "altas-web-pago-online",
+              "title": "Alta con pago online (tarjeta)",
+              "blocks": [
+                {
+                  "id": "aw-p-pasos",
+                  "type": "steps",
+                  "items": [
+                    {
+                      "title": "Recibes el Excel o los datos de la compra",
+                      "md": "La persona ha pagado con **tarjeta en la página web**. Nos pasan el **Excel** o los **datos de la compra**."
+                    },
+                    {
+                      "title": "Contacta para que venga a recepción",
+                      "md": "Contacta con ella para que **venga a recepción** a acabar de rellenar unos datos."
+                    },
+                    {
+                      "title": "Formulario presencial",
+                      "md": "Tiene que rellenar el **formulario presencial**."
+                    },
+                    {
+                      "title": "Alta normal, cobrando por transferencia",
+                      "md": "Sigue el mismo proceso de una [alta normal](#altas-normales). La única diferencia: al pulsar **Dar de alta y cobrar**, el método es **transferencia** (no tarjeta ni efectivo)."
+                    }
+                  ]
+                },
+                {
+                  "id": "aw-p-shot",
+                  "type": "screenshot",
+                  "src": "/capturas/altas-4-alta-abono.png",
+                  "alt": "Botón Dar de alta y cobrar de la pantalla Alta de abono",
+                  "caption": "Pago online: «Dar de alta y cobrar» y método transferencia.",
+                  "annotations": [
+                    {
+                      "kind": "box",
+                      "x": 62.31,
+                      "y": 93.89,
+                      "w": 7.44,
+                      "h": 4.24,
+                      "label": "Dar de alta y cobrar"
+                    }
+                  ]
+                },
+                {
+                  "id": "aw-p-despues",
+                  "type": "checklist",
+                  "title": "Después de cobrar",
+                  "items": [
+                    "Agrega el contacto del cliente al teléfono",
+                    "Escanea el alta y guárdala en la carpeta de OneDrive correspondiente",
+                    "Tritura el alta"
+                  ]
+                },
+                {
+                  "id": "aw-p-pendiente",
+                  "type": "pending",
+                  "note": "Por completar: quién nos envía el Excel o los datos de la compra online."
+                }
+              ],
+              "children": [],
+              "updatedAt": "2026-10-08"
+            }
+          ],
+          "lead": "De momento hay dos vías de alta online.",
+          "updatedAt": "2026-10-08"
         }
       ],
       "updatedAt": "2026-10-08"
