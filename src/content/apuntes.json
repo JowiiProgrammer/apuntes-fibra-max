@@ -1,5 +1,5 @@
 {
-  "version": 21,
+  "version": 22,
   "title": "Apuntes de Recepción",
   "sections": [
     {
@@ -597,7 +597,7 @@
               "type": "callout",
               "variant": "warning",
               "title": "Cuota de empresa: un paso más",
-              "md": "En algunas cuotas hay un paso más. Por ejemplo, en una cuota de **Empresas**: en **Información adicional**, además de los checks, marca en **Tipo de cliente** la **empresa**."
+              "md": "En una cuota de **Empresas** hay un paso más: en **Información adicional**, además de los checks, marca en **Tipo de cliente** la **empresa**."
             },
             {
               "id": "altas-shot-tipo-cliente",
@@ -614,6 +614,36 @@
                   "h": 8.01
                 }
               ]
+            },
+            {
+              "id": "altas-n-familias",
+              "type": "callout",
+              "variant": "warning",
+              "title": "Cuota de familias: un paso más",
+              "md": "Ve a **Información adicional**, pestaña **Personas relacionadas**: pulsa **Nuevo**, busca a la persona y pon la **relación** que tiene (cónyuge, hermano, hermana, hijo, hija…).\n\nAñade **todos los familiares** dentro de la misma ficha."
+            },
+            {
+              "id": "altas-shot-personas",
+              "type": "screenshot",
+              "src": "/capturas/altas-6-informacion-adicional.png",
+              "alt": "Pantalla Información Adicional con la pestaña Personas Relacionadas resaltada",
+              "caption": "Información Adicional → Personas Relacionadas → Nuevo.",
+              "annotations": [
+                {
+                  "kind": "box",
+                  "x": 42.25,
+                  "y": 2.09,
+                  "w": 10.62,
+                  "h": 6.27
+                }
+              ]
+            },
+            {
+              "id": "altas-n-sin-tipo",
+              "type": "callout",
+              "variant": "info",
+              "title": "Sin paso extra",
+              "md": "En **Funcionarios** y en **Convenios y colectivos** no se marca el tipo de cliente."
             },
             {
               "id": "altas-n-pasos-5",
