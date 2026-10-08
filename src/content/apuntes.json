@@ -1,5 +1,5 @@
 {
-  "version": 18,
+  "version": 19,
   "title": "Apuntes de Recepción",
   "sections": [
     {
@@ -209,7 +209,14 @@
               "type": "callout",
               "variant": "info",
               "title": "Para quién es",
-              "md": "Vale tanto si la persona viene **en persona** como si ya lo tiene **pagado por la web**. En este caso no se enseña el comprobante.\n\nEl proceso es el mismo para entradas puntuales y para bonos; el bono de semanas lleva **un paso más** (el 12)."
+              "md": "Vale tanto si la persona viene **en persona** como si ya lo tiene **pagado por la web**.\n\nEl proceso es el mismo para entradas puntuales y para bonos; el **bono de semanas** lleva **dos pasos más** (el 12 y el 13)."
+            },
+            {
+              "id": "mp-aviso-comprobante",
+              "type": "callout",
+              "variant": "warning",
+              "title": "Si lo pagó por la web",
+              "md": "Tiene que **enseñar el comprobante**, sea un bono o una entrada puntual."
             },
             {
               "id": "mp-pasos-1",
@@ -404,8 +411,8 @@
               "id": "mp-aviso-bono",
               "type": "callout",
               "variant": "warning",
-              "title": "Solo bonos de semanas",
-              "md": "El paso 12 es **solo para los bonos de 1, 2, 3 o 4 semanas**. En una entrada puntual, sáltalo."
+              "title": "Pasos 12 y 13: solo bonos",
+              "md": "El grupo «todo el día» (paso 12) y explicar la app (paso 13) son **solo para los bonos de 1, 2, 3 o 4 semanas**. En una entrada puntual no se hacen."
             },
             {
               "id": "mp-pasos-12",
@@ -441,7 +448,7 @@
               "items": [
                 {
                   "title": "Explícale cómo entrar",
-                  "md": "Dile que tiene que **descargar la app de Fibra Max** para poder acceder. Tendrá que **iniciar sesión** en el móvil con su **correo** y la **contraseña** que puso al registrarse en el formulario."
+                  "md": "Dile que, para poder acceder, tiene que **descargar la app de Fibra Max** e **iniciar sesión** en el móvil con su **correo** y la **contraseña** que puso al registrarse en el formulario."
                 }
               ]
             }
@@ -747,7 +754,7 @@
             {
               "id": "altas-web-resumen",
               "type": "text",
-              "md": "| | Formulario de la web | Pago online con tarjeta |\n|---|---|---|\n| **Cómo llega** | Email al correo de recepción del centro | Excel o datos de la compra |\n| **Los datos** | Se copian y pegan desde el email | La persona viene a recepción y rellena el formulario presencial |\n| **Al terminar** | **Dar de alta** (el importe queda pendiente) | **Dar de alta y cobrar** por **transferencia** |"
+              "md": "| | Formulario de la web | Pago online con tarjeta |\n|---|---|---|\n| **Cómo llega** | Email al correo de recepción del centro | Excel de pedidos de la web |\n| **Los datos** | Se copian y pegan desde el email | La persona viene a recepción y rellena el formulario presencial |\n| **Al terminar** | **Dar de alta** (el importe queda pendiente) | **Dar de alta y cobrar** por **transferencia** |"
             }
           ],
           "children": [
@@ -807,8 +814,8 @@
                   "type": "steps",
                   "items": [
                     {
-                      "title": "Recibes el Excel o los datos de la compra",
-                      "md": "La persona ha pagado con **tarjeta en la página web**. Nos pasan el **Excel** o los **datos de la compra**, que llegan al **correo de recepción del centro**."
+                      "title": "Recibes el Excel de pedidos",
+                      "md": "La persona ha pagado con **tarjeta en la página web**. Nos envían un **Excel de pedidos** con las compras hechas por la página web."
                     },
                     {
                       "title": "Contacta para que venga a recepción",
