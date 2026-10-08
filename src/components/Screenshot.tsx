@@ -87,7 +87,7 @@ export function ScreenshotView({ block }: { block: ShotBlock }) {
   if (!block.src) return <div className="empty-note">Captura pendiente de subir.</div>
 
   return (
-    <figure className="shot">
+    <figure className="shot" style={size ? { maxWidth: size.w } : undefined}>
       <button className="shot__frame" onClick={() => setOpen(true)} title="Ampliar captura" data-search-skip>
         <img src={block.src} alt={block.alt} loading="lazy" />
         {size && <Overlay annotations={block.annotations} size={size} />}

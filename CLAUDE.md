@@ -16,7 +16,7 @@ Vite + React 19 + TypeScript, sin backend. Ver `docs/blueprint.md` para PRD y pl
   `centros`, `matricula` y `review` (pendiente revisar).
 - Fuente de las tarifas: catálogo de tarifas del Cuadro de mando (capturas de Joel).
 - Capturas en `public/capturas/`, anotaciones en % (x, y, w, h) sobre la imagen. Antes de subir
-  una captura, borra datos personales de clientes (la web es pública).
+  una captura, borra datos personales (nombres de clientes, IBAN…): la web es pública.
 - Los bloques `steps` tienen `start` para continuar la numeración tras una captura.
 - Logo: `public/logo-fibra.png` (oficial, blanco sobre transparente), favicon en `public/`.
 - Marca: tokens en `:root` de `src/styles.css` (negro `--side`, rojo `--red`, crema `--bg`,

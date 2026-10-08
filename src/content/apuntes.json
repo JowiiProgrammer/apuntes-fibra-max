@@ -1,5 +1,5 @@
 {
-  "version": 17,
+  "version": 18,
   "title": "Apuntes de Recepción",
   "sections": [
     {
@@ -7,7 +7,7 @@
       "title": "Tarifas Fibra Max",
       "group": "Comercial",
       "lead": "Empieza siempre el speech preguntando el horario de entrenamiento.",
-      "updatedAt": "2026-10-07",
+      "updatedAt": "2026-10-08",
       "blocks": [
         {
           "id": "tarifas-speech",
@@ -171,9 +171,15 @@
               "id": "precios-entradas",
               "type": "prices",
               "tableId": "entradas"
+            },
+            {
+              "id": "entradas-puntuales-ver-matchpoint",
+              "type": "text",
+              "md": "**Cómo se registra en Matchpoint:** [Entradas puntuales y bonos en Matchpoint](#tarifas-matchpoint)."
             }
           ],
-          "children": []
+          "children": [],
+          "updatedAt": "2026-10-08"
         },
         {
           "id": "bonos",
@@ -183,9 +189,265 @@
               "id": "precios-bonos",
               "type": "prices",
               "tableId": "bonos"
+            },
+            {
+              "id": "bonos-ver-matchpoint",
+              "type": "text",
+              "md": "**Cómo se registra en Matchpoint:** [Entradas puntuales y bonos en Matchpoint](#tarifas-matchpoint)."
             }
           ],
-          "children": []
+          "children": [],
+          "updatedAt": "2026-10-08"
+        },
+        {
+          "id": "tarifas-matchpoint",
+          "title": "Entradas puntuales y bonos en Matchpoint",
+          "lead": "Cómo se registra una entrada puntual o un bono cuando alguien lo compra.",
+          "blocks": [
+            {
+              "id": "mp-aviso",
+              "type": "callout",
+              "variant": "info",
+              "title": "Para quién es",
+              "md": "Vale tanto si la persona viene **en persona** como si ya lo tiene **pagado por la web**. En este caso no se enseña el comprobante.\n\nEl proceso es el mismo para entradas puntuales y para bonos; el bono de semanas lleva **un paso más** (el 12)."
+            },
+            {
+              "id": "mp-pasos-1",
+              "type": "steps",
+              "start": 1,
+              "items": [
+                {
+                  "title": "Dale el teléfono de recepción",
+                  "md": "Con la **app de Fibra** (Matchpoint) abierta en el teléfono de recepción: entra, pulsa **Registrar** y que la persona rellene sus datos."
+                },
+                {
+                  "title": "Web y Redes → Peticiones de Alta",
+                  "md": "Una vez rellenados los datos, en Matchpoint abre el menú **Web y Redes** y entra en **Peticiones de Alta**."
+                }
+              ]
+            },
+            {
+              "id": "mp-shot-web",
+              "type": "screenshot",
+              "src": "/capturas/bonos-1-web-y-redes.png",
+              "alt": "Menú Web y Redes de Matchpoint con Peticiones de Alta",
+              "caption": "Web y Redes → Peticiones de Alta.",
+              "annotations": [
+                {
+                  "kind": "box",
+                  "x": 91.72,
+                  "y": 1.55,
+                  "w": 8.05,
+                  "h": 44.33
+                },
+                {
+                  "kind": "box",
+                  "x": 69.65,
+                  "y": 82.47,
+                  "w": 9.99,
+                  "h": 16.49
+                }
+              ]
+            },
+            {
+              "id": "mp-pasos-3",
+              "type": "steps",
+              "start": 3,
+              "items": [
+                {
+                  "title": "Busca su petición",
+                  "md": "Busca a la persona. Normalmente es la **última** de la lista, pero pregúntale: «¿Te llamas…?». Si dice que sí, es esa; si no, busca el nombre que te diga."
+                },
+                {
+                  "title": "Copia su nombre",
+                  "md": "**Copia el nombre** de la persona antes de pulsar el tick."
+                },
+                {
+                  "title": "Tick verde",
+                  "md": "Pulsa el **tick verde**."
+                },
+                {
+                  "title": "Búscala como cliente",
+                  "md": "En la barra de iconos, pulsa el **primer muñeco con lupa** y **pega el nombre**."
+                }
+              ]
+            },
+            {
+              "id": "mp-shot-lupa",
+              "type": "screenshot",
+              "src": "/capturas/altas-1-barra-matchpoint.png",
+              "alt": "Barra de iconos de Matchpoint con el primer muñeco con lupa",
+              "caption": "Matchpoint: el primer muñeco con lupa, para buscar al cliente.",
+              "annotations": [
+                {
+                  "kind": "circle",
+                  "x": 41.06,
+                  "y": 29.67,
+                  "w": 4.25,
+                  "h": 22.97
+                }
+              ]
+            },
+            {
+              "id": "mp-pasos-7",
+              "type": "steps",
+              "start": 7,
+              "items": [
+                {
+                  "title": "Entra en su perfil",
+                  "md": "Búscala, entra en su **perfil** y ve primero a **Información adicional**."
+                },
+                {
+                  "title": "Tipo de cliente",
+                  "md": "En **Tipo de cliente** pon **Entrada puntual**. Es así tanto para entradas puntuales como para bonos."
+                }
+              ]
+            },
+            {
+              "id": "mp-shot-info",
+              "type": "screenshot",
+              "src": "/capturas/altas-5-menu-ficha-cliente.png",
+              "alt": "Menú izquierdo de la ficha del cliente con Información Adicional resaltado",
+              "caption": "Menú de la ficha del cliente: Información Adicional.",
+              "annotations": [
+                {
+                  "kind": "box",
+                  "x": 0.0,
+                  "y": 13.94,
+                  "w": 19.11,
+                  "h": 11.52
+                }
+              ]
+            },
+            {
+              "id": "mp-pasos-9",
+              "type": "steps",
+              "start": 9,
+              "items": [
+                {
+                  "title": "Bonos → Contratar nuevo Bono",
+                  "md": "Ve a **Bonos** (menú de la izquierda) y pulsa **Contratar nuevo Bono**."
+                }
+              ]
+            },
+            {
+              "id": "mp-shot-bonos-menu",
+              "type": "screenshot",
+              "src": "/capturas/altas-5-menu-ficha-cliente.png",
+              "alt": "Menú izquierdo de la ficha del cliente con Bonos resaltado",
+              "caption": "Menú de la ficha del cliente: Bonos.",
+              "annotations": [
+                {
+                  "kind": "box",
+                  "x": 0.0,
+                  "y": 87.27,
+                  "w": 20.67,
+                  "h": 10.3
+                }
+              ]
+            },
+            {
+              "id": "mp-shot-contratar",
+              "type": "screenshot",
+              "src": "/capturas/bonos-2-contratar-bono.png",
+              "alt": "Botón Contratar nuevo Bono",
+              "caption": "Pestaña Bonos: Contratar nuevo Bono.",
+              "annotations": [
+                {
+                  "kind": "box",
+                  "x": 2.71,
+                  "y": 25.35,
+                  "w": 40.65,
+                  "h": 59.15
+                }
+              ]
+            },
+            {
+              "id": "mp-pasos-10",
+              "type": "steps",
+              "start": 10,
+              "items": [
+                {
+                  "title": "Elige el bono y cobra",
+                  "md": "Selecciona el **bono correspondiente** en el desplegable y pulsa **Crear y Cobrar**."
+                },
+                {
+                  "title": "Método de pago",
+                  "md": "Elige el método de pago: **efectivo** o **tarjeta** si paga en recepción, o **transferencia** si ya lo ha pagado online."
+                }
+              ]
+            },
+            {
+              "id": "mp-shot-form",
+              "type": "screenshot",
+              "src": "/capturas/bonos-3-formulario-bono.png",
+              "alt": "Formulario Bono de Matchpoint con el desplegable de bono y el botón Crear y Cobrar",
+              "caption": "Formulario del bono: elige el bono y pulsa Crear y Cobrar.",
+              "annotations": [
+                {
+                  "kind": "box",
+                  "x": 30.56,
+                  "y": 32.0,
+                  "w": 44.51,
+                  "h": 6.15
+                },
+                {
+                  "kind": "box",
+                  "x": 30.12,
+                  "y": 88.77,
+                  "w": 15.13,
+                  "h": 5.85
+                }
+              ]
+            },
+            {
+              "id": "mp-aviso-bono",
+              "type": "callout",
+              "variant": "warning",
+              "title": "Solo bonos de semanas",
+              "md": "El paso 12 es **solo para los bonos de 1, 2, 3 o 4 semanas**. En una entrada puntual, sáltalo."
+            },
+            {
+              "id": "mp-pasos-12",
+              "type": "steps",
+              "start": 12,
+              "items": [
+                {
+                  "title": "Añade el grupo «todo el día»",
+                  "md": "Ve a **General** (menú de la izquierda), baja hasta **Grupos** y pulsa **Añadir Grupo**. Selecciona **todo el día**; en **Desde** pon la fecha de **hoy** y en **Hasta** cuenta las semanas del bono (4, 3, 2 o 1) hasta el **mismo día de la semana**.\n\nPor ejemplo, si hoy es miércoles y es un bono de 4 semanas, hasta el miércoles de dentro de 4 semanas."
+                }
+              ]
+            },
+            {
+              "id": "mp-shot-grupos",
+              "type": "screenshot",
+              "src": "/capturas/bonos-4-grupos.png",
+              "alt": "Sección Grupos de la pestaña General con el botón Añadir Grupo",
+              "caption": "General → Grupos → Añadir Grupo.",
+              "annotations": [
+                {
+                  "kind": "box",
+                  "x": 52.71,
+                  "y": 12.06,
+                  "w": 11.47,
+                  "h": 29.79
+                }
+              ]
+            },
+            {
+              "id": "mp-pasos-13",
+              "type": "steps",
+              "start": 13,
+              "items": [
+                {
+                  "title": "Explícale cómo entrar",
+                  "md": "Dile que tiene que **descargar la app de Fibra Max** para poder acceder. Tendrá que **iniciar sesión** en el móvil con su **correo** y la **contraseña** que puso al registrarse en el formulario."
+                }
+              ]
+            }
+          ],
+          "children": [],
+          "updatedAt": "2026-10-08"
         }
       ]
     },
@@ -485,7 +747,7 @@
             {
               "id": "altas-web-resumen",
               "type": "text",
-              "md": "| | Formulario de la web | Pago online con tarjeta |\n|---|---|---|\n| **Cómo llega** | Email con los datos | Excel o datos de la compra |\n| **Los datos** | Se copian y pegan desde el email | La persona viene a recepción y rellena el formulario presencial |\n| **Al terminar** | **Dar de alta** (el importe queda pendiente) | **Dar de alta y cobrar** por **transferencia** |"
+              "md": "| | Formulario de la web | Pago online con tarjeta |\n|---|---|---|\n| **Cómo llega** | Email al correo de recepción del centro | Excel o datos de la compra |\n| **Los datos** | Se copian y pegan desde el email | La persona viene a recepción y rellena el formulario presencial |\n| **Al terminar** | **Dar de alta** (el importe queda pendiente) | **Dar de alta y cobrar** por **transferencia** |"
             }
           ],
           "children": [
@@ -499,7 +761,7 @@
                   "items": [
                     {
                       "title": "Copia los datos del email",
-                      "md": "La persona rellena el formulario de la web como si fuera presencial y los datos nos llegan por **email**. Es más fácil **copiarlos desde el email** que teclearlos."
+                      "md": "La persona rellena el formulario de la web como si fuera presencial y los datos nos llegan por **email**, al **correo de recepción del centro**. Es más fácil **copiarlos desde el email** que teclearlos."
                     },
                     {
                       "title": "Haz el alta como una normal",
@@ -511,7 +773,7 @@
                     },
                     {
                       "title": "Apúntala en el Excel de altas web",
-                      "md": "Ve al **Excel de altas web** y apunta allí el alta."
+                      "md": "Ve al **Excel de altas web** (está en **OneDrive**) y apunta allí el alta."
                     }
                   ]
                 },
@@ -531,11 +793,6 @@
                       "label": "Dar de alta"
                     }
                   ]
-                },
-                {
-                  "id": "aw-f-pendiente",
-                  "type": "pending",
-                  "note": "Por completar: dónde está el Excel de altas web y a qué dirección llegan los emails del formulario."
                 }
               ],
               "children": [],
@@ -551,7 +808,7 @@
                   "items": [
                     {
                       "title": "Recibes el Excel o los datos de la compra",
-                      "md": "La persona ha pagado con **tarjeta en la página web**. Nos pasan el **Excel** o los **datos de la compra**."
+                      "md": "La persona ha pagado con **tarjeta en la página web**. Nos pasan el **Excel** o los **datos de la compra**, que llegan al **correo de recepción del centro**."
                     },
                     {
                       "title": "Contacta para que venga a recepción",
@@ -593,11 +850,6 @@
                     "Escanea el alta y guárdala en la carpeta de OneDrive correspondiente",
                     "Tritura el alta"
                   ]
-                },
-                {
-                  "id": "aw-p-pendiente",
-                  "type": "pending",
-                  "note": "Por completar: quién nos envía el Excel o los datos de la compra online."
                 }
               ],
               "children": [],
