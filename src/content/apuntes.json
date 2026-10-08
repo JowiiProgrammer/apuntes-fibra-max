@@ -1,5 +1,5 @@
 {
-  "version": 15,
+  "version": 16,
   "title": "Apuntes de Recepción",
   "sections": [
     {
@@ -464,7 +464,7 @@
               "title": "Después de cobrar",
               "items": [
                 "Agrega el contacto del cliente al teléfono",
-                "Escanea el alta",
+                "Escanea el alta y guárdala en la carpeta de OneDrive correspondiente",
                 "Tritura el alta"
               ]
             }
