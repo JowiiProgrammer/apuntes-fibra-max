@@ -1,5 +1,5 @@
 {
-  "version": 35,
+  "version": 36,
   "title": "Apuntes de Recepción",
   "sections": [
     {
@@ -1943,7 +1943,7 @@
           "type": "callout",
           "variant": "info",
           "title": "Dónde se apunta la facturación",
-          "md": "La facturación diaria se apunta en el programa nuevo, [erp.fibra-max.com](https://erp.fibra-max.com/): **Recepción → Facturación diaria**. Se elige la **fecha** y el **centro**, y hay dos bloques: **Arqueo** (mañana) y **Cierre diario de recepción** (tarde). En los dos, **Wellhub / Urban / Classpass** ya se apunta ahí."
+          "md": "La facturación diaria se apunta en el programa nuevo, [erp.fibra-max.com](https://erp.fibra-max.com/): **Recepción → Facturación diaria**. Se elige la **fecha** y el **centro**, y hay dos bloques: **Arqueo** (mañana) y **Cierre diario de recepción** (tarde)."
         },
         {
           "id": "fa-shot-erp",
@@ -2020,7 +2020,7 @@
                 },
                 {
                   "title": "Anota la facturación en el programa",
-                  "md": "En [erp.fibra-max.com](https://erp.fibra-max.com/) (**Facturación diaria**) elige la fecha y el centro. En **Arqueo** anota efectivo, domiciliación, tarjeta, retirada y salida de dinero, y los comentarios (incidencias del día, descuadres, avisos). **Wellhub / Urban / Classpass** también se apunta ahí. Pulsa **Guardar arqueo**."
+                  "md": "En [erp.fibra-max.com](https://erp.fibra-max.com/) (**Facturación diaria**) elige la fecha y el centro. En **Arqueo** anota efectivo, domiciliación, tarjeta, retirada y salida de dinero, y los comentarios (incidencias del día, descuadres, avisos). Pulsa **Guardar arqueo**."
                 }
               ]
             }
@@ -2055,7 +2055,7 @@
                 },
                 {
                   "title": "Anota la facturación en el programa",
-                  "md": "En [erp.fibra-max.com](https://erp.fibra-max.com/) (**Facturación diaria**), en **Cierre diario de recepción**, anota efectivo, domiciliación, tarjeta, retirada (aquí **solo el importe de los billetes**) y salida de dinero, y los comentarios. **Wellhub / Urban / Classpass** también se apunta ahí. Pulsa **Guardar cierre**."
+                  "md": "En [erp.fibra-max.com](https://erp.fibra-max.com/) (**Facturación diaria**), en **Cierre diario de recepción**, anota efectivo, domiciliación, tarjeta, retirada (aquí **solo el importe de los billetes**) y salida de dinero, y los comentarios. Pulsa **Guardar cierre**."
                 },
                 {
                   "title": "Guarda la retirada",
