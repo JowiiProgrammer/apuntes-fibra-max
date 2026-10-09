@@ -1,5 +1,5 @@
 {
-  "version": 34,
+  "version": 35,
   "title": "Apuntes de Recepción",
   "sections": [
     {
@@ -1937,7 +1937,45 @@
       "id": "facturacion",
       "title": "Facturación",
       "group": "Caja",
-      "blocks": [],
+      "blocks": [
+        {
+          "id": "fa-erp",
+          "type": "callout",
+          "variant": "info",
+          "title": "Dónde se apunta la facturación",
+          "md": "La facturación diaria se apunta en el programa nuevo, [erp.fibra-max.com](https://erp.fibra-max.com/): **Recepción → Facturación diaria**. Se elige la **fecha** y el **centro**, y hay dos bloques: **Arqueo** (mañana) y **Cierre diario de recepción** (tarde). En los dos, **Wellhub / Urban / Classpass** ya se apunta ahí."
+        },
+        {
+          "id": "fa-shot-erp",
+          "type": "screenshot",
+          "src": "/capturas/facturacion-diaria-erp.png",
+          "alt": "Pantalla Facturación diaria del programa de facturación con Arqueo y Cierre diario de recepción",
+          "caption": "Facturación diaria: fecha y centro, Arqueo y Cierre diario de recepción.",
+          "annotations": [
+            {
+              "kind": "box",
+              "x": 14.53,
+              "y": 16.31,
+              "w": 84.47,
+              "h": 10.32
+            },
+            {
+              "kind": "box",
+              "x": 47.5,
+              "y": 88.02,
+              "w": 7.79,
+              "h": 6.32
+            },
+            {
+              "kind": "box",
+              "x": 91.0,
+              "y": 85.36,
+              "w": 7.06,
+              "h": 6.32
+            }
+          ]
+        }
+      ],
       "children": [
         {
           "id": "apertura",
@@ -1981,18 +2019,15 @@
                   "md": "Revisa el importe y acepta el arqueo."
                 },
                 {
-                  "title": "Actualiza Número de personas",
-                  "md": "Wellhub / Urban / Classpass."
-                },
-                {
-                  "title": "Anota la facturación",
-                  "md": "Apúntala en el **Excel de facturación**."
+                  "title": "Anota la facturación en el programa",
+                  "md": "En [erp.fibra-max.com](https://erp.fibra-max.com/) (**Facturación diaria**) elige la fecha y el centro. En **Arqueo** anota efectivo, domiciliación, tarjeta, retirada y salida de dinero, y los comentarios (incidencias del día, descuadres, avisos). **Wellhub / Urban / Classpass** también se apunta ahí. Pulsa **Guardar arqueo**."
                 }
               ]
             }
           ],
           "children": [],
-          "lead": "Antes de terminar el turno de mañana."
+          "lead": "Antes de terminar el turno de mañana.",
+          "updatedAt": "2026-10-09"
         },
         {
           "id": "cierre",
@@ -2019,12 +2054,8 @@
                   "md": "Revisa el importe y acepta el cierre."
                 },
                 {
-                  "title": "Actualiza Facturación",
-                  "md": "Anota efectivo, tarjeta, domiciliación y retirada (en la retirada, **solo el importe de los billetes**)."
-                },
-                {
-                  "title": "Actualiza Número de personas",
-                  "md": "Wellhub / Urban / Classpass."
+                  "title": "Anota la facturación en el programa",
+                  "md": "En [erp.fibra-max.com](https://erp.fibra-max.com/) (**Facturación diaria**), en **Cierre diario de recepción**, anota efectivo, domiciliación, tarjeta, retirada (aquí **solo el importe de los billetes**) y salida de dinero, y los comentarios. **Wellhub / Urban / Classpass** también se apunta ahí. Pulsa **Guardar cierre**."
                 },
                 {
                   "title": "Guarda la retirada",
@@ -2034,7 +2065,8 @@
             }
           ],
           "children": [],
-          "lead": "Cierre de caja de la tarde."
+          "lead": "Cierre de caja de la tarde.",
+          "updatedAt": "2026-10-09"
         },
         {
           "id": "cargos-periodicos",
@@ -2069,7 +2101,7 @@
           "lead": "Para mantener al día cuotas y cobros."
         }
       ],
-      "updatedAt": "2026-10-08",
+      "updatedAt": "2026-10-09",
       "lead": "Apertura, arqueo de mañana y cierre de tarde."
     },
     {
@@ -2226,12 +2258,12 @@
                 "Gestiones del turno actualizadas",
                 "Arqueo realizado",
                 "TPV comprobado",
-                "Facturación de la mañana comunicada"
+                "Arqueo guardado en el programa de facturación"
               ]
             }
           ],
           "children": [],
-          "updatedAt": "2026-10-08",
+          "updatedAt": "2026-10-09",
           "lead": "Orden de trabajo del turno de mañana."
         },
         {
@@ -2256,7 +2288,7 @@
                 },
                 {
                   "title": "Cierre físico del centro",
-                  "md": "- **22:50** · Para la música: apaga el equipo.\n- **Revisa seguridad:** cierra las puertas de seguridad, revisa los vestuarios y cierra las puertas del parking.\n- **22:58** · Apaga las luces.\n- **Revisa la facturación:** comprueba que Facturación está actualizada y envía lo que corresponda con el botón **«ENVIAR»**.\n- **Ficha la salida:** haz el fichaje antes de marcharte.\n- **Activa la alarma y cierra:** activa la alarma y cierra la puerta con llave."
+                  "md": "- **22:50** · Para la música: apaga el equipo.\n- **Revisa seguridad:** cierra las puertas de seguridad, revisa los vestuarios y cierra las puertas del parking.\n- **22:58** · Apaga las luces.\n- **Revisa la facturación:** comprueba que el arqueo y el cierre están guardados en el programa de facturación.\n- **Ficha la salida:** haz el fichaje antes de marcharte.\n- **Activa la alarma y cierra:** activa la alarma y cierra la puerta con llave."
                 }
               ]
             },
@@ -2266,7 +2298,7 @@
               "title": "Antes de marcharte",
               "items": [
                 "Caja cerrada y cuadrada",
-                "Facturación enviada",
+                "Facturación guardada en el programa (cierre)",
                 "Retirada (solo billetes) guardada en la caja fuerte",
                 "Añadir cambio en la máquina de efectivo (las monedas de la retirada)",
                 "Vestuarios, parking y puertas revisados",
@@ -2276,11 +2308,11 @@
             }
           ],
           "children": [],
-          "updatedAt": "2026-10-08",
+          "updatedAt": "2026-10-09",
           "lead": "Orden de trabajo del turno de tarde."
         }
       ],
-      "updatedAt": "2026-10-08"
+      "updatedAt": "2026-10-09"
     },
     {
       "id": "extraordinarias",

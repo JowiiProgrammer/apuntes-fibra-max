@@ -6,7 +6,17 @@ export function Markdown({ md }: { md: string }) {
   if (!md.trim()) return null
   return (
     <div className="prose">
-      <ReactMarkdown remarkPlugins={[remarkGfm]}>{md}</ReactMarkdown>
+      <ReactMarkdown
+        remarkPlugins={[remarkGfm]}
+        components={{
+          a: ({ href, children }) =>
+            href?.startsWith('http')
+              ? <a href={href} target="_blank" rel="noopener noreferrer">{children}</a>
+              : <a href={href}>{children}</a>,
+        }}
+      >
+        {md}
+      </ReactMarkdown>
     </div>
   )
 }
