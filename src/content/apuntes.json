@@ -1,5 +1,5 @@
 {
-  "version": 38,
+  "version": 39,
   "title": "Apuntes de Recepción",
   "sections": [
     {
@@ -1932,6 +1932,275 @@
         }
       ],
       "children": []
+    },
+    {
+      "id": "falta-cambio",
+      "title": "Falta de cambio en la caja automática",
+      "group": "Caja",
+      "lead": "Cómo comprobar el cambio de la caja automática (CashKeeper) y a quién avisar antes de que afecte a los cobros.",
+      "blocks": [
+        {
+          "id": "fc-cuando",
+          "type": "callout",
+          "variant": "info",
+          "title": "Cuándo se revisa",
+          "md": "Revisión **diaria**: en la **apertura** y **a media jornada**. También cuando salte el **aviso de alarma** del sistema."
+        },
+        {
+          "id": "fc-1",
+          "type": "steps",
+          "items": [
+            {
+              "title": "Abre el Monitor y pulsa «Caja»",
+              "md": "El botón está en la parte **inferior derecha** de la pantalla principal."
+            }
+          ]
+        },
+        {
+          "id": "fc-s1",
+          "type": "screenshot",
+          "src": "/capturas/falta-cambio-1-monitor.png",
+          "alt": "Pantalla principal del Monitor de la caja automática",
+          "caption": "Pantalla principal del Monitor: pulsar «Caja».",
+          "annotations": [
+            {
+              "kind": "box",
+              "x": 81.7,
+              "y": 92.8,
+              "w": 4.6,
+              "h": 7
+            },
+            {
+              "kind": "marker",
+              "n": 1,
+              "x": 79,
+              "y": 96.5
+            }
+          ]
+        },
+        {
+          "id": "fc-2",
+          "type": "steps",
+          "start": 2,
+          "items": [
+            {
+              "title": "Abre el detalle de CashKeeper",
+              "md": "En la pantalla de **Cierre de caja**, pulsa el icono **CashKeeper** (parte inferior derecha) para ver el detalle del contenido."
+            }
+          ]
+        },
+        {
+          "id": "fc-s2",
+          "type": "screenshot",
+          "src": "/capturas/falta-cambio-2-cierre-caja.png",
+          "alt": "Pantalla Cierre de caja con el icono CashKeeper",
+          "caption": "Cierre de caja: pulsar el icono CashKeeper.",
+          "annotations": [
+            {
+              "kind": "box",
+              "x": 86.2,
+              "y": 93,
+              "w": 4.4,
+              "h": 6.9
+            },
+            {
+              "kind": "marker",
+              "n": 2,
+              "x": 83.6,
+              "y": 96.5
+            }
+          ]
+        },
+        {
+          "id": "fc-3",
+          "type": "steps",
+          "start": 3,
+          "items": [
+            {
+              "title": "Revisa el estado del cambio",
+              "md": "En la ventana de CashKeeper, mira la columna **«Estado del cambio»** (**Uni.** y **Valor**) de cada denominación, tanto de monedas como de billetes."
+            }
+          ]
+        },
+        {
+          "id": "fc-s3",
+          "type": "screenshot",
+          "src": "/capturas/falta-cambio-3-cashkeeper.png",
+          "alt": "Ventana CashKeeper con monedas y billetes disponibles",
+          "caption": "CashKeeper: detalle de monedas y billetes disponibles.",
+          "annotations": [
+            {
+              "kind": "box",
+              "x": 27.5,
+              "y": 11.5,
+              "w": 19,
+              "h": 62
+            },
+            {
+              "kind": "marker",
+              "n": 3,
+              "x": 24.5,
+              "y": 42
+            }
+          ]
+        },
+        {
+          "id": "fc-45",
+          "type": "steps",
+          "start": 4,
+          "items": [
+            {
+              "title": "Compara con el nivel de alarma",
+              "md": "Compara las unidades disponibles de cada denominación con su **nivel de alarma** (tabla de más abajo)."
+            },
+            {
+              "title": "Si hay una en alarma, avisa",
+              "md": "Si alguna denominación está **en** su nivel de alarma o **por debajo**, sigue el **procedimiento de aviso** (más abajo)."
+            }
+          ]
+        },
+        {
+          "id": "fc-manual",
+          "type": "callout",
+          "variant": "danger",
+          "title": "La alarma del sistema no sustituye la revisión manual",
+          "md": "Los umbrales están muy ajustados (por ejemplo, 10 monedas en total) y dejan poco margen de reacción. Sigue **revisando el nivel de caja a mano** aunque el nivel de alarma esté configurado."
+        },
+        {
+          "id": "fc-tabla-t",
+          "type": "text",
+          "md": "### Niveles de alarma\n\nSon los mismos en **todos los centros** Fibra Max.\n\n| Denominación | Nivel inicial | Nivel máximo | Nivel de alarma | Comentario |\n|---|---|---|---|---|\n| Monedas 0,01 € – 2,00 € (todas) | 60 uds | 90 uds | **10 uds** | Un único valor para las 8 denominaciones de moneda. |\n| Billetes de 5 € | 5 uds | 20 uds | **5 uds** | |\n| Billetes de 10 € | 4 uds | 15 uds | **4 uds** | |\n| Billetes de 20 € | 2 uds | 10 uds | **2 uds** | |\n| Billetes de 50 € | 1 ud | 5 uds | **1 ud** | Con un único billete de referencia, la alarma coincide con el nivel inicial: cualquier salida ya debe tratarse como aviso. |\n| Billetes de 100 € | 0 uds | 1 ud | **0 uds** | No hay margen real: cualquier salida de un billete de 100 € es aviso directo. |\n| Billetes de 200 € / 500 € | 0 uds | 0 uds | **0 uds** | No se gestionan en el cajón automático. |"
+        },
+        {
+          "id": "fc-aviso-t",
+          "type": "text",
+          "md": "### Procedimiento de aviso"
+        },
+        {
+          "id": "fc-av1",
+          "type": "steps",
+          "items": [
+            {
+              "title": "Avisa al responsable de turno por Teams",
+              "md": "En cuanto una denominación llegue a su nivel de alarma, avisa **de inmediato** en el grupo **«STOCK»** de Microsoft Teams, con el mismo formato que ya se usa para otras faltas de material. En **Faltante**, escribe la **denominación exacta** detectada (moneda o billete), no «cambio» a secas."
+            }
+          ]
+        },
+        {
+          "id": "fc-msg",
+          "type": "message",
+          "title": "Aviso en el grupo STOCK de Teams",
+          "text": "STOCK\nCentro: [CENTRO]\nFaltante: [Monedas de 1 € / la denominación que corresponda]\nAcción: Avisado a [PERSONA A QUIEN SE AVISA]\nPrioridad: Alta"
+        },
+        {
+          "id": "fc-ej",
+          "type": "text",
+          "md": "Ejemplos de cómo rellenar **Faltante**: *Monedas de 1 €*, *Monedas de 2 €*, *Billetes de 10 €*, *Billetes de 20 €*."
+        },
+        {
+          "id": "fc-av2",
+          "type": "steps",
+          "start": 2,
+          "items": [
+            {
+              "title": "El responsable lo traslada a la directora de operaciones",
+              "md": "El responsable de turno traslada el aviso a la **directora de operaciones** por **WhatsApp**."
+            }
+          ]
+        },
+        {
+          "id": "fc-exc",
+          "type": "callout",
+          "variant": "warning",
+          "title": "Si el responsable de turno no está disponible",
+          "md": "Si está de vacaciones o no disponible, avisa **directamente a la directora de operaciones por WhatsApp**, sin pasar antes por Teams."
+        }
+      ],
+      "children": [
+        {
+          "id": "falta-cambio-config",
+          "title": "Configurar el nivel de alarma en CashKeeper",
+          "lead": "Se hace una sola vez por centro, directamente en el sistema.",
+          "blocks": [
+            {
+              "id": "fcc-1",
+              "type": "steps",
+              "items": [
+                {
+                  "title": "Pulsa «Nivel Alarma»",
+                  "md": "En la ventana de CashKeeper, botón **Nivel Alarma**."
+                },
+                {
+                  "title": "Introduce los valores",
+                  "md": "**Monedas:** el valor en el campo **«Todas»** (aplica el mismo umbral a las 8 denominaciones). **Billetes:** el valor de cada denominación por separado con el teclado numérico. Los valores a poner están en la tabla de niveles de alarma."
+                },
+                {
+                  "title": "Pulsa «Aceptar»",
+                  "md": "Para guardar."
+                }
+              ]
+            },
+            {
+              "id": "fcc-s",
+              "type": "screenshot",
+              "src": "/capturas/falta-cambio-4-nivel-alarma.png",
+              "alt": "Pantalla Nivel Alarma de CashKeeper con los valores de configuración",
+              "caption": "CashKeeper: pantalla «Nivel Alarma».",
+              "annotations": [
+                {
+                  "kind": "box",
+                  "x": 10.5,
+                  "y": 28,
+                  "w": 14,
+                  "h": 8.5
+                },
+                {
+                  "kind": "marker",
+                  "n": 1,
+                  "x": 26.8,
+                  "y": 32
+                },
+                {
+                  "kind": "box",
+                  "x": 41,
+                  "y": 28,
+                  "w": 14.5,
+                  "h": 60
+                },
+                {
+                  "kind": "marker",
+                  "n": 2,
+                  "x": 58,
+                  "y": 58
+                },
+                {
+                  "kind": "box",
+                  "x": 60,
+                  "y": 77,
+                  "w": 19,
+                  "h": 15.5
+                },
+                {
+                  "kind": "marker",
+                  "n": 3,
+                  "x": 57.5,
+                  "y": 80
+                }
+              ]
+            },
+            {
+              "id": "fcc-n",
+              "type": "callout",
+              "variant": "info",
+              "title": "Niveles inicial y máximo",
+              "md": "Los niveles «Ini.» y «Máx.» ya están configurados en CashKeeper (**Configurar → Niveles Iniciales / Niveles Máximos**). Solo hay que fijar el nivel de alarma."
+            }
+          ],
+          "children": [],
+          "updatedAt": "2026-10-09"
+        }
+      ],
+      "updatedAt": "2026-10-09"
     },
     {
       "id": "facturacion",
