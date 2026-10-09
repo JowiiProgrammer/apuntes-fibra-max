@@ -1,5 +1,5 @@
 {
-  "version": 31,
+  "version": 32,
   "title": "Apuntes de Recepción",
   "sections": [
     {
@@ -1262,7 +1262,7 @@
               "type": "callout",
               "variant": "info",
               "title": "Cuándo es una baja directa",
-              "md": "Normalmente es por **recibos devueltos**: cuando no sigue un recibo devuelto y el abonado no contesta. Las bajas directas se gestionan el día **25/26**. Pasado el día 25, sería una baja directa. Puede haber otros casos, pero normalmente es este."
+              "md": "Normalmente es por **recibos devueltos**: cuando no sigue un recibo devuelto y el abonado no contesta. Las bajas directas se gestionan entre los días **25 y 28**. Pasado el día 25, sería una baja directa. Puede haber otros casos, pero normalmente es este."
             },
             {
               "id": "b-d-igual",
@@ -1294,7 +1294,7 @@
             }
           ],
           "children": [],
-          "updatedAt": "2026-10-08"
+          "updatedAt": "2026-10-09"
         },
         {
           "id": "baja-medica",
@@ -1465,7 +1465,7 @@
                   "md": "Si sigue pendiente, envía el **segundo aviso** (está en Missatges Compartits)."
                 },
                 {
-                  "title": "Tercer aviso",
+                  "title": "Día 24: tercer aviso",
                   "md": "Si sigue pendiente, envía el **tercer aviso**."
                 },
                 {
@@ -1484,19 +1484,14 @@
               "variant": "info",
               "title": "Cómo paga el abonado",
               "md": "Tendrá que **venir a recepción** o **pagarlo por transferencia**. Por cada recibo devuelto hay unos gastos de comisión de **6 €**."
-            },
-            {
-              "id": "rd-pend",
-              "type": "pending",
-              "note": "Por confirmar: el manual dice tercer aviso el día 20 en un sitio y el día 24 en otro (calendario)."
             }
           ],
           "children": [],
-          "updatedAt": "2026-10-08",
+          "updatedAt": "2026-10-09",
           "lead": "Qué hacer cuando nos llega el documento de recibos devueltos."
         }
       ],
-      "updatedAt": "2026-10-08"
+      "updatedAt": "2026-10-09"
     },
     {
       "id": "cambio-cuota",
