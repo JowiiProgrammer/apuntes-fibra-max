@@ -1,5 +1,5 @@
 {
-  "version": 32,
+  "version": 33,
   "title": "Apuntes de Recepción",
   "sections": [
     {
@@ -1422,10 +1422,17 @@
               "variant": "warning",
               "title": "Caso excepcional: tiene varios meses pagados",
               "md": "Si ya tiene pagados varios meses y se da de baja médica:\n\n- Si sabe **exactamente** cuánto va a estar (**2 meses o más**), le **avanzamos el próximo pago tantos meses como vaya a estar**. Además, ponemos la **cuota de baja médica**.\n- Si **no sabe exactamente** cuánto va a estar (aunque pongamos una previsión de vuelta), le configuramos la **cuota de baja médica** y, **a la vuelta, le damos los meses que no haya disfrutado**."
+            },
+            {
+              "id": "b-m-recibos",
+              "type": "callout",
+              "variant": "info",
+              "title": "Si hay que eliminar algún recibo",
+              "md": "Mira cómo en [Anular un recibo](#anular-recibo)."
             }
           ],
           "children": [],
-          "updatedAt": "2026-10-08",
+          "updatedAt": "2026-10-09",
           "lead": "Pausar la cuota por lesión o baja médica."
         },
         {
@@ -2343,9 +2350,199 @@
           ],
           "children": [],
           "updatedAt": "2026-10-08"
+        },
+        {
+          "id": "anular-recibo",
+          "title": "Anular un recibo",
+          "lead": "Eliminar un recibo de la deuda del abonado.",
+          "blocks": [
+            {
+              "id": "ar-cuando",
+              "type": "callout",
+              "variant": "info",
+              "title": "Cuándo",
+              "md": "Si hay que **eliminar un recibo**, ya sea por un **error nuestro** o por una **baja médica**."
+            },
+            {
+              "id": "ar-1",
+              "type": "steps",
+              "start": 1,
+              "items": [
+                {
+                  "title": "Facturación y Cobro → Deudas",
+                  "md": "En la ficha del abonado ve a **Facturación y Cobro** y entra en la pestaña **Deudas**."
+                },
+                {
+                  "title": "Edita la deuda",
+                  "md": "En la deuda, pulsa el **lápiz**."
+                }
+              ]
+            },
+            {
+              "id": "ar-shot-deudas",
+              "type": "screenshot",
+              "src": "/capturas/anular-1-deudas.png",
+              "alt": "Pestaña Deudas de Facturación y Cobro con el lápiz de cada deuda",
+              "caption": "Facturación y Cobro → Deudas: el lápiz de la deuda.",
+              "annotations": [
+                {
+                  "kind": "box",
+                  "x": 0.32,
+                  "y": 32.65,
+                  "w": 7.91,
+                  "h": 8.67
+                },
+                {
+                  "kind": "box",
+                  "x": 34.55,
+                  "y": 1.02,
+                  "w": 3.16,
+                  "h": 8.16
+                },
+                {
+                  "kind": "circle",
+                  "x": 95.62,
+                  "y": 56.38,
+                  "w": 1.69,
+                  "h": 8.16
+                },
+                {
+                  "kind": "circle",
+                  "x": 95.62,
+                  "y": 65.82,
+                  "w": 1.69,
+                  "h": 8.16
+                }
+              ]
+            },
+            {
+              "id": "ar-3",
+              "type": "steps",
+              "start": 3,
+              "items": [
+                {
+                  "title": "Ver recibos",
+                  "md": "Pulsa **Ver Recibos**."
+                }
+              ]
+            },
+            {
+              "id": "ar-shot-ver",
+              "type": "screenshot",
+              "src": "/capturas/anular-2-ver-recibos.png",
+              "alt": "Botones de la deuda con Ver Recibos resaltado",
+              "caption": "Deuda: Ver Recibos.",
+              "annotations": [
+                {
+                  "kind": "box",
+                  "x": 4.82,
+                  "y": 27.62,
+                  "w": 10.61,
+                  "h": 32.38
+                }
+              ]
+            },
+            {
+              "id": "ar-4",
+              "type": "steps",
+              "start": 4,
+              "items": [
+                {
+                  "title": "Edita cada recibo",
+                  "md": "En la lista de recibos, pulsa el **lápiz de cada uno de los recibos**."
+                }
+              ]
+            },
+            {
+              "id": "ar-shot-lista",
+              "type": "screenshot",
+              "src": "/capturas/anular-3-lista-recibos.png",
+              "alt": "Lista de recibos con el lápiz de cada recibo",
+              "caption": "Lista de recibos: el lápiz de cada recibo.",
+              "annotations": [
+                {
+                  "kind": "circle",
+                  "x": 76.76,
+                  "y": 55.91,
+                  "w": 4.41,
+                  "h": 11.81
+                },
+                {
+                  "kind": "circle",
+                  "x": 76.76,
+                  "y": 69.29,
+                  "w": 4.41,
+                  "h": 11.81
+                }
+              ]
+            },
+            {
+              "id": "ar-5",
+              "type": "steps",
+              "start": 5,
+              "items": [
+                {
+                  "title": "Anula el recibo",
+                  "md": "Pulsa **Anular**, pon el **motivo** y vuelve a pulsar **Anular**."
+                }
+              ]
+            },
+            {
+              "id": "ar-shot-anular",
+              "type": "screenshot",
+              "src": "/capturas/anular-4-anular.png",
+              "alt": "Botones del recibo con Anular resaltado",
+              "caption": "Recibo: Anular.",
+              "annotations": [
+                {
+                  "kind": "box",
+                  "x": 57.87,
+                  "y": 23.08,
+                  "w": 10.24,
+                  "h": 65.38
+                }
+              ]
+            },
+            {
+              "id": "ar-6",
+              "type": "steps",
+              "start": 6,
+              "items": [
+                {
+                  "title": "Actualiza y cierra",
+                  "md": "Cuando estén todos anulados, pulsa **Actualizar**, **Cerrar** y vuelve a pulsar **Actualizar**."
+                }
+              ]
+            },
+            {
+              "id": "ar-shot-actualizar",
+              "type": "screenshot",
+              "src": "/capturas/anular-2-ver-recibos.png",
+              "alt": "Botones de la deuda con Actualizar y Cerrar resaltados",
+              "caption": "Deuda: Actualizar y Cerrar.",
+              "annotations": [
+                {
+                  "kind": "box",
+                  "x": 73.55,
+                  "y": 27.62,
+                  "w": 9.37,
+                  "h": 32.38
+                },
+                {
+                  "kind": "box",
+                  "x": 82.64,
+                  "y": 27.62,
+                  "w": 6.89,
+                  "h": 32.38
+                }
+              ]
+            }
+          ],
+          "children": [],
+          "updatedAt": "2026-10-09"
         }
       ],
-      "updatedAt": "2026-10-08"
+      "updatedAt": "2026-10-09"
     },
     {
       "id": "control-actitudes",
