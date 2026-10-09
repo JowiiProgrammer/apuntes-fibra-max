@@ -117,7 +117,7 @@ export default function App() {
                   <span className="index-card__body">
                     {s.group && <span className="index-card__group">{s.group}</span>}
                     <span className="index-card__title">{s.title}</span>
-                    {s.children.length > 0 && <span className="index-card__meta">{s.children.length} apartados</span>}
+                    {s.children.length > 0 && <span className="index-card__meta">{s.children.length} {s.children.length === 1 ? 'apartado' : 'apartados'}</span>}
                   </span>
                 </a>
               ))}
