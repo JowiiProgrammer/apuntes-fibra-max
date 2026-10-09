@@ -1,5 +1,5 @@
 {
-  "version": 39,
+  "version": 40,
   "title": "Apuntes de Recepción",
   "sections": [
     {
@@ -2081,7 +2081,7 @@
           "type": "steps",
           "items": [
             {
-              "title": "Avisa al responsable de turno por Teams",
+              "title": "Avisa por Teams en el grupo STOCK",
               "md": "En cuanto una denominación llegue a su nivel de alarma, avisa **de inmediato** en el grupo **«STOCK»** de Microsoft Teams, con el mismo formato que ya se usa para otras faltas de material. En **Faltante**, escribe la **denominación exacta** detectada (moneda o billete), no «cambio» a secas."
             }
           ]
@@ -2090,7 +2090,7 @@
           "id": "fc-msg",
           "type": "message",
           "title": "Aviso en el grupo STOCK de Teams",
-          "text": "STOCK\nCentro: [CENTRO]\nFaltante: [Monedas de 1 € / la denominación que corresponda]\nAcción: Avisado a [PERSONA A QUIEN SE AVISA]\nPrioridad: Alta"
+          "text": "STOCK\nCentro: [CENTRO]\nFaltante: [Monedas de 1 € / la denominación que corresponda]\nAcción: Avisado a la directora de operaciones\nPrioridad: Alta"
         },
         {
           "id": "fc-ej",
@@ -2103,17 +2103,10 @@
           "start": 2,
           "items": [
             {
-              "title": "El responsable lo traslada a la directora de operaciones",
-              "md": "El responsable de turno traslada el aviso a la **directora de operaciones** por **WhatsApp**."
+              "title": "Avisa a la directora de operaciones por WhatsApp",
+              "md": "El aviso va **directamente a la directora de operaciones**, por **WhatsApp**."
             }
           ]
-        },
-        {
-          "id": "fc-exc",
-          "type": "callout",
-          "variant": "warning",
-          "title": "Si el responsable de turno no está disponible",
-          "md": "Si está de vacaciones o no disponible, avisa **directamente a la directora de operaciones por WhatsApp**, sin pasar antes por Teams."
         }
       ],
       "children": [
