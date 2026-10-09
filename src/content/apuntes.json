@@ -1,5 +1,5 @@
 {
-  "version": 33,
+  "version": 34,
   "title": "Apuntes de Recepción",
   "sections": [
     {
@@ -2511,29 +2511,6 @@
                 {
                   "title": "Actualiza y cierra",
                   "md": "Cuando estén todos anulados, pulsa **Actualizar**, **Cerrar** y vuelve a pulsar **Actualizar**."
-                }
-              ]
-            },
-            {
-              "id": "ar-shot-actualizar",
-              "type": "screenshot",
-              "src": "/capturas/anular-2-ver-recibos.png",
-              "alt": "Botones de la deuda con Actualizar y Cerrar resaltados",
-              "caption": "Deuda: Actualizar y Cerrar.",
-              "annotations": [
-                {
-                  "kind": "box",
-                  "x": 73.55,
-                  "y": 27.62,
-                  "w": 9.37,
-                  "h": 32.38
-                },
-                {
-                  "kind": "box",
-                  "x": 82.64,
-                  "y": 27.62,
-                  "w": 6.89,
-                  "h": 32.38
                 }
               ]
             }
