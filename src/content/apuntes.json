@@ -1,5 +1,5 @@
 {
-  "version": 36,
+  "version": 37,
   "title": "Apuntes de Recepción",
   "sections": [
     {
@@ -1811,7 +1811,7 @@
         {
           "id": "pe-emails",
           "type": "pending",
-          "note": "Por completar: direcciones de email de administración y del director del centro (no se publican aquí porque la web es pública)."
+          "note": "Por completar: direcciones de email de administración y de la directora de operaciones (no se publican aquí porque la web es pública)."
         }
       ],
       "children": [
@@ -1828,12 +1828,12 @@
                   "md": "En WhatsApp busca el contacto del comercial de Big y pídele el **Excel de precios actualizados**. Marca las unidades de cada tipo de producto que queremos."
                 },
                 {
-                  "title": "Propuesta al director",
-                  "md": "Envía la propuesta de pedido al **director del centro** para que valide el presupuesto."
+                  "title": "Propuesta a la directora de operaciones",
+                  "md": "Envía la propuesta de pedido a la **directora de operaciones** para que valide el presupuesto."
                 },
                 {
                   "title": "Aviso a administración",
-                  "md": "Si el pedido es aceptado, envía una **captura de la cesta a administración** para que lo tenga en cuenta y coméntale que es un pedido **ya aprobado por el director**."
+                  "md": "Si el pedido es aceptado, envía una **captura de la cesta a administración** para que lo tenga en cuenta y coméntale que es un pedido **ya aprobado por la directora de operaciones**."
                 },
                 {
                   "title": "Proforma",
@@ -1841,7 +1841,7 @@
                 },
                 {
                   "title": "Llega el pedido",
-                  "md": "Envía la **factura a administración** y en copia al director del centro."
+                  "md": "Envía la **factura a administración** y en copia a la directora de operaciones."
                 }
               ]
             }
@@ -1861,16 +1861,16 @@
                   "md": "Abre la web de **suplementos mayoristas** (portal de Life Pro). De cada categoría selecciona las unidades que queremos y añádelas a la cesta."
                 },
                 {
-                  "title": "Propuesta al director",
-                  "md": "Envía la propuesta de pedido al **director del centro** para que valide el presupuesto."
+                  "title": "Propuesta a la directora de operaciones",
+                  "md": "Envía la propuesta de pedido a la **directora de operaciones** para que valide el presupuesto."
                 },
                 {
                   "title": "Aviso a administración y confirmación",
-                  "md": "Si el pedido es aceptado, envía una **captura de la cesta a administración** y coméntale que es un pedido **ya aprobado por el director**. Confirma el pedido añadiendo la **dirección de entrega** y la **forma de pago a 30 días**."
+                  "md": "Si el pedido es aceptado, envía una **captura de la cesta a administración** y coméntale que es un pedido **ya aprobado por la directora de operaciones**. Confirma el pedido añadiendo la **dirección de entrega** y la **forma de pago a 30 días**."
                 },
                 {
                   "title": "Llega el pedido",
-                  "md": "Envía la **factura a administración** y en copia al director del centro."
+                  "md": "Envía la **factura a administración** y en copia a la directora de operaciones."
                 }
               ]
             }
@@ -2572,7 +2572,7 @@
             },
             {
               "title": "Avisos 2 y 3",
-              "md": "Cuando se registre el **aviso 2** o el **aviso 3**, el director de zona se pondrá en contacto con la persona para avisarla por escrito con la sanción correspondiente."
+              "md": "Cuando se registre el **aviso 2** o el **aviso 3**, la directora de operaciones se pondrá en contacto con la persona para avisarla por escrito con la sanción correspondiente."
             }
           ]
         },
@@ -2645,7 +2645,7 @@
                 },
                 {
                   "title": "Llama al responsable de emergencias",
-                  "md": "Llama al **director del centro**: él es quien llama al **112** e informa del incendio."
+                  "md": "Llama a la **directora de operaciones**: ella es quien llama al **112** e informa del incendio."
                 },
                 {
                   "title": "Evacúa",
@@ -2662,7 +2662,7 @@
               "type": "callout",
               "variant": "warning",
               "title": "A quién avisamos",
-              "md": "Al **director del centro**. Si está de vacaciones o no está operativo, a la **directora de operaciones**."
+              "md": "A la **directora de operaciones**."
             },
             {
               "id": "pi-shot-112",
