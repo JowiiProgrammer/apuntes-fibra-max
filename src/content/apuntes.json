@@ -1,5 +1,5 @@
 {
-  "version": 40,
+  "version": 41,
   "title": "Apuntes de Recepción",
   "sections": [
     {
@@ -1453,12 +1453,80 @@
                 },
                 {
                   "title": "Forma de pago y gastos",
-                  "md": "Comprueba que la forma de pago figure como **efectivo** o **tarjeta** y, en gastos a cargar a cada cliente, añade **6 €**."
+                  "md": "Comprueba que en **«Forma de pago en la que dejar los recibos devueltos»** figure **efectivo** o **tarjeta** y, en **«Gastos a cargar al cliente en cada cargo devuelto»**, añade **6 €**."
                 },
                 {
                   "title": "Inserta el documento",
-                  "md": "Inserta el documento y cárgalo. Expórtalo a Excel."
+                  "md": "En **«Cargar desde fichero»** selecciona el documento y pulsa **Cargar**. Después pulsa **Insertar**. Expórtalo a Excel."
+                }
+              ]
+            },
+            {
+              "id": "rd-shot",
+              "type": "screenshot",
+              "src": "/capturas/recibos-devueltos-1-devoluciones.png",
+              "alt": "Pantalla Devoluciones de Matchpoint",
+              "caption": "Económicas → Devoluciones → Añadir.",
+              "annotations": [
+                {
+                  "kind": "box",
+                  "x": 28.5,
+                  "y": 42,
+                  "w": 4.4,
+                  "h": 5
                 },
+                {
+                  "kind": "marker",
+                  "n": 3,
+                  "x": 26.3,
+                  "y": 44.5
+                },
+                {
+                  "kind": "box",
+                  "x": 28.5,
+                  "y": 55.6,
+                  "w": 8.3,
+                  "h": 4.6
+                },
+                {
+                  "kind": "marker",
+                  "n": 3,
+                  "x": 26.3,
+                  "y": 57.9
+                },
+                {
+                  "kind": "box",
+                  "x": 6.3,
+                  "y": 70.9,
+                  "w": 15.9,
+                  "h": 4.9
+                },
+                {
+                  "kind": "marker",
+                  "n": 4,
+                  "x": 24.4,
+                  "y": 73.4
+                },
+                {
+                  "kind": "box",
+                  "x": 47.1,
+                  "y": 90.6,
+                  "w": 6,
+                  "h": 5
+                },
+                {
+                  "kind": "marker",
+                  "n": 4,
+                  "x": 55.8,
+                  "y": 93.1
+                }
+              ]
+            },
+            {
+              "id": "rd-pasos-2",
+              "type": "steps",
+              "start": 5,
+              "items": [
                 {
                   "title": "Añádelo al control",
                   "md": "Registra a los abonados en el Excel **Recibos Devueltos**."
