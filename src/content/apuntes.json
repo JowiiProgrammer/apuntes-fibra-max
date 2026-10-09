@@ -1,5 +1,5 @@
 {
-  "version": 37,
+  "version": 38,
   "title": "Apuntes de Recepción",
   "sections": [
     {
@@ -2312,6 +2312,48 @@
           "lead": "Orden de trabajo del turno de tarde."
         }
       ],
+      "updatedAt": "2026-10-09"
+    },
+    {
+      "id": "solicitudes-personal",
+      "title": "Cambios de turno, permisos y vacaciones",
+      "group": "Turnos",
+      "lead": "Todo lo que tenga que ver con horarios y organización laboral se pide por email.",
+      "blocks": [
+        {
+          "id": "sp-regla",
+          "type": "callout",
+          "variant": "danger",
+          "title": "Siempre por email y con Recursos Humanos en copia",
+          "md": "Cualquier solicitud de **cambio de turno**, **días personales**, **permisos** o cualquier otro tema de **horarios y organización laboral** se envía **por email** y **siempre con Recursos Humanos en copia**. Así se lleva un mejor control y seguimiento de todas las solicitudes."
+        },
+        {
+          "id": "sp-pasos",
+          "type": "steps",
+          "items": [
+            {
+              "title": "Escribe un email con tu solicitud",
+              "md": "Cambio de turno, día personal, permiso… Indica claramente **qué pides** y **para qué fecha o turno**."
+            },
+            {
+              "title": "Pon a Recursos Humanos en copia",
+              "md": "No se envía nunca sin copia a Recursos Humanos."
+            },
+            {
+              "title": "Espera la respuesta por email",
+              "md": "No des nada por concedido hasta tener la confirmación."
+            }
+          ]
+        },
+        {
+          "id": "sp-vacaciones",
+          "type": "callout",
+          "variant": "warning",
+          "title": "Vacaciones",
+          "md": "Las vacaciones se piden igual, por email y con Recursos Humanos en copia, **adjuntando el formulario de solicitud** de vacaciones."
+        }
+      ],
+      "children": [],
       "updatedAt": "2026-10-09"
     },
     {
