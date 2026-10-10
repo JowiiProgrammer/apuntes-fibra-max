@@ -1,5 +1,5 @@
 {
-  "version": 42,
+  "version": 43,
   "title": "Apuntes de Recepción",
   "sections": [
     {
@@ -1895,18 +1895,20 @@
               "md": "Crea una pestaña con los abonos a los que queremos avisar de que finaliza su promo. Ahí anotarás si renuevan o no."
             },
             {
-              "title": "Gestiónalo en Matchpoint",
-              "md": "**Facturación y cobro**, y aplaza **Próximo pago** y **Pagado hasta**."
-            },
-            {
-              "title": "Gestiónalo en la app FibraMax",
-              "md": "Apartado **«Altas»**: selecciona **«Renovaciones»**."
+              "title": "Avísales por email",
+              "md": "Contacta a cada abonado de la pestaña **por correo electrónico**: dile que **se le acaba la promoción** (o los **meses pagados**) y que puede **renovar con las [tarifas de pago anticipado](#tarifas)**. Anota en la pestaña si renuevan o no."
             }
           ]
+        },
+        {
+          "id": "rn-msg",
+          "type": "message",
+          "title": "Email de fin de promoción (borrador)",
+          "text": "Asunto: Tu promoción en Fibra Max está a punto de terminar\n\nHola [Nombre],\n\nTe escribimos desde Fibra Max [centro] para avisarte de que [tu promoción / los meses que tienes pagados] finaliza el [fecha].\n\nSi quieres seguir entrenando con nosotros, puedes renovar con nuestras tarifas de pago anticipado. Pásate por recepción o respóndenos a este correo y te lo gestionamos.\n\nUn saludo,\n[persona que escribe]\nFibra Max [centro]"
         }
       ],
       "children": [],
-      "updatedAt": "2026-10-08",
+      "updatedAt": "2026-10-10",
       "lead": "Registrar la renovación de una tarifa con pago adelantado."
     },
     {
