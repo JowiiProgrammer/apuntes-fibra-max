@@ -1,5 +1,5 @@
 {
-  "version": 41,
+  "version": 42,
   "title": "Apuntes de Recepción",
   "sections": [
     {
@@ -1219,8 +1219,102 @@
                 },
                 {
                   "title": "Seguimiento",
-                  "md": "Haz el **seguimiento de la baja** (solo para bajas programadas): añade los datos que se piden en **seguimiento**."
+                  "md": "Haz el **seguimiento de la baja** (solo para bajas programadas): entra en **Seguimiento**, busca a la persona y rellena los datos de la captura de abajo:\n1. **¿Contactado?**: márcalo cuando hayas contactado.\n2. **Canal de contacto** y **fecha de contacto**.\n3. **¿Recuperable?**\n4. **Resultado**.\n5. **Respuesta del socio**: se anota cuando conteste (paso 9).\n6. Pulsa **Guardar**."
+                }
+              ]
+            },
+            {
+              "id": "b-a-shot-seguimiento",
+              "type": "screenshot",
+              "src": "/capturas/bajas-4-seguimiento.png",
+              "alt": "Pantalla de Seguimiento de bajas en la app de FM",
+              "caption": "App de FM → Seguimiento: datos del seguimiento de una baja.",
+              "annotations": [
+                {
+                  "kind": "box",
+                  "x": 34.5,
+                  "y": 55.5,
+                  "w": 21.2,
+                  "h": 4.8
                 },
+                {
+                  "kind": "marker",
+                  "n": 1,
+                  "x": 53.3,
+                  "y": 53.4
+                },
+                {
+                  "kind": "box",
+                  "x": 56.2,
+                  "y": 55.5,
+                  "w": 42.8,
+                  "h": 4.8
+                },
+                {
+                  "kind": "marker",
+                  "n": 2,
+                  "x": 75,
+                  "y": 53.4
+                },
+                {
+                  "kind": "box",
+                  "x": 56.2,
+                  "y": 71,
+                  "w": 21,
+                  "h": 4.4
+                },
+                {
+                  "kind": "marker",
+                  "n": 3,
+                  "x": 75,
+                  "y": 68.9
+                },
+                {
+                  "kind": "box",
+                  "x": 78,
+                  "y": 71,
+                  "w": 21,
+                  "h": 4.4
+                },
+                {
+                  "kind": "marker",
+                  "n": 4,
+                  "x": 96.8,
+                  "y": 68.9
+                },
+                {
+                  "kind": "box",
+                  "x": 34.6,
+                  "y": 78.7,
+                  "w": 64.3,
+                  "h": 5.7
+                },
+                {
+                  "kind": "marker",
+                  "n": 5,
+                  "x": 96.8,
+                  "y": 76.6
+                },
+                {
+                  "kind": "box",
+                  "x": 92.5,
+                  "y": 94.2,
+                  "w": 6.6,
+                  "h": 4.4
+                },
+                {
+                  "kind": "marker",
+                  "n": 6,
+                  "x": 90.2,
+                  "y": 96.4
+                }
+              ]
+            },
+            {
+              "id": "b-a-8",
+              "type": "steps",
+              "start": 8,
+              "items": [
                 {
                   "title": "WhatsApp",
                   "md": "Contacta por **WhatsApp** con este mensaje o similar (los [huecos] se rellenan):"
