@@ -1,5 +1,5 @@
 {
-  "version": 43,
+  "version": 44,
   "title": "Apuntes de Recepción",
   "sections": [
     {
@@ -7,7 +7,7 @@
       "title": "Tarifas Fibra Max",
       "group": "Comercial",
       "lead": "Empieza siempre el speech preguntando el horario de entrenamiento.",
-      "updatedAt": "2026-10-08",
+      "updatedAt": "2026-10-15",
       "blocks": [
         {
           "id": "tarifas-speech",
@@ -37,7 +37,7 @@
           "type": "callout",
           "variant": "info",
           "title": "Matrícula y pago anticipado",
-          "md": "- La **matrícula** es siempre de **50 €** y solo se cobra en el pago **mensual**. Trimestral, semestral y anual van **sin matrícula**.\n- Debajo de cada pago anticipado tienes lo que sale **al mes**: es el argumento de venta."
+          "md": "- La **matrícula** es siempre de **50 €** y solo se cobra en el pago **mensual**. Trimestral, semestral y anual van **sin matrícula**.\n- Debajo de cada pago anticipado tienes lo que sale **al mes**: es el argumento de venta.\n- Al darse de alta, lo que se cobra depende del **día del mes**: del 1 al 5, el abono completo; desde el 6, la parte proporcional del mes en curso más el abono completo. Mira [Altas normales](#altas-normales)."
         }
       ],
       "children": [
@@ -805,8 +805,8 @@
               "id": "altas-n-pago-anticipado",
               "type": "callout",
               "variant": "warning",
-              "title": "Alta con pago anticipado un día cualquiera",
-              "md": "Si se da de alta con un **pago anticipado** (trimestral, semestral o anual) un día cualquiera, por ejemplo el **día 6**, paga **solo el importe del pago anticipado** (por ejemplo, 165 €), **sin la parte proporcional del mes**. Su próximo pago es **el mismo día 6, dentro de esos meses** (3 meses si es trimestral).\n\nSi luego quiere darse de baja, tiene que avisar **5 días antes** de esa fecha."
+              "title": "Qué se cobra según el día del alta",
+              "md": "- **Del día 1 al 5 de cada mes (ambos incluidos):** se cobra el **importe completo del abono** que elija el cliente, ya sea trimestral, semestral, anual, etc.\n- **A partir del día 6:** se cobra la **parte proporcional del mes en curso**, **más** el **importe completo del abono** que elija el cliente (trimestral, semestral, anual, etc.)."
             },
             {
               "id": "altas-n-speech-link",
@@ -826,7 +826,7 @@
           ],
           "children": [],
           "lead": "Proceso de un alta normal en Matchpoint, de principio a fin.",
-          "updatedAt": "2026-10-08"
+          "updatedAt": "2026-10-15"
         },
         {
           "id": "altas-web",
