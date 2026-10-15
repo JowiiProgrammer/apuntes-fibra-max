@@ -1,5 +1,5 @@
 {
-  "version": 48,
+  "version": 49,
   "title": "Apuntes de Recepción",
   "sections": [
     {
@@ -806,7 +806,55 @@
               "type": "callout",
               "variant": "warning",
               "title": "Qué se cobra según el día del alta",
-              "md": "- **Del día 1 al 5 de cada mes (ambos incluidos):** se cobra el **importe completo del abono** que elija el cliente, ya sea trimestral, semestral, anual, etc.\n- **A partir del día 6:** se cobra la **parte proporcional del mes en curso**, **más** el **importe completo del abono** que elija el cliente (trimestral, semestral, anual, etc.).\n\nEn los dos casos, el **próximo pago es siempre el día 1**.\n\nEn las **mensuales** se cobran los **días que quedan del mes** desde la fecha de alta (incluida), más la **matrícula** (50 €) si corresponde. La cuota completa se cobra el **día 1 del mes siguiente**.\n\nPara calcularlo usa la **Calculadora de altas** del Cuadro de mando ([erp.fibra-max.com](https://erp.fibra-max.com/) → **Recepción → Tarifas → Calculadora de altas**): eliges la **tarifa** y la **fecha de alta** y te da el **total a cobrar**, redondeado hacia arriba a **0,50 €**."
+              "md": "- **Del día 1 al 5 de cada mes (ambos incluidos):** se cobra el **importe completo del abono** que elija el cliente, ya sea trimestral, semestral, anual, etc.\n- **A partir del día 6:** se cobra la **parte proporcional del mes en curso**, **más** el **importe completo del abono** que elija el cliente (trimestral, semestral, anual, etc.).\n\nEn los dos casos, el **próximo pago es siempre el día 1**.\n\nEn las **mensuales** se cobran los **días que quedan del mes** desde la fecha de alta (incluida), más la **matrícula** (50 €) si corresponde. La cuota completa se cobra el **día 1 del mes siguiente**.\n\nPara calcularlo usa la **Calculadora de altas** del Cuadro de mando ([erp.fibra-max.com](https://erp.fibra-max.com/) → **Recepción → Tarifas → Calculadora de altas**): eliges la **tarifa** (**1**) y la **fecha de alta** (**2**) y te da el **total a cobrar** (**3**), redondeado hacia arriba a **0,50 €**."
+            },
+            {
+              "id": "altas-shot-calculadora",
+              "type": "screenshot",
+              "src": "/capturas/altas-calculadora.png",
+              "alt": "Calculadora de altas del Cuadro de mando con un alta mensual el 15/10/2026",
+              "caption": "Recepción → Tarifas → Calculadora de altas (ejemplo: Fitness Unlimited mensual, alta el 15/10).",
+              "annotations": [
+                {
+                  "kind": "box",
+                  "x": 15.8,
+                  "y": 33.3,
+                  "w": 39.5,
+                  "h": 4.6
+                },
+                {
+                  "kind": "marker",
+                  "n": 1,
+                  "x": 57.7,
+                  "y": 35.6
+                },
+                {
+                  "kind": "box",
+                  "x": 15.8,
+                  "y": 45.3,
+                  "w": 39.5,
+                  "h": 4.6
+                },
+                {
+                  "kind": "marker",
+                  "n": 2,
+                  "x": 57.7,
+                  "y": 47.5
+                },
+                {
+                  "kind": "box",
+                  "x": 57.4,
+                  "y": 59.5,
+                  "w": 41.1,
+                  "h": 6.3
+                },
+                {
+                  "kind": "marker",
+                  "n": 3,
+                  "x": 56.7,
+                  "y": 62.6
+                }
+              ]
             },
             {
               "id": "altas-n-speech-link",
