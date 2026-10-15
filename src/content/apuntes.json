@@ -1,5 +1,5 @@
 {
-  "version": 45,
+  "version": 46,
   "title": "Apuntes de Recepción",
   "sections": [
     {
@@ -806,7 +806,7 @@
               "type": "callout",
               "variant": "warning",
               "title": "Qué se cobra según el día del alta",
-              "md": "- **Del día 1 al 5 de cada mes (ambos incluidos):** se cobra el **importe completo del abono** que elija el cliente, ya sea trimestral, semestral, anual, etc.\n- **A partir del día 6:** se cobra la **parte proporcional del mes en curso**, **más** el **importe completo del abono** que elija el cliente (trimestral, semestral, anual, etc.).\n\nEn los dos casos, el **próximo pago es siempre el día 1**."
+              "md": "- **Del día 1 al 5 de cada mes (ambos incluidos):** se cobra el **importe completo del abono** que elija el cliente, ya sea trimestral, semestral, anual, etc.\n- **A partir del día 6:** se cobra la **parte proporcional del mes en curso**, **más** el **importe completo del abono** que elija el cliente (trimestral, semestral, anual, etc.).\n\nEn los dos casos, el **próximo pago es siempre el día 1**.\n\nEn las **mensuales** se cobran los **días que quedan del mes** desde la fecha de alta (incluida), más la **matrícula** (50 €) si corresponde. La cuota completa se cobra el **día 1 del mes siguiente**.\n\nPara calcularlo usa la **Calculadora de altas** del Cuadro de mando ([erp.fibra-max.com](https://erp.fibra-max.com/) → **Recepción → Tarifas → Calculadora de altas**): eliges la **tarifa** y la **fecha de alta** y te da el **total a cobrar**, redondeado hacia arriba a **0,50 €**."
             },
             {
               "id": "altas-n-speech-link",
@@ -981,7 +981,7 @@
               "items": [
                 {
                   "title": "Pago anticipado",
-                  "md": "Si ha cogido una tarifa de **pago anticipado**: pasados esos meses **comenzará a pagar mensualmente**. Puede **renovar** viniendo **antes del día 25 del último mes** que tiene cubierto y haciendo el pago de nuevo. Si no nos comenta nada, empieza a pagar mensualmente."
+                  "md": "Si ha cogido una tarifa de **pago anticipado**: pasados esos meses **comenzará a pagar mensualmente**. Puede **renovar** viniendo durante el **último mes** que tiene cubierto y haciendo el pago de nuevo. Si no nos comenta nada, empieza a pagar mensualmente."
                 },
                 {
                   "title": "Mensual",
@@ -989,11 +989,11 @@
                 },
                 {
                   "title": "Cuota de mantenimiento",
-                  "md": "Si un mes se va de viaje y no puede venir a entrenar, tenemos la **cuota de mantenimiento**: **10 €**. Si es dentro de los meses que tiene pagados, viniendo **antes del día 25 del mes anterior** al que quiere solicitarlo y haciendo el pago de los 10 €, se le **retrasa la fecha de próximo pago**. Más en [Cuota de mantenimiento](#cuota-mantenimiento)."
+                  "md": "Si un mes se va de viaje y no puede venir a entrenar, tenemos la **cuota de mantenimiento**: **10 €**. Si es dentro de los meses que tiene pagados, haciendo el pago de los 10 €, se le **retrasa la fecha de próximo pago**. Más en [Cuota de mantenimiento](#cuota-mantenimiento)."
                 },
                 {
                   "title": "Fijar la cuota de mantenimiento o darse de baja",
-                  "md": "Para fijar la cuota de mantenimiento o darse de baja, hay que **avisar antes del día 25 del mes anterior** al que quiere solicitarlo, para poder gestionarlo. Más en [Bajas](#bajas)."
+                  "md": "Para fijar la cuota de mantenimiento o darse de baja, hay que **solicitarlo con antelación** para poder gestionarlo. Más en [Bajas](#bajas)."
                 },
                 {
                   "title": "Si se da de baja",
@@ -1066,13 +1066,6 @@
           "id": "b-respuestas",
           "type": "text",
           "md": "**Según la respuesta que nos dé:**\n\n| Si nos dice… | Hacemos… |\n|---|---|\n| Que es por un tema de **salud** | Enviamos el **formulario de baja médica** y le pedimos un **documento médico**. [Baja médica](#baja-medica) |\n| «Voy a estar unos meses», «quiero la cuota de mantenimiento» | Enviamos el **formulario para solicitar la cuota de mantenimiento**. [Cuota de mantenimiento](#cuota-mantenimiento) |\n| Que quiere darse de baja | Enviamos el **formulario para darse de baja**. [Bajas anunciadas](#bajas-anunciadas) |"
-        },
-        {
-          "id": "b-plazo",
-          "type": "callout",
-          "variant": "warning",
-          "title": "Plazo para avisar",
-          "md": "El formulario hay que rellenarlo **antes del día 25** del mes anterior, porque el próximo pago es siempre el día **1**.\n\nEn general les decimos **antes del día 20**, así avisan con más margen."
         }
       ],
       "children": [
@@ -1776,7 +1769,7 @@
           "type": "callout",
           "variant": "info",
           "title": "Cuota de mantenimiento: 10 € al mes",
-          "md": "Por ejemplo, si se va de viaje un mes. Si es **dentro de los meses que tiene pagados**, viniendo **antes del día 25 del mes anterior** al que quiere solicitarlo y pagando los 10 €, se le **retrasa la fecha de próximo pago**.\n\nPara fijarla hay que **avisar antes del día 25** del mes anterior."
+          "md": "Por ejemplo, si se va de viaje un mes. Si es **dentro de los meses que tiene pagados** y paga los 10 €, se le **retrasa la fecha de próximo pago**.\n\nPara fijarla hay que **solicitarlo con antelación**."
         },
         {
           "id": "cm-pasos",
@@ -1843,7 +1836,7 @@
           "type": "callout",
           "variant": "info",
           "title": "Cuándo",
-          "md": "Cuando un abonado con **pago adelantado** (trimestral, semestral o anual) renueva. Puede renovar viniendo **antes del día 25 del último mes** que tiene cubierto y haciendo el pago de nuevo."
+          "md": "Cuando un abonado con **pago adelantado** (trimestral, semestral o anual) renueva. Puede renovar viniendo durante el **último mes** que tiene cubierto y haciendo el pago de nuevo."
         },
         {
           "id": "rn-pasos",
@@ -1929,6 +1922,21 @@
       "group": "Operativa",
       "blocks": [
         {
+          "id": "st-app",
+          "type": "callout",
+          "variant": "info",
+          "title": "Stock en el Cuadro de mando",
+          "md": "En el Cuadro de mando también hay un apartado **Stock** (**Recepción → Stock**) con cuatro pestañas: **Existencias en tu centro**, **Entradas**, **Catálogo** y **Movimientos**. En **Existencias en tu centro** ves los artículos con existencias del centro: unidades y PVP de venta (IVA incluido). Puedes buscar por nombre, referencia o código."
+        },
+        {
+          "id": "st-shot",
+          "type": "screenshot",
+          "src": "/capturas/stock-1-existencias.png",
+          "alt": "Pantalla Stock del Cuadro de mando, pestaña Existencias en tu centro",
+          "caption": "Stock → Existencias en tu centro.",
+          "annotations": []
+        },
+        {
           "id": "st-pasos",
           "type": "steps",
           "items": [
@@ -1957,7 +1965,7 @@
         }
       ],
       "children": [],
-      "updatedAt": "2026-10-08",
+      "updatedAt": "2026-10-15",
       "lead": "Regularizar el stock cuando llega un pedido."
     },
     {
@@ -2051,27 +2059,170 @@
       "group": "Operativa",
       "blocks": [
         {
+          "id": "vs-aviso",
+          "type": "callout",
+          "variant": "danger",
+          "title": "Ya no se cobra por Matchpoint",
+          "md": "La suplementación y demás productos **ya no se cobran por Matchpoint**. Se venden desde el **TPV** del Cuadro de mando ([erp.fibra-max.com](https://erp.fibra-max.com/) → **Recepción → TPV**)."
+        },
+        {
           "id": "vs-pasos",
           "type": "steps",
           "items": [
             {
               "title": "Abre el TPV",
-              "md": "En Matchpoint registra todas las ventas de suplementación, toallas y artículos varios. Para abrir el TPV: **Económicas → Ventas y facturación → TPV TÁCTIL**."
+              "md": "En el Cuadro de mando entra en **Recepción → TPV** y quédate en la pestaña **Venta**."
             },
             {
-              "title": "Busca el artículo",
-              "md": "Lo más eficaz es **«Buscar artículo»**. Fíjate bien en el envase, en los gramos y en la marca."
+              "title": "Elige el producto",
+              "md": "Hay dos formas:\n\n- **Lector de código de barras** (casilla **1**): ponte en esa casilla, como si fueras a escribir, y pasa el lector por el código. Escanear **solo identifica** el producto: no lo añade ni lo cobra.\n- **Buscador** (**O busca por nombre**): si el lector no funciona alguna vez o el producto no tiene código de barras, búscalo por nombre, referencia o marca. Fíjate bien en el envase, en los gramos y en la marca."
             },
             {
-              "title": "Cobra",
-              "md": "Selecciona el artículo y pulsa **COBRAR**, en efectivo o tarjeta."
+              "title": "Cantidad y carrito",
+              "md": "Pon la **cantidad** y pulsa **Añadir al carrito**. Repite con todo lo que necesites."
+            },
+            {
+              "title": "Paga",
+              "md": "Cuando tengas en el carrito lo que necesitas, pulsa **Pagar**. Te aparece una pantalla para elegir **efectivo** o **tarjeta**."
             }
           ]
+        },
+        {
+          "id": "vs-shot",
+          "type": "screenshot",
+          "src": "/capturas/tpv-1-venta.png",
+          "alt": "Pantalla Venta del TPV",
+          "caption": "TPV → Venta: lector, buscador, cantidad y carrito.",
+          "annotations": [
+            {
+              "kind": "marker",
+              "n": 2,
+              "x": 48.6,
+              "y": 43.3
+            },
+            {
+              "kind": "box",
+              "x": 3.6,
+              "y": 65.3,
+              "w": 43.7,
+              "h": 6.4
+            },
+            {
+              "kind": "marker",
+              "n": 2,
+              "x": 48.6,
+              "y": 68.5
+            },
+            {
+              "kind": "box",
+              "x": 4.6,
+              "y": 83.1,
+              "w": 32.2,
+              "h": 6.6
+            },
+            {
+              "kind": "marker",
+              "n": 3,
+              "x": 38.6,
+              "y": 86.4
+            },
+            {
+              "kind": "box",
+              "x": 53,
+              "y": 61.6,
+              "w": 43.8,
+              "h": 6.6
+            },
+            {
+              "kind": "marker",
+              "n": 4,
+              "x": 50.2,
+              "y": 65
+            }
+          ]
+        },
+        {
+          "id": "vs-stock",
+          "type": "callout",
+          "variant": "info",
+          "title": "Cuándo se descuenta el stock",
+          "md": "Añadir al carrito o cancelar el pago **no cambia el stock**. Solo al **confirmar** se registra la venta y se descuentan las existencias."
         }
       ],
-      "children": [],
-      "updatedAt": "2026-10-08",
-      "lead": "Registrar una venta de suplementación o de artículos varios."
+      "children": [
+        {
+          "id": "tpv-devolucion",
+          "title": "Devolución",
+          "lead": "Para descontar un producto. No se usa mucho, pero está por si acaso.",
+          "blocks": [
+            {
+              "id": "tpvd-t",
+              "type": "text",
+              "md": "La pestaña **Devolución** funciona igual que **Venta**, pero para **descontar**."
+            }
+          ],
+          "children": [],
+          "updatedAt": "2026-10-15"
+        },
+        {
+          "id": "tpv-ventas-registradas",
+          "title": "Ventas registradas",
+          "lead": "Histórico de las ventas del TPV.",
+          "blocks": [
+            {
+              "id": "tpvr-t",
+              "type": "text",
+              "md": "Aquí queda el **histórico de las ventas** que vas haciendo. Si te equivocas con el pago, puedes **editarlo** entre **tarjeta** y **efectivo**."
+            },
+            {
+              "id": "tpvr-shot",
+              "type": "screenshot",
+              "src": "/capturas/tpv-3-ventas-registradas.png",
+              "alt": "Pantalla Ventas registradas del TPV con el resumen de caja",
+              "caption": "TPV → Ventas registradas: resumen de caja del día y listado de ventas.",
+              "annotations": [
+                {
+                  "kind": "marker",
+                  "n": 1,
+                  "x": 50,
+                  "y": 47.5
+                },
+                {
+                  "kind": "box",
+                  "x": 2.3,
+                  "y": 52.2,
+                  "w": 95.7,
+                  "h": 10.3
+                },
+                {
+                  "kind": "marker",
+                  "n": 2,
+                  "x": 50,
+                  "y": 70.3
+                },
+                {
+                  "kind": "box",
+                  "x": 1.5,
+                  "y": 72.6,
+                  "w": 97,
+                  "h": 15.2
+                }
+              ]
+            },
+            {
+              "id": "tpvr-cuadrar",
+              "type": "callout",
+              "variant": "warning",
+              "title": "Para cuadrar la caja",
+              "md": "Al cuadrar la caja hay que tener en cuenta lo cobrado de **suplementación** y otros productos, tanto en **efectivo** como en **tarjeta**. Lo ves arriba, en el **Resumen de caja TPV** (**1**), día por día. Ese importe **ya está incluido en la Facturación diaria**: sirve para cuadrar, **no se suma otra vez**."
+            }
+          ],
+          "children": [],
+          "updatedAt": "2026-10-15"
+        }
+      ],
+      "updatedAt": "2026-10-15",
+      "lead": "Registrar una venta de suplementación, toallas o artículos varios en el TPV."
     },
     {
       "id": "entrada-cambio",
@@ -2372,6 +2523,13 @@
           "md": "La facturación diaria se apunta en el programa nuevo, [erp.fibra-max.com](https://erp.fibra-max.com/): **Recepción → Facturación diaria**. Se elige la **fecha** y el **centro**, y hay dos bloques: **Arqueo** (mañana) y **Cierre diario de recepción** (tarde)."
         },
         {
+          "id": "fa-tpv",
+          "type": "callout",
+          "variant": "warning",
+          "title": "Suplementación y otros productos (TPV)",
+          "md": "Al cuadrar tienes que tener en cuenta lo cobrado por el **TPV** en **efectivo** y en **tarjeta**. Lo ves en [Ventas registradas](#tpv-ventas-registradas). Ese importe ya está incluido en la Facturación diaria: sirve para cuadrar, no se suma otra vez."
+        },
+        {
           "id": "fa-shot-erp",
           "type": "screenshot",
           "src": "/capturas/facturacion-diaria-erp.png",
@@ -2527,7 +2685,7 @@
           "lead": "Para mantener al día cuotas y cobros."
         }
       ],
-      "updatedAt": "2026-10-09",
+      "updatedAt": "2026-10-15",
       "lead": "Apertura, arqueo de mañana y cierre de tarde."
     },
     {
