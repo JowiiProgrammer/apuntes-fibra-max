@@ -1,5 +1,5 @@
 {
-  "version": 46,
+  "version": 47,
   "title": "Apuntes de Recepción",
   "sections": [
     {
@@ -1974,6 +1974,13 @@
       "group": "Operativa",
       "blocks": [
         {
+          "id": "pe-facturas",
+          "type": "callout",
+          "variant": "danger",
+          "title": "Dónde se envían las facturas",
+          "md": "**Todas las facturas** de suplementación y demás se envían al correo [proveedores@fibra-max.com](mailto:proveedores@fibra-max.com)."
+        },
+        {
           "id": "pe-llega",
           "type": "callout",
           "variant": "info",
@@ -1983,7 +1990,7 @@
         {
           "id": "pe-emails",
           "type": "pending",
-          "note": "Por completar: direcciones de email de administración y de la directora de operaciones (no se publican aquí porque la web es pública)."
+          "note": "Por completar: email de administración y de la directora de operaciones (no se publican aquí porque la web es pública)."
         }
       ],
       "children": [
@@ -2013,12 +2020,13 @@
                 },
                 {
                   "title": "Llega el pedido",
-                  "md": "Envía la **factura a administración** y en copia a la directora de operaciones."
+                  "md": "Envía la **factura** a [proveedores@fibra-max.com](mailto:proveedores@fibra-max.com) y en copia a la directora de operaciones."
                 }
               ]
             }
           ],
-          "children": []
+          "children": [],
+          "updatedAt": "2026-10-15"
         },
         {
           "id": "pedido-life-pro",
@@ -2042,15 +2050,16 @@
                 },
                 {
                   "title": "Llega el pedido",
-                  "md": "Envía la **factura a administración** y en copia a la directora de operaciones."
+                  "md": "Envía la **factura** a [proveedores@fibra-max.com](mailto:proveedores@fibra-max.com) y en copia a la directora de operaciones."
                 }
               ]
             }
           ],
-          "children": []
+          "children": [],
+          "updatedAt": "2026-10-15"
         }
       ],
-      "updatedAt": "2026-10-08",
+      "updatedAt": "2026-10-15",
       "lead": "Dos proveedores: Big y Life Pro."
     },
     {
