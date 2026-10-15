@@ -1,5 +1,5 @@
 {
-  "version": 44,
+  "version": 45,
   "title": "Apuntes de Recepción",
   "sections": [
     {
@@ -806,7 +806,7 @@
               "type": "callout",
               "variant": "warning",
               "title": "Qué se cobra según el día del alta",
-              "md": "- **Del día 1 al 5 de cada mes (ambos incluidos):** se cobra el **importe completo del abono** que elija el cliente, ya sea trimestral, semestral, anual, etc.\n- **A partir del día 6:** se cobra la **parte proporcional del mes en curso**, **más** el **importe completo del abono** que elija el cliente (trimestral, semestral, anual, etc.)."
+              "md": "- **Del día 1 al 5 de cada mes (ambos incluidos):** se cobra el **importe completo del abono** que elija el cliente, ya sea trimestral, semestral, anual, etc.\n- **A partir del día 6:** se cobra la **parte proporcional del mes en curso**, **más** el **importe completo del abono** que elija el cliente (trimestral, semestral, anual, etc.).\n\nEn los dos casos, el **próximo pago es siempre el día 1**."
             },
             {
               "id": "altas-n-speech-link",
@@ -993,7 +993,7 @@
                 },
                 {
                   "title": "Fijar la cuota de mantenimiento o darse de baja",
-                  "md": "Para fijar la cuota de mantenimiento o darse de baja, hay que **avisar antes del día 25 del mes anterior** al que quiere solicitarlo (si su próximo pago cae en el día 1). Si cae en **otro día**, hay que avisar **5 días antes** de esa fecha. Para poder gestionarlo. Más en [Bajas](#bajas)."
+                  "md": "Para fijar la cuota de mantenimiento o darse de baja, hay que **avisar antes del día 25 del mes anterior** al que quiere solicitarlo, para poder gestionarlo. Más en [Bajas](#bajas)."
                 },
                 {
                   "title": "Si se da de baja",
@@ -1072,7 +1072,7 @@
           "type": "callout",
           "variant": "warning",
           "title": "Plazo para avisar",
-          "md": "El formulario hay que rellenarlo **antes del día 25** (del mes anterior) si su próximo pago cae en el día **1**.\n\nSi su próximo pago cae en **otro día** (por ejemplo, un pago anticipado que empezó el día 6), tiene que avisar **5 días antes** de esa fecha.\n\nEn general les decimos **antes del día 20**, así avisan con más margen."
+          "md": "El formulario hay que rellenarlo **antes del día 25** del mes anterior, porque el próximo pago es siempre el día **1**.\n\nEn general les decimos **antes del día 20**, así avisan con más margen."
         }
       ],
       "children": [
@@ -1776,7 +1776,7 @@
           "type": "callout",
           "variant": "info",
           "title": "Cuota de mantenimiento: 10 € al mes",
-          "md": "Por ejemplo, si se va de viaje un mes. Si es **dentro de los meses que tiene pagados**, viniendo **antes del día 25 del mes anterior** al que quiere solicitarlo y pagando los 10 €, se le **retrasa la fecha de próximo pago**.\n\nPara fijarla hay que **avisar antes del día 25** del mes anterior (si su próximo pago cae en el día 1). Si cae en otro día, **5 días antes** de esa fecha."
+          "md": "Por ejemplo, si se va de viaje un mes. Si es **dentro de los meses que tiene pagados**, viniendo **antes del día 25 del mes anterior** al que quiere solicitarlo y pagando los 10 €, se le **retrasa la fecha de próximo pago**.\n\nPara fijarla hay que **avisar antes del día 25** del mes anterior."
         },
         {
           "id": "cm-pasos",
