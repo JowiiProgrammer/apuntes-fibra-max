@@ -1,5 +1,5 @@
 {
-  "version": 49,
+  "version": 50,
   "title": "Apuntes de Recepción",
   "sections": [
     {
@@ -806,7 +806,7 @@
               "type": "callout",
               "variant": "warning",
               "title": "Qué se cobra según el día del alta",
-              "md": "- **Del día 1 al 5 de cada mes (ambos incluidos):** se cobra el **importe completo del abono** que elija el cliente, ya sea trimestral, semestral, anual, etc.\n- **A partir del día 6:** se cobra la **parte proporcional del mes en curso**, **más** el **importe completo del abono** que elija el cliente (trimestral, semestral, anual, etc.).\n\nEn los dos casos, el **próximo pago es siempre el día 1**.\n\nEn las **mensuales** se cobran los **días que quedan del mes** desde la fecha de alta (incluida), más la **matrícula** (50 €) si corresponde. La cuota completa se cobra el **día 1 del mes siguiente**.\n\nPara calcularlo usa la **Calculadora de altas** del Cuadro de mando ([erp.fibra-max.com](https://erp.fibra-max.com/) → **Recepción → Tarifas → Calculadora de altas**): eliges la **tarifa** (**1**) y la **fecha de alta** (**2**) y te da el **total a cobrar** (**3**), redondeado hacia arriba a **0,50 €**."
+              "md": "**Abonos de pago anticipado** (trimestral, semestral, anual, etc.):\n- **Del día 1 al 5 de cada mes (ambos incluidos):** se cobra el **importe completo del abono** que elija el cliente.\n- **A partir del día 6:** se cobra la **parte proporcional del mes en curso**, **más** el **importe completo del abono** que elija el cliente.\n\n**Mensual:** siempre se cobra la **parte proporcional**: los **días que quedan del mes** desde la fecha de alta (incluida), más la **matrícula** (50 €) si corresponde. La cuota completa se cobra el **día 1 del mes siguiente**.\n\nEn todos los casos, el **próximo pago es siempre el día 1**.\n\nPara calcularlo usa la **Calculadora de altas** del Cuadro de mando ([erp.fibra-max.com](https://erp.fibra-max.com/) → **Recepción → Tarifas → Calculadora de altas**): eliges la **tarifa** (**1**) y la **fecha de alta** (**2**) y te da el **total a cobrar** (**3**), redondeado hacia arriba a **0,50 €**."
             },
             {
               "id": "altas-shot-calculadora",
@@ -1997,19 +1997,15 @@
           "items": [
             {
               "title": "Comprueba la factura",
-              "md": "Abre la factura y comprueba que esté todo correcto."
+              "md": "Abre la factura y comprueba que esté todo correcto. El truco está en **ir marcando en la factura** todo lo que vas comprobando."
             },
             {
-              "title": "Busca cada artículo",
-              "md": "En Matchpoint: **Económicas → Control de Stock → Artículos**. Busca artículo por artículo."
+              "title": "Envíala a proveedores",
+              "md": "Envía la **factura** a [proveedores@fibra-max.com](mailto:proveedores@fibra-max.com)."
             },
             {
-              "title": "Regulariza",
-              "md": "**Editar → lápiz → Stock → Regularizar Stock**. Escoge el almacén e introduce las unidades de los artículos que han llegado."
-            },
-            {
-              "title": "Marca en la factura",
-              "md": "El truco está en **ir marcando en la factura** todo lo que vas regularizando."
+              "title": "Ellos introducen el stock",
+              "md": "Desde proveedores **introducen el stock**: tú no tienes que regularizarlo."
             }
           ]
         },
@@ -2020,8 +2016,8 @@
         }
       ],
       "children": [],
-      "updatedAt": "2026-10-15",
-      "lead": "Regularizar el stock cuando llega un pedido."
+      "updatedAt": "2026-10-16",
+      "lead": "Qué hacer cuando llega un pedido."
     },
     {
       "id": "pedido-suplementacion",
@@ -2040,7 +2036,7 @@
           "type": "callout",
           "variant": "info",
           "title": "Cuando llega el pedido",
-          "md": "Regulariza el stock: [Stock](#stock)."
+          "md": "Envía la factura a proveedores para que introduzcan el stock: [Stock](#stock)."
         },
         {
           "id": "pe-emails",
@@ -2067,7 +2063,7 @@
                 },
                 {
                   "title": "Aviso a administración",
-                  "md": "Si el pedido es aceptado, envía una **captura de la cesta a administración** para que lo tenga en cuenta y coméntale que es un pedido **ya aprobado por la directora de operaciones**."
+                  "md": "Si el pedido es aceptado, envía una **captura de la cesta a administración** y también a [proveedores@fibra-max.com](mailto:proveedores@fibra-max.com) para que lo tenga en cuenta y coméntale que es un pedido **ya aprobado por la directora de operaciones**."
                 },
                 {
                   "title": "Proforma",
@@ -2101,7 +2097,7 @@
                 },
                 {
                   "title": "Aviso a administración y confirmación",
-                  "md": "Si el pedido es aceptado, envía una **captura de la cesta a administración** y coméntale que es un pedido **ya aprobado por la directora de operaciones**. Confirma el pedido añadiendo la **dirección de entrega** y la **forma de pago a 30 días**."
+                  "md": "Si el pedido es aceptado, envía una **captura de la cesta a administración** y también a [proveedores@fibra-max.com](mailto:proveedores@fibra-max.com) y coméntale que es un pedido **ya aprobado por la directora de operaciones**. Confirma el pedido añadiendo la **dirección de entrega** y la **forma de pago a 30 días**."
                 },
                 {
                   "title": "Llega el pedido",
@@ -3271,7 +3267,7 @@
           "type": "callout",
           "variant": "warning",
           "title": "Sistema de avisos y sanciones",
-          "md": "1. **Recordatorio verbal** por parte del personal de sala.\n2. **Aviso formal por escrito**, emitido por el responsable o la dirección.\n3. **Sanción:** una semana sin acceso a ningún centro Fibra Max."
+          "md": "1. **Recordatorio verbal** por parte del personal de sala.\n2. **Aviso formal por escrito**, emitido por la directora de operaciones.\n3. **Sanción:** una semana sin acceso a ningún centro Fibra Max."
         }
       ],
       "children": [],
@@ -3334,7 +3330,7 @@
                   "md": "Ya sea en nuestra instalación o en la instalación vecina, si puede afectar a la nuestra."
                 },
                 {
-                  "title": "Llama al responsable de emergencias",
+                  "title": "Llama a la directora de operaciones",
                   "md": "Llama a la **directora de operaciones**: ella es quien llama al **112** e informa del incendio."
                 },
                 {
