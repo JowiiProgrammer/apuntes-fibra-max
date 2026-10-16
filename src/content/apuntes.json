@@ -1,5 +1,5 @@
 {
-  "version": 50,
+  "version": 51,
   "title": "Apuntes de Recepción",
   "sections": [
     {
@@ -1980,8 +1980,8 @@
           "id": "st-app",
           "type": "callout",
           "variant": "info",
-          "title": "Stock en el Cuadro de mando",
-          "md": "En el Cuadro de mando también hay un apartado **Stock** (**Recepción → Stock**) con cuatro pestañas: **Existencias en tu centro**, **Entradas**, **Catálogo** y **Movimientos**. En **Existencias en tu centro** ves los artículos con existencias del centro: unidades y PVP de venta (IVA incluido). Puedes buscar por nombre, referencia o código."
+          "title": "Stock en el Cuadro de mando (solo consulta)",
+          "md": "Por el momento es **solo para consultar**. En el Cuadro de mando hay un apartado **Stock** (**Recepción → Stock**) con cuatro pestañas: **Existencias en tu centro**, **Entradas**, **Catálogo** y **Movimientos**. En **Existencias en tu centro** ves los artículos con existencias del centro: unidades y PVP de venta (IVA incluido). Puedes buscar por nombre, referencia o código."
         },
         {
           "id": "st-shot",
@@ -2123,7 +2123,7 @@
           "type": "callout",
           "variant": "danger",
           "title": "Ya no se cobra por Matchpoint",
-          "md": "La suplementación y demás productos **ya no se cobran por Matchpoint**. Se venden desde el **TPV** del Cuadro de mando ([erp.fibra-max.com](https://erp.fibra-max.com/) → **Recepción → TPV**)."
+          "md": "**Todo lo que tengamos en stock en Matchpoint ya no se cobra en Matchpoint**: suplementación, toallas de Fibra Max y demás productos. Se cobra desde el **TPV** del Cuadro de mando ([erp.fibra-max.com](https://erp.fibra-max.com/) → **Recepción → TPV**)."
         },
         {
           "id": "vs-pasos",
@@ -2281,7 +2281,7 @@
           "updatedAt": "2026-10-15"
         }
       ],
-      "updatedAt": "2026-10-15",
+      "updatedAt": "2026-10-16",
       "lead": "Registrar una venta de suplementación, toallas o artículos varios en el TPV."
     },
     {
