@@ -1,5 +1,5 @@
 {
-  "version": 69,
+  "version": 70,
   "title": "Apuntes de Recepción",
   "sections": [
     {
@@ -956,7 +956,7 @@
                 },
                 {
                   "title": "Recibo devuelto",
-                  "md": "Si en algún momento se le **devuelve un recibo**, tendrá que **venir a recepción** o **pagarlo por transferencia**. Por cada recibo devuelto hay unos **gastos de comisión de 6 €**."
+                  "md": "Si en algún momento se le **devuelve un recibo**, tendrá que **venir a recepción** o **pagarlo por transferencia**, con unos **gastos de comisión de 6 €**. Mientras no lo pague, se le pone una **cuota de penalización de 20 € al mes** que se le va acumulando como deuda."
                 },
                 {
                   "title": "Normativa",
@@ -1206,14 +1206,14 @@
         },
         {
           "id": "bajas-directas",
-          "title": "Bajas directas (recibos devueltos)",
+          "title": "Bajas directas",
           "blocks": [
             {
               "id": "b-d-intro",
               "type": "callout",
               "variant": "info",
               "title": "Cuándo es una baja directa",
-              "md": "Normalmente es por **recibos devueltos**: cuando no sigue un recibo devuelto y el abonado no contesta. Las bajas directas se gestionan entre los días **25 y 28**. Pasado el día 25, sería una baja directa. Puede haber otros casos, pero normalmente es este."
+              "md": "Es la baja que tramitamos **en el momento**, sin el plazo de la baja programada.\n\n**Los recibos devueltos ya no van a baja directa:** se les pone la [Cuota penalización](#recibos-devueltos)."
             },
             {
               "id": "b-d-igual",
@@ -1231,7 +1231,7 @@
                 },
                 {
                   "title": "Motivo en Matchpoint",
-                  "md": "En **Motivo** pon **recibos devueltos** y pulsa **Aceptar**."
+                  "md": "En **Motivo** pon el que corresponda y pulsa **Aceptar**."
                 },
                 {
                   "title": "Sin WhatsApp",
@@ -1404,7 +1404,7 @@
                 },
                 {
                   "title": "Inserta el documento",
-                  "md": "En **«Cargar desde fichero»** selecciona el documento y pulsa **Cargar**. Después pulsa **Insertar**. Expórtalo a Excel."
+                  "md": "En **«Cargar desde fichero»** selecciona el documento y pulsa **Cargar**. Después pulsa **Insertar**. Expórtalo a **Excel**."
                 }
               ]
             },
@@ -1475,42 +1475,33 @@
               "start": 5,
               "items": [
                 {
-                  "title": "Añádelo al control",
-                  "md": "Registra a los abonados en el Excel **Recibos Devueltos**."
+                  "title": "Pásale el Excel a Carlos Huertas",
+                  "md": "Pásale a **Carlos Huertas** el **Excel de las devoluciones** que acabas de exportar.\n\nYa **no** se apunta nada en el Excel **Recibos Devueltos**."
                 },
                 {
-                  "title": "Primer aviso",
-                  "md": "Manda el mensaje de recibo devuelto al abonado (mail o WhatsApp)."
-                },
-                {
-                  "title": "Día 15: segundo aviso",
-                  "md": "Si sigue pendiente, envía el **segundo aviso** (está en Missatges Compartits)."
-                },
-                {
-                  "title": "Día 24: tercer aviso",
-                  "md": "Si sigue pendiente, envía el **tercer aviso**."
-                },
-                {
-                  "title": "Días 25-28: baja directa",
-                  "md": "Si continúa sin pagar, aplica la [baja directa](#bajas-directas)."
-                },
-                {
-                  "title": "Si viene a pagar después",
-                  "md": "Si viene a pagar después del 25-28, lo **reactivamos** y **deshacemos el proceso de baja**."
+                  "title": "Ponle la Cuota penalización",
+                  "md": "A cada persona con recibo devuelto, en su perfil ve a **Abonos → lápiz** y cambia el **Tipo de abono** a **Cuota penalización** (**20 € al mes**). Revisa que la **fecha de próximo pago** quede bien y guarda.\n\nEsta cuota **no pasa a remesa**: cada mes que no venga a pagar, se le queda como **deuda**."
                 }
               ]
             },
             {
-              "id": "rd-paga",
+              "id": "rd-avisos",
               "type": "callout",
               "variant": "info",
-              "title": "Cómo paga el abonado",
-              "md": "Tendrá que **venir a recepción** o **pagarlo por transferencia**. Por cada recibo devuelto hay unos gastos de comisión de **6 €**."
+              "title": "Avisos automáticos",
+              "md": "Los avisos de recibo devuelto ya **se envían solos**: no hay que mandar el primer aviso ni los del día 15 y 24. Y ya **no se hace baja directa** por recibos devueltos: se queda con la Cuota penalización."
+            },
+            {
+              "id": "rd-paga",
+              "type": "callout",
+              "variant": "warning",
+              "title": "Cuando viene a pagar",
+              "md": "Se cobra en su ficha, **Facturación y Cobro → Deudas** (o por **transferencia**).\n\n- **Viene en el mismo mes:** paga el **recibo devuelto** más la **comisión de 6 €** de siempre.\n- **Viene pasados meses:** se le **quita la deuda del recibo devuelto** (mira [Anular un recibo](#anular-recibo)) y **solo paga la deuda acumulada** de la Cuota penalización (20 € por cada mes que no ha venido).\n\nCuando haya pagado, vuelve a ponerle **su cuota de siempre** en **Abonos → lápiz** y revisa el **próximo pago**."
             }
           ],
           "children": [],
-          "updatedAt": "2026-10-09",
-          "lead": "Qué hacer cuando nos llega el documento de recibos devueltos."
+          "updatedAt": "2026-11-23",
+          "lead": "Qué hacer cuando nos llega el documento de recibos devueltos de administración."
         }
       ],
       "updatedAt": "2026-11-23"
@@ -2648,9 +2639,9 @@
               "type": "checklist",
               "title": "Del día 1 al 10",
               "items": [
-                "Revisión y modificación del Excel Cambios (Excel Cambios y MatchPoint)",
+                "Revisión de los cambios de cuota (Cuadro de mando → Cambios cuota y Matchpoint)",
                 "Cuotas de baja médica y mantenimiento: contacto (Cuadro de mando → Cambios cuota y WhatsApp)",
-                "Recibos devueltos: gestión y contacto (Excel Recibos Devueltos)",
+                "Recibos devueltos: cargarlos en Matchpoint, pasar el Excel de devoluciones a Carlos Huertas y poner la Cuota penalización",
                 "Gestión y solicitud de bajas (Cuadro de mando → Solicitudes baja y Matchpoint)",
                 "Aviso de que finaliza la promo y gestión de renovaciones"
               ]
@@ -2668,8 +2659,7 @@
               "title": "Del día 10 al 15",
               "items": [
                 "Revisar abonados inactivos desde hace más de 15 días: contactar y hacer seguimiento",
-                "Contactar con ex abonados que han pasado 6 meses",
-                "Día 15: enviar el segundo aviso de recibo devuelto (está en Missatges Compartits)"
+                "Contactar con ex abonados que han pasado 6 meses"
               ]
             },
             {
@@ -2691,10 +2681,7 @@
               "type": "checklist",
               "title": "Del día 15 al 31",
               "items": [
-                "Recibos devueltos: avisos y seguimientos",
                 "Bajas médicas y cuotas de mantenimiento",
-                "Día 24: enviar el tercer aviso de recibos devueltos",
-                "Días 25-28: tramitar las bajas directas de los recibos devueltos que sigan sin pagar",
                 "Reportar las entradas puntuales que se hayan anotado ya",
                 "Activar de nuevo los formularios de baja y de cambio de cuota",
                 "Revisión de bajas y cuotas a facturar para el próximo mes (equipo)"
@@ -2702,7 +2689,7 @@
             }
           ],
           "children": [],
-          "updatedAt": "2026-10-08",
+          "updatedAt": "2026-11-23",
           "lead": "Tareas que no se hacen cada día: revísalas según la fecha para que no se acumulen al final de mes."
         },
         {
@@ -2865,7 +2852,7 @@
               "type": "callout",
               "variant": "info",
               "title": "Si viene a pagar un recibo devuelto",
-              "md": "Puede **venir a recepción** o **pagarlo por transferencia**, con los gastos de **6 €** por recibo devuelto. Si viene después del 25-28, lo reactivamos y deshacemos el proceso de baja. Todo el proceso está en [Recibos devueltos](#recibos-devueltos)."
+              "md": "- **En el mismo mes:** paga el recibo devuelto más los **6 €** de comisión.\n- **Pasados meses:** se le quita la deuda del recibo devuelto y **solo paga la Cuota penalización acumulada** (20 € por mes).\n\nTodo el proceso, en [Recibos devueltos](#recibos-devueltos)."
             },
             {
               "id": "pp-pend",
@@ -2874,7 +2861,7 @@
             }
           ],
           "children": [],
-          "updatedAt": "2026-10-08"
+          "updatedAt": "2026-11-23"
         },
         {
           "id": "excel-cambios",
