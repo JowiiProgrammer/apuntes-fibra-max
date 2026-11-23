@@ -1,5 +1,5 @@
 {
-  "version": 65,
+  "version": 67,
   "title": "Apuntes de Recepción",
   "sections": [
     {
@@ -500,6 +500,13 @@
               ]
             },
             {
+              "id": "altas-n-tarjeta",
+              "type": "callout",
+              "variant": "warning",
+              "title": "Si pagó con tarjeta en la web",
+              "md": "Ya está pagado. Al cobrarlo en Matchpoint (paso 10) el método de pago es siempre **transferencia**, nunca tarjeta."
+            },
+            {
               "id": "altas-n-efectivo",
               "type": "callout",
               "variant": "danger",
@@ -941,7 +948,7 @@
                 },
                 {
                   "title": "Fijar la cuota de mantenimiento o darse de baja",
-                  "md": "Para fijar la cuota de mantenimiento o darse de baja, hay que **avisar antes del día 25 del mes anterior** al que quiere solicitarlo, para poder gestionarlo. Más en [Bajas](#bajas)."
+                  "md": "Para fijar la cuota de mantenimiento o darse de baja, hay que **avisar como muy tarde el día 24 a las 23:00 h del mes anterior** al que quiere solicitarlo, para poder gestionarlo. Más en [Bajas](#bajas)."
                 },
                 {
                   "title": "Si se da de baja",
@@ -1002,25 +1009,26 @@
           "type": "callout",
           "variant": "info",
           "title": "Cuando alguien solicita la baja",
-          "md": "Lo primero es enviarle un **primer mensaje** (este o similar) para conocer el motivo y recordarle las alternativas."
-        },
-        {
-          "id": "b-msg-1",
-          "type": "message",
-          "title": "Primer mensaje",
-          "text": "Hola,\n\nPodemos gestionar tu baja sin ningún problema. Antes de hacerlo, nos gustaría conocer el motivo de tu decisión, ya que nos ayuda a seguir mejorando nuestro servicio.\n\nEn cualquier caso, queremos recordarte que disponemos de la opción de cuota de mantenimiento por 10 € al mes, para el tiempo que necesites. Además, en caso de lesión o baja médica, podemos paralizar la cuota temporalmente.\n\nQuedamos atentos a tu respuesta.\n¡Muchas gracias!\n\n*Fibra Max*"
+          "md": "Lo primero es enviarle el **Mensaje 1** de baja para conocer el motivo y recordarle las alternativas (cuota de mantenimiento y baja médica).\n\nLos mensajes oficiales están en el Cuadro de mando: [erp.fibra-max.com](https://erp.fibra-max.com/) → **Control abonados → Formularios / Mensajes**, con botón de **copiar**. Usa siempre esos, no textos guardados en otro sitio."
         },
         {
           "id": "b-respuestas",
           "type": "text",
-          "md": "**Según la respuesta que nos dé:**\n\n| Si nos dice… | Hacemos… |\n|---|---|\n| Que es por un tema de **salud** | Enviamos el **formulario de baja médica** y le pedimos un **documento médico**. [Baja médica](#baja-medica) |\n| «Voy a estar unos meses», «quiero la cuota de mantenimiento» | Enviamos el **formulario para solicitar la cuota de mantenimiento**. [Cuota de mantenimiento](#cuota-mantenimiento) |\n| Que quiere darse de baja | Enviamos el **formulario para darse de baja**. [Bajas anunciadas](#bajas-anunciadas) |"
+          "md": "**Según la respuesta que nos dé:**\n\n| Si nos dice… | Hacemos… |\n|---|---|\n| Que es por un tema de **salud** | Le enviamos el **formulario de cambio de cuota** (va en el Mensaje 1) para la **baja médica** y le pedimos un **documento médico**. [Baja médica](#baja-medica) |\n| «Voy a estar unos meses», «quiero la cuota de mantenimiento» | Le enviamos el **formulario de cambio de cuota** (va en el Mensaje 1). [Cuota de mantenimiento](#cuota-mantenimiento) |\n| Que quiere darse de baja | Le enviamos el **Mensaje 2**, con el **formulario de baja**. [Bajas anunciadas](#bajas-anunciadas) |"
         },
         {
           "id": "b-plazo",
           "type": "callout",
           "variant": "warning",
           "title": "Plazo para avisar",
-          "md": "El formulario hay que rellenarlo **antes del día 25 del mes anterior** al que se quiere solicitar, porque el próximo pago es siempre el día **1**.\n\nEn general les decimos **antes del día 20**, así avisan con más margen."
+          "md": "El formulario hay que rellenarlo como muy tarde el **día 24 a las 23:00 h** del mes anterior al que se quiere solicitar, porque el próximo pago es siempre el día **1**.\n\nVale para la **baja**, la **cuota de mantenimiento** y cualquier **cambio de cuota**."
+        },
+        {
+          "id": "b-volver",
+          "type": "callout",
+          "variant": "info",
+          "title": "Si vuelve antes de 6 meses",
+          "md": "Lo recuerda el Mensaje 2: si se da de baja y vuelve **antes de 6 meses**, paga los **meses de baja como cuota de mantenimiento**, y además la **mensualidad con matrícula** o el **pago anticipado** con **matrícula gratis**."
         }
       ],
       "children": [
@@ -1034,8 +1042,8 @@
               "start": 1,
               "items": [
                 {
-                  "title": "Llega al Excel de solicitud de bajas",
-                  "md": "La baja programada nos llega al **Excel de solicitud de bajas**."
+                  "title": "Cuadro de mando → Solicitudes baja",
+                  "md": "Las bajas que pide el abonado con el formulario llegan a [erp.fibra-max.com](https://erp.fibra-max.com/) → **Control abonados → Solicitudes baja**, pestaña **Pendientes** (origen **Web**). Pulsa **Ver** para ver sus datos y el **motivo**."
                 },
                 {
                   "title": "Búscala en Matchpoint",
@@ -1104,7 +1112,7 @@
                 },
                 {
                   "title": "Motivo",
-                  "md": "En **Motivo** (**2**) pon el que haya elegido el abonado en el Excel y pulsa **Aceptar** (**3**)."
+                  "md": "En **Motivo** (**2**) pon el que haya elegido el abonado en el formulario (lo ves en **Solicitudes baja → Ver**) y pulsa **Aceptar** (**3**)."
                 }
               ]
             },
@@ -1285,14 +1293,14 @@
                   "md": "Cuando responda, **anota la respuesta del abonado en el seguimiento**."
                 },
                 {
-                  "title": "Marca el check del Excel",
-                  "md": "Cuando hayas hecho todo el proceso, **marca el check del Excel** de solicitud de bajas."
+                  "title": "Márcala como tramitada",
+                  "md": "Cuando hayas hecho todo el proceso, vuelve a **Control abonados → Solicitudes baja** y marca el check **«Marcar como tramitada»**. Pasa al **Histórico** sin borrarse."
                 }
               ]
             }
           ],
           "children": [],
-          "updatedAt": "2026-10-08",
+          "updatedAt": "2026-11-23",
           "lead": "La baja normal, a la que llamamos baja programada."
         },
         {
@@ -1349,7 +1357,7 @@
               "items": [
                 {
                   "title": "Formulario y documento médico",
-                  "md": "La baja médica nos llega por el **formulario de solicitud de cambio de cuota**. Cuando le hemos pasado el formulario de baja médica, necesitamos que nos facilite un **documento médico**."
+                  "md": "La baja médica nos llega por el **formulario de cambio de cuota**, a [erp.fibra-max.com](https://erp.fibra-max.com/) → **Control abonados → Cambios cuota**. Además, necesitamos que nos facilite un **documento médico**."
                 },
                 {
                   "title": "Cambia el abono a baja médica",
@@ -1442,12 +1450,12 @@
               "start": 5,
               "items": [
                 {
-                  "title": "Excel de solicitud de cambio",
-                  "md": "Ve otra vez al **Excel de solicitud de cambios** y **marca el check**."
+                  "title": "Márcala como tramitada",
+                  "md": "Vuelve a **Control abonados → Cambios cuota** y **marca el check**: pasa al **Histórico** sin borrarse."
                 },
                 {
                   "title": "Apartado de bajas médicas",
-                  "md": "En el mismo Excel hay un apartado de **bajas médicas**. Anota los datos de la persona, el **motivo** (la lesión o lo que sea) y la **fecha de previsión de vuelta**."
+                  "md": "Apunta los datos de la persona, el **motivo** (la lesión o lo que sea) y la **fecha de previsión de vuelta** en el apartado de **bajas médicas**."
                 }
               ]
             },
@@ -1474,7 +1482,7 @@
             }
           ],
           "children": [],
-          "updatedAt": "2026-10-09",
+          "updatedAt": "2026-11-23",
           "lead": "Pausar la cuota por lesión o baja médica."
         },
         {
@@ -1608,7 +1616,7 @@
           "lead": "Qué hacer cuando nos llega el documento de recibos devueltos."
         }
       ],
-      "updatedAt": "2026-10-09"
+      "updatedAt": "2026-11-23"
     },
     {
       "id": "cambio-cuota",
@@ -1620,7 +1628,7 @@
           "type": "callout",
           "variant": "info",
           "title": "Cómo llega",
-          "md": "Le enviamos el **formulario de solicitud de cambio de cuota** (lo tienes en **Missatges Compartits**). Cuando lo rellena, llega al **Excel de solicitud de cambios**: ahí miramos a la persona y qué proceso seguimos."
+          "md": "Le enviamos el **formulario de cambio de cuota** (el **Mensaje** de cambio de cuota, en **Control abonados → Formularios / Mensajes**). Cuando lo rellena, llega a [erp.fibra-max.com](https://erp.fibra-max.com/) → **Control abonados → Cambios cuota**, con su **cuota actual → nueva**."
         },
         {
           "id": "cc-pasos-1",
@@ -1629,7 +1637,7 @@
           "items": [
             {
               "title": "Busca a la persona",
-              "md": "Mira en el **Excel de solicitud de cambios** qué cambio pide, búscala en Matchpoint con el **muñeco con lupa** y entra en su perfil."
+              "md": "Mira en **Cambios cuota** qué cambio pide (**Ver** para el detalle), búscala en Matchpoint con el **muñeco con lupa** y entra en su perfil."
             },
             {
               "title": "Abonos → lápiz",
@@ -1704,15 +1712,15 @@
           "start": 5,
           "items": [
             {
-              "title": "Marca el check del Excel",
-              "md": "Cuando hayas gestionado el cambio, vuelve al **Excel de solicitud de cambios** y **marca el check**."
+              "title": "Márcalo como tramitado",
+              "md": "Cuando hayas gestionado el cambio, vuelve a **Control abonados → Cambios cuota** y **marca el check**: pasa al **Histórico** sin borrarse."
             }
           ]
         }
       ],
       "children": [],
       "lead": "Cuando un abonado quiere cambiar de cuota, por ejemplo para ampliar el horario.",
-      "updatedAt": "2026-10-08"
+      "updatedAt": "2026-11-23"
     },
     {
       "id": "cuota-mantenimiento",
@@ -1724,7 +1732,7 @@
           "type": "callout",
           "variant": "info",
           "title": "Cuota de mantenimiento: 10 € al mes",
-          "md": "Por ejemplo, si se va de viaje un mes. Si es **dentro de los meses que tiene pagados**, viniendo **antes del día 25 del mes anterior** al que quiere solicitarlo y pagando los 10 €, se le **retrasa la fecha de próximo pago**.\n\nPara fijarla hay que **avisar antes del día 25** del mes anterior."
+          "md": "Por ejemplo, si se va de viaje un mes. Si es **dentro de los meses que tiene pagados**, avisando como muy tarde el **día 24 a las 23:00 h** del mes anterior al que quiere solicitarlo y pagando los 10 €, se le **retrasa la fecha de próximo pago**.\n\nPara fijarla hay que **avisar como muy tarde el día 24 a las 23:00 h** del mes anterior."
         },
         {
           "id": "cm-pasos",
@@ -1733,7 +1741,7 @@
           "items": [
             {
               "title": "Formulario",
-              "md": "El abonado la pide con el **formulario para solicitar la cuota de mantenimiento**. Cuando lo rellena, llega al **Excel de solicitud de cambios**."
+              "md": "El abonado la pide con el **formulario de cambio de cuota**. Cuando lo rellena, llega a **Control abonados → Cambios cuota** (cuota nueva: **Mantenimiento**)."
             },
             {
               "title": "Cambia el abono",
@@ -1771,15 +1779,15 @@
           "start": 5,
           "items": [
             {
-              "title": "Marca el check del Excel",
-              "md": "Cuando lo hayas gestionado, vuelve al **Excel de solicitud de cambios** y **marca el check**."
+              "title": "Márcalo como tramitado",
+              "md": "Cuando lo hayas gestionado, vuelve a **Control abonados → Cambios cuota** y **marca el check**."
             }
           ]
         }
       ],
       "children": [],
       "lead": "Para quien no va a poder entrenar durante un tiempo.",
-      "updatedAt": "2026-10-08"
+      "updatedAt": "2026-11-23"
     },
     {
       "id": "renovaciones",
@@ -2744,9 +2752,9 @@
               "title": "Del día 1 al 10",
               "items": [
                 "Revisión y modificación del Excel Cambios (Excel Cambios y MatchPoint)",
-                "Cuotas de baja médica y mantenimiento: contacto (Excel de solicitud de cambio de cuota y WhatsApp)",
+                "Cuotas de baja médica y mantenimiento: contacto (Cuadro de mando → Cambios cuota y WhatsApp)",
                 "Recibos devueltos: gestión y contacto (Excel Recibos Devueltos)",
-                "Gestión y solicitud de bajas (Excel de solicitud de bajas, Matchpoint, app Fibra Max: Bajas y Seguimiento)",
+                "Gestión y solicitud de bajas (Cuadro de mando → Solicitudes baja, Matchpoint, app Fibra Max: Bajas y Seguimiento)",
                 "Aviso de que finaliza la promo y gestión de renovaciones"
               ]
             },
