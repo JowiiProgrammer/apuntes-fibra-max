@@ -1,5 +1,5 @@
 {
-  "version": 55,
+  "version": 56,
   "title": "Apuntes de Recepción",
   "sections": [
     {
@@ -18,7 +18,7 @@
         {
           "id": "tarifas-horarios",
           "type": "text",
-          "md": "| Si entrena… | Modalidad |\n|---|---|\n| De 6 a 16 h entre semana (última entrada a las 16 h, salida hasta las 17 h) + fines de semana (9–21 h) y festivos | **Sunrise** |\n| De 6 a 23 h entre semana + fines de semana (9–21 h) y festivos | **Unlimited** |\n| Solo fines de semana (9–21 h) y festivos | **Weekend** |"
+          "md": "| Si entrena… | Modalidad |\n|---|---|\n| De 6 a 16 h entre semana (última entrada a las 16 h, salida hasta las 17 h) + fines de semana (7–21 h) y festivos | **Sunrise** |\n| De 6 a 23 h entre semana + fines de semana (7–21 h) y festivos | **Unlimited** |\n| Solo fines de semana (7–21 h) y festivos | **Weekend** |"
         },
         {
           "id": "tarifas-matricula",
@@ -3359,7 +3359,7 @@
             "semestral": 300,
             "anual": 500
           },
-          "note": "Entre semana 6–23 h · fines de semana 9–21 h y festivos"
+          "note": "Entre semana 6–23 h · fines de semana 7–21 h y festivos"
         },
         {
           "id": "fitness-sunrise",
@@ -3372,7 +3372,7 @@
             "semestral": 250,
             "anual": 400
           },
-          "note": "Entre semana 6–16 h (última entrada 16 h, salida 17 h) · fines de semana 9–21 h y festivos"
+          "note": "Entre semana 6–16 h (última entrada 16 h, salida 17 h) · fines de semana 7–21 h y festivos"
         },
         {
           "id": "fitness-weekend",
@@ -3383,7 +3383,7 @@
             "mensual": 29,
             "anual": 250
           },
-          "note": "Fines de semana 9–21 h y festivos"
+          "note": "Fines de semana 7–21 h y festivos"
         }
       ],
       "updatedAt": "2026-10-07"
@@ -3494,7 +3494,7 @@
           "values": {
             "mensual": 66.5
           },
-          "note": "Horario completo: entre semana 6–23 h · fines de semana 9–21 h y festivos"
+          "note": "Horario completo: entre semana 6–23 h · fines de semana 7–21 h y festivos"
         },
         {
           "id": "fitness-unlimited-familias",
@@ -3504,7 +3504,7 @@
           "values": {
             "mensual": 49
           },
-          "note": "Horario completo: entre semana 6–23 h · fines de semana 9–21 h y festivos"
+          "note": "Horario completo: entre semana 6–23 h · fines de semana 7–21 h y festivos"
         },
         {
           "id": "padel-player-familias",
@@ -3514,7 +3514,7 @@
           "values": {
             "mensual": 39
           },
-          "note": "Horario completo: entre semana 6–23 h · fines de semana 9–21 h y festivos"
+          "note": "Horario completo: entre semana 6–23 h · fines de semana 7–21 h y festivos"
         }
       ],
       "updatedAt": "2026-10-07",
