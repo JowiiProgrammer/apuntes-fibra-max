@@ -1,5 +1,5 @@
 {
-  "version": 54,
+  "version": 55,
   "title": "Apuntes de Recepción",
   "sections": [
     {
@@ -13,7 +13,7 @@
           "id": "tarifas-speech",
           "type": "speech",
           "title": "Cómo arrancar",
-          "md": "1. «¿En qué horario sueles entrenar?»\n2. «¿Estudias o trabajas?»\n\nCon las dos respuestas eliges la modalidad que encaja y presentas solo esa."
+          "md": "«¿En qué horario sueles entrenar?»\n\nCon la respuesta eliges la modalidad que encaja y presentas solo esa."
         },
         {
           "id": "tarifas-horarios",
