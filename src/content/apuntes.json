@@ -1,5 +1,5 @@
 {
-  "version": 64,
+  "version": 65,
   "title": "Apuntes de Recepción",
   "sections": [
     {
@@ -172,14 +172,14 @@
               "type": "callout",
               "variant": "info",
               "title": "Para quién es",
-              "md": "Vale tanto si la persona viene **en persona** como si ya lo tiene **pagado por la web**.\n\nEl proceso es el mismo para entradas puntuales y para bonos; el **bono de semanas** lleva **dos pasos más** (el 12 y el 13)."
+              "md": "Vale tanto si la persona viene **en persona** como si lo ha comprado **por la web**.\n\nEl proceso es el mismo para entradas puntuales y para bonos; el **bono de semanas** lleva **dos pasos más** (el 12 y el 13)."
             },
             {
               "id": "mp-aviso-comprobante",
               "type": "callout",
-              "variant": "warning",
-              "title": "Si lo pagó por la web",
-              "md": "Tiene que **enseñar el comprobante**, sea un bono o una entrada puntual."
+              "variant": "info",
+              "title": "Si lo compró por la web: EP/Bonos",
+              "md": "Las compras de la web llegan al Cuadro de mando: [erp.fibra-max.com](https://erp.fibra-max.com/) → **Control abonados → EP/Bonos**.\n\n- Pestaña **Vigentes** (las que están en vigor) e **Histórico** (las que ya han caducado). Puedes filtrar por **centro** y por **tipo** (entrada puntual o bono).\n- Búscala por **nombre, email, teléfono, producto o referencia**.\n- En cada compra ves el **producto**, la **vigencia** (desde → hasta), el **importe** y el **pago** («Pagado · comunicado por Web»).\n- El **ojo** (Detalle) abre todos sus datos: nombre, DNI, teléfono, correo, dirección… Te sirven para registrarla en Matchpoint.\n\nCompruébalo ahí antes de dar el acceso. Si **no** sale como pagado (eligió **efectivo en recepción**), cóbralo en el paso 11."
             },
             {
               "id": "mp-pasos-1",
@@ -350,7 +350,7 @@
                 },
                 {
                   "title": "Método de pago",
-                  "md": "Elige el método de pago: **efectivo** o **tarjeta** si paga en recepción, o **transferencia** si ya lo ha pagado online."
+                  "md": "Elige el método de pago: **efectivo** o **tarjeta** si paga en recepción, o **transferencia** si sale como **pagado por la web** en EP/Bonos."
                 }
               ]
             },
@@ -391,7 +391,7 @@
               "items": [
                 {
                   "title": "Añade el grupo «todo el día»",
-                  "md": "Ve a **General** (menú de la izquierda), baja hasta **Grupos** y pulsa **Añadir Grupo**. Selecciona **todo el día** (en Matchpoint: «TODO EL DIA/ENTRADA PUNTUAL»); en **Desde** pon la fecha de **hoy** y en **Hasta** cuenta las semanas del bono (4, 3, 2 o 1) hasta el **mismo día de la semana**.\n\nPor ejemplo, si hoy es miércoles y es un bono de 4 semanas, hasta el miércoles de dentro de 4 semanas.\n\nEsto permite que la persona entre y salga con su QR."
+                  "md": "Ve a **General** (menú de la izquierda), baja hasta **Grupos** y pulsa **Añadir Grupo**. Selecciona **todo el día** (en Matchpoint: «TODO EL DIA/ENTRADA PUNTUAL»).\n\n- **Desde:** el día que empieza (el bono se activa el día que se contrata).\n- **Hasta:** el último día del bono. Dura **días naturales seguidos**: un bono de 1 semana que empieza el 19/11 vale **hasta el 25/11**.\n\nSi lo compró por la web, copia las fechas de la **vigencia** que sale en **EP/Bonos**.\n\nEsto permite que la persona entre y salga con su QR."
                 }
               ]
             },
@@ -424,7 +424,7 @@
             }
           ],
           "children": [],
-          "updatedAt": "2026-10-08"
+          "updatedAt": "2026-11-23"
         }
       ]
     },
