@@ -1,5 +1,5 @@
 {
-  "version": 61,
+  "version": 62,
   "title": "Apuntes de Recepción",
   "sections": [
     {
@@ -94,6 +94,33 @@
                   "md": "Después paga **lo que falta hasta el total** de la cuota con Hyrox. Por ejemplo, con Fitness Unlimited (62 €) paga **43 €** más para llegar a los **105 €** de Gym + Hyrox."
                 }
               ]
+            }
+          ],
+          "children": [],
+          "updatedAt": "2026-11-23"
+        },
+        {
+          "id": "tarifas-familias",
+          "title": "Familias",
+          "blocks": [
+            {
+              "id": "familias-recepcion",
+              "type": "callout",
+              "variant": "info",
+              "title": "Solo en recepción",
+              "md": "La cuota de familias **no está en la web**: de momento **solo se gestiona desde recepción**."
+            },
+            {
+              "id": "familias-requisito",
+              "type": "callout",
+              "variant": "warning",
+              "title": "Requisito",
+              "md": "- Tienen que apuntarse **mínimo 3 personas de la misma unidad familiar**. Se comprueba, en los casos que haga falta, con los **apellidos** o pidiendo el **padrón**.\n- **Todos** tienen que tener el **mismo número de cuenta** para domiciliar.\n- En las **cuotas de familias anteriores**, si ya tienen número de cuenta familiar, no pasa nada. En las **nuevas** es **obligatorio**."
+            },
+            {
+              "id": "precios-familias",
+              "type": "prices",
+              "tableId": "familias"
             }
           ],
           "children": [],
@@ -534,6 +561,13 @@
                   "label": "Según formulario"
                 }
               ]
+            },
+            {
+              "id": "altas-n-familias",
+              "type": "callout",
+              "variant": "warning",
+              "title": "Cuota de familias: un paso más",
+              "md": "Ve a **Información adicional**, pestaña **Personas relacionadas**: pulsa **Nuevo**, busca a la persona y pon la **relación** que tiene (cónyuge, hermano, hermana, hijo, hija…).\n\nAñade **todos los familiares** dentro de la misma ficha.\n\nRecuerda: todos tienen que tener el **mismo número de cuenta** para domiciliar (obligatorio en las cuotas nuevas)."
             },
             {
               "id": "altas-shot-personas",
@@ -3438,6 +3472,30 @@
         }
       ],
       "updatedAt": "2026-11-23"
+    },
+    {
+      "id": "familias",
+      "title": "Familias",
+      "columns": [
+        {
+          "key": "mensual",
+          "label": "Mensual"
+        }
+      ],
+      "rows": [
+        {
+          "id": "fitness-unlimited-familias",
+          "label": "Fitness Unlimited Familias",
+          "centros": "Todos",
+          "matricula": true,
+          "values": {
+            "mensual": 49
+          },
+          "note": "Horario completo: entre semana 6–23 h · fines de semana 7–21 h y festivos"
+        }
+      ],
+      "updatedAt": "2026-11-23",
+      "footnote": "Mínimo 3 personas de la misma unidad familiar, todas con el mismo número de cuenta para domiciliar."
     },
     {
       "id": "entradas",
