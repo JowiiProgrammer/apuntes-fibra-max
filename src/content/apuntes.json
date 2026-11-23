@@ -1,5 +1,5 @@
 {
-  "version": 51,
+  "version": 52,
   "title": "Apuntes de Recepción",
   "sections": [
     {
@@ -2290,11 +2290,45 @@
       "group": "Caja",
       "blocks": [
         {
-          "id": "entrada-cambio-pendiente",
-          "type": "pending"
+          "id": "ec-pasos",
+          "type": "steps",
+          "items": [
+            {
+              "title": "Pulsa «Añadir cambio»",
+              "md": "En el Monitor de la caja automática, pulsa **«Añadir cambio»** (**1**)."
+            },
+            {
+              "title": "Introduce el dinero",
+              "md": "Introduce el dinero **por la caja**."
+            }
+          ]
+        },
+        {
+          "id": "ec-shot",
+          "type": "screenshot",
+          "src": "/capturas/entrada-cambio-1-monitor.png",
+          "alt": "Monitor de la caja automática con el botón Añadir cambio",
+          "caption": "Monitor: botón «Añadir cambio».",
+          "annotations": [
+            {
+              "kind": "box",
+              "x": 4.4,
+              "y": 93,
+              "w": 6,
+              "h": 7
+            },
+            {
+              "kind": "marker",
+              "n": 1,
+              "x": 7.4,
+              "y": 89.3
+            }
+          ]
         }
       ],
-      "children": []
+      "children": [],
+      "lead": "Cuando hay que meter cambio en la caja automática.",
+      "updatedAt": "2026-11-23"
     },
     {
       "id": "salida-dinero",
