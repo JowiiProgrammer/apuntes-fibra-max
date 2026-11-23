@@ -1,5 +1,5 @@
 {
-  "version": 56,
+  "version": 57,
   "title": "Apuntes de Recepción",
   "sections": [
     {
@@ -25,7 +25,7 @@
           "type": "callout",
           "variant": "info",
           "title": "Matrícula y pago anticipado",
-          "md": "- La **matrícula** es siempre de **50 €** y solo se cobra en el pago **mensual**. Trimestral, semestral y anual van **sin matrícula**.\n- Debajo de cada pago anticipado tienes lo que sale **al mes**: es el argumento de venta.\n- Al darse de alta, lo que se cobra depende del **día del mes**: del 1 al 5, el abono completo; desde el 6, la parte proporcional del mes en curso más el abono completo. Mira [Altas normales](#altas-normales)."
+          "md": "- La **matrícula** es siempre de **50 €** y solo se cobra en el pago **mensual**. Trimestral, semestral y anual van **sin matrícula**.\n- Debajo de cada pago anticipado tienes lo que sale **al mes**: es el argumento de venta.\n- Al darse de alta, lo que se cobra depende de la tarifa y del **día del mes**:\n  - **Pago anticipado:** del 1 al 5, el abono completo; desde el 6, la parte proporcional del mes en curso más el abono completo.\n  - **Mensual:** siempre la parte proporcional (días que quedan del mes) más la matrícula; la cuota completa se cobra el día 1.\n  - Mira [Altas normales](#altas-normales)."
         }
       ],
       "children": [
