@@ -1,5 +1,5 @@
 {
-  "version": 63,
+  "version": 64,
   "title": "Apuntes de Recepción",
   "sections": [
     {
@@ -504,7 +504,7 @@
               "type": "callout",
               "variant": "danger",
               "title": "Si sale «Efectivo · Pendiente de pago en recepción»",
-              "md": "No está pagado ni activo. Cuando venga con la **referencia**, **cobra el importe pendiente** en efectivo. Al dar de alta el abono en Matchpoint, el método es **efectivo**."
+              "md": "Todavía no ha pagado. En Matchpoint haz **todo igual**, pero al final pulsa **Dar de alta** (**sin cobrar**): el importe queda como deuda.\n\nCuando venga a pagar con la **referencia**, cóbralo en su ficha: **Facturación y Cobro → Deudas**, en **efectivo**."
             },
             {
               "id": "altas-n-pasos-2",
@@ -698,8 +698,8 @@
                   "md": "En **Primera cuota** (**4**) pon lo que ha pagado **sin la matrícula**: la **parte proporcional** del primer mes, más los **meses completos** si es pago anticipado.\n\nSi es **mensual**, en **Matrícula** pones **50 €**.\n\n**Resto de cuotas** no se toca: sale solo según el tipo de abono."
                 },
                 {
-                  "title": "Dar de alta y cobrar",
-                  "md": "Pulsa **Dar de alta y cobrar** (**5**) y elige el método: **transferencia** si pagó con **tarjeta en la web**, **efectivo** si lo ha pagado en recepción."
+                  "title": "Dar de alta",
+                  "md": "- **Pagó con tarjeta en la web:** pulsa **Dar de alta y cobrar** (**5**) y elige **transferencia**.\n- **Paga en efectivo en recepción:** pulsa **Dar de alta**, sin cobrar. Cuando pague, se cobra en **Facturación y Cobro → Deudas**."
                 }
               ]
             },
@@ -898,8 +898,7 @@
               "title": "Después de cobrar",
               "items": [
                 "Agrega el contacto del cliente al teléfono",
-                "Escanea toda la documentación (formulario, contrato y SEPA) con CamScanner, compártela en «Escritorio» y guárdala con nombre y apellidos en OneDrive → Altas escaneadas → carpeta del mes",
-                "Tritura el alta"
+                "Escanea toda la documentación (formulario, contrato y SEPA) con CamScanner y pásasela a Carlos Huertas: él es quien la guarda"
               ]
             }
           ],
