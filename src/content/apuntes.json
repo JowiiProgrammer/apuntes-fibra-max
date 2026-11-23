@@ -1,5 +1,5 @@
 {
-  "version": 70,
+  "version": 71,
   "title": "Apuntes de Recepción",
   "sections": [
     {
@@ -1687,7 +1687,7 @@
           "type": "callout",
           "variant": "info",
           "title": "Cuándo",
-          "md": "Cuando un abonado con **pago adelantado** (trimestral, semestral o anual) renueva. Puede renovar viniendo **antes del día 25 del último mes** que tiene cubierto y haciendo el pago de nuevo."
+          "md": "Cuando un abonado con **pago adelantado** (trimestral, semestral o anual) renueva. Puede renovar viniendo **antes del día 25 del último mes** que tiene cubierto y haciendo el pago de nuevo.\n\nSe renueva **solo en recepción**: por la web no se puede."
         },
         {
           "id": "rn-pasos",
@@ -1699,60 +1699,24 @@
             },
             {
               "title": "Registra el cobro",
-              "md": "**Facturación y cobro → Nueva venta → Añadir**. En **concepto** pon «Anual», «Semestral» o «Trimestral», según la renovación. Cobra en tarjeta o efectivo."
+              "md": "**Facturación y cobro → Nueva venta → Añadir**. En **concepto** pon «Anual», «Semestral» o «Trimestral», según la renovación, con el precio de las [tarifas de pago anticipado](#tarifas). Cobra en tarjeta o efectivo."
             },
             {
               "title": "Adelanta los meses",
               "md": "**Abonos → lápiz** para editar. Configura **«Pagado hasta»** y **«Próximo pago»** en función de los meses que haya renovado."
-            },
-            {
-              "title": "Regístralo en el Excel",
-              "md": "Anota en el Excel **«Control Renovaciones»** al abonado que ha renovado, para llevar un control."
             }
           ]
         },
         {
-          "id": "rn-aviso",
+          "id": "rn-aviso-auto",
           "type": "callout",
-          "variant": "warning",
-          "title": "Aviso de fin de promo (días 1 a 10)",
-          "md": "Cada mes hay que avisar a quien termina su promo y gestionar las renovaciones:"
-        },
-        {
-          "id": "rn-aviso-pasos",
-          "type": "steps",
-          "items": [
-            {
-              "title": "Extrae el Excel de abonados",
-              "md": "**2 días antes de que acabe el mes**."
-            },
-            {
-              "title": "Filtra",
-              "md": "Filtra por **próximo pago del mes siguiente**."
-            },
-            {
-              "title": "Abre el Excel de control",
-              "md": "Búscalo en **Común Recepciones → carpeta del centro → Control Renovaciones**."
-            },
-            {
-              "title": "Nueva pestaña",
-              "md": "Crea una pestaña con los abonos a los que queremos avisar de que finaliza su promo. Ahí anotarás si renuevan o no."
-            },
-            {
-              "title": "Avísales por email",
-              "md": "Contacta a cada abonado de la pestaña **por correo electrónico**: dile que **se le acaba la promoción** (o los **meses pagados**) y que puede **renovar con las [tarifas de pago anticipado](#tarifas)**. Anota en la pestaña si renuevan o no."
-            }
-          ]
-        },
-        {
-          "id": "rn-msg",
-          "type": "message",
-          "title": "Email de fin de promoción (borrador)",
-          "text": "Asunto: Tu promoción en Fibra Max está a punto de terminar\n\nHola [Nombre],\n\nTe escribimos desde Fibra Max [centro] para avisarte de que [tu promoción / los meses que tienes pagados] finaliza el [fecha].\n\nSi quieres seguir entrenando con nosotros, puedes renovar con nuestras tarifas de pago anticipado. Pásate por recepción o respóndenos a este correo y te lo gestionamos.\n\nUn saludo,\n[persona que escribe]\nFibra Max [centro]"
+          "variant": "info",
+          "title": "Aviso de fin de promo",
+          "md": "Ya **no** hay que avisar a mano a quien termina su promo (ni Excel de abonados ni Excel «Control Renovaciones»). En un par de meses el aviso será **automático**."
         }
       ],
       "children": [],
-      "updatedAt": "2026-10-10",
+      "updatedAt": "2026-11-23",
       "lead": "Registrar la renovación de una tarifa con pago adelantado."
     },
     {
@@ -2643,7 +2607,7 @@
                 "Cuotas de baja médica y mantenimiento: contacto (Cuadro de mando → Cambios cuota y WhatsApp)",
                 "Recibos devueltos: cargarlos en Matchpoint, pasar el Excel de devoluciones a Carlos Huertas y poner la Cuota penalización",
                 "Gestión y solicitud de bajas (Cuadro de mando → Solicitudes baja y Matchpoint)",
-                "Aviso de que finaliza la promo y gestión de renovaciones"
+                "Gestión de renovaciones (en recepción)"
               ]
             },
             {
