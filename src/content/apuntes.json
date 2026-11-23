@@ -1,5 +1,5 @@
 {
-  "version": 58,
+  "version": 59,
   "title": "Apuntes de Recepción",
   "sections": [
     {
@@ -61,25 +61,6 @@
           "children": []
         },
         {
-          "id": "tarifas-padel",
-          "title": "Pádel",
-          "blocks": [
-            {
-              "id": "padel-cabrera",
-              "type": "callout",
-              "variant": "warning",
-              "title": "Solo en Cabrera",
-              "md": "El pádel solo está en el centro de **Cabrera**. Si el abonado entrena en otro centro, no se le puede ofrecer."
-            },
-            {
-              "id": "precios-padel",
-              "type": "prices",
-              "tableId": "padel"
-            }
-          ],
-          "children": []
-        },
-        {
           "id": "tarifas-hyrox",
           "title": "Hyrox",
           "blocks": [
@@ -94,26 +75,6 @@
               "variant": "warning",
               "title": "Por confirmar",
               "md": "Tarifas nuevas sacadas de la web. Falta confirmar en qué centros hay Hyrox y su horario."
-            }
-          ],
-          "children": [],
-          "updatedAt": "2026-11-23"
-        },
-        {
-          "id": "tarifas-familias",
-          "title": "Familias",
-          "blocks": [
-            {
-              "id": "familias-requisito",
-              "type": "callout",
-              "variant": "warning",
-              "title": "Requisito",
-              "md": "- Tienen que apuntarse **mínimo 3 personas de la misma unidad familiar**. Se comprueba, en los casos que haga falta, con los **apellidos** o pidiendo el **padrón**.\n- **Todos** tienen que tener el **mismo número de cuenta** para domiciliar.\n- En las **cuotas de familias anteriores**, si ya tienen número de cuenta familiar, no pasa nada. En las **nuevas** es **obligatorio**."
-            },
-            {
-              "id": "precios-familias",
-              "type": "prices",
-              "tableId": "familias"
             }
           ],
           "children": [],
@@ -554,13 +515,6 @@
                   "label": "Según formulario"
                 }
               ]
-            },
-            {
-              "id": "altas-n-familias",
-              "type": "callout",
-              "variant": "warning",
-              "title": "Cuota de familias: un paso más",
-              "md": "Ve a **Información adicional**, pestaña **Personas relacionadas**: pulsa **Nuevo**, busca a la persona y pon la **relación** que tiene (cónyuge, hermano, hermana, hijo, hija…).\n\nAñade **todos los familiares** dentro de la misma ficha.\n\nRecuerda: todos tienen que tener el **mismo número de cuenta** para domiciliar (obligatorio en las cuotas nuevas)."
             },
             {
               "id": "altas-shot-personas",
@@ -3415,11 +3369,6 @@
         {
           "key": "mensual",
           "label": "Mensual"
-        },
-        {
-          "key": "anual",
-          "label": "Anual",
-          "months": 12
         }
       ],
       "footnote": "La matrícula solo se cobra en el pago mensual.",
@@ -3430,72 +3379,12 @@
           "centros": "Cabrera",
           "matricula": true,
           "values": {
-            "mensual": 90,
-            "anual": 650
+            "mensual": 90
           },
           "note": "Entre semana 6–23 h · fines de semana 7–21 h y festivos · pádel con reserva de pista"
-        },
-        {
-          "id": "fp-sunrise",
-          "label": "Fitness & Pádel Sunrise",
-          "centros": "Cabrera",
-          "matricula": true,
-          "values": {
-            "mensual": 55.5,
-            "anual": 450
-          }
-        },
-        {
-          "id": "fp-weekend",
-          "label": "Fitness & Pádel Weekend",
-          "centros": "Cabrera",
-          "matricula": true,
-          "values": {
-            "mensual": 45.5,
-            "anual": 350
-          }
         }
       ],
       "updatedAt": "2026-11-23"
-    },
-    {
-      "id": "padel",
-      "title": "Pádel",
-      "columns": [
-        {
-          "key": "mensual",
-          "label": "Mensual"
-        },
-        {
-          "key": "anual",
-          "label": "Anual",
-          "months": 12
-        }
-      ],
-      "footnote": "La matrícula solo se cobra en el pago mensual.",
-      "rows": [
-        {
-          "id": "unlimited-player",
-          "label": "Unlimited Player",
-          "centros": "Cabrera",
-          "matricula": true,
-          "values": {
-            "mensual": 49,
-            "anual": 400
-          }
-        },
-        {
-          "id": "sunrise-player",
-          "label": "Sunrise Player",
-          "centros": "Cabrera",
-          "matricula": true,
-          "values": {
-            "mensual": 39,
-            "anual": 300
-          }
-        }
-      ],
-      "updatedAt": "2026-10-07"
     },
     {
       "id": "hyrox",
@@ -3527,50 +3416,6 @@
         }
       ],
       "updatedAt": "2026-11-23"
-    },
-    {
-      "id": "familias",
-      "title": "Familias",
-      "columns": [
-        {
-          "key": "mensual",
-          "label": "Mensual"
-        }
-      ],
-      "rows": [
-        {
-          "id": "fp-familias",
-          "label": "Fitness & Pádel Familias",
-          "centros": "Cabrera",
-          "matricula": true,
-          "values": {
-            "mensual": 66.5
-          },
-          "note": "Horario completo: entre semana 6–23 h · fines de semana 7–21 h y festivos"
-        },
-        {
-          "id": "fitness-unlimited-familias",
-          "label": "Fitness Unlimited Familias",
-          "centros": "Todos",
-          "matricula": true,
-          "values": {
-            "mensual": 49
-          },
-          "note": "Horario completo: entre semana 6–23 h · fines de semana 7–21 h y festivos"
-        },
-        {
-          "id": "padel-player-familias",
-          "label": "Pádel Player Familias",
-          "centros": "Cabrera",
-          "matricula": true,
-          "values": {
-            "mensual": 39
-          },
-          "note": "Horario completo: entre semana 6–23 h · fines de semana 7–21 h y festivos"
-        }
-      ],
-      "updatedAt": "2026-10-07",
-      "footnote": "Mínimo 3 personas de la misma unidad familiar, todas con el mismo número de cuenta para domiciliar."
     },
     {
       "id": "entradas",
