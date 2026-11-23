@@ -1,5 +1,5 @@
 {
-  "version": 59,
+  "version": 60,
   "title": "Apuntes de Recepción",
   "sections": [
     {
@@ -25,7 +25,7 @@
           "type": "callout",
           "variant": "info",
           "title": "Matrícula y pago anticipado",
-          "md": "- La **matrícula** es siempre de **50 €** y solo se cobra en el pago **mensual**. Trimestral, semestral y anual van **sin matrícula**.\n- Debajo de cada pago anticipado tienes lo que sale **al mes**: es el argumento de venta.\n- Al darse de alta, lo que se cobra depende de la tarifa y del **día del mes**:\n  - **Pago anticipado:** del 1 al 5, el abono completo; desde el 6, la parte proporcional del mes en curso más el abono completo.\n  - **Mensual:** siempre la parte proporcional (días que quedan del mes) más la matrícula; la cuota completa se cobra el día 1.\n  - Mira [Altas normales](#altas-normales)."
+          "md": "- La **matrícula** es siempre de **50 €** y solo se cobra en el pago **mensual**. Trimestral, semestral y anual van **sin matrícula**.\n- Debajo de cada pago anticipado tienes lo que sale **al mes**: es el argumento de venta.\n- Al darse de alta se cobra **siempre la parte proporcional** del mes en curso, tanto en **mensual** como en **pago anticipado**. Se calcula con la **Calculadora de altas** del Cuadro de mando. Mira [Altas normales](#altas-normales)."
         }
       ],
       "children": [
@@ -685,54 +685,54 @@
               "id": "altas-n-pago-anticipado",
               "type": "callout",
               "variant": "warning",
-              "title": "Qué se cobra según el día del alta",
-              "md": "**Abonos de pago anticipado** (trimestral, semestral, anual, etc.):\n- **Del día 1 al 5 de cada mes (ambos incluidos):** se cobra el **importe completo del abono** que elija el cliente.\n- **A partir del día 6:** se cobra la **parte proporcional del mes en curso**, **más** el **importe completo del abono** que elija el cliente.\n\n**Mensual:** siempre se cobra la **parte proporcional**: los **días que quedan del mes** desde la fecha de alta (incluida), más la **matrícula** (50 €) si corresponde. La cuota completa se cobra el **día 1 del mes siguiente**.\n\nEn todos los casos, el **próximo pago es siempre el día 1**.\n\nPara calcularlo usa la **Calculadora de altas** del Cuadro de mando ([erp.fibra-max.com](https://erp.fibra-max.com/) → **Recepción → Tarifas → Calculadora de altas**): eliges la **tarifa** (**1**) y la **fecha de alta** (**2**) y te da el **total a cobrar** (**3**), redondeado hacia arriba a **0,50 €**."
+              "title": "Qué se cobra en el alta",
+              "md": "Ahora **siempre se cobra la parte proporcional** del mes en curso, sea **mensual** o **pago anticipado**:\n- **Mensual:** parte proporcional del mes (días que quedan desde la fecha de alta, incluida) **más la matrícula** (50 €). La cuota completa se cobra el **día 1 del mes siguiente**.\n- **Pago anticipado** (trimestral, semestral, anual): el mes del alta cuenta como el **primer mes** del periodo. Se cobra la **parte proporcional** de ese mes **más los meses completos que faltan**, sin matrícula. Por ejemplo, un trimestral el 23/11 cubre hasta el 31/01 y se renueva el 01/02.\n\nEn todos los casos, el **próximo pago es siempre el día 1**.\n\nCalcúlalo siempre con la **Calculadora de altas** del Cuadro de mando ([erp.fibra-max.com](https://erp.fibra-max.com/) → **Recepción → Tarifas → Calculadora de altas**): eliges la **tarifa** (**1**) y la **fecha de alta** (**2**) y te da el **total a cobrar** (**3**), redondeado hacia arriba a **0,50 €**. En el resumen también ves el **periodo cubierto** y la **próxima renovación**."
             },
             {
               "id": "altas-shot-calculadora",
               "type": "screenshot",
               "src": "/capturas/altas-calculadora.png",
-              "alt": "Calculadora de altas del Cuadro de mando con un alta mensual el 15/10/2026",
-              "caption": "Recepción → Tarifas → Calculadora de altas (ejemplo: Fitness Unlimited mensual, alta el 15/10).",
+              "alt": "Calculadora de altas del Cuadro de mando con un Fitness Unlimited trimestral dado de alta el 23/11/2026",
+              "caption": "Recepción → Tarifas → Calculadora de altas (ejemplo: Fitness Unlimited trimestral, alta el 23/11: parte proporcional de noviembre + 2 meses completos).",
               "annotations": [
                 {
                   "kind": "box",
-                  "x": 15.8,
-                  "y": 33.3,
-                  "w": 39.5,
-                  "h": 4.6
+                  "x": 2.1,
+                  "y": 44.1,
+                  "w": 46.2,
+                  "h": 9
                 },
                 {
                   "kind": "marker",
                   "n": 1,
-                  "x": 57.7,
-                  "y": 35.6
+                  "x": 49.9,
+                  "y": 48.6
                 },
                 {
                   "kind": "box",
-                  "x": 15.8,
-                  "y": 45.3,
-                  "w": 39.5,
-                  "h": 4.6
+                  "x": 2.1,
+                  "y": 67.6,
+                  "w": 46.2,
+                  "h": 8.6
                 },
                 {
                   "kind": "marker",
                   "n": 2,
-                  "x": 57.7,
-                  "y": 47.5
+                  "x": 49.9,
+                  "y": 71.9
                 },
                 {
                   "kind": "box",
-                  "x": 57.4,
-                  "y": 59.5,
-                  "w": 41.1,
-                  "h": 6.3
+                  "x": 50.7,
+                  "y": 78.8,
+                  "w": 48.2,
+                  "h": 12.4
                 },
                 {
                   "kind": "marker",
                   "n": 3,
-                  "x": 56.7,
-                  "y": 62.6
+                  "x": 49.9,
+                  "y": 85
                 }
               ]
             },
@@ -970,7 +970,7 @@
           "updatedAt": "2026-10-08"
         }
       ],
-      "updatedAt": "2026-10-08"
+      "updatedAt": "2026-11-23"
     },
     {
       "id": "bajas",
