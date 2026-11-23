@@ -1,5 +1,5 @@
 {
-  "version": 67,
+  "version": 69,
   "title": "Apuntes de Recepción",
   "sections": [
     {
@@ -1012,6 +1012,13 @@
           "md": "Lo primero es enviarle el **Mensaje 1** de baja para conocer el motivo y recordarle las alternativas (cuota de mantenimiento y baja médica).\n\nLos mensajes oficiales están en el Cuadro de mando: [erp.fibra-max.com](https://erp.fibra-max.com/) → **Control abonados → Formularios / Mensajes**, con botón de **copiar**. Usa siempre esos, no textos guardados en otro sitio."
         },
         {
+          "id": "b-forms-web",
+          "type": "callout",
+          "variant": "info",
+          "title": "Los formularios también están en la web",
+          "md": "El abonado puede entrar él mismo desde [fibra-max.com](https://fibra-max.com/#bajas-cambios) → **Bajas y cambios de cuota**:\n\n- **Darme de baja** → [formulario de baja](https://erp.fibra-max.com/formularios/baja)\n- **Cambiar mi cuota** → [formulario de cambio de cuota](https://erp.fibra-max.com/formularios/cambio-cuota) (también para **cuota de mantenimiento** y **baja médica**)\n\nLlegan igual al Cuadro de mando: **Solicitudes baja** o **Cambios cuota**."
+        },
+        {
           "id": "b-respuestas",
           "type": "text",
           "md": "**Según la respuesta que nos dé:**\n\n| Si nos dice… | Hacemos… |\n|---|---|\n| Que es por un tema de **salud** | Le enviamos el **formulario de cambio de cuota** (va en el Mensaje 1) para la **baja médica** y le pedimos un **documento médico**. [Baja médica](#baja-medica) |\n| «Voy a estar unos meses», «quiero la cuota de mantenimiento» | Le enviamos el **formulario de cambio de cuota** (va en el Mensaje 1). [Cuota de mantenimiento](#cuota-mantenimiento) |\n| Que quiere darse de baja | Le enviamos el **Mensaje 2**, con el **formulario de baja**. [Bajas anunciadas](#bajas-anunciadas) |"
@@ -1165,111 +1172,9 @@
               ]
             },
             {
-              "id": "b-a-6",
-              "type": "steps",
-              "start": 6,
-              "items": [
-                {
-                  "title": "Regístrala en la app de FM",
-                  "md": "Ve a **nuestra aplicación de FM** y registra la baja en el apartado de **Bajas**: marca el **motivo** y el **centro**, y que es una **baja programada**."
-                },
-                {
-                  "title": "Seguimiento",
-                  "md": "Haz el **seguimiento de la baja** (solo para bajas programadas): entra en **Seguimiento**, busca a la persona y rellena los datos de la captura de abajo:\n1. **¿Contactado?**: márcalo cuando hayas contactado.\n2. **Canal de contacto** y **fecha de contacto**.\n3. **¿Recuperable?**\n4. **Resultado**.\n5. **Respuesta del socio**: se anota cuando conteste (paso 9).\n6. Pulsa **Guardar**."
-                }
-              ]
-            },
-            {
-              "id": "b-a-shot-seguimiento",
-              "type": "screenshot",
-              "src": "/capturas/bajas-4-seguimiento.png",
-              "alt": "Pantalla de Seguimiento de bajas en la app de FM",
-              "caption": "App de FM → Seguimiento: datos del seguimiento de una baja.",
-              "annotations": [
-                {
-                  "kind": "box",
-                  "x": 34.5,
-                  "y": 55.5,
-                  "w": 21.2,
-                  "h": 4.8
-                },
-                {
-                  "kind": "marker",
-                  "n": 1,
-                  "x": 53.3,
-                  "y": 53.4
-                },
-                {
-                  "kind": "box",
-                  "x": 56.2,
-                  "y": 55.5,
-                  "w": 42.8,
-                  "h": 4.8
-                },
-                {
-                  "kind": "marker",
-                  "n": 2,
-                  "x": 75,
-                  "y": 53.4
-                },
-                {
-                  "kind": "box",
-                  "x": 56.2,
-                  "y": 71,
-                  "w": 21,
-                  "h": 4.4
-                },
-                {
-                  "kind": "marker",
-                  "n": 3,
-                  "x": 75,
-                  "y": 68.9
-                },
-                {
-                  "kind": "box",
-                  "x": 78,
-                  "y": 71,
-                  "w": 21,
-                  "h": 4.4
-                },
-                {
-                  "kind": "marker",
-                  "n": 4,
-                  "x": 96.8,
-                  "y": 68.9
-                },
-                {
-                  "kind": "box",
-                  "x": 34.6,
-                  "y": 78.7,
-                  "w": 64.3,
-                  "h": 5.7
-                },
-                {
-                  "kind": "marker",
-                  "n": 5,
-                  "x": 96.8,
-                  "y": 76.6
-                },
-                {
-                  "kind": "box",
-                  "x": 92.5,
-                  "y": 94.2,
-                  "w": 6.6,
-                  "h": 4.4
-                },
-                {
-                  "kind": "marker",
-                  "n": 6,
-                  "x": 90.2,
-                  "y": 96.4
-                }
-              ]
-            },
-            {
               "id": "b-a-8",
               "type": "steps",
-              "start": 8,
+              "start": 6,
               "items": [
                 {
                   "title": "WhatsApp",
@@ -1286,12 +1191,8 @@
             {
               "id": "b-a-9",
               "type": "steps",
-              "start": 9,
+              "start": 7,
               "items": [
-                {
-                  "title": "Anota la respuesta",
-                  "md": "Cuando responda, **anota la respuesta del abonado en el seguimiento**."
-                },
                 {
                   "title": "Márcala como tramitada",
                   "md": "Cuando hayas hecho todo el proceso, vuelve a **Control abonados → Solicitudes baja** y marca el check **«Marcar como tramitada»**. Pasa al **Histórico** sin borrarse."
@@ -1333,18 +1234,14 @@
                   "md": "En **Motivo** pon **recibos devueltos** y pulsa **Aceptar**."
                 },
                 {
-                  "title": "En la app de FM",
-                  "md": "Registra la baja en el apartado de **Bajas** como **directa**: marca el **motivo** (**recibos devueltos**) y el **centro**."
-                },
-                {
-                  "title": "Sin seguimiento ni WhatsApp",
-                  "md": "El **seguimiento** y el **WhatsApp de seguimiento** son solo para bajas programadas: en una baja directa no se hacen."
+                  "title": "Sin WhatsApp",
+                  "md": "El **WhatsApp de seguimiento** es solo para bajas programadas: en una baja directa no se envía."
                 }
               ]
             }
           ],
           "children": [],
-          "updatedAt": "2026-10-09"
+          "updatedAt": "2026-11-23"
         },
         {
           "id": "baja-medica",
@@ -1628,7 +1525,7 @@
           "type": "callout",
           "variant": "info",
           "title": "Cómo llega",
-          "md": "Le enviamos el **formulario de cambio de cuota** (el **Mensaje** de cambio de cuota, en **Control abonados → Formularios / Mensajes**). Cuando lo rellena, llega a [erp.fibra-max.com](https://erp.fibra-max.com/) → **Control abonados → Cambios cuota**, con su **cuota actual → nueva**."
+          "md": "Le enviamos el **formulario de cambio de cuota** (el **Mensaje** de cambio de cuota, en **Control abonados → Formularios / Mensajes**). También puede entrar él mismo desde [fibra-max.com](https://fibra-max.com/#bajas-cambios) → **Bajas y cambios de cuota → Cambiar mi cuota**. Cuando lo rellena, llega a [erp.fibra-max.com](https://erp.fibra-max.com/) → **Control abonados → Cambios cuota**, con su **cuota actual → nueva**."
         },
         {
           "id": "cc-pasos-1",
@@ -1704,7 +1601,7 @@
           "type": "callout",
           "variant": "warning",
           "title": "Cambio para este mismo mes (efecto inmediato)",
-          "md": "Tiene que **pagar la diferencia de cuota**. Hazle el cambio en el mes en curso:\n\n1. **Actualiza Matchpoint:** cambia tipo de abono, tarifa y próximo pago.\n2. **Calcula la diferencia** con la app FibraMax, en el apartado **Altas**: se recomienda configurar el parámetro **«Sin promoción»**, escoger la cuota y restar al importe los **50 € de matrícula**: eso es lo que pagaría ese día de parte proporcional.\n3. **Genera la venta:** Facturación y Cobro → Añadir nueva venta → Insertar (más en [Nueva venta en el perfil](#nueva-venta)).\n4. **Cobra la diferencia** en efectivo o tarjeta."
+          "md": "Tiene que **pagar la diferencia de cuota**. Hazle el cambio en el mes en curso:\n\n1. **Actualiza Matchpoint:** cambia tipo de abono, tarifa y próximo pago.\n2. **Calcula lo que paga** con la **Calculadora de altas** del Cuadro de mando (**Recepción → Tarifas → Calculadora de altas**): elige la **cuota nueva** con fecha de hoy y quédate con la **parte proporcional**, sin la matrícula.\n3. **Genera la venta:** Facturación y Cobro → Añadir nueva venta → Insertar (más en [Nueva venta en el perfil](#nueva-venta)).\n4. **Cobra la diferencia** en efectivo o tarjeta."
         },
         {
           "id": "cc-pasos-5",
@@ -2754,7 +2651,7 @@
                 "Revisión y modificación del Excel Cambios (Excel Cambios y MatchPoint)",
                 "Cuotas de baja médica y mantenimiento: contacto (Cuadro de mando → Cambios cuota y WhatsApp)",
                 "Recibos devueltos: gestión y contacto (Excel Recibos Devueltos)",
-                "Gestión y solicitud de bajas (Cuadro de mando → Solicitudes baja, Matchpoint, app Fibra Max: Bajas y Seguimiento)",
+                "Gestión y solicitud de bajas (Cuadro de mando → Solicitudes baja y Matchpoint)",
                 "Aviso de que finaliza la promo y gestión de renovaciones"
               ]
             },
