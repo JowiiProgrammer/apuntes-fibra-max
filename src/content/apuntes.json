@@ -1,5 +1,5 @@
 {
-  "version": 52,
+  "version": 53,
   "title": "Apuntes de Recepción",
   "sections": [
     {
@@ -7,7 +7,7 @@
       "title": "Tarifas Fibra Max",
       "group": "Comercial",
       "lead": "Empieza siempre el speech preguntando el horario de entrenamiento.",
-      "updatedAt": "2026-10-15",
+      "updatedAt": "2026-11-23",
       "blocks": [
         {
           "id": "tarifas-speech",
@@ -19,18 +19,6 @@
           "id": "tarifas-horarios",
           "type": "text",
           "md": "| Si entrena… | Modalidad |\n|---|---|\n| De 6 a 17 h entre semana + fines de semana (9–21 h) y festivos | **Sunrise** |\n| De 6 a 23 h entre semana + fines de semana (9–21 h) y festivos | **Unlimited** |\n| Solo fines de semana (9–21 h) y festivos | **Weekend** |"
-        },
-        {
-          "id": "tarifas-perfil",
-          "type": "text",
-          "md": "| Si responde… | Ofrece |\n|---|---|\n| Trabaja en una empresa o centro del que ya tenemos **mínimo 5 personas** | Cuota **Empresas** |\n| Es **funcionario** | Cuota **Funcionarios** (horario Sunrise con pádel incluido) |\n| Es **policía, mosso o similar** y el horario de funcionarios no le va bien | Cuota **Fepol** |\n| Ninguna de las anteriores | La modalidad según su horario (tabla de arriba) |"
-        },
-        {
-          "id": "tarifas-fepol",
-          "type": "callout",
-          "variant": "warning",
-          "title": "Fepol",
-          "md": "Para darle la cuota Fepol tiene que estar **inscrito en FEPOL**."
         },
         {
           "id": "tarifas-matricula",
@@ -100,7 +88,7 @@
               "type": "callout",
               "variant": "warning",
               "title": "Requisito",
-              "md": "Tienen que apuntarse **mínimo 3 familiares de la misma unidad familiar**."
+              "md": "- Tienen que apuntarse **mínimo 3 personas de la misma unidad familiar**. Se comprueba, en los casos que haga falta, con los **apellidos** o pidiendo el **padrón**.\n- **Todos** tienen que tener el **mismo número de cuenta** para domiciliar.\n- En las **cuotas de familias anteriores**, si ya tienen número de cuenta familiar, no pasa nada. En las **nuevas** es **obligatorio**."
             },
             {
               "id": "precios-familias",
@@ -109,59 +97,7 @@
             }
           ],
           "children": [],
-          "updatedAt": "2026-10-07"
-        },
-        {
-          "id": "tarifas-empresas",
-          "title": "Empresas",
-          "blocks": [
-            {
-              "id": "empresas-requisito",
-              "type": "callout",
-              "variant": "warning",
-              "title": "Requisito",
-              "md": "La empresa o centro de trabajo tiene que tener **mínimo 5 personas** apuntadas.\n\nSi ya las tiene, **cualquier persona nueva** de ese mismo sitio entra también con la cuota Empresas."
-            },
-            {
-              "id": "precios-empresas",
-              "type": "prices",
-              "tableId": "empresas"
-            }
-          ],
-          "children": [],
-          "updatedAt": "2026-10-07"
-        },
-        {
-          "id": "tarifas-funcionarios",
-          "title": "Funcionarios",
-          "blocks": [
-            {
-              "id": "funcionarios-padel",
-              "type": "callout",
-              "variant": "tip",
-              "title": "Incluye pádel",
-              "md": "Mismo horario que **Fitness Sunrise**, pero con el **pádel incluido** dentro de ese horario."
-            },
-            {
-              "id": "precios-funcionarios",
-              "type": "prices",
-              "tableId": "funcionarios"
-            }
-          ],
-          "children": [],
-          "updatedAt": "2026-10-07"
-        },
-        {
-          "id": "tarifas-colectivos",
-          "title": "Convenios y colectivos",
-          "blocks": [
-            {
-              "id": "precios-colectivos",
-              "type": "prices",
-              "tableId": "colectivos"
-            }
-          ],
-          "children": []
+          "updatedAt": "2026-11-23"
         },
         {
           "id": "entradas-puntuales",
@@ -600,34 +536,11 @@
               ]
             },
             {
-              "id": "altas-n-tipo-cliente",
-              "type": "callout",
-              "variant": "warning",
-              "title": "Cuota de empresa: un paso más",
-              "md": "En una cuota de **Empresas** hay un paso más: en **Información adicional**, además de los checks, marca en **Tipo de cliente** la **empresa**."
-            },
-            {
-              "id": "altas-shot-tipo-cliente",
-              "type": "screenshot",
-              "src": "/capturas/altas-6-informacion-adicional.png",
-              "alt": "Pantalla Información Adicional con el desplegable Tipo de cliente resaltado",
-              "caption": "Información Adicional → Tipo de cliente.",
-              "annotations": [
-                {
-                  "kind": "box",
-                  "x": 43.38,
-                  "y": 47.56,
-                  "w": 41.0,
-                  "h": 8.01
-                }
-              ]
-            },
-            {
               "id": "altas-n-familias",
               "type": "callout",
               "variant": "warning",
               "title": "Cuota de familias: un paso más",
-              "md": "Ve a **Información adicional**, pestaña **Personas relacionadas**: pulsa **Nuevo**, busca a la persona y pon la **relación** que tiene (cónyuge, hermano, hermana, hijo, hija…).\n\nAñade **todos los familiares** dentro de la misma ficha."
+              "md": "Ve a **Información adicional**, pestaña **Personas relacionadas**: pulsa **Nuevo**, busca a la persona y pon la **relación** que tiene (cónyuge, hermano, hermana, hijo, hija…).\n\nAñade **todos los familiares** dentro de la misma ficha.\n\nRecuerda: todos tienen que tener el **mismo número de cuenta** para domiciliar (obligatorio en las cuotas nuevas)."
             },
             {
               "id": "altas-shot-personas",
@@ -644,13 +557,6 @@
                   "h": 6.27
                 }
               ]
-            },
-            {
-              "id": "altas-n-sin-tipo",
-              "type": "callout",
-              "variant": "info",
-              "title": "Sin paso extra",
-              "md": "En **Funcionarios** y en **Convenios y colectivos** no se marca el tipo de cliente."
             },
             {
               "id": "altas-n-pasos-5",
@@ -874,7 +780,7 @@
           ],
           "children": [],
           "lead": "Proceso de un alta normal en Matchpoint, de principio a fin.",
-          "updatedAt": "2026-10-15"
+          "updatedAt": "2026-11-23"
         },
         {
           "id": "altas-web",
@@ -3612,143 +3518,7 @@
         }
       ],
       "updatedAt": "2026-10-07",
-      "footnote": "Mínimo 3 familiares de la misma unidad familiar."
-    },
-    {
-      "id": "empresas",
-      "title": "Empresas",
-      "columns": [
-        {
-          "key": "mensual",
-          "label": "Mensual"
-        }
-      ],
-      "rows": [
-        {
-          "id": "fp-unlimited-empresas",
-          "label": "Fitness & Pádel Unlimited Empresas",
-          "centros": "Cabrera",
-          "matricula": true,
-          "values": {
-            "mensual": 59
-          },
-          "note": "Entre semana 6–23 h · fines de semana 9–21 h y festivos"
-        },
-        {
-          "id": "fitness-unlimited-empresas",
-          "label": "Fitness Unlimited Empresas",
-          "centros": "Todos",
-          "matricula": true,
-          "values": {
-            "mensual": 45
-          },
-          "note": "Entre semana 6–23 h · fines de semana 9–21 h y festivos"
-        },
-        {
-          "id": "fitness-sunrise-empresas",
-          "label": "Fitness Sunrise Empresas",
-          "centros": "Todos",
-          "matricula": true,
-          "values": {
-            "mensual": 31.4
-          },
-          "note": "Entre semana 6–17 h · fines de semana 9–21 h y festivos"
-        }
-      ],
-      "updatedAt": "2026-10-07",
-      "footnote": "Para empresas o centros de trabajo con mínimo 5 personas apuntadas; las nuevas altas de ese sitio entran con la misma cuota."
-    },
-    {
-      "id": "funcionarios",
-      "title": "Funcionarios",
-      "columns": [
-        {
-          "key": "mensual",
-          "label": "Mensual"
-        }
-      ],
-      "rows": [
-        {
-          "id": "fitness-funcionarios",
-          "label": "Fitness Funcionarios",
-          "centros": "Todos",
-          "values": {
-            "mensual": 36.4
-          },
-          "matricula": true,
-          "note": "Horario Sunrise: entre semana 6–17 h · fines de semana 9–21 h y festivos"
-        }
-      ],
-      "updatedAt": "2026-10-07"
-    },
-    {
-      "id": "colectivos",
-      "title": "Convenios y colectivos",
-      "columns": [
-        {
-          "key": "precio",
-          "label": "Precio base"
-        }
-      ],
-      "rows": [
-        {
-          "id": "fepol",
-          "label": "Fepol",
-          "centros": "Todos",
-          "values": {
-            "precio": 45
-          }
-        },
-        {
-          "id": "camping",
-          "label": "Camping",
-          "centros": "Blanes",
-          "values": {
-            "precio": 45
-          }
-        },
-        {
-          "id": "celesti-ballera",
-          "label": "Celestí Ballera",
-          "centros": "Granollers",
-          "values": {
-            "precio": 45
-          }
-        },
-        {
-          "id": "voley-ballbona",
-          "label": "Voley Ballbona",
-          "centros": "Granollers",
-          "values": {
-            "precio": 35
-          }
-        },
-        {
-          "id": "futbol-canovelles",
-          "label": "Fútbol Canovelles",
-          "centros": "Granollers",
-          "values": {
-            "precio": 31.4
-          }
-        },
-        {
-          "id": "cocoa",
-          "label": "Cocoa",
-          "centros": "Cabrera",
-          "values": {
-            "precio": 31.4
-          }
-        },
-        {
-          "id": "dara",
-          "label": "Dara",
-          "centros": "Granollers",
-          "values": {
-            "precio": 28
-          }
-        }
-      ],
-      "updatedAt": "2026-10-07"
+      "footnote": "Mínimo 3 personas de la misma unidad familiar, todas con el mismo número de cuenta para domiciliar."
     },
     {
       "id": "entradas",
