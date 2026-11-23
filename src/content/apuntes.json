@@ -1,5 +1,5 @@
 {
-  "version": 60,
+  "version": 61,
   "title": "Apuntes de Recepción",
   "sections": [
     {
@@ -65,16 +65,35 @@
           "title": "Hyrox",
           "blocks": [
             {
+              "id": "hyrox-cabrera",
+              "type": "callout",
+              "variant": "warning",
+              "title": "Solo en Cabrera",
+              "md": "Hyrox solo está en el centro de **Cabrera**. El horario es el **mismo que tenga en su cuota de gym**."
+            },
+            {
               "id": "precios-hyrox",
               "type": "prices",
               "tableId": "hyrox"
             },
             {
-              "id": "hyrox-pendiente",
-              "type": "callout",
-              "variant": "warning",
-              "title": "Por confirmar",
-              "md": "Tarifas nuevas sacadas de la web. Falta confirmar en qué centros hay Hyrox y su horario."
+              "id": "hyrox-como",
+              "type": "steps",
+              "start": 1,
+              "items": [
+                {
+                  "title": "Primero, abonado",
+                  "md": "Para apuntarse a Hyrox **primero tiene que ser abonado** con su cuota de gym."
+                },
+                {
+                  "title": "Reserva",
+                  "md": "Hyrox va **con reserva**: hay **700 plazas**."
+                },
+                {
+                  "title": "Paga la diferencia",
+                  "md": "Después paga **lo que falta hasta el total** de la cuota con Hyrox. Por ejemplo, con Fitness Unlimited (62 €) paga **43 €** más para llegar a los **105 €** de Gym + Hyrox."
+                }
+              ]
             }
           ],
           "children": [],
@@ -3403,7 +3422,9 @@
           "matricula": true,
           "values": {
             "mensual": 105
-          }
+          },
+          "centros": "Cabrera",
+          "note": "Mismo horario que su cuota de gym"
         },
         {
           "id": "gym-padel-hyrox",
@@ -3412,7 +3433,8 @@
           "matricula": true,
           "values": {
             "mensual": 125
-          }
+          },
+          "note": "Mismo horario que su cuota de gym"
         }
       ],
       "updatedAt": "2026-11-23"
