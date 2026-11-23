@@ -1,5 +1,5 @@
 {
-  "version": 71,
+  "version": 72,
   "title": "Apuntes de Recepción",
   "sections": [
     {
@@ -1725,11 +1725,59 @@
       "group": "Operativa",
       "blocks": [
         {
-          "id": "aforo-pendiente",
-          "type": "pending"
+          "id": "af-pasos",
+          "type": "steps",
+          "start": 1,
+          "items": [
+            {
+              "title": "Control Acceso",
+              "md": "En Matchpoint abre el menú **Control Acceso** (**1**)."
+            },
+            {
+              "title": "Accesos en vivo",
+              "md": "En **Accesos a la instalación**, pulsa **Accesos en vivo** (**2**). Ahí ves el **aforo** del centro en tiempo real."
+            }
+          ]
+        },
+        {
+          "id": "af-shot",
+          "type": "screenshot",
+          "src": "/capturas/aforo-1-accesos-en-vivo.png",
+          "alt": "Menú Control Acceso de Matchpoint con la opción Accesos en vivo",
+          "caption": "Matchpoint: Control Acceso → Accesos en vivo.",
+          "annotations": [
+            {
+              "kind": "box",
+              "x": 58.2,
+              "y": 0.5,
+              "w": 6.9,
+              "h": 17
+            },
+            {
+              "kind": "marker",
+              "n": 1,
+              "x": 56.8,
+              "y": 9
+            },
+            {
+              "kind": "box",
+              "x": 1.8,
+              "y": 31,
+              "w": 7.2,
+              "h": 8.5
+            },
+            {
+              "kind": "marker",
+              "n": 2,
+              "x": 10.3,
+              "y": 35.2
+            }
+          ]
         }
       ],
-      "children": []
+      "children": [],
+      "lead": "Cuánta gente hay ahora mismo en el centro.",
+      "updatedAt": "2026-11-23"
     },
     {
       "id": "stock",
@@ -1740,8 +1788,8 @@
           "id": "st-app",
           "type": "callout",
           "variant": "info",
-          "title": "Stock en el Cuadro de mando (solo consulta)",
-          "md": "Por el momento es **solo para consultar**. En el Cuadro de mando hay un apartado **Stock** (**Recepción → Stock**) con cuatro pestañas: **Existencias en tu centro**, **Entradas**, **Catálogo** y **Movimientos**. En **Existencias en tu centro** ves los artículos con existencias del centro: unidades y PVP de venta (IVA incluido). Puedes buscar por nombre, referencia o código."
+          "title": "Stock en el Cuadro de mando",
+          "md": "En el Cuadro de mando hay un apartado **Stock** (**Recepción → Stock**) con cuatro pestañas: **Existencias en tu centro**, **Entradas**, **Catálogo** y **Movimientos**. En **Existencias en tu centro** ves los artículos con existencias del centro: unidades y PVP de venta (IVA incluido). Puedes buscar por nombre, referencia o código.\n\nPara **regularizar** el stock (cuando llega un pedido) se usa **Lista de elementos**, no esta pantalla."
         },
         {
           "id": "st-shot",
@@ -1754,18 +1802,15 @@
         {
           "id": "st-pasos",
           "type": "steps",
+          "start": 1,
           "items": [
             {
-              "title": "Comprueba la factura",
-              "md": "Abre la factura y comprueba que esté todo correcto. El truco está en **ir marcando en la factura** todo lo que vas comprobando."
+              "title": "Lista de elementos",
+              "md": "Cuando llega el pedido, en [erp.fibra-max.com](https://erp.fibra-max.com/) ve a **Recepción → Lista de elementos** y busca cada artículo por **nombre, referencia o código de barras**."
             },
             {
-              "title": "Envíala a proveedores",
-              "md": "Envía la **factura** a [proveedores@fibra-max.com](mailto:proveedores@fibra-max.com)."
-            },
-            {
-              "title": "Ellos introducen el stock",
-              "md": "Desde proveedores **introducen el stock**: tú no tienes que regularizarlo."
+              "title": "Cuenta y guarda",
+              "md": "En la columna **Unidades actuales** ves el **Saldo**. Escribe en **Contar** las unidades que hay **ahora** en el centro (las que había más las que han llegado) y pulsa **Guardar**."
             }
           ]
         },
@@ -1776,8 +1821,8 @@
         }
       ],
       "children": [],
-      "updatedAt": "2026-10-16",
-      "lead": "Qué hacer cuando llega un pedido."
+      "updatedAt": "2026-11-23",
+      "lead": "Qué hacer cuando llega un pedido: regularizar el stock en el Cuadro de mando."
     },
     {
       "id": "pedido-suplementacion",
@@ -1785,93 +1830,28 @@
       "group": "Operativa",
       "blocks": [
         {
-          "id": "pe-facturas",
-          "type": "callout",
-          "variant": "danger",
-          "title": "Dónde se envían las facturas",
-          "md": "**Todas las facturas** de suplementación y demás se envían al correo [proveedores@fibra-max.com](mailto:proveedores@fibra-max.com)."
-        },
-        {
-          "id": "pe-llega",
-          "type": "callout",
-          "variant": "info",
-          "title": "Cuando llega el pedido",
-          "md": "Envía la factura a proveedores para que introduzcan el stock: [Stock](#stock)."
-        },
-        {
-          "id": "pe-emails",
-          "type": "pending",
-          "note": "Por completar: email de administración y de la directora de operaciones (no se publican aquí porque la web es pública)."
+          "id": "pe-pasos",
+          "type": "steps",
+          "start": 1,
+          "items": [
+            {
+              "title": "Rellena la plantilla",
+              "md": "Apunta el pedido en la **plantilla de Excel** de pedidos. Ten en cuenta el **pedido mínimo**."
+            },
+            {
+              "title": "Envíaselo a Alex",
+              "md": "Envía la plantilla a **Alex** por el **grupo** de pedidos. Ellos se encargan de todo y de **traerlo** al centro."
+            },
+            {
+              "title": "Cuando llega",
+              "md": "Lo único que haces tú es **regularizar el stock** en el Cuadro de mando: [Stock](#stock) (**Lista de elementos**)."
+            }
+          ]
         }
       ],
-      "children": [
-        {
-          "id": "pedido-big",
-          "title": "BIG",
-          "blocks": [
-            {
-              "id": "pb-pasos",
-              "type": "steps",
-              "items": [
-                {
-                  "title": "Pide los precios",
-                  "md": "En WhatsApp busca el contacto del comercial de Big y pídele el **Excel de precios actualizados**. Marca las unidades de cada tipo de producto que queremos."
-                },
-                {
-                  "title": "Propuesta a la directora de operaciones",
-                  "md": "Envía la propuesta de pedido a la **directora de operaciones** para que valide el presupuesto."
-                },
-                {
-                  "title": "Aviso a administración",
-                  "md": "Si el pedido es aceptado, envía una **captura de la cesta a administración** y también a [proveedores@fibra-max.com](mailto:proveedores@fibra-max.com) para que lo tenga en cuenta y coméntale que es un pedido **ya aprobado por la directora de operaciones**."
-                },
-                {
-                  "title": "Proforma",
-                  "md": "Confirma al comercial de Big que podemos tirar adelante la **proforma**. Te la enviará por email y la firmas."
-                },
-                {
-                  "title": "Llega el pedido",
-                  "md": "Envía la **factura** a [proveedores@fibra-max.com](mailto:proveedores@fibra-max.com) y en copia a la directora de operaciones."
-                }
-              ]
-            }
-          ],
-          "children": [],
-          "updatedAt": "2026-10-15"
-        },
-        {
-          "id": "pedido-life-pro",
-          "title": "Life Pro",
-          "blocks": [
-            {
-              "id": "pl-pasos",
-              "type": "steps",
-              "items": [
-                {
-                  "title": "Elige los productos",
-                  "md": "Abre la web de **suplementos mayoristas** (portal de Life Pro). De cada categoría selecciona las unidades que queremos y añádelas a la cesta."
-                },
-                {
-                  "title": "Propuesta a la directora de operaciones",
-                  "md": "Envía la propuesta de pedido a la **directora de operaciones** para que valide el presupuesto."
-                },
-                {
-                  "title": "Aviso a administración y confirmación",
-                  "md": "Si el pedido es aceptado, envía una **captura de la cesta a administración** y también a [proveedores@fibra-max.com](mailto:proveedores@fibra-max.com) y coméntale que es un pedido **ya aprobado por la directora de operaciones**. Confirma el pedido añadiendo la **dirección de entrega** y la **forma de pago a 30 días**."
-                },
-                {
-                  "title": "Llega el pedido",
-                  "md": "Envía la **factura** a [proveedores@fibra-max.com](mailto:proveedores@fibra-max.com) y en copia a la directora de operaciones."
-                }
-              ]
-            }
-          ],
-          "children": [],
-          "updatedAt": "2026-10-15"
-        }
-      ],
-      "updatedAt": "2026-10-15",
-      "lead": "Dos proveedores: Big y Life Pro."
+      "children": [],
+      "updatedAt": "2026-11-23",
+      "lead": "Se pide a Alex con la plantilla de Excel; ellos lo traen."
     },
     {
       "id": "venta-suplementacion",
@@ -2674,7 +2654,7 @@
                 },
                 {
                   "title": "Durante la mañana",
-                  "md": "Atiendes la operativa normal de recepción. Cuando aparezca una de estas gestiones, sigue su procedimiento:\n\n- Alta de abonado → [Altas](#altas)\n- Baja de abonado → [Bajas](#bajas)\n- Cambio de cuota → [Cambio de cuota](#cambio-cuota)\n- Cuota de mantenimiento → [Cuota de mantenimiento](#cuota-mantenimiento)\n- Baja médica → [Baja médica](#baja-medica)\n- Recibo devuelto → [Recibos devueltos](#recibos-devueltos)\n- Altas web pendientes → [Pasar el alta a Matchpoint](#altas-normales)\n- Entradas puntuales → [Entradas puntuales y bonos en Matchpoint](#tarifas-matchpoint)\n- Control de renovaciones → [Renovaciones](#renovaciones)\n- Venta de suplementación → [Venta de suplementación](#venta-suplementacion)\n- Pedido de suplementación Big/Life Pro y envío de factura → [Hacer pedido](#pedido-suplementacion)\n- Entrada de stock y regularización → [Stock](#stock)\n- Control de actitudes de abonados → [Control de actitudes](#control-actitudes)\n- Material pendiente de sala → lístalo en «Sugerencias de Sala» y regístralo en el Excel."
+                  "md": "Atiendes la operativa normal de recepción. Cuando aparezca una de estas gestiones, sigue su procedimiento:\n\n- Alta de abonado → [Altas](#altas)\n- Baja de abonado → [Bajas](#bajas)\n- Cambio de cuota → [Cambio de cuota](#cambio-cuota)\n- Cuota de mantenimiento → [Cuota de mantenimiento](#cuota-mantenimiento)\n- Baja médica → [Baja médica](#baja-medica)\n- Recibo devuelto → [Recibos devueltos](#recibos-devueltos)\n- Altas web pendientes → [Pasar el alta a Matchpoint](#altas-normales)\n- Entradas puntuales → [Entradas puntuales y bonos en Matchpoint](#tarifas-matchpoint)\n- Control de renovaciones → [Renovaciones](#renovaciones)\n- Venta de suplementación → [Venta de suplementación](#venta-suplementacion)\n- Pedido de suplementación (plantilla a Alex) → [Hacer pedido](#pedido-suplementacion)\n- Entrada de stock y regularización → [Stock](#stock)\n- Control de actitudes de abonados → [Control de actitudes](#control-actitudes)\n- Material pendiente de sala → lístalo en «Sugerencias de Sala» y regístralo en el Excel."
                 },
                 {
                   "title": "Antes de terminar: arqueo",
