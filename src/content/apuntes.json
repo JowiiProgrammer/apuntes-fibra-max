@@ -1,5 +1,5 @@
 {
-  "version": 62,
+  "version": 63,
   "title": "Apuntes de Recepción",
   "sections": [
     {
@@ -25,7 +25,7 @@
           "type": "callout",
           "variant": "info",
           "title": "Matrícula y pago anticipado",
-          "md": "- La **matrícula** es siempre de **50 €** y solo se cobra en el pago **mensual**. Trimestral, semestral y anual van **sin matrícula**.\n- Debajo de cada pago anticipado tienes lo que sale **al mes**: es el argumento de venta.\n- Al darse de alta se cobra **siempre la parte proporcional** del mes en curso, tanto en **mensual** como en **pago anticipado**. Se calcula con la **Calculadora de altas** del Cuadro de mando. Mira [Altas normales](#altas-normales)."
+          "md": "- La **matrícula** es siempre de **50 €** y solo se cobra en el pago **mensual**. Trimestral, semestral y anual van **sin matrícula**.\n- Debajo de cada pago anticipado tienes lo que sale **al mes**: es el argumento de venta.\n- Al darse de alta se cobra **siempre la parte proporcional** del mes en curso, tanto en **mensual** como en **pago anticipado**. Se calcula con la **Calculadora de altas** del Cuadro de mando. Mira [Pasar el alta a Matchpoint](#altas-normales)."
         }
       ],
       "children": [
@@ -435,8 +435,58 @@
       "blocks": [],
       "children": [
         {
+          "id": "altas-web-cliente",
+          "title": "Alta en la web (lo que hace el cliente)",
+          "lead": "Todas las altas se hacen ahora por la web: fibra-max.com → Hazte socio. Sin papel, salvo las cuotas de familias.",
+          "blocks": [
+            {
+              "id": "awc-sin-papel",
+              "type": "callout",
+              "variant": "warning",
+              "title": "Nada de papel",
+              "md": "- **Todas las altas** las hace el cliente en la **web** ([fibra-max.com](https://fibra-max.com/) → **Hazte socio**). Si viene a recepción a apuntarse, que la haga desde **su móvil**.\n- **Ya no hay formulario, contrato ni SEPA en papel**: se firma en la propia web.\n- **Única excepción:** las [cuotas de familias](#altas-familias), que solo se gestionan desde recepción."
+            },
+            {
+              "id": "awc-pasos",
+              "type": "steps",
+              "start": 1,
+              "items": [
+                {
+                  "title": "Elige cuota y periodo",
+                  "md": "Elige la cuota (mensual o abono de pago anticipado). La web ya calcula la **parte proporcional** del primer mes, la **matrícula**, el **total** y la **próxima renovación**."
+                },
+                {
+                  "title": "Rellena sus datos",
+                  "md": "Centro, nombre y apellidos, teléfono, email, dirección, documento de identidad, fecha de nacimiento y sexo. La **fecha de alta** es la de hoy y no se puede cambiar. Pone también el **IBAN** para domiciliar las cuotas de los próximos meses y acepta la privacidad y las condiciones."
+                },
+                {
+                  "title": "Elige cómo paga",
+                  "md": "**Tarjeta** (pago online) o **Efectivo en recepción**."
+                },
+                {
+                  "title": "Firma",
+                  "md": "Firma en la web. Los documentos firmados se guardan solos (los ves en el detalle del alta, en el Cuadro de mando)."
+                },
+                {
+                  "title": "Paga",
+                  "md": "- **Tarjeta:** paga en la pasarela segura de **Getnet**. Queda pagado.\n- **Efectivo:** la web le da una **referencia** para pagar en recepción."
+                }
+              ]
+            },
+            {
+              "id": "awc-efectivo",
+              "type": "callout",
+              "variant": "danger",
+              "title": "Pago en efectivo",
+              "md": "Si eligió **efectivo**, tiene que venir a recepción con la **referencia** y pagar el importe. **Hasta entonces no está pagado ni activo: no puede entrar.**"
+            }
+          ],
+          "children": [],
+          "updatedAt": "2026-11-23"
+        },
+        {
           "id": "altas-normales",
-          "title": "Altas normales",
+          "title": "Pasar el alta a Matchpoint",
           "blocks": [
             {
               "id": "altas-n-pasos-1",
@@ -444,10 +494,17 @@
               "start": 1,
               "items": [
                 {
-                  "title": "Excel «final de promo»",
-                  "md": "Si el alta **no** es *mensualidad + matrícula* (lleva promo), apúntala primero en el Excel de final de promo: ahí se anota **cuándo es su próximo pago**. Si es mensualidad + matrícula, sáltate este paso."
+                  "title": "Cuadro de mando → Altas web",
+                  "md": "En [erp.fibra-max.com](https://erp.fibra-max.com/) ve a **Control abonados → Altas web**, pestaña **Pendientes**. Ahí llegan todas las altas de la web de tu centro, con la **fecha de alta**, la **fecha de próximo pago** y cómo ha **pagado**. Pulsa **Ver** para abrir el detalle: cada dato tiene un botón para **copiarlo**."
                 }
               ]
+            },
+            {
+              "id": "altas-n-efectivo",
+              "type": "callout",
+              "variant": "danger",
+              "title": "Si sale «Efectivo · Pendiente de pago en recepción»",
+              "md": "No está pagado ni activo. Cuando venga con la **referencia**, **cobra el importe pendiente** en efectivo. Al dar de alta el abono en Matchpoint, el método es **efectivo**."
             },
             {
               "id": "altas-n-pasos-2",
@@ -484,7 +541,7 @@
               "items": [
                 {
                   "title": "Rellena los datos del cliente",
-                  "md": "Rellena **todos los datos** con lo que pone en el formulario de alta."
+                  "md": "Rellena **todos los datos** copiándolos del detalle del alta en el Cuadro de mando (botón **Ver**)."
                 }
               ]
             },
@@ -634,15 +691,15 @@
                 },
                 {
                   "title": "Fecha comienzo paso resto de cuotas",
-                  "md": "Cambia la **Fecha comienzo paso resto de cuotas** (**3**): es la fecha de su **próximo pago**. Si lleva promo, coincide con la que has puesto en el Excel de final de promo. Hazlo **antes de tocar el importe**."
+                  "md": "Cambia la **Fecha comienzo paso resto de cuotas** (**3**): es la fecha de su **próximo pago**, que es **siempre el día 1** (la tienes en **Fecha de próximo pago** del alta web). Hazlo **antes de tocar el importe**."
                 },
                 {
                   "title": "Configura el importe",
-                  "md": "En **Primera cuota** (**4**) pon lo que haya pagado el cliente, sea mensual o pago anticipado (por ejemplo, si ha pagado 165 €, pones 165 €).\n\nSi es **mensual**, la primera cuota es la mensualidad y en **Matrícula** pones **50 €**.\n\n**Resto de cuotas** no se toca: sale solo según el tipo de abono."
+                  "md": "En **Primera cuota** (**4**) pon lo que ha pagado **sin la matrícula**: la **parte proporcional** del primer mes, más los **meses completos** si es pago anticipado.\n\nSi es **mensual**, en **Matrícula** pones **50 €**.\n\n**Resto de cuotas** no se toca: sale solo según el tipo de abono."
                 },
                 {
                   "title": "Dar de alta y cobrar",
-                  "md": "Pulsa **Dar de alta y cobrar** (**5**) y elige el método con el que ha pagado: **tarjeta** o **efectivo**."
+                  "md": "Pulsa **Dar de alta y cobrar** (**5**) y elige el método: **transferencia** si pagó con **tarjeta en la web**, **efectivo** si lo ha pagado en recepción."
                 }
               ]
             },
@@ -725,21 +782,14 @@
               "type": "callout",
               "variant": "info",
               "title": "Forma de pago",
-              "md": "Normalmente es **Banco**. Si el número de cuenta no es correcto, pon forma de pago **tarjeta** y reclama el número de cuenta al abonado."
-            },
-            {
-              "id": "altas-n-tarifa-mensual",
-              "type": "callout",
-              "variant": "danger",
-              "title": "Tarifa aplicada: MENSUAL",
-              "md": "Es importante que en el abono la **Tarifa aplicada** esté en **MENSUAL**."
+              "md": "Normalmente es **Banco**, con el **IBAN** que puso en la web. Si el número de cuenta no es correcto, pon forma de pago **tarjeta** y reclama el número de cuenta al abonado."
             },
             {
               "id": "altas-n-pago-anticipado",
               "type": "callout",
               "variant": "warning",
               "title": "Qué se cobra en el alta",
-              "md": "Ahora **siempre se cobra la parte proporcional** del mes en curso, sea **mensual** o **pago anticipado**:\n- **Mensual:** parte proporcional del mes (días que quedan desde la fecha de alta, incluida) **más la matrícula** (50 €). La cuota completa se cobra el **día 1 del mes siguiente**.\n- **Pago anticipado** (trimestral, semestral, anual): el mes del alta cuenta como el **primer mes** del periodo. Se cobra la **parte proporcional** de ese mes **más los meses completos que faltan**, sin matrícula. Por ejemplo, un trimestral el 23/11 cubre hasta el 31/01 y se renueva el 01/02.\n\nEn todos los casos, el **próximo pago es siempre el día 1**.\n\nCalcúlalo siempre con la **Calculadora de altas** del Cuadro de mando ([erp.fibra-max.com](https://erp.fibra-max.com/) → **Recepción → Tarifas → Calculadora de altas**): eliges la **tarifa** (**1**) y la **fecha de alta** (**2**) y te da el **total a cobrar** (**3**), redondeado hacia arriba a **0,50 €**. En el resumen también ves el **periodo cubierto** y la **próxima renovación**."
+              "md": "Ahora **siempre se cobra la parte proporcional** del mes en curso, sea **mensual** o **pago anticipado**:\n- **Mensual:** parte proporcional del mes (días que quedan desde la fecha de alta, incluida) **más la matrícula** (50 €). La cuota completa se cobra el **día 1 del mes siguiente**.\n- **Pago anticipado** (trimestral, semestral, anual): el mes del alta cuenta como el **primer mes** del periodo. Se cobra la **parte proporcional** de ese mes **más los meses completos que faltan**, sin matrícula. Por ejemplo, un trimestral el 23/11 cubre hasta el 31/01 y se renueva el 01/02.\n\nEn todos los casos, el **próximo pago es siempre el día 1**.\n\nLa web ya lo calcula. Para comprobarlo (o en una alta de familias) usa la **Calculadora de altas** del Cuadro de mando ([erp.fibra-max.com](https://erp.fibra-max.com/) → **Recepción → Tarifas → Calculadora de altas**): eliges la **tarifa** (**1**) y la **fecha de alta** (**2**) y te da el **total a cobrar** (**3**), redondeado hacia arriba a **0,50 €**. En el resumen también ves el **periodo cubierto** y la **próxima renovación**."
             },
             {
               "id": "altas-shot-calculadora",
@@ -790,12 +840,60 @@
               ]
             },
             {
+              "id": "altas-n-completado",
+              "type": "steps",
+              "start": 11,
+              "items": [
+                {
+                  "title": "Márcala como completada",
+                  "md": "Vuelve a **Control abonados → Altas web** y marca **Completado** en esa alta. Pasa al **Histórico** con tu nombre en **Gestionada por**."
+                }
+              ]
+            },
+            {
               "id": "altas-n-speech-link",
               "type": "text",
               "md": "**Cuando cobres,** cuéntale al cliente qué le va a llegar: [Speech al terminar el alta](#altas-speech)."
             },
             {
               "id": "altas-n-despues",
+              "type": "checklist",
+              "title": "Al terminar",
+              "items": [
+                "Agrega el contacto del cliente al teléfono"
+              ]
+            }
+          ],
+          "children": [],
+          "lead": "Lo que hace recepción con cada alta que llega de la web, de principio a fin.",
+          "updatedAt": "2026-11-23"
+        },
+        {
+          "id": "altas-familias",
+          "title": "Altas de familias",
+          "lead": "La única alta que se sigue haciendo en papel, desde recepción.",
+          "blocks": [
+            {
+              "id": "af-pasos",
+              "type": "steps",
+              "start": 1,
+              "items": [
+                {
+                  "title": "Formulario en papel",
+                  "md": "Cada miembro rellena el **formulario de alta en papel** (con contrato y SEPA). Recuerda el [requisito](#tarifas-familias): mínimo **3 personas** de la misma unidad familiar y el **mismo número de cuenta**."
+                },
+                {
+                  "title": "Calcula el importe",
+                  "md": "Con la **Calculadora de altas** del Cuadro de mando (tarifa **Fitness Unlimited Familias**)."
+                },
+                {
+                  "title": "Pásala a Matchpoint",
+                  "md": "Igual que en [Pasar el alta a Matchpoint](#altas-normales), copiando los datos del papel, con un paso más: en **Información adicional → Personas relacionadas** añade a todos los familiares. Cobra en recepción con **tarjeta** o **efectivo**."
+                }
+              ]
+            },
+            {
+              "id": "af-despues",
               "type": "checklist",
               "title": "Después de cobrar",
               "items": [
@@ -806,137 +904,7 @@
             }
           ],
           "children": [],
-          "lead": "Proceso de un alta normal en Matchpoint, de principio a fin.",
           "updatedAt": "2026-11-23"
-        },
-        {
-          "id": "altas-web",
-          "title": "Altas web",
-          "blocks": [
-            {
-              "id": "altas-web-base",
-              "type": "text",
-              "md": "Los pasos son los de [Altas normales](#altas-normales). Aquí solo se explica **lo que cambia** en cada vía."
-            },
-            {
-              "id": "altas-web-resumen",
-              "type": "text",
-              "md": "| | Formulario de la web | Pago online con tarjeta |\n|---|---|---|\n| **Cómo llega** | Email al correo de recepción del centro | Excel de pedidos de la web |\n| **Los datos** | Se copian y pegan desde el email | La persona viene a recepción y rellena el formulario presencial |\n| **Al terminar** | **Dar de alta** (el importe queda pendiente) | **Dar de alta y cobrar** por **transferencia** |"
-            }
-          ],
-          "children": [
-            {
-              "id": "altas-web-formulario",
-              "title": "Alta por el formulario de la web",
-              "blocks": [
-                {
-                  "id": "aw-f-pasos",
-                  "type": "steps",
-                  "items": [
-                    {
-                      "title": "Copia los datos del email",
-                      "md": "La persona rellena el formulario de la web como si fuera presencial y los datos nos llegan por **email**, al **correo de recepción del centro**. Es más fácil **copiarlos desde el email** que teclearlos."
-                    },
-                    {
-                      "title": "Haz el alta como una normal",
-                      "md": "Rellena la ficha copiando y pegando, y sigue **todo el proceso de una [alta normal](#altas-normales)**: ficha del cliente, Información adicional y abono."
-                    },
-                    {
-                      "title": "Dar de alta (sin cobrar)",
-                      "md": "Al final del abono pulsa **Dar de alta** en vez de *Dar de alta y cobrar*. El importe queda **pendiente de pago**."
-                    },
-                    {
-                      "title": "Apúntala en el Excel de altas web",
-                      "md": "Ve al **Excel de altas web** (está en **OneDrive**) y apunta allí el alta."
-                    }
-                  ]
-                },
-                {
-                  "id": "aw-f-shot",
-                  "type": "screenshot",
-                  "src": "/capturas/altas-4-alta-abono.png",
-                  "alt": "Botón Dar de alta de la pantalla Alta de abono",
-                  "caption": "Alta por formulario web: pulsa «Dar de alta», no «Dar de alta y cobrar».",
-                  "annotations": [
-                    {
-                      "kind": "box",
-                      "x": 57.72,
-                      "y": 93.89,
-                      "w": 4.73,
-                      "h": 4.24,
-                      "label": "Dar de alta"
-                    }
-                  ]
-                }
-              ],
-              "children": [],
-              "updatedAt": "2026-10-08"
-            },
-            {
-              "id": "altas-web-pago-online",
-              "title": "Alta con pago online (tarjeta)",
-              "blocks": [
-                {
-                  "id": "aw-p-pasos",
-                  "type": "steps",
-                  "items": [
-                    {
-                      "title": "Recibes el Excel de pedidos",
-                      "md": "La persona ha pagado con **tarjeta en la página web**. Nos envían un **Excel de pedidos** con las compras hechas por la página web."
-                    },
-                    {
-                      "title": "Contacta para que venga a recepción",
-                      "md": "Contacta con ella para que **venga a recepción** a acabar de rellenar unos datos."
-                    },
-                    {
-                      "title": "Formulario presencial",
-                      "md": "Tiene que rellenar el **formulario presencial**."
-                    },
-                    {
-                      "title": "Alta normal, cobrando por transferencia",
-                      "md": "Sigue el mismo proceso de una [alta normal](#altas-normales). La única diferencia: al pulsar **Dar de alta y cobrar**, el método es **transferencia** (no tarjeta ni efectivo)."
-                    }
-                  ]
-                },
-                {
-                  "id": "aw-p-shot",
-                  "type": "screenshot",
-                  "src": "/capturas/altas-4-alta-abono.png",
-                  "alt": "Botón Dar de alta y cobrar de la pantalla Alta de abono",
-                  "caption": "Pago online: «Dar de alta y cobrar» y método transferencia.",
-                  "annotations": [
-                    {
-                      "kind": "box",
-                      "x": 62.31,
-                      "y": 93.89,
-                      "w": 7.44,
-                      "h": 4.24,
-                      "label": "Dar de alta y cobrar"
-                    }
-                  ]
-                },
-                {
-                  "id": "aw-p-speech-link",
-                  "type": "text",
-                  "md": "**Cuando cobres,** cuéntale al cliente qué le va a llegar: [Speech al terminar el alta](#altas-speech)."
-                },
-                {
-                  "id": "aw-p-despues",
-                  "type": "checklist",
-                  "title": "Después de cobrar",
-                  "items": [
-                    "Agrega el contacto del cliente al teléfono",
-                    "Escanea toda la documentación (formulario, contrato y SEPA) con CamScanner, compártela en «Escritorio» y guárdala con nombre y apellidos en OneDrive → Altas escaneadas → carpeta del mes",
-                    "Tritura el alta"
-                  ]
-                }
-              ],
-              "children": [],
-              "updatedAt": "2026-10-08"
-            }
-          ],
-          "lead": "De momento hay dos vías de alta online.",
-          "updatedAt": "2026-10-08"
         },
         {
           "id": "altas-speech",
@@ -2851,7 +2819,7 @@
                 },
                 {
                   "title": "Durante la mañana",
-                  "md": "Atiendes la operativa normal de recepción. Cuando aparezca una de estas gestiones, sigue su procedimiento:\n\n- Alta de abonado → [Altas](#altas)\n- Baja de abonado → [Bajas](#bajas)\n- Cambio de cuota → [Cambio de cuota](#cambio-cuota)\n- Cuota de mantenimiento → [Cuota de mantenimiento](#cuota-mantenimiento)\n- Baja médica → [Baja médica](#baja-medica)\n- Recibo devuelto → [Recibos devueltos](#recibos-devueltos)\n- Escaneado y archivo de altas → [Altas normales](#altas-normales)\n- Entradas puntuales → [Entradas puntuales y bonos en Matchpoint](#tarifas-matchpoint)\n- Control de renovaciones → [Renovaciones](#renovaciones)\n- Venta de suplementación → [Venta de suplementación](#venta-suplementacion)\n- Pedido de suplementación Big/Life Pro y envío de factura → [Hacer pedido](#pedido-suplementacion)\n- Entrada de stock y regularización → [Stock](#stock)\n- Control de actitudes de abonados → [Control de actitudes](#control-actitudes)\n- Material pendiente de sala → lístalo en «Sugerencias de Sala» y regístralo en el Excel."
+                  "md": "Atiendes la operativa normal de recepción. Cuando aparezca una de estas gestiones, sigue su procedimiento:\n\n- Alta de abonado → [Altas](#altas)\n- Baja de abonado → [Bajas](#bajas)\n- Cambio de cuota → [Cambio de cuota](#cambio-cuota)\n- Cuota de mantenimiento → [Cuota de mantenimiento](#cuota-mantenimiento)\n- Baja médica → [Baja médica](#baja-medica)\n- Recibo devuelto → [Recibos devueltos](#recibos-devueltos)\n- Altas web pendientes → [Pasar el alta a Matchpoint](#altas-normales)\n- Entradas puntuales → [Entradas puntuales y bonos en Matchpoint](#tarifas-matchpoint)\n- Control de renovaciones → [Renovaciones](#renovaciones)\n- Venta de suplementación → [Venta de suplementación](#venta-suplementacion)\n- Pedido de suplementación Big/Life Pro y envío de factura → [Hacer pedido](#pedido-suplementacion)\n- Entrada de stock y regularización → [Stock](#stock)\n- Control de actitudes de abonados → [Control de actitudes](#control-actitudes)\n- Material pendiente de sala → lístalo en «Sugerencias de Sala» y regístralo en el Excel."
                 },
                 {
                   "title": "Antes de terminar: arqueo",
@@ -2887,7 +2855,7 @@
               "items": [
                 {
                   "title": "Al coger el turno",
-                  "md": "- Revisa **email, Feedback, Teams y Tareas**: mira lo que ha quedado pendiente de la mañana.\n- Revisa las **gestiones abiertas**: comprueba si hay algún alta, baja, cambio o incidencia a medias (WhatsApps y mails).\n- **Continúa la operativa:** durante la tarde aplica el procedimiento de cada gestión (altas, bajas, cambios de cuota, cuota de mantenimiento, baja médica, recibos devueltos, escaneado de altas y entradas puntuales)."
+                  "md": "- Revisa **email, Feedback, Teams y Tareas**: mira lo que ha quedado pendiente de la mañana.\n- Revisa las **gestiones abiertas**: comprueba si hay algún alta, baja, cambio o incidencia a medias (WhatsApps y mails).\n- **Continúa la operativa:** durante la tarde aplica el procedimiento de cada gestión (altas, bajas, cambios de cuota, cuota de mantenimiento, baja médica, recibos devueltos, altas web pendientes y entradas puntuales)."
                 },
                 {
                   "title": "Antes del cierre",
