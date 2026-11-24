@@ -1,5 +1,5 @@
 {
-  "version": 84,
+  "version": 85,
   "title": "Apuntes de Recepción",
   "sections": [
     {
@@ -3191,24 +3191,31 @@
               "md": "- **En el mismo mes:** paga el recibo devuelto más los **6 €** de comisión.\n- **Pasados meses:** se le quita la deuda del recibo devuelto y **solo paga la Cuota penalización acumulada** (20 € por mes).\n\nTodo el proceso, en [Recibos devueltos](#recibos-devueltos)."
             },
             {
-              "id": "pp-pend",
-              "type": "pending",
-              "note": "Por completar: cómo se cobra en Matchpoint (nueva venta)."
+              "id": "pp-cobro",
+              "type": "steps",
+              "start": 1,
+              "items": [
+                {
+                  "title": "Facturación y Cobro → Deudas",
+                  "md": "En su ficha de Matchpoint ve a **Facturación y Cobro → Deudas**: ahí está todo lo que tiene pendiente."
+                },
+                {
+                  "title": "Si han pasado meses, anula el recibo devuelto",
+                  "md": "Antes de cobrar, quita la deuda del recibo devuelto: [Anular un recibo](#anular-recibo). Solo cobras la Cuota penalización acumulada."
+                },
+                {
+                  "title": "Cobra",
+                  "md": "Cobra la deuda en **efectivo** o **tarjeta** (o **transferencia** si ya lo ha pagado así)."
+                },
+                {
+                  "title": "Vuelve a su cuota",
+                  "md": "En **Abonos → lápiz** vuelve a ponerle **su cuota de siempre** y revisa el **próximo pago**."
+                }
+              ]
             }
           ],
           "children": [],
-          "updatedAt": "2026-11-23"
-        },
-        {
-          "id": "excel-cambios",
-          "title": "Excel de cambios",
-          "blocks": [
-            {
-              "id": "excel-cambios-pendiente",
-              "type": "pending"
-            }
-          ],
-          "children": []
+          "updatedAt": "2026-11-24"
         },
         {
           "id": "nueva-venta",
@@ -3223,13 +3230,27 @@
               "md": "Hay que hacer una **nueva venta en su perfil**. Puede ser por varios motivos:\n\n- **Cuota de mantenimiento**, porque tiene meses pagados.\n- **Diferencia de cuota**. Por ejemplo, ha estado pagando la cuota de mantenimiento, vuelve a su cuota y paga la **diferencia del mes** de su cuota.\n- **Otros casos.**"
             },
             {
-              "id": "nv-pend",
-              "type": "pending",
-              "note": "Por completar: proceso paso a paso de la nueva venta en Matchpoint."
+              "id": "nv-pasos",
+              "type": "steps",
+              "start": 1,
+              "items": [
+                {
+                  "title": "Facturación y Cobro",
+                  "md": "En la ficha del abonado ve a **Facturación y Cobro** y pulsa **Añadir nueva venta**."
+                },
+                {
+                  "title": "Concepto e importe",
+                  "md": "Pon el **concepto** (por ejemplo «Cuota de mantenimiento» o «Diferencia de cuota») y el **importe**. Si es una diferencia de cuota, calcúlala con la **Calculadora de altas** del Cuadro de mando."
+                },
+                {
+                  "title": "Insertar y cobrar",
+                  "md": "Pulsa **Insertar** y cóbrala en **efectivo** o **tarjeta**."
+                }
+              ]
             }
           ],
           "children": [],
-          "updatedAt": "2026-10-08"
+          "updatedAt": "2026-11-24"
         },
         {
           "id": "anular-recibo",
@@ -3241,7 +3262,7 @@
               "type": "callout",
               "variant": "info",
               "title": "Cuándo",
-              "md": "Si hay que **eliminar un recibo**, ya sea por un **error nuestro** o por una **baja médica**."
+              "md": "Si hay que **eliminar un recibo**: por un **error nuestro**, por una **baja médica** o por un **recibo devuelto** cuando vuelve a pagar pasados meses (solo paga la [Cuota penalización](#recibos-devueltos))."
             },
             {
               "id": "ar-1",
@@ -3396,10 +3417,10 @@
             }
           ],
           "children": [],
-          "updatedAt": "2026-10-09"
+          "updatedAt": "2026-11-24"
         }
       ],
-      "updatedAt": "2026-10-09"
+      "updatedAt": "2026-11-24"
     },
     {
       "id": "control-actitudes",
