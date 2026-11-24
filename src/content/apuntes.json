@@ -1,5 +1,5 @@
 {
-  "version": 85,
+  "version": 86,
   "title": "Apuntes de Recepción",
   "sections": [
     {
@@ -2958,6 +2958,7 @@
               "type": "checklist",
               "title": "Del día 1 al 10",
               "items": [
+                "Revisión y modificación del Excel de cambios (situaciones extraordinarias): [Excel de cambios](#excel-cambios) y Matchpoint",
                 "Revisión de los cambios de cuota (Cuadro de mando → Cambios cuota y Matchpoint)",
                 "Cuotas de baja médica y mantenimiento: contacto (Cuadro de mando → Cambios cuota y WhatsApp)",
                 "Recibos devueltos: cargarlos en Matchpoint, pasar el Excel de devoluciones a Carlos Huertas y poner la Cuota penalización",
@@ -3210,6 +3211,42 @@
                 {
                   "title": "Vuelve a su cuota",
                   "md": "En **Abonos → lápiz** vuelve a ponerle **su cuota de siempre** y revisa el **próximo pago**."
+                }
+              ]
+            }
+          ],
+          "children": [],
+          "updatedAt": "2026-11-24"
+        },
+        {
+          "id": "excel-cambios",
+          "title": "Excel de cambios",
+          "lead": "Cuando hay que cambiarle algo a un abonado por algún error (cobro de más o de menos, precio mal puesto…).",
+          "blocks": [
+            {
+              "id": "ec-que",
+              "type": "callout",
+              "variant": "info",
+              "title": "Qué es",
+              "md": "Es para **situaciones extraordinarias**: no es para los cambios de cuota normales (esos llegan a [Cambios cuota](#cambio-cuota) del Cuadro de mando). Aquí se apunta lo que hay que **corregir a mano** en el próximo cobro por un **error**: se le cobró de más, hay que cobrarle otro precio un mes, cambio de cuenta, etc."
+            },
+            {
+              "id": "ec-donde",
+              "type": "text",
+              "md": "**Dónde está:** SharePoint → **FIBRA-TEAM - COMUN RECEPCIONES →** carpeta del centro → Excel **CAMBIOS**. Hay una **hoja por mes**."
+            },
+            {
+              "id": "ec-pasos",
+              "type": "steps",
+              "start": 1,
+              "items": [
+                {
+                  "title": "Apúntalo en la hoja del mes",
+                  "md": "En la hoja del mes en que hay que aplicarlo, rellena:\n\n- **Abonado:** nombre y apellidos.\n- **Cambio:** qué hay que hacer (por ejemplo «De 47 € a 43 €»).\n- **Motivo:** por qué (por ejemplo «En octubre se le cobró 59 € en vez de 43 €»)."
+                },
+                {
+                  "title": "Aplícalo en Matchpoint",
+                  "md": "Del **día 1 al 10** se revisa el Excel y se hacen los cambios en **Matchpoint** (ver el [calendario](#calendario))."
                 }
               ]
             }
