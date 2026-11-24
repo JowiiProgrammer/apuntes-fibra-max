@@ -2007,7 +2007,7 @@
           "items": [
             {
               "title": "Lista de elementos",
-              "md": "Cuando llega el pedido, en [erp.fibra-max.com](https://erp.fibra-max.com/) ve a **Recepción → Lista de elementos** y busca cada artículo por **nombre, referencia o código de barras**."
+              "md": "Cuando llega el pedido, en [erp.fibra-max.com](https://erp.fibra-max.com/) ve a **Recepción → Lista de elementos** y busca cada artículo por **nombre, referencia o código de barras** (**1**)."
             },
             {
               "title": "Cuenta y guarda",
