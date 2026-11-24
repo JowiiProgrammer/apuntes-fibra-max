@@ -1,5 +1,5 @@
 {
-  "version": 75,
+  "version": 76,
   "title": "Apuntes de Recepción",
   "sections": [
     {
@@ -2508,13 +2508,14 @@
                   "md": "En MatchPoint entra en **Económicas → Apertura de Caja**."
                 },
                 {
-                  "title": "Efectivo a 0 €",
-                  "md": "En el apartado **Efectivo** pon **0 €** y acepta la apertura."
+                  "title": "Todo a 0 €",
+                  "md": "Pon **0 €** en **todos los campos** y acepta la apertura."
                 }
               ]
             }
           ],
-          "children": []
+          "children": [],
+          "updatedAt": "2026-11-24"
         },
         {
           "id": "arqueo",
@@ -2552,20 +2553,24 @@
           "title": "Cierre",
           "blocks": [
             {
+              "id": "ci-no-sacar",
+              "type": "callout",
+              "variant": "warning",
+              "title": "El dinero no se saca de la caja",
+              "md": "En el cierre **ya no se abre la máquina ni se saca el efectivo**: vienen a **retirarlo** al día siguiente o días después. Lo que sí hay que hacer es **anotar la retirada** en el Cuadro de mando."
+            },
+            {
               "id": "ci-pasos",
               "type": "steps",
+              "start": 1,
               "items": [
                 {
                   "title": "Abre Cierre de Caja",
-                  "md": "MatchPoint → **Económicas → Cierre de Caja**."
+                  "md": "MatchPoint → **Económicas → Cierre de Caja**. Sobre las **22:45**."
                 },
                 {
                   "title": "Revisa la máquina de efectivo",
-                  "md": "Revisa el importe de la máquina de efectivo y pulsa el botón **«Cierre por valores iniciales»**. Abre la máquina. Sobre las **22:45**."
-                },
-                {
-                  "title": "Comprueba la retirada",
-                  "md": "Comprueba la retirada y cierra de nuevo la máquina. Los **billetes** van al sobre de retirada de efectivo. Las **monedas** vuelve a introducirlas pulsando el botón **«añadir cambio»** en el programa."
+                  "md": "Revisa el importe de la máquina de efectivo."
                 },
                 {
                   "title": "Comprueba el TPV",
@@ -2573,18 +2578,14 @@
                 },
                 {
                   "title": "Anota la facturación en el programa",
-                  "md": "En [erp.fibra-max.com](https://erp.fibra-max.com/) (**Facturación diaria**), en **Cierre diario de recepción**, anota efectivo, domiciliación, tarjeta, retirada (aquí **solo el importe de los billetes**) y salida de dinero, y los comentarios. Pulsa **Guardar cierre**."
-                },
-                {
-                  "title": "Guarda la retirada",
-                  "md": "Pon el efectivo retirado en un **sobre con fecha, importe y centro** y déjalo en la caja fuerte."
+                  "md": "En [erp.fibra-max.com](https://erp.fibra-max.com/) (**Facturación diaria**), en **Cierre diario de recepción**, anota efectivo, domiciliación, tarjeta, **retirada** y salida de dinero, y los comentarios. Pulsa **Guardar cierre**."
                 }
               ]
             }
           ],
           "children": [],
           "lead": "Cierre de caja de la tarde.",
-          "updatedAt": "2026-10-09"
+          "updatedAt": "2026-11-24"
         },
         {
           "id": "cargos-periodicos",
@@ -2619,7 +2620,7 @@
           "lead": "Para mantener al día cuotas y cobros."
         }
       ],
-      "updatedAt": "2026-10-15",
+      "updatedAt": "2026-11-24",
       "lead": "Apertura, arqueo de mañana y cierre de tarde."
     },
     {
@@ -2813,8 +2814,7 @@
               "items": [
                 "Caja cerrada y cuadrada",
                 "Facturación guardada en el programa (cierre)",
-                "Retirada (solo billetes) guardada en la caja fuerte",
-                "Añadir cambio en la máquina de efectivo (las monedas de la retirada)",
+                "Retirada anotada en la Facturación diaria (el dinero se queda en la máquina)",
                 "Vestuarios, parking y puertas revisados",
                 "Fichaje realizado",
                 "Alarma activada y puerta cerrada"
