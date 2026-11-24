@@ -1,5 +1,5 @@
 {
-  "version": 76,
+  "version": 77,
   "title": "Apuntes de Recepción",
   "sections": [
     {
@@ -180,6 +180,54 @@
               "variant": "info",
               "title": "Si lo compró por la web: EP/Bonos",
               "md": "Las compras de la web llegan al Cuadro de mando: [erp.fibra-max.com](https://erp.fibra-max.com/) → **Control abonados → EP/Bonos**.\n\n- Pestaña **Vigentes** (las que están en vigor) e **Histórico** (las que ya han caducado). Puedes filtrar por **centro** y por **tipo** (entrada puntual o bono).\n- Búscala por **nombre, email, teléfono, producto o referencia**.\n- En cada compra ves el **producto**, la **vigencia** (desde → hasta), el **importe** y el **pago** («Pagado · comunicado por Web»).\n- El **ojo** (Detalle) abre todos sus datos: nombre, DNI, teléfono, correo, dirección… Te sirven para registrarla en Matchpoint.\n\nCompruébalo ahí antes de dar el acceso. Si **no** sale como pagado (eligió **efectivo en recepción**), cóbralo en el paso 11."
+            },
+            {
+              "id": "mp-shot-ep-bonos",
+              "type": "screenshot",
+              "src": "/capturas/erp-ep-bonos.png",
+              "alt": "Cuadro de mando, Entradas puntuales y bonos",
+              "caption": "Control abonados → EP/Bonos (datos de ejemplo): Vigentes / Histórico (1), estado del pago (2) y el ojo para ver el detalle (3).",
+              "annotations": [
+                {
+                  "kind": "box",
+                  "x": 15.2,
+                  "y": 14.3,
+                  "w": 11,
+                  "h": 4.6
+                },
+                {
+                  "kind": "marker",
+                  "n": 1,
+                  "x": 27.2,
+                  "y": 16.6
+                },
+                {
+                  "kind": "box",
+                  "x": 77.2,
+                  "y": 36.6,
+                  "w": 16,
+                  "h": 6.6
+                },
+                {
+                  "kind": "marker",
+                  "n": 2,
+                  "x": 76,
+                  "y": 39.9
+                },
+                {
+                  "kind": "box",
+                  "x": 95,
+                  "y": 36.6,
+                  "w": 2.4,
+                  "h": 6.6
+                },
+                {
+                  "kind": "marker",
+                  "n": 3,
+                  "x": 93.8,
+                  "y": 39.9
+                }
+              ]
             },
             {
               "id": "mp-pasos-1",
@@ -424,7 +472,7 @@
             }
           ],
           "children": [],
-          "updatedAt": "2026-11-23"
+          "updatedAt": "2026-11-24"
         }
       ]
     },
@@ -496,6 +544,54 @@
                 {
                   "title": "Cuadro de mando → Altas web",
                   "md": "En [erp.fibra-max.com](https://erp.fibra-max.com/) ve a **Control abonados → Altas web**, pestaña **Pendientes**. Ahí llegan todas las altas de la web de tu centro, con la **fecha de alta**, la **fecha de próximo pago** y cómo ha **pagado**. Pulsa **Ver** para abrir el detalle: cada dato tiene un botón para **copiarlo**."
+                }
+              ]
+            },
+            {
+              "id": "altas-shot-erp",
+              "type": "screenshot",
+              "src": "/capturas/erp-altas-web.png",
+              "alt": "Cuadro de mando, Control abonados, Altas web",
+              "caption": "Cuadro de mando → Control abonados → Altas web (datos de ejemplo): Altas web (1), Pendientes / Histórico (2) y Ver para abrir el detalle (3).",
+              "annotations": [
+                {
+                  "kind": "box",
+                  "x": 2.6,
+                  "y": 23.8,
+                  "w": 9.9,
+                  "h": 4
+                },
+                {
+                  "kind": "marker",
+                  "n": 1,
+                  "x": 13.6,
+                  "y": 25.8
+                },
+                {
+                  "kind": "box",
+                  "x": 15.2,
+                  "y": 34.4,
+                  "w": 9.6,
+                  "h": 3.7
+                },
+                {
+                  "kind": "marker",
+                  "n": 2,
+                  "x": 25.6,
+                  "y": 36.2
+                },
+                {
+                  "kind": "box",
+                  "x": 84.3,
+                  "y": 46.1,
+                  "w": 3.4,
+                  "h": 4.3
+                },
+                {
+                  "kind": "marker",
+                  "n": 3,
+                  "x": 82.9,
+                  "y": 48.2
                 }
               ]
             },
@@ -873,7 +969,7 @@
           ],
           "children": [],
           "lead": "Lo que hace recepción con cada alta que llega de la web, de principio a fin.",
-          "updatedAt": "2026-11-23"
+          "updatedAt": "2026-11-24"
         },
         {
           "id": "altas-familias",
@@ -1012,6 +1108,41 @@
           "md": "Lo primero es enviarle el **Mensaje 1** de baja para conocer el motivo y recordarle las alternativas (cuota de mantenimiento y baja médica).\n\nLos mensajes oficiales están en el Cuadro de mando: [erp.fibra-max.com](https://erp.fibra-max.com/) → **Control abonados → Formularios / Mensajes**, con botón de **copiar**. Usa siempre esos, no textos guardados en otro sitio."
         },
         {
+          "id": "b-shot-mensajes",
+          "type": "screenshot",
+          "src": "/capturas/erp-formularios-mensajes.png",
+          "alt": "Cuadro de mando, Formularios / Mensajes",
+          "caption": "Control abonados → Formularios / Mensajes: mensajes de baja (1) y de cambio de cuota (2).",
+          "annotations": [
+            {
+              "kind": "box",
+              "x": 16.3,
+              "y": 46.9,
+              "w": 11.3,
+              "h": 7.7
+            },
+            {
+              "kind": "marker",
+              "n": 1,
+              "x": 28.6,
+              "y": 50.8
+            },
+            {
+              "kind": "box",
+              "x": 58.4,
+              "y": 46.9,
+              "w": 4.8,
+              "h": 7.7
+            },
+            {
+              "kind": "marker",
+              "n": 2,
+              "x": 64.2,
+              "y": 50.8
+            }
+          ]
+        },
+        {
           "id": "b-forms-web",
           "type": "callout",
           "variant": "info",
@@ -1055,6 +1186,41 @@
                 {
                   "title": "Búscala en Matchpoint",
                   "md": "Busca a la persona en Matchpoint con el **muñeco con lupa** y entra en su perfil."
+                }
+              ]
+            },
+            {
+              "id": "b-a-shot-solicitudes",
+              "type": "screenshot",
+              "src": "/capturas/erp-solicitudes-baja.png",
+              "alt": "Cuadro de mando, Solicitudes de baja",
+              "caption": "Control abonados → Solicitudes baja (datos de ejemplo): el check para marcarla como tramitada (1) y Ver (2).",
+              "annotations": [
+                {
+                  "kind": "box",
+                  "x": 2,
+                  "y": 81.8,
+                  "w": 2.4,
+                  "h": 13.6
+                },
+                {
+                  "kind": "marker",
+                  "n": 1,
+                  "x": 5.4,
+                  "y": 88.6
+                },
+                {
+                  "kind": "box",
+                  "x": 92.4,
+                  "y": 81.4,
+                  "w": 3.4,
+                  "h": 14.5
+                },
+                {
+                  "kind": "marker",
+                  "n": 2,
+                  "x": 91,
+                  "y": 88.6
                 }
               ]
             },
@@ -1201,7 +1367,7 @@
             }
           ],
           "children": [],
-          "updatedAt": "2026-11-23",
+          "updatedAt": "2026-11-24",
           "lead": "La baja normal, a la que llamamos baja programada."
         },
         {
@@ -1504,7 +1670,7 @@
           "lead": "Qué hacer cuando nos llega el documento de recibos devueltos de administración."
         }
       ],
-      "updatedAt": "2026-11-23"
+      "updatedAt": "2026-11-24"
     },
     {
       "id": "cambio-cuota",
@@ -1517,6 +1683,41 @@
           "variant": "info",
           "title": "Cómo llega",
           "md": "Le enviamos el **formulario de cambio de cuota** (el **Mensaje** de cambio de cuota, en **Control abonados → Formularios / Mensajes**). También puede entrar él mismo desde [fibra-max.com](https://fibra-max.com/#bajas-cambios) → **Bajas y cambios de cuota → Cambiar mi cuota**. Cuando lo rellena, llega a [erp.fibra-max.com](https://erp.fibra-max.com/) → **Control abonados → Cambios cuota**, con su **cuota actual → nueva**."
+        },
+        {
+          "id": "cc-shot-erp",
+          "type": "screenshot",
+          "src": "/capturas/erp-cambios-cuota.png",
+          "alt": "Cuadro de mando, Cambios de cuota",
+          "caption": "Control abonados → Cambios cuota (datos de ejemplo): la cuota que pide (1) y el check al terminar (2).",
+          "annotations": [
+            {
+              "kind": "box",
+              "x": 56.1,
+              "y": 68.3,
+              "w": 19.1,
+              "h": 28.8
+            },
+            {
+              "kind": "marker",
+              "n": 1,
+              "x": 76.2,
+              "y": 70.5
+            },
+            {
+              "kind": "box",
+              "x": 15.3,
+              "y": 68.3,
+              "w": 1.8,
+              "h": 28.8
+            },
+            {
+              "kind": "marker",
+              "n": 2,
+              "x": 18.1,
+              "y": 70.5
+            }
+          ]
         },
         {
           "id": "cc-pasos-1",
@@ -1608,7 +1809,7 @@
       ],
       "children": [],
       "lead": "Cuando un abonado quiere cambiar de cuota, por ejemplo para ampliar el horario.",
-      "updatedAt": "2026-11-23"
+      "updatedAt": "2026-11-24"
     },
     {
       "id": "cuota-mantenimiento",
@@ -1810,7 +2011,42 @@
             },
             {
               "title": "Cuenta y guarda",
-              "md": "En la columna **Unidades actuales** ves el **Saldo**. Escribe en **Contar** las unidades que hay **ahora** en el centro (las que había más las que han llegado) y pulsa **Guardar**."
+              "md": "En la columna **Unidades actuales** ves el **Saldo**. Escribe en **Contar** las unidades que hay **ahora** en el centro (las que había más las que han llegado) y pulsa **Guardar** (**2**)."
+            }
+          ]
+        },
+        {
+          "id": "st-shot-lista",
+          "type": "screenshot",
+          "src": "/capturas/erp-lista-elementos.png",
+          "alt": "Cuadro de mando, Lista de elementos",
+          "caption": "Recepción → Lista de elementos: busca el artículo (1) y en Unidades actuales escribe en Contar y pulsa Guardar (2).",
+          "annotations": [
+            {
+              "kind": "box",
+              "x": 15,
+              "y": 42.9,
+              "w": 39.4,
+              "h": 4.8
+            },
+            {
+              "kind": "marker",
+              "n": 1,
+              "x": 55.4,
+              "y": 45.3
+            },
+            {
+              "kind": "box",
+              "x": 46,
+              "y": 63.2,
+              "w": 7.4,
+              "h": 6.9
+            },
+            {
+              "kind": "marker",
+              "n": 2,
+              "x": 44.8,
+              "y": 66.6
             }
           ]
         },
@@ -1821,7 +2057,7 @@
         }
       ],
       "children": [],
-      "updatedAt": "2026-11-23",
+      "updatedAt": "2026-11-24",
       "lead": "Qué hacer cuando llega un pedido: regularizar el stock en el Cuadro de mando."
     },
     {
@@ -1973,11 +2209,59 @@
                 },
                 {
                   "title": "Unidades",
-                  "md": "Pon las **unidades** que devuelve y pulsa **Añadir a la devolución**."
+                  "md": "Pon las **unidades** que devuelve y pulsa **Añadir a la devolución** (**1**)."
                 },
                 {
                   "title": "Reembolsa",
-                  "md": "Revisa el **Total a reembolsar** y pulsa **Devolución** para confirmarla."
+                  "md": "Si quieres, pon el **motivo** y el **nº de venta original** (los dos son opcionales) (**2**). Revisa el **Total a reembolsar** y pulsa **Devolución** para confirmarla (**3**)."
+                }
+              ]
+            },
+            {
+              "id": "tpvd-shot",
+              "type": "screenshot",
+              "src": "/capturas/erp-tpv-devolucion.png",
+              "alt": "TPV del Cuadro de mando, pestaña Devolución",
+              "caption": "TPV → Devolución: unidades (1), motivo y nº de venta original (2) y botón Devolución (3).",
+              "annotations": [
+                {
+                  "kind": "box",
+                  "x": 17,
+                  "y": 83.1,
+                  "w": 23.3,
+                  "h": 7.9
+                },
+                {
+                  "kind": "marker",
+                  "n": 1,
+                  "x": 41.2,
+                  "y": 87
+                },
+                {
+                  "kind": "box",
+                  "x": 58.5,
+                  "y": 63.6,
+                  "w": 38.5,
+                  "h": 15.3
+                },
+                {
+                  "kind": "marker",
+                  "n": 2,
+                  "x": 57.3,
+                  "y": 71.2
+                },
+                {
+                  "kind": "box",
+                  "x": 58.5,
+                  "y": 81.1,
+                  "w": 38.5,
+                  "h": 7.4
+                },
+                {
+                  "kind": "marker",
+                  "n": 3,
+                  "x": 57.3,
+                  "y": 84.8
                 }
               ]
             },
@@ -2055,6 +2339,14 @@
               "id": "tpvk-t",
               "type": "text",
               "md": "La pestaña **Ranking** ordena los productos del centro por **cantidad vendida** (número, nombre del producto y cantidad). Te sirve para saber qué se vende más y qué conviene tener siempre en stock al preparar el [pedido](#pedido-suplementacion)."
+            },
+            {
+              "id": "tpvk-shot",
+              "type": "screenshot",
+              "src": "/capturas/erp-tpv-ranking.png",
+              "alt": "TPV del Cuadro de mando, pestaña Ranking",
+              "caption": "TPV → Ranking: productos más vendidos del centro.",
+              "annotations": []
             }
           ],
           "children": [],
@@ -2557,7 +2849,7 @@
               "type": "callout",
               "variant": "warning",
               "title": "El dinero no se saca de la caja",
-              "md": "En el cierre **ya no se abre la máquina ni se saca el efectivo**: vienen a **retirarlo** al día siguiente o días después. Lo que sí hay que hacer es **anotar la retirada** en el Cuadro de mando."
+              "md": "El cierre se hace **igual que siempre** (con **«Cierre por valores iniciales»**), pero **ya no se saca el efectivo** para ponerlo en el sobre: vienen a **retirarlo** al día siguiente o días después. Lo que sí hay que hacer es **anotar la retirada** en el Cuadro de mando."
             },
             {
               "id": "ci-pasos",
@@ -2570,7 +2862,7 @@
                 },
                 {
                   "title": "Revisa la máquina de efectivo",
-                  "md": "Revisa el importe de la máquina de efectivo."
+                  "md": "Revisa el importe de la máquina de efectivo y pulsa **«Cierre por valores iniciales»**, como siempre. Lo único que cambia: **no abras la máquina ni saques el dinero** para el sobre."
                 },
                 {
                   "title": "Comprueba el TPV",
