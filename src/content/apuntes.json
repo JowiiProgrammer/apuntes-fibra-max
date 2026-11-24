@@ -1,5 +1,5 @@
 {
-  "version": 89,
+  "version": 90,
   "title": "Apuntes de Recepción",
   "sections": [
     {
@@ -3507,13 +3507,7 @@
       "id": "protocolos",
       "title": "Protocolos de incidencias y emergencias",
       "group": "Emergencias",
-      "blocks": [
-        {
-          "id": "pr-pend",
-          "type": "pending",
-          "note": "Por completar: reclamaciones (el manual indica tener 5 hojas impresas en cada centro), cortes de luz, temperatura del agua de las duchas, abonado encerrado dentro, inundación, máquinas vending, incidente con máquina y abonado implicado, robos y mantenimiento de zonas. En el manual solo tienen la plantilla vacía."
-        }
-      ],
+      "blocks": [],
       "children": [
         {
           "id": "pr-torno",
@@ -3564,7 +3558,7 @@
                 },
                 {
                   "title": "Evacúa",
-                  "md": "Evacúa toda la instalación: avisa por megafonía y recorre la sala avisando a los abonados. Todos deben ir al **punto de control**."
+                  "md": "Evacúa toda la instalación: avisa por megafonía y recorre la sala avisando a los abonados. Todos deben ir al **punto de encuentro** del centro."
                 },
                 {
                   "title": "Cuenta a la gente",
@@ -3578,27 +3572,6 @@
               "variant": "warning",
               "title": "A quién avisamos",
               "md": "A la **directora de operaciones**."
-            },
-            {
-              "id": "pi-shot-112",
-              "type": "screenshot",
-              "src": "/capturas/emergencia-1-guion-112.png",
-              "alt": "Guion para la llamada de emergencia al 112, en catalán",
-              "caption": "Guion de la llamada de emergencia (a completar mientras se habla).",
-              "annotations": []
-            },
-            {
-              "id": "pi-shot-mapa",
-              "type": "screenshot",
-              "src": "/capturas/emergencia-2-punto-reunion-cabrera.webp",
-              "alt": "Mapa del punto de reunión de Cabrera de Mar",
-              "caption": "Punto de reunión: Cabrera de Mar.",
-              "annotations": []
-            },
-            {
-              "id": "pi-pend",
-              "type": "pending",
-              "note": "Por completar: puntos de encuentro de los demás centros."
             }
           ],
           "children": [],
@@ -3606,7 +3579,7 @@
           "lead": "Cuando hay un incendio en la instalación o en la vecina."
         }
       ],
-      "updatedAt": "2026-10-08",
+      "updatedAt": "2026-11-24",
       "lead": "Qué hacer cuando pasa algo en el centro."
     }
   ],
