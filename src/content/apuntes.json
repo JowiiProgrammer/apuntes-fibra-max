@@ -1,5 +1,5 @@
 {
-  "version": 79,
+  "version": 80,
   "title": "Apuntes de Recepción",
   "sections": [
     {
@@ -2990,16 +2990,8 @@
               "type": "checklist",
               "title": "Del día 10 al 15",
               "items": [
-                "Revisar abonados inactivos desde hace más de 15 días: contactar y hacer seguimiento",
                 "Contactar con ex abonados que han pasado 6 meses"
               ]
-            },
-            {
-              "id": "cal-inactivos",
-              "type": "callout",
-              "variant": "info",
-              "title": "Abonados inactivos (más de 15 días)",
-              "md": "- En Matchpoint ve a **Información y Estadísticas → Abonos → 2.4 Clientes abonados no registran actividad**.\n- Exporta los datos y pásalos al Excel de la carpeta **Seguimiento abonados inactivos**.\n- Contacta por email y anota las respuestas que te den.\n- El mensaje está en **Missatges Compartits**: mensaje cercano y corto."
             },
             {
               "id": "cal-exabonados",
