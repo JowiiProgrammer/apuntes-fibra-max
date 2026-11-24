@@ -1,5 +1,5 @@
 {
-  "version": 80,
+  "version": 81,
   "title": "Apuntes de Recepción",
   "sections": [
     {
@@ -2947,13 +2947,7 @@
       "id": "tareas",
       "title": "Tareas según turno o calendario",
       "group": "Turnos",
-      "blocks": [
-        {
-          "id": "ta-cabrera",
-          "type": "pending",
-          "note": "Por completar: peculiaridades de Cabrera (apertura, cierre, luces…)."
-        }
-      ],
+      "blocks": [],
       "children": [
         {
           "id": "calendario",
@@ -3103,7 +3097,7 @@
           "lead": "Orden de trabajo del turno de tarde."
         }
       ],
-      "updatedAt": "2026-10-09"
+      "updatedAt": "2026-11-24"
     },
     {
       "id": "solicitudes-personal",
