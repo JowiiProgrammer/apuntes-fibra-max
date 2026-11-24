@@ -75,6 +75,7 @@ export function newBlock(type: BlockType): Block {
     case 'screenshot': return { id, type, src: '', alt: '', caption: '', annotations: [] }
     case 'message': return { id, type, title: 'Mensaje', text: '' }
     case 'pending': return { id, type, note: '' }
+    case 'download': return { id, type, title: '', href: '', note: '' }
   }
 }
 

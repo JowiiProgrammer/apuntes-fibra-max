@@ -324,6 +324,15 @@ kbd {
   display: flex; align-items: center; gap: 10px; padding: 12px 14px;
   border: 1.5px dashed var(--line); border-radius: var(--radius-sm); color: var(--muted); font-size: 13.5px;
 }
+.download {
+  display: flex; align-items: center; gap: 12px; padding: 12px 14px;
+  border: 1px solid var(--line); border-radius: var(--radius-sm); background: var(--card);
+}
+.download__icon { color: var(--red); flex: none; }
+.download__text { flex: 1; min-width: 0; }
+.download__title { margin: 0; font-weight: 700; }
+.download__text .small { margin: 2px 0 0; }
+.download .btn { flex: none; text-decoration: none; }
 .empty-note { padding: 12px 14px; border-radius: var(--radius-sm); background: var(--bg); color: var(--muted); font-size: 13.5px; }
 
 /* Tabla de precios: mismo lenguaje que el "Resumen del cobro" del Cuadro de mando */

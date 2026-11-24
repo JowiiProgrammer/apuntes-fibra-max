@@ -1,4 +1,4 @@
-import { AlertTriangle, Check, Copy, Info, Lightbulb, MessageSquareQuote, MessageSquareText, OctagonAlert, PencilLine } from 'lucide-react'
+import { AlertTriangle, Check, Copy, Download, FileText, Info, Lightbulb, MessageSquareQuote, MessageSquareText, OctagonAlert, PencilLine } from 'lucide-react'
 import { useState } from 'react'
 import type { Block, CalloutVariant } from '../types'
 import { Markdown } from './Markdown'
@@ -61,6 +61,22 @@ export function BlockView({ block }: { block: Block }) {
 
     case 'message':
       return <MessageBlock title={block.title} text={block.text} />
+
+    case 'download':
+      return (
+        <div className="download">
+          <FileText size={22} className="download__icon" />
+          <div className="download__text">
+            <p className="download__title">{block.title}</p>
+            {block.note && <p className="muted small">{block.note}</p>}
+          </div>
+          {block.href && (
+            <a className="btn btn--sm" href={block.href} download data-search-skip>
+              <Download size={14} /> Descargar
+            </a>
+          )}
+        </div>
+      )
 
     case 'pending':
       return (

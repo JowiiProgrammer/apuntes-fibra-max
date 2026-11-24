@@ -16,6 +16,7 @@ export const BLOCK_LABELS: Record<BlockType, string> = {
   prices: 'Tabla de precios',
   screenshot: 'Captura',
   pending: 'Pendiente',
+  download: 'Descarga',
 }
 
 /** Campo que guarda al salir (blur) y no en cada tecla: evita reescribir todo el
@@ -175,6 +176,15 @@ function BlockForm({ block, save }: { block: Block; save: (b: Block) => void }) 
         </>
       )
 
+    case 'download':
+      return (
+        <>
+          <Field value={block.title} placeholder="Nombre del documento" onCommit={(title) => save({ ...block, title })} />
+          <Field value={block.href} placeholder="Ruta del archivo (ej. /documentos/vacaciones.pdf)" onCommit={(href) => save({ ...block, href })} />
+          <Field value={block.note ?? ''} placeholder="Nota (opcional)" onCommit={(note) => save({ ...block, note })} />
+        </>
+      )
+
     case 'pending':
       return <Field value={block.note ?? ''} placeholder="Nota: qué falta por redactar (opcional)" onCommit={(note) => save({ ...block, note })} />
   }
@@ -184,7 +194,7 @@ function AddButton({ onClick, children }: { onClick: () => void; children: React
   return <button className="btn btn--ghost btn--sm" onClick={onClick}><Plus size={14} /> {children}</button>
 }
 
-const ADDABLE: BlockType[] = ['text', 'steps', 'screenshot', 'callout', 'speech', 'message', 'checklist', 'prices', 'pending']
+const ADDABLE: BlockType[] = ['text', 'steps', 'screenshot', 'callout', 'speech', 'message', 'checklist', 'prices', 'download', 'pending']
 
 export function AddBlockMenu({ sectionId }: { sectionId: string }) {
   const { addBlock } = useApuntes()

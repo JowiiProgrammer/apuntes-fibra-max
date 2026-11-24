@@ -1,5 +1,5 @@
 {
-  "version": 83,
+  "version": 84,
   "title": "Apuntes de Recepción",
   "sections": [
     {
@@ -3149,11 +3149,18 @@
           "type": "callout",
           "variant": "warning",
           "title": "Vacaciones",
-          "md": "Las vacaciones se piden igual, por email y con Recursos Humanos en copia, **adjuntando el formulario de solicitud** de vacaciones."
+          "md": "Las vacaciones se piden igual, por email y con Recursos Humanos en copia, **adjuntando el formulario de solicitud** de vacaciones (descárgalo aquí abajo, rellénalo y fírmalo)."
+        },
+        {
+          "id": "sp-form-vacaciones",
+          "type": "download",
+          "title": "Formulario de solicitud y autorización de vacaciones",
+          "href": "/documentos/solicitud-vacaciones.pdf",
+          "note": "PDF · Rellénalo, fírmalo y adjúntalo al email."
         }
       ],
       "children": [],
-      "updatedAt": "2026-10-09"
+      "updatedAt": "2026-11-24"
     },
     {
       "id": "extraordinarias",
