@@ -1,5 +1,5 @@
 {
-  "version": 90,
+  "version": 91,
   "title": "Apuntes de Recepción",
   "sections": [
     {
@@ -2631,7 +2631,7 @@
           "id": "fc-msg",
           "type": "message",
           "title": "Aviso en el grupo STOCK de Teams",
-          "text": "STOCK\nCentro: [CENTRO]\nFaltante: [Monedas de 1 € / la denominación que corresponda]\nAcción: Avisado a la directora de operaciones\nPrioridad: Alta"
+          "text": "STOCK\nCentro: [CENTRO]\nFaltante: [Monedas de 1 € / la denominación que corresponda]\nAcción: Avisado a Alex\nPrioridad: Alta"
         },
         {
           "id": "fc-ej",
@@ -2644,8 +2644,8 @@
           "start": 2,
           "items": [
             {
-              "title": "Avisa a la directora de operaciones por WhatsApp",
-              "md": "El aviso va **directamente a la directora de operaciones**, por **WhatsApp**."
+              "title": "Avisa a Alex por WhatsApp",
+              "md": "El aviso va **directamente a Alex** (o a **dirección**), por **WhatsApp**."
             }
           ]
         }
@@ -2734,7 +2734,7 @@
           "updatedAt": "2026-10-09"
         }
       ],
-      "updatedAt": "2026-10-09"
+      "updatedAt": "2026-11-24"
     },
     {
       "id": "facturacion",
@@ -3553,8 +3553,8 @@
                   "md": "Ya sea en nuestra instalación o en la instalación vecina, si puede afectar a la nuestra."
                 },
                 {
-                  "title": "Llama a la directora de operaciones",
-                  "md": "Llama a la **directora de operaciones**: ella es quien llama al **112** e informa del incendio."
+                  "title": "Llama a Alex o a dirección",
+                  "md": "Llama a **Alex** o a **dirección**: son quienes llaman al **112** e informan del incendio."
                 },
                 {
                   "title": "Evacúa",
@@ -3571,7 +3571,7 @@
               "type": "callout",
               "variant": "warning",
               "title": "A quién avisamos",
-              "md": "A la **directora de operaciones**."
+              "md": "A **Alex** o a **dirección**."
             }
           ],
           "children": [],
