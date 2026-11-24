@@ -1,5 +1,5 @@
 {
-  "version": 74,
+  "version": 75,
   "title": "Apuntes de Recepción",
   "sections": [
     {
@@ -2148,6 +2148,10 @@
             {
               "title": "Saca el importe",
               "md": "Indica el importe que hay que sacar y recoge el dinero de la caja."
+            },
+            {
+              "title": "Apúntalo en la Facturación diaria",
+              "md": "En [Facturación diaria](#facturacion) del Cuadro de mando, pon el importe en **Salida de dinero** y explica el motivo en **Comentarios**."
             }
           ]
         },
