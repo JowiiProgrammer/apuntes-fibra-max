@@ -1,5 +1,5 @@
 {
-  "version": 86,
+  "version": 87,
   "title": "Apuntes de Recepción",
   "sections": [
     {
@@ -3174,11 +3174,16 @@
           "title": "Problema con pedido de suplementación",
           "blocks": [
             {
-              "id": "problema-pedido-pendiente",
-              "type": "pending"
+              "id": "pp-alex",
+              "type": "callout",
+              "variant": "info",
+              "title": "Avisa a Alex",
+              "md": "Si hay cualquier problema con un pedido de suplementación, **avisa a Alex** por el grupo de WhatsApp **«FIBRA MAX PEDIDOS SUPLEMENTACION»**: qué producto, qué pasa y, si puedes, una **foto**. Él se encarga de solucionarlo.\n\nCómo se hace el pedido: [Hacer pedido de suplementación](#pedido-suplementacion)."
             }
           ],
-          "children": []
+          "children": [],
+          "lead": "Falta algo, llega roto o no es lo que se pidió.",
+          "updatedAt": "2026-11-24"
         },
         {
           "id": "pago-pendientes",
