@@ -1,5 +1,5 @@
 {
-  "version": 88,
+  "version": 89,
   "title": "Apuntes de Recepción",
   "sections": [
     {
@@ -3482,8 +3482,12 @@
               "md": "En el Excel **CONTROL ACTITUDES ABONADOS** (SharePoint → **FIBRA-TEAM - COMUN RECEPCIONES → COMUN**) anota: **nombre, fecha, incidencia y número de aviso**."
             },
             {
-              "title": "Avisos 2 y 3",
-              "md": "Cuando se registre el **aviso 2** o el **aviso 3**, la directora de operaciones se pondrá en contacto con la persona para avisarla por escrito con la sanción correspondiente."
+              "title": "Coméntaselo a Alex",
+              "md": "Antes de nada, **coméntaselo primero a Alex**."
+            },
+            {
+              "title": "Avisos 2 y 3: los enviamos nosotros",
+              "md": "Si **Alex o Xevi** lo **autorizan**, el **aviso por escrito** (aviso 2) o la **sanción** (aviso 3) se lo **enviamos nosotros directamente** desde recepción. Sin su autorización, no se envía."
             }
           ]
         },
@@ -3492,7 +3496,7 @@
           "type": "callout",
           "variant": "warning",
           "title": "Sistema de avisos y sanciones",
-          "md": "1. **Recordatorio verbal** por parte del personal de sala.\n2. **Aviso formal por escrito**, emitido por la directora de operaciones.\n3. **Sanción:** una semana sin acceso a ningún centro Fibra Max."
+          "md": "1. **Recordatorio verbal** por parte del personal de sala.\n2. **Aviso formal por escrito**, enviado por recepción con la autorización de **Alex o Xevi**.\n3. **Sanción:** una semana sin acceso a ningún centro Fibra Max (también con su autorización)."
         }
       ],
       "children": [],
