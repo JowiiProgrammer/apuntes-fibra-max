@@ -1,5 +1,5 @@
 {
-  "version": 78,
+  "version": 79,
   "title": "Apuntes de Recepción",
   "sections": [
     {
@@ -1159,7 +1159,7 @@
           "type": "callout",
           "variant": "warning",
           "title": "Plazo para avisar",
-          "md": "El formulario hay que rellenarlo como muy tarde el **día 24 a las 23:00 h** del mes anterior al que se quiere solicitar, porque el próximo pago es siempre el día **1**.\n\nVale para la **baja**, la **cuota de mantenimiento** y cualquier **cambio de cuota**."
+          "md": "El formulario hay que rellenarlo como muy tarde el **día 24 a las 23:00 h** del mes anterior al que se quiere solicitar, porque el próximo pago es siempre el día **1**.\n\nVale para la **baja**, la **cuota de mantenimiento** y cualquier **cambio de cuota**.\n\nLos formularios **se cierran solos** al pasar el plazo y **se vuelven a abrir solos**: no hay que activarlos a mano."
         },
         {
           "id": "b-volver",
@@ -2982,8 +2982,8 @@
               "id": "cal-renov",
               "type": "callout",
               "variant": "info",
-              "title": "Fin de promo y renovaciones",
-              "md": "Todo el proceso está en [Renovaciones](#renovaciones)."
+              "title": "Renovaciones",
+              "md": "Todo el proceso está en [Renovaciones](#renovaciones). El aviso de fin de promo ya no se hace a mano: será automático."
             },
             {
               "id": "cal-10-15",
@@ -3014,14 +3014,12 @@
               "title": "Del día 15 al 31",
               "items": [
                 "Bajas médicas y cuotas de mantenimiento",
-                "Reportar las entradas puntuales que se hayan anotado ya",
-                "Activar de nuevo los formularios de baja y de cambio de cuota",
                 "Revisión de bajas y cuotas a facturar para el próximo mes (equipo)"
               ]
             }
           ],
           "children": [],
-          "updatedAt": "2026-11-23",
+          "updatedAt": "2026-11-24",
           "lead": "Tareas que no se hacen cada día: revísalas según la fecha para que no se acumulen al final de mes."
         },
         {
