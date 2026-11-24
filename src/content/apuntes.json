@@ -1,5 +1,5 @@
 {
-  "version": 73,
+  "version": 74,
   "title": "Apuntes de Recepción",
   "sections": [
     {
@@ -2130,11 +2130,53 @@
       "group": "Caja",
       "blocks": [
         {
-          "id": "salida-dinero-pendiente",
-          "type": "pending"
+          "id": "sd-aviso",
+          "type": "callout",
+          "variant": "danger",
+          "title": "Solo con autorización previa",
+          "md": "Solo se saca dinero de la caja en **casos excepcionales**, cuando haga falta para algo concreto y **siempre con autorización previa**. Sin autorización, no."
+        },
+        {
+          "id": "sd-pasos",
+          "type": "steps",
+          "start": 1,
+          "items": [
+            {
+              "title": "Pulsa «Pago»",
+              "md": "En el **Monitor** de la caja automática, pulsa **Pago** (**1**), abajo a la izquierda."
+            },
+            {
+              "title": "Saca el importe",
+              "md": "Indica el importe que hay que sacar y recoge el dinero de la caja."
+            }
+          ]
+        },
+        {
+          "id": "sd-shot",
+          "type": "screenshot",
+          "src": "/capturas/salida-dinero-1-monitor.png",
+          "alt": "Monitor de la caja automática con el botón Pago",
+          "caption": "Monitor de la caja automática: botón Pago.",
+          "annotations": [
+            {
+              "kind": "box",
+              "x": 0.1,
+              "y": 93.2,
+              "w": 4.2,
+              "h": 6.7
+            },
+            {
+              "kind": "marker",
+              "n": 1,
+              "x": 6,
+              "y": 96.5
+            }
+          ]
         }
       ],
-      "children": []
+      "children": [],
+      "lead": "Sacar dinero de la caja automática: solo en casos excepcionales.",
+      "updatedAt": "2026-11-24"
     },
     {
       "id": "falta-cambio",
