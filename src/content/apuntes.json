@@ -1,5 +1,5 @@
 {
-  "version": 82,
+  "version": 83,
   "title": "Apuntes de Recepción",
   "sections": [
     {
@@ -2954,13 +2954,6 @@
           "title": "Calendario",
           "blocks": [
             {
-              "id": "cal-excel",
-              "type": "callout",
-              "variant": "info",
-              "title": "Dónde están los Excel",
-              "md": "En **SharePoint**: OneDrive **Fibra Team → Común Recepciones →** carpeta del centro."
-            },
-            {
               "id": "cal-1-10",
               "type": "checklist",
               "title": "Del día 1 al 10",
@@ -2992,6 +2985,42 @@
           "children": [],
           "updatedAt": "2026-11-24",
           "lead": "Tareas que no se hacen cada día: revísalas según la fecha para que no se acumulen al final de mes."
+        },
+        {
+          "id": "incidencias-mantenimiento",
+          "title": "Incidencias de mantenimiento",
+          "lead": "Cuando algo se rompe o hay que arreglarlo (máquinas, vestuarios, sala, clima…). Es el único Excel que se usa.",
+          "blocks": [
+            {
+              "id": "im-donde",
+              "type": "callout",
+              "variant": "info",
+              "title": "Dónde está",
+              "md": "Excel **MANTENIMIENTO FIBRA MAX**. Desde el escritorio: acceso **SharePoint FIBRA** → **FIBRA-TEAM - COMUN RECEPCIONES → COMUN → MANTENIMIENTO FIBRA MAX**. Es el mismo para **todos los centros**."
+            },
+            {
+              "id": "im-pasos",
+              "type": "steps",
+              "start": 1,
+              "items": [
+                {
+                  "title": "Añade una fila en la hoja MANTENIMIENTO",
+                  "md": "En la primera fila libre rellena:\n\n- **Fecha** de hoy.\n- **Centro** y **Persona** (tú), del desplegable.\n- **Zona** (maquinaria, sala, vestuarios, pádel…) y el **detalle** (columna de al lado), también del desplegable: las opciones cambian según la zona.\n- **Nº máquina**, si es una máquina.\n- **Comentarios:** explica bien qué pasa y dónde."
+                },
+                {
+                  "title": "No toques las primeras columnas",
+                  "md": "**Respuesta**, **Fecha realizado** y **Nº incidencia** las rellena **solo Alex Lobillo** (mantenimiento)."
+                }
+              ]
+            },
+            {
+              "id": "im-completado",
+              "type": "text",
+              "md": "Cuando la incidencia está arreglada pasa a la hoja **COMPLETADO**. En la hoja **TAREAS** están las tareas de mantenimiento de los centros (semanales, mensuales y trimestrales)."
+            }
+          ],
+          "children": [],
+          "updatedAt": "2026-11-24"
         },
         {
           "id": "turno-mananas",
