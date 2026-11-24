@@ -1,5 +1,5 @@
 {
-  "version": 77,
+  "version": 78,
   "title": "Apuntes de Recepción",
   "sections": [
     {
@@ -2929,23 +2929,18 @@
               "md": "Desde Matchpoint recoge: **nombre, apellido, email, dirección, DNI/NIE/CIF, abono y periodo pagado**."
             },
             {
-              "title": "Envíalos a administración",
-              "md": "Envía estos datos por email a **administración**."
+              "title": "Envíaselos a Anna Canal",
+              "md": "Envía estos datos por email a **Anna Canal**: es quien hace las facturas."
             },
             {
               "title": "Copia oculta al cliente",
-              "md": "Mejor si pones al cliente en **copia oculta**, porque le llegará la factura una vez realizada por administración."
+              "md": "Mejor si pones al cliente en **copia oculta**, porque le llegará la factura cuando Anna la haya hecho."
             }
           ]
-        },
-        {
-          "id": "sf-pend",
-          "type": "pending",
-          "note": "Por completar: direcciones de email de administración (no se publican aquí porque la web es pública)."
         }
       ],
       "children": [],
-      "updatedAt": "2026-10-08",
+      "updatedAt": "2026-11-24",
       "lead": "Cuando un abonado nos pide factura de una entrada puntual o del abono pagado."
     },
     {
