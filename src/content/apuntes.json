@@ -1,5 +1,5 @@
 {
-  "version": 81,
+  "version": 82,
   "title": "Apuntes de Recepción",
   "sections": [
     {
@@ -2978,21 +2978,6 @@
               "variant": "info",
               "title": "Renovaciones",
               "md": "Todo el proceso está en [Renovaciones](#renovaciones). El aviso de fin de promo ya no se hace a mano: será automático."
-            },
-            {
-              "id": "cal-10-15",
-              "type": "checklist",
-              "title": "Del día 10 al 15",
-              "items": [
-                "Contactar con ex abonados que han pasado 6 meses"
-              ]
-            },
-            {
-              "id": "cal-exabonados",
-              "type": "callout",
-              "variant": "info",
-              "title": "Ex abonados de 6 meses",
-              "md": "- En Matchpoint ve a **Información y Estadísticas → Abonos → 2.13 Registro Altas y bajas de abonados**.\n- Filtra el mes que quieres revisar y contacta por email.\n- Hay una plantilla HTML guardada: abre el perfil de cualquier persona del staff y cambia su email por el de recepción. En MatchPoint ve a **Enviar Email**, elige formato **HTML** y copia el código.\n- Te llega el HTML por email y lo reenvías **con copia oculta** a todos los ex abonados de 6 meses."
             },
             {
               "id": "cal-15-31",
