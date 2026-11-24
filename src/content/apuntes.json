@@ -1,5 +1,5 @@
 {
-  "version": 87,
+  "version": 88,
   "title": "Apuntes de Recepción",
   "sections": [
     {
@@ -3475,11 +3475,11 @@
           "items": [
             {
               "title": "Revisa el control de accesos",
-              "md": "En Matchpoint puedes revisar el **control de accesos** para estar pendiente del nombre y apellido."
+              "md": "En Matchpoint revisa el **control de accesos** (**Control Acceso → Historial de accesos** o **Accesos en vivo**) para tener el **nombre y apellido** de la persona."
             },
             {
               "title": "Regístralo en el Excel",
-              "md": "En el Excel **Control actitudes abonados** anota: **nombre, fecha, incidencia y número de aviso**."
+              "md": "En el Excel **CONTROL ACTITUDES ABONADOS** (SharePoint → **FIBRA-TEAM - COMUN RECEPCIONES → COMUN**) anota: **nombre, fecha, incidencia y número de aviso**."
             },
             {
               "title": "Avisos 2 y 3",
@@ -3496,7 +3496,7 @@
         }
       ],
       "children": [],
-      "updatedAt": "2026-10-08",
+      "updatedAt": "2026-11-24",
       "lead": "Para registrar una incidencia o el incumplimiento de la normativa por parte de un abonado."
     },
     {
@@ -3564,7 +3564,7 @@
                 },
                 {
                   "title": "Cuenta a la gente",
-                  "md": "Cuenta desde Matchpoint cuánta gente hay en ese momento en el centro, para comprobar al llegar al punto de encuentro que está todo el mundo."
+                  "md": "Mira en Matchpoint cuánta gente hay en ese momento en el centro (**Control Acceso → Accesos en vivo**, ver [Aforo](#aforo)), para comprobar al llegar al punto de encuentro que está todo el mundo."
                 }
               ]
             },
@@ -3598,7 +3598,7 @@
             }
           ],
           "children": [],
-          "updatedAt": "2026-10-08",
+          "updatedAt": "2026-11-24",
           "lead": "Cuando hay un incendio en la instalación o en la vecina."
         }
       ],
