@@ -1,5 +1,5 @@
 {
-  "version": 72,
+  "version": 73,
   "title": "Apuntes de Recepción",
   "sections": [
     {
@@ -1836,11 +1836,11 @@
           "items": [
             {
               "title": "Rellena la plantilla",
-              "md": "Apunta el pedido en la **plantilla de Excel** de pedidos. Ten en cuenta el **pedido mínimo**."
+              "md": "Apunta el pedido en la **plantilla de Excel** de pedidos. Ten en cuenta el **pedido mínimo**: **depende de la marca** (cada proveedor tiene el suyo)."
             },
             {
               "title": "Envíaselo a Alex",
-              "md": "Envía la plantilla a **Alex** por el **grupo** de pedidos. Ellos se encargan de todo y de **traerlo** al centro."
+              "md": "Envía la plantilla a **Alex** por el grupo de WhatsApp **«FIBRA MAX PEDIDOS SUPLEMENTACION»**. Ellos se encargan de todo y de **traerlo** al centro."
             },
             {
               "title": "Cuando llega",
@@ -1850,7 +1850,7 @@
         }
       ],
       "children": [],
-      "updatedAt": "2026-11-23",
+      "updatedAt": "2026-11-24",
       "lead": "Se pide a Alex con la plantilla de Excel; ellos lo traen."
     },
     {
@@ -1866,6 +1866,13 @@
           "md": "**Todo lo que tengamos en stock en Matchpoint ya no se cobra en Matchpoint**: suplementación, toallas de Fibra Max y demás productos. Se cobra desde el **TPV** del Cuadro de mando ([erp.fibra-max.com](https://erp.fibra-max.com/) → **Recepción → TPV**)."
         },
         {
+          "id": "vs-mapa",
+          "type": "callout",
+          "variant": "info",
+          "title": "El TPV por dentro",
+          "md": "En **Recepción → TPV** hay cuatro pestañas:\n\n- **Venta**: cobrar productos (abajo).\n- **[Devolución](#tpv-devolucion)**: devolver productos y reembolsar.\n- **[Ventas registradas](#tpv-ventas-registradas)**: histórico de ventas y resumen de caja.\n- **[Ranking](#tpv-ranking)**: los productos más vendidos del centro.\n\nArriba a la derecha, el botón **Ayuda** abre una **guía visual en PDF** del TPV (se puede descargar)."
+        },
+        {
           "id": "vs-pasos",
           "type": "steps",
           "items": [
@@ -1875,7 +1882,7 @@
             },
             {
               "title": "Elige el producto",
-              "md": "Hay dos formas:\n\n- **Lector de código de barras** (casilla **1**): ponte en esa casilla, como si fueras a escribir, y pasa el lector por el código. Escanear **solo identifica** el producto: no lo añade ni lo cobra.\n- **Buscador** (**O busca por nombre**): si el lector no funciona alguna vez o el producto no tiene código de barras, búscalo por nombre, referencia o marca. Fíjate bien en el envase, en los gramos y en la marca."
+              "md": "Hay tres formas:\n\n- **1 · Lector de código de barras**: ponte en esa casilla, como si fueras a escribir, y pasa el lector por el código. El lector funciona desde **cualquier parte del TPV**. Escanear **solo identifica** el producto: no lo añade ni lo cobra.\n- **2 · Categoría, marca y producto**: elige en los desplegables. Solo salen los artículos **activados en el Catálogo** del centro.\n- **O busca por nombre**: si el lector no funciona o el producto no tiene código, búscalo por **nombre, referencia o marca**. Fíjate bien en el envase, en los gramos y en la marca."
             },
             {
               "title": "Cantidad y carrito",
@@ -1956,13 +1963,32 @@
           "lead": "Para descontar un producto. No se usa mucho, pero está por si acaso.",
           "blocks": [
             {
-              "id": "tpvd-t",
+              "id": "tpvd-pasos",
+              "type": "steps",
+              "start": 1,
+              "items": [
+                {
+                  "title": "Elige el producto",
+                  "md": "En la pestaña **Devolución**, igual que en Venta: con el **lector** o con **categoría, marca y producto**."
+                },
+                {
+                  "title": "Unidades",
+                  "md": "Pon las **unidades** que devuelve y pulsa **Añadir a la devolución**."
+                },
+                {
+                  "title": "Reembolsa",
+                  "md": "Revisa el **Total a reembolsar** y pulsa **Devolución** para confirmarla."
+                }
+              ]
+            },
+            {
+              "id": "tpvd-neto",
               "type": "text",
-              "md": "La pestaña **Devolución** funciona igual que **Venta**, pero para **descontar**."
+              "md": "La devolución queda enlazada a su venta en [Ventas registradas](#tpv-ventas-registradas) y se resta del total del día."
             }
           ],
           "children": [],
-          "updatedAt": "2026-10-15"
+          "updatedAt": "2026-11-24"
         },
         {
           "id": "tpv-ventas-registradas",
@@ -1972,7 +1998,7 @@
             {
               "id": "tpvr-t",
               "type": "text",
-              "md": "Aquí queda el **histórico de las ventas** que vas haciendo. Si te equivocas con el pago, puedes **editarlo** entre **tarjeta** y **efectivo**."
+              "md": "Aquí queda el **histórico de las ventas** del centro.\n\n- Arriba, el **Resumen de caja TPV** del día: **tarjeta**, **efectivo** y **total neto** (ventas menos devoluciones).\n- Puedes **buscar** por producto, referencia o código y filtrar por fechas (**Desde / Hasta**) y por **estado**: **Todas**, **Vigentes** o **Anuladas**.\n- Cada venta muestra la fecha y hora, el canal de venta, el **recepcionista**, los productos, el pago y el total. Si tiene devoluciones, salen **enlazadas** con el neto.\n- Si te equivocas con el pago, puedes **editarlo** entre **tarjeta** y **efectivo**."
             },
             {
               "id": "tpvr-shot",
@@ -2018,11 +2044,39 @@
             }
           ],
           "children": [],
-          "updatedAt": "2026-10-15"
+          "updatedAt": "2026-11-24"
+        },
+        {
+          "id": "tpv-ranking",
+          "title": "Ranking",
+          "lead": "Los productos que más se venden en el centro.",
+          "blocks": [
+            {
+              "id": "tpvk-t",
+              "type": "text",
+              "md": "La pestaña **Ranking** ordena los productos del centro por **cantidad vendida** (número, nombre del producto y cantidad). Te sirve para saber qué se vende más y qué conviene tener siempre en stock al preparar el [pedido](#pedido-suplementacion)."
+            }
+          ],
+          "children": [],
+          "updatedAt": "2026-11-24"
+        },
+        {
+          "id": "tpv-relacionado",
+          "title": "Otros apartados del Cuadro de mando",
+          "lead": "Pantallas de Recepción que van con el TPV.",
+          "blocks": [
+            {
+              "id": "tpvo-lista",
+              "type": "text",
+              "md": "- **Stock**: existencias del centro, **Entradas**, **Catálogo** y **Movimientos**. Solo para consultar. Más en [Stock](#stock).\n- **Lista de elementos**: catálogo completo de artículos (referencia, código de barras, familia, marca, PVP, IVA y si está activo). Aquí se **regulariza el stock** cuando llega un pedido (**Contar → Guardar**).\n- **Facturación diaria**: lo cobrado en el TPV sale solo en **Efectivo Ventas** y **Tarjeta Ventas**. Ya está incluido: no se suma otra vez."
+            }
+          ],
+          "children": [],
+          "updatedAt": "2026-11-24"
         }
       ],
-      "updatedAt": "2026-10-16",
-      "lead": "Registrar una venta de suplementación, toallas o artículos varios en el TPV."
+      "updatedAt": "2026-11-24",
+      "lead": "Todo lo del TPV del Cuadro de mando: vender, devolver, ver las ventas y el ranking."
     },
     {
       "id": "entrada-cambio",
