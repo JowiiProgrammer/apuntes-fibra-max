@@ -1,9 +1,11 @@
 import { Download, Menu, Plus, Printer, RotateCcw, Upload } from 'lucide-react'
 import { useEffect, useMemo, useRef, useState } from 'react'
+import { Novedades } from './components/Novedades'
 import { SearchBar } from './components/SearchBar'
 import { SectionView } from './components/SectionView'
 import { Sidebar } from './components/Sidebar'
 import { numbering, useApuntes } from './store'
+import seed from './content/apuntes.json'
 import type { Apuntes, Section } from './types'
 
 const flatten = (list: Section[]): Section[] => list.flatMap((s) => [s, ...flatten(s.children)])
@@ -137,6 +139,8 @@ export default function App() {
           <footer className="foot" data-search-skip>Fibra Max · Apuntes internos de recepción</footer>
         </main>
       </div>
+      {/* Las novedades salen siempre de la versión publicada, aunque haya cambios locales. */}
+      <Novedades items={(seed as Apuntes).novedades ?? []} />
     </div>
   )
 }

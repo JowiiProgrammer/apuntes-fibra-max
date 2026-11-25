@@ -67,9 +67,19 @@ export interface PriceTable {
   updatedAt?: string
 }
 
+/** Aviso corto para recepción (aparece en el botón flotante «Novedades»). */
+export interface Novedad {
+  id: string
+  /** Fecha ISO (AAAA-MM-DD). */
+  date: string
+  title: string
+  md: string
+}
+
 export interface Apuntes {
   version: number
   title: string
   sections: Section[]
   priceTables: PriceTable[]
+  novedades?: Novedad[]
 }

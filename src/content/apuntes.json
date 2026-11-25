@@ -1,5 +1,5 @@
 {
-  "version": 91,
+  "version": 94,
   "title": "Apuntes de Recepción",
   "sections": [
     {
@@ -179,14 +179,14 @@
               "type": "callout",
               "variant": "info",
               "title": "Si lo compró por la web: EP/Bonos",
-              "md": "Las compras de la web llegan al Cuadro de mando: [erp.fibra-max.com](https://erp.fibra-max.com/) → **Control abonados → EP/Bonos**.\n\n- Pestaña **Vigentes** (las que están en vigor) e **Histórico** (las que ya han caducado). Puedes filtrar por **centro** y por **tipo** (entrada puntual o bono).\n- Búscala por **nombre, email, teléfono, producto o referencia**.\n- En cada compra ves el **producto**, la **vigencia** (desde → hasta), el **importe** y el **pago** («Pagado · comunicado por Web»).\n- El **ojo** (Detalle) abre todos sus datos: nombre, DNI, teléfono, correo, dirección… Te sirven para registrarla en Matchpoint.\n\nCompruébalo ahí antes de dar el acceso. Si **no** sale como pagado (eligió **efectivo en recepción**), cóbralo en el paso 11."
+              "md": "Las compras de la web llegan al Cuadro de mando: [erp.fibra-max.com](https://erp.fibra-max.com/) → **Control abonados → EP/Bonos**.\n\n- Pestaña **Vigentes** (las que están en vigor) e **Histórico** (las que ya han caducado). Puedes filtrar por **centro** y por **tipo** (entrada puntual o bono).\n- Búscala por **nombre, email, teléfono, producto o referencia**.\n- En cada compra ves el **producto**, la **vigencia** (desde → hasta), el **importe** y el **pago** («Pagado · comunicado por Web»).\n- El **ojo** (Detalle) abre todos sus datos: nombre, DNI, teléfono, correo, dirección… Te sirven para registrarla en Matchpoint.\n\nCompruébalo ahí antes de dar el acceso. Si sale **«Pendiente de pago · efectivo en recepción»**, cóbralo en el paso 11 y después marca el **check** que tiene al lado (**Cobro en efectivo recibido en recepción**)."
             },
             {
               "id": "mp-shot-ep-bonos",
               "type": "screenshot",
               "src": "/capturas/erp-ep-bonos.png",
               "alt": "Cuadro de mando, Entradas puntuales y bonos",
-              "caption": "Control abonados → EP/Bonos (datos de ejemplo): Vigentes / Histórico (1), estado del pago (2) y el ojo para ver el detalle (3).",
+              "caption": "Control abonados → EP/Bonos (datos de ejemplo): Vigentes / Histórico (1), pago pendiente en efectivo con su check (2) y el ojo para ver el detalle (3).",
               "annotations": [
                 {
                   "kind": "box",
@@ -203,15 +203,15 @@
                 },
                 {
                   "kind": "box",
-                  "x": 77.2,
+                  "x": 75.4,
                   "y": 36.6,
-                  "w": 16,
-                  "h": 6.6
+                  "w": 17.2,
+                  "h": 13.6
                 },
                 {
                   "kind": "marker",
                   "n": 2,
-                  "x": 76,
+                  "x": 74.2,
                   "y": 39.9
                 },
                 {
@@ -224,7 +224,7 @@
                 {
                   "kind": "marker",
                   "n": 3,
-                  "x": 93.8,
+                  "x": 98.6,
                   "y": 39.9
                 }
               ]
@@ -472,7 +472,7 @@
             }
           ],
           "children": [],
-          "updatedAt": "2026-11-24"
+          "updatedAt": "2026-11-25"
         }
       ]
     },
@@ -1891,6 +1891,13 @@
           "md": "Cuando un abonado con **pago adelantado** (trimestral, semestral o anual) renueva. Puede renovar viniendo **antes del día 25 del último mes** que tiene cubierto y haciendo el pago de nuevo.\n\nSe renueva **solo en recepción**: por la web no se puede."
         },
         {
+          "id": "rn-tarde",
+          "type": "callout",
+          "variant": "tip",
+          "title": "Si se le pasa el día 24",
+          "md": "Si no ha renovado a tiempo y al mes siguiente ya se le ha cobrado la **cuota mensual**, puede pasarse igualmente a **trimestral, semestral o anual**: paga la **diferencia**, es decir, el **total del abono** menos lo que ya ha pagado de **mensual** (precios en [Tarifas](#tarifas)). Cóbralo con una [nueva venta](#nueva-venta) y adelanta los meses en el abono como en una renovación normal."
+        },
+        {
           "id": "rn-pasos",
           "type": "steps",
           "items": [
@@ -1917,7 +1924,7 @@
         }
       ],
       "children": [],
-      "updatedAt": "2026-11-23",
+      "updatedAt": "2026-11-25",
       "lead": "Registrar la renovación de una tarifa con pago adelantado."
     },
     {
@@ -2759,29 +2766,60 @@
           "id": "fa-shot-erp",
           "type": "screenshot",
           "src": "/capturas/facturacion-diaria-erp.png",
-          "alt": "Pantalla Facturación diaria del programa de facturación con Arqueo y Cierre diario de recepción",
-          "caption": "Facturación diaria: fecha y centro, Arqueo y Cierre diario de recepción.",
+          "alt": "Cuadro de mando, Facturación diaria con Arqueo y Cierre diario de recepción",
+          "caption": "Recepción → Facturación diaria (importes de ejemplo a 0): Arqueo (1), Cierre diario (2), Ventas del TPV, que salen solas (3), y Retirada, solo en el cierre (4).",
           "annotations": [
             {
               "kind": "box",
-              "x": 14.53,
-              "y": 16.31,
-              "w": 84.47,
-              "h": 10.32
+              "x": 15.1,
+              "y": 35.8,
+              "w": 40.6,
+              "h": 62.4
+            },
+            {
+              "kind": "marker",
+              "n": 1,
+              "x": 53.5,
+              "y": 38.4
             },
             {
               "kind": "box",
-              "x": 47.5,
-              "y": 88.02,
-              "w": 7.79,
-              "h": 6.32
+              "x": 57,
+              "y": 35.8,
+              "w": 40.6,
+              "h": 62.4
+            },
+            {
+              "kind": "marker",
+              "n": 2,
+              "x": 96.5,
+              "y": 38.4
             },
             {
               "kind": "box",
-              "x": 91,
-              "y": 85.36,
-              "w": 7.06,
-              "h": 6.32
+              "x": 29.1,
+              "y": 43.3,
+              "w": 12.4,
+              "h": 14.8
+            },
+            {
+              "kind": "marker",
+              "n": 3,
+              "x": 42.3,
+              "y": 41.8
+            },
+            {
+              "kind": "box",
+              "x": 57.8,
+              "y": 68.5,
+              "w": 12.4,
+              "h": 6
+            },
+            {
+              "kind": "marker",
+              "n": 4,
+              "x": 71,
+              "y": 71.5
             }
           ]
         }
@@ -2831,14 +2869,14 @@
                 },
                 {
                   "title": "Anota la facturación en el programa",
-                  "md": "En [erp.fibra-max.com](https://erp.fibra-max.com/) (**Facturación diaria**) elige la fecha y el centro. En **Arqueo** anota efectivo, domiciliación, tarjeta, retirada y salida de dinero, y los comentarios (incidencias del día, descuadres, avisos). Pulsa **Guardar arqueo**."
+                  "md": "En [erp.fibra-max.com](https://erp.fibra-max.com/) (**Recepción → Facturación diaria**) elige la fecha y el centro. En **Arqueo** (**1**) anota **Efectivo Matchpoint**, **Tarjeta Matchpoint**, **Domiciliación** y **Salida de dinero**, y los comentarios (incidencias del día, descuadres, avisos). **Efectivo Ventas** y **Tarjeta Ventas** (lo del TPV) salen solos (**3**). Pulsa **Guardar arqueo**."
                 }
               ]
             }
           ],
           "children": [],
           "lead": "Antes de terminar el turno de mañana.",
-          "updatedAt": "2026-10-09"
+          "updatedAt": "2026-11-25"
         },
         {
           "id": "cierre",
@@ -2870,49 +2908,17 @@
                 },
                 {
                   "title": "Anota la facturación en el programa",
-                  "md": "En [erp.fibra-max.com](https://erp.fibra-max.com/) (**Facturación diaria**), en **Cierre diario de recepción**, anota efectivo, domiciliación, tarjeta, **retirada** y salida de dinero, y los comentarios. Pulsa **Guardar cierre**."
+                  "md": "En [erp.fibra-max.com](https://erp.fibra-max.com/) (**Facturación diaria**), en **Cierre diario de recepción** (**2**), anota **Efectivo Matchpoint**, **Tarjeta Matchpoint**, **Domiciliación**, **Retirada** (**4**) y **Salida de dinero**, y los comentarios. Las ventas del TPV salen solas. Pulsa **Guardar cierre**."
                 }
               ]
             }
           ],
           "children": [],
           "lead": "Cierre de caja de la tarde.",
-          "updatedAt": "2026-11-24"
-        },
-        {
-          "id": "cargos-periodicos",
-          "title": "Revisión de facturación de cargos periódicos",
-          "blocks": [
-            {
-              "id": "cp-que",
-              "type": "text",
-              "md": "Es uno de los controles principales de dirección. Aquí deben estar al día los **precios**, los **tipos de cuota**, los **próximos pagos**, las **altas** y las **bajas**."
-            },
-            {
-              "id": "cp-check",
-              "type": "checklist",
-              "title": "Qué hay que revisar",
-              "items": [
-                "Que los precios estén actualizados",
-                "Que el tipo coincida con la tabla de referencia",
-                "Que las fechas sean correctas",
-                "Que las altas estén añadidas",
-                "Que las bajas estén eliminadas o contabilizadas correctamente",
-                "Que el total de abonados cuadre con los movimientos del mes"
-              ]
-            },
-            {
-              "id": "cp-pend",
-              "type": "pending",
-              "note": "Por completar: cómo se prepara y revisa la remesa completa, quién la valida y qué controles se hacen antes de enviarla."
-            }
-          ],
-          "children": [],
-          "updatedAt": "2026-10-08",
-          "lead": "Para mantener al día cuotas y cobros."
+          "updatedAt": "2026-11-25"
         }
       ],
-      "updatedAt": "2026-11-24",
+      "updatedAt": "2026-11-25",
       "lead": "Apertura, arqueo de mañana y cierre de tarde."
     },
     {
@@ -3831,6 +3837,14 @@
         }
       ],
       "updatedAt": "2026-10-08"
+    }
+  ],
+  "novedades": [
+    {
+      "id": "revolut-2026-11",
+      "date": "2026-11-25",
+      "title": "Anuncio de Revolut: qué decir si preguntan",
+      "md": "**De momento no tenéis que hacer nada.**\n\n- El anuncio es para quien quiera (sea abonado o no): si se da de alta en **Revolut** con el enlace que hemos puesto, **recibe 20 €**.\n- Lo del **x5** de momento **no nos afecta**: hay que pagar con **Revolut Pay** y para eso necesitamos unos datáfonos que todavía no tenemos.\n\n**Resumen si te preguntan:** es para darse de alta en Revolut y llevarse 20 €."
     }
   ]
 }
