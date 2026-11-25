@@ -22,6 +22,9 @@ Vite + React 19 + TypeScript, sin backend. Ver `docs/blueprint.md` para PRD y pl
   `[huecos]` entre corchetes se resaltan para rellenarlos antes de enviar.
 - Los bloques `download` (title, href, note) muestran un botón «Descargar»; los documentos van en
   `public/documentos/` (solo plantillas en blanco, nunca documentos con datos personales).
+- Novedades: array `novedades` del JSON ({id, date AAAA-MM-DD, title, md}). Salen en el botón
+  flotante «Novedades» (abajo a la derecha) con contador de no leídas (localStorage
+  `fm-novedades-vistas`). Cada aviso nuevo de Joel → nueva entrada con `id` único.
 - Logo: `public/logo-fibra.png` (oficial, blanco sobre transparente), favicon en `public/`.
 - Marca: tokens en `:root` de `src/styles.css` (negro `--side`, rojo `--red`, crema `--bg`,
   Montserrat). Mismo lenguaje visual que el Cuadro de mando de Fibra Max.
