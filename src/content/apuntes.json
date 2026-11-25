@@ -1,5 +1,5 @@
 {
-  "version": 94,
+  "version": 95,
   "title": "Apuntes de Recepción",
   "sections": [
     {
@@ -2960,15 +2960,21 @@
           "title": "Calendario",
           "blocks": [
             {
+              "id": "cal-diario",
+              "type": "checklist",
+              "title": "Cada día (hasta el día 24)",
+              "items": [
+                "Solicitudes de baja: Cuadro de mando → Solicitudes baja y Matchpoint",
+                "Cambios de cuota, bajas médicas y cuotas de mantenimiento: Cuadro de mando → Cambios cuota y Matchpoint"
+              ]
+            },
+            {
               "id": "cal-1-10",
               "type": "checklist",
               "title": "Del día 1 al 10",
               "items": [
                 "Revisión y modificación del Excel de cambios (situaciones extraordinarias) y Matchpoint",
-                "Revisión de los cambios de cuota (Cuadro de mando → Cambios cuota y Matchpoint)",
-                "Cuotas de baja médica y mantenimiento: contacto (Cuadro de mando → Cambios cuota y WhatsApp)",
                 "Recibos devueltos: cargarlos en Matchpoint, pasar el Excel de devoluciones a Carlos Huertas y poner la Cuota penalización",
-                "Gestión y solicitud de bajas (Cuadro de mando → Solicitudes baja y Matchpoint)",
                 "Gestión de renovaciones (en recepción)"
               ]
             },
@@ -2978,19 +2984,10 @@
               "variant": "info",
               "title": "Renovaciones",
               "md": "Todo el proceso está en [Renovaciones](#renovaciones). El aviso de fin de promo ya no se hace a mano: será automático."
-            },
-            {
-              "id": "cal-15-31",
-              "type": "checklist",
-              "title": "Del día 15 al 31",
-              "items": [
-                "Bajas médicas y cuotas de mantenimiento",
-                "Revisión de bajas y cuotas a facturar para el próximo mes (equipo)"
-              ]
             }
           ],
           "children": [],
-          "updatedAt": "2026-11-24",
+          "updatedAt": "2026-11-25",
           "lead": "Tareas que no se hacen cada día: revísalas según la fecha para que no se acumulen al final de mes."
         },
         {
