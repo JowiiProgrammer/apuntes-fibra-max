@@ -27,7 +27,7 @@ function chapterOf(sections: Section[], id: string) {
 }
 
 export function Sidebar({ activeId, num, open, onClose }: Props) {
-  const { data, editMode, setEditMode, hasLocalChanges } = useApuntes()
+  const { data, editMode, setEditMode } = useApuntes()
   const activeChapter = chapterOf(data.sections, activeId)
 
   const link = (s: Section, depth: number) => (
@@ -78,7 +78,6 @@ export function Sidebar({ activeId, num, open, onClose }: Props) {
             <Pencil size={15} />
             <span>{editMode ? 'Salir de edición' : 'Modo edición'}</span>
           </button>
-          {hasLocalChanges && <p className="sidebar__note">Hay cambios guardados en este navegador</p>}
         </div>
       </aside>
       {open && <div className="scrim" onClick={onClose} />}

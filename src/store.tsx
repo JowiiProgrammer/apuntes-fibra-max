@@ -1,46 +1,27 @@
-import { createContext, useCallback, useContext, useMemo, useRef, useState, type ReactNode } from 'react'
+import { createContext, useCallback, useContext, useEffect, useMemo, useRef, useState, type ReactNode } from 'react'
 import seed from './content/apuntes.json'
+import { checkPassword, fetchLatest, RemoteError, saveRemote } from './remote'
 import type { Apuntes, Block, BlockType, PriceTable, Section } from './types'
 
-// Por ahora los cambios hechos en "Modo edición" se guardan en este navegador
-// (localStorage). La capa está aislada aquí para poder cambiarla por una base
-// de datos compartida sin tocar los componentes.
-const STORAGE_KEY = 'apuntes-fibramax:v1'
+// Los apuntes se guardan para todos en Supabase (ver remote.ts). Se muestra siempre la versión
+// con el número más alto entre la publicada en el código y la guardada en Supabase.
+// En "Modo edición" (solo con contraseña) cada cambio se guarda solo a los pocos segundos.
 const bundled = seed as Apuntes
+const PW_KEY = 'apuntes-fibramax:pw'
+const SAVE_DELAY = 1500
 
-interface Stored {
-  baseVersion: number
-  data: Apuntes
-}
+// Restos del guardado antiguo en el navegador: ya no se usan.
+try { localStorage.removeItem('apuntes-fibramax:v1') } catch { /* sin almacenamiento */ }
 
-function loadStored(): Stored | null {
+const readPw = () => { try { return sessionStorage.getItem(PW_KEY) } catch { return null } }
+const writePw = (pw: string | null) => {
   try {
-    const raw = localStorage.getItem(STORAGE_KEY)
-    if (!raw) return null
-    const parsed = JSON.parse(raw) as Stored
-    return parsed?.data?.sections ? parsed : null
-  } catch {
-    return null
-  }
+    if (pw) sessionStorage.setItem(PW_KEY, pw)
+    else sessionStorage.removeItem(PW_KEY)
+  } catch { /* sin almacenamiento: habrá que volver a escribirla */ }
 }
 
-function saveStored(data: Apuntes): boolean {
-  try {
-    localStorage.setItem(STORAGE_KEY, JSON.stringify({ baseVersion: bundled.version, data } satisfies Stored))
-    return true
-  } catch {
-    // Suele ser cuota llena por capturas pesadas: avisamos en la UI.
-    return false
-  }
-}
-
-function clearStored() {
-  try {
-    localStorage.removeItem(STORAGE_KEY)
-  } catch {
-    /* sin almacenamiento disponible: no hay nada que borrar */
-  }
-}
+export type SaveState = 'idle' | 'pending' | 'saving' | 'saved' | 'error'
 
 export const uid = (prefix = 'b') => `${prefix}-${Math.random().toString(36).slice(2, 9)}`
 const today = () => new Date().toISOString().slice(0, 10)
@@ -82,11 +63,16 @@ export function newBlock(type: BlockType): Block {
 interface Ctx {
   data: Apuntes
   editMode: boolean
+  /** Activar pide la contraseña si aún no se ha puesto en esta pestaña. */
   setEditMode: (v: boolean) => void
-  hasLocalChanges: boolean
-  /** La versión publicada es más nueva que la que había cuando se editó en local. */
-  outdatedBase: boolean
-  saveError: boolean
+  /** Hay que mostrar el diálogo de contraseña. */
+  askPassword: boolean
+  cancelPassword: () => void
+  /** Comprueba la contraseña y, si es buena, entra en Modo edición. Devuelve el error o null. */
+  login: (password: string) => Promise<string | null>
+  saveState: SaveState
+  saveMessage: string
+  retrySave: () => void
   mutate: (fn: (draft: Apuntes) => void, touchSectionId?: string) => void
   addSection: (parentId: string | null, title: string, group?: string) => string
   removeSection: (id: string) => void
@@ -98,27 +84,111 @@ interface Ctx {
   updateTable: (table: PriceTable) => void
   addTable: (title: string) => string
   replaceAll: (data: Apuntes) => void
-  resetLocal: () => void
 }
 
 const ApuntesContext = createContext<Ctx | null>(null)
 
 export function ApuntesProvider({ children }: { children: ReactNode }) {
-  const [stored] = useState(loadStored)
-  const [data, setData] = useState<Apuntes>(stored?.data ?? bundled)
-  const [hasLocalChanges, setHasLocalChanges] = useState(!!stored)
-  const [saveError, setSaveError] = useState(false)
-  const [editMode, setEditMode] = useState(false)
-  const outdatedBase = !!stored && stored.baseVersion < bundled.version
+  const [data, setData] = useState<Apuntes>(bundled)
+  const [editMode, setEditModeState] = useState(false)
+  const [askPassword, setAskPassword] = useState(false)
+  const [saveState, setSaveState] = useState<SaveState>('idle')
+  const [saveMessage, setSaveMessage] = useState('')
 
   // Ref con el estado actual para que las mutaciones no dependan de closures viejos.
   const dataRef = useRef(data)
+  const dirtyRef = useRef(false)
+  const timerRef = useRef<number | undefined>(undefined)
+  const savingRef = useRef(false)
+
+  // Al abrir, trae la última versión guardada para todos (si es más nueva que la del código).
+  useEffect(() => {
+    let alive = true
+    fetchLatest()
+      .then((remote) => {
+        if (!alive || !remote || dirtyRef.current) return
+        if (remote.version >= dataRef.current.version) {
+          dataRef.current = remote
+          setData(remote)
+        }
+      })
+      .catch(() => { /* sin conexión: se queda la versión del código */ })
+    return () => { alive = false }
+  }, [])
+
+  const save = useCallback(async () => {
+    window.clearTimeout(timerRef.current)
+    const pw = readPw()
+    if (!dirtyRef.current) return
+    if (!pw) {
+      setSaveState('error')
+      setSaveMessage('Falta la contraseña: sal y vuelve a entrar en Modo edición.')
+      return
+    }
+    if (savingRef.current) {
+      // Ya hay un guardado en marcha: se repite al terminar.
+      timerRef.current = window.setTimeout(() => void save(), 400)
+      return
+    }
+    savingRef.current = true
+    dirtyRef.current = false
+    const payload = { ...dataRef.current, version: dataRef.current.version + 1 }
+    setSaveState('saving')
+    try {
+      await saveRemote(pw, payload)
+      // La versión guardada pasa a ser la actual (sin perder cambios hechos mientras se guardaba).
+      dataRef.current = { ...dataRef.current, version: payload.version }
+      setData(dataRef.current)
+      setSaveState(dirtyRef.current ? 'pending' : 'saved')
+      setSaveMessage('')
+    } catch (e) {
+      dirtyRef.current = true
+      setSaveState('error')
+      setSaveMessage(e instanceof RemoteError ? e.message : 'No se pudo guardar')
+      if (e instanceof RemoteError && e.status === 401) writePw(null)
+    } finally {
+      savingRef.current = false
+    }
+  }, [])
 
   const commit = useCallback((next: Apuntes) => {
     dataRef.current = next
     setData(next)
-    setHasLocalChanges(true)
-    setSaveError(!saveStored(next))
+    dirtyRef.current = true
+    setSaveState('pending')
+    window.clearTimeout(timerRef.current)
+    timerRef.current = window.setTimeout(() => void save(), SAVE_DELAY)
+  }, [save])
+
+  // Avisa antes de cerrar si queda algo sin guardar.
+  useEffect(() => {
+    const onUnload = (e: BeforeUnloadEvent) => {
+      if (dirtyRef.current || savingRef.current) e.preventDefault()
+    }
+    window.addEventListener('beforeunload', onUnload)
+    return () => window.removeEventListener('beforeunload', onUnload)
+  }, [])
+
+  const setEditMode = useCallback((v: boolean) => {
+    if (!v) {
+      if (dirtyRef.current) void save()
+      setEditModeState(false)
+      return
+    }
+    if (readPw()) setEditModeState(true)
+    else setAskPassword(true)
+  }, [save])
+
+  const login = useCallback(async (password: string) => {
+    try {
+      await checkPassword(password)
+      writePw(password)
+      setAskPassword(false)
+      setEditModeState(true)
+      return null
+    } catch (e) {
+      return e instanceof RemoteError ? e.message : 'No se pudo comprobar la contraseña'
+    }
   }, [])
 
   const mutate = useCallback<Ctx['mutate']>((fn, touchSectionId) => {
@@ -135,9 +205,12 @@ export function ApuntesProvider({ children }: { children: ReactNode }) {
     data,
     editMode,
     setEditMode,
-    hasLocalChanges,
-    outdatedBase,
-    saveError,
+    askPassword,
+    cancelPassword: () => setAskPassword(false),
+    login,
+    saveState,
+    saveMessage,
+    retrySave: () => { dirtyRef.current = true; void save() },
     mutate,
     addSection: (parentId, title, group) => {
       const id = uid('sec')
@@ -199,15 +272,9 @@ export function ApuntesProvider({ children }: { children: ReactNode }) {
       })
       return id
     },
-    replaceAll: commit,
-    resetLocal: () => {
-      clearStored()
-      dataRef.current = bundled
-      setData(bundled)
-      setHasLocalChanges(false)
-      setSaveError(false)
-    },
-  }), [data, editMode, hasLocalChanges, outdatedBase, saveError, mutate, commit])
+    // Al importar, se conserva el número de versión actual para que el guardado sea la más nueva.
+    replaceAll: (next) => commit({ ...next, version: Math.max(next.version, dataRef.current.version) }),
+  }), [data, editMode, setEditMode, askPassword, login, saveState, saveMessage, save, mutate, commit])
 
   return <ApuntesContext.Provider value={value}>{children}</ApuntesContext.Provider>
 }

@@ -1,11 +1,11 @@
-import { Download, Menu, Plus, Printer, RotateCcw, Upload } from 'lucide-react'
+import { Check, Download, Menu, Plus, Printer, RotateCcw, Upload } from 'lucide-react'
 import { useEffect, useMemo, useRef, useState } from 'react'
 import { Novedades } from './components/Novedades'
 import { SearchBar } from './components/SearchBar'
 import { SectionView } from './components/SectionView'
 import { Sidebar } from './components/Sidebar'
 import { numbering, useApuntes } from './store'
-import seed from './content/apuntes.json'
+import { PasswordDialog } from './components/PasswordDialog'
 import type { Apuntes, Section } from './types'
 
 const flatten = (list: Section[]): Section[] => list.flatMap((s) => [s, ...flatten(s.children)])
@@ -42,7 +42,7 @@ function download(data: Apuntes) {
 }
 
 export default function App() {
-  const { data, editMode, hasLocalChanges, outdatedBase, saveError, replaceAll, resetLocal, addSection } = useApuntes()
+  const { data, editMode, saveState, saveMessage, retrySave, replaceAll, addSection } = useApuntes()
   const contentRef = useRef<HTMLElement>(null)
   const [menuOpen, setMenuOpen] = useState(false)
 
@@ -78,25 +78,29 @@ export default function App() {
         {editMode && (
           <div className="edit-banner" data-search-skip>
             <div>
-              <strong>Modo edición.</strong> Los cambios se guardan automáticamente en este navegador.
-              Para que lleguen a todos, exporta el archivo y súbelo al proyecto.
+              <strong>Modo edición.</strong> Cada cambio se guarda solo y lo ve todo el mundo.{' '}
+              <span className={`save-state save-state--${saveState}`}>
+                {saveState === 'pending' && 'Cambios sin guardar…'}
+                {saveState === 'saving' && 'Guardando…'}
+                {saveState === 'saved' && <><Check size={13} /> Guardado para todos</>}
+                {saveState === 'error' && 'No se ha guardado'}
+              </span>
             </div>
             <div className="edit-banner__actions">
-              <button className="btn btn--sm" onClick={() => download(data)}><Download size={14} /> Exportar</button>
+              <button className="btn btn--sm btn--ghost" onClick={() => download(data)} title="Descarga una copia de seguridad"><Download size={14} /> Copia</button>
               <label className="btn btn--sm btn--ghost">
                 <Upload size={14} /> Importar
                 <input type="file" accept="application/json" hidden onChange={(e) => { const f = e.target.files?.[0]; if (f) importFile(f); e.target.value = '' }} />
               </label>
-              {hasLocalChanges && (
-                <button className="btn btn--sm btn--ghost" onClick={() => confirm('¿Descartar todos los cambios locales y volver a la versión publicada?') && resetLocal()}>
-                  <RotateCcw size={14} /> Descartar cambios
-                </button>
-              )}
             </div>
           </div>
         )}
-        {saveError && <div className="alert" data-search-skip>No se pudo guardar: el almacenamiento del navegador está lleno (suele ser por capturas grandes). Exporta para no perder cambios.</div>}
-        {outdatedBase && <div className="alert alert--info" data-search-skip>Hay una versión publicada más nueva que tus cambios locales. Exporta tus cambios y descártalos para ver la nueva.</div>}
+        {editMode && saveState === 'error' && (
+          <div className="alert" data-search-skip>
+            No se ha podido guardar: {saveMessage}{' '}
+            <button className="btn btn--sm" onClick={retrySave}><RotateCcw size={14} /> Reintentar</button>
+          </div>
+        )}
 
         <main ref={contentRef} className="content">
           <section id="inicio" className="hero">
@@ -139,8 +143,8 @@ export default function App() {
           <footer className="foot" data-search-skip>Fibra Max · Apuntes internos de recepción</footer>
         </main>
       </div>
-      {/* Las novedades salen siempre de la versión publicada, aunque haya cambios locales. */}
-      <Novedades items={(seed as Apuntes).novedades ?? []} />
+      <Novedades items={data.novedades ?? []} />
+      <PasswordDialog />
     </div>
   )
 }
