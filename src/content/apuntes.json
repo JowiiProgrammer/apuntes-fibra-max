@@ -1,6 +1,6 @@
 {
   "title": "Apuntes de Recepción",
-  "version": 97,
+  "version": 98,
   "sections": [
     {
       "id": "tarifas",
@@ -1893,10 +1893,10 @@
         },
         {
           "id": "rn-tarde",
-          "md": "Si no ha renovado a tiempo y al mes siguiente ya se le ha cobrado la **cuota mensual**, puede pasarse igualmente a **trimestral, semestral o anual**: paga la **diferencia**, es decir, el **total del abono** menos lo que ya ha pagado de **mensual** (precios en [Tarifas](#tarifas)). Cóbralo con una [nueva venta](#nueva-venta) y adelanta los meses en el abono como en una renovación normal.",
+          "md": "A partir del **día 25 (incluido)** ya no se puede renovar ese mes: **tiene que esperar al mes siguiente**.\n\n1. El día 1 se le cobra la **cuota mensual** como siempre.\n2. Después, si quiere **trimestral, semestral o anual**, paga la **diferencia**: el **total del abono** menos la **mensual** que ya ha pagado (precios en [Tarifas](#tarifas)).\n\nCóbralo con una [nueva venta](#nueva-venta) y adelanta los meses en el abono como en una renovación normal.",
           "type": "callout",
-          "title": "Si se le pasa el día 24",
-          "variant": "tip"
+          "title": "Si viene a partir del día 25",
+          "variant": "warning"
         },
         {
           "id": "rn-pasos",
@@ -1925,7 +1925,7 @@
         }
       ],
       "children": [],
-      "updatedAt": "2026-11-25"
+      "updatedAt": "2026-11-27"
     },
     {
       "id": "aforo",
