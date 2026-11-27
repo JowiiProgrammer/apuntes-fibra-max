@@ -1,6 +1,6 @@
 {
   "title": "Apuntes de Recepción",
-  "version": 116,
+  "version": 117,
   "sections": [
     {
       "id": "tarifas",
@@ -507,7 +507,7 @@
                   "title": "Rellena sus datos"
                 },
                 {
-                  "md": "- **Tarjeta online:** paga en ese momento por la pasarela de pago.\n- **Pagar en recepción:** viene al centro y paga en **efectivo** o con **tarjeta**.",
+                  "md": "En **Forma de pago** elige:\n\n- **Tarjeta de crédito o débito (pago online):** paga en ese momento por la pasarela.\n- **Efectivo en recepción:** viene al centro y paga allí. Aunque en la web pone «efectivo», en recepción puede pagar en **efectivo** o con **tarjeta**.",
                   "title": "Elige cómo paga"
                 },
                 {
