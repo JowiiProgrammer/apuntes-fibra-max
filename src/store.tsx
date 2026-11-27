@@ -8,6 +8,7 @@ import type { Apuntes, Block, BlockType, PriceTable, Section } from './types'
 // En "Modo edición" (solo con contraseña) cada cambio se guarda solo a los pocos segundos.
 const bundled = seed as Apuntes
 const SAVE_DELAY = 1500
+const MAX_HISTORY = 50
 
 // Restos de versiones anteriores en el navegador: ya no se usan.
 try {
@@ -72,6 +73,11 @@ interface Ctx {
   saveState: SaveState
   saveMessage: string
   retrySave: () => void
+  /** Deshacer / rehacer el último cambio de esta sesión de edición. */
+  undo: () => void
+  redo: () => void
+  canUndo: boolean
+  canRedo: boolean
   mutate: (fn: (draft: Apuntes) => void, touchSectionId?: string) => void
   addSection: (parentId: string | null, title: string, group?: string) => string
   removeSection: (id: string) => void
@@ -156,7 +162,13 @@ export function ApuntesProvider({ children }: { children: ReactNode }) {
     }
   }, [])
 
-  const commit = useCallback((next: Apuntes) => {
+  // Historial de esta sesión de edición para deshacer / rehacer (solo en memoria).
+  const undoRef = useRef<Apuntes[]>([])
+  const redoRef = useRef<Apuntes[]>([])
+  const [historyLen, setHistoryLen] = useState({ undo: 0, redo: 0 })
+  const syncHistory = () => setHistoryLen({ undo: undoRef.current.length, redo: redoRef.current.length })
+
+  const apply = useCallback((next: Apuntes) => {
     dataRef.current = next
     setData(next)
     dirtyRef.current = true
@@ -164,6 +176,32 @@ export function ApuntesProvider({ children }: { children: ReactNode }) {
     window.clearTimeout(timerRef.current)
     timerRef.current = window.setTimeout(() => void save(), SAVE_DELAY)
   }, [save])
+
+  const commit = useCallback((next: Apuntes) => {
+    undoRef.current.push(dataRef.current)
+    if (undoRef.current.length > MAX_HISTORY) undoRef.current.shift()
+    redoRef.current = []
+    syncHistory()
+    apply(next)
+  }, [apply])
+
+  // Al deshacer se recupera el contenido anterior, pero con el número de versión actual,
+  // para que al guardarse siga siendo la versión más nueva para todos.
+  const undo = useCallback(() => {
+    const prev = undoRef.current.pop()
+    if (!prev) return
+    redoRef.current.push(dataRef.current)
+    syncHistory()
+    apply({ ...prev, version: dataRef.current.version })
+  }, [apply])
+
+  const redo = useCallback(() => {
+    const next = redoRef.current.pop()
+    if (!next) return
+    undoRef.current.push(dataRef.current)
+    syncHistory()
+    apply({ ...next, version: dataRef.current.version })
+  }, [apply])
 
   // Avisa antes de cerrar si queda algo sin guardar.
   useEffect(() => {
@@ -216,6 +254,10 @@ export function ApuntesProvider({ children }: { children: ReactNode }) {
     saveState,
     saveMessage,
     retrySave: () => { dirtyRef.current = true; void save() },
+    undo,
+    redo,
+    canUndo: historyLen.undo > 0,
+    canRedo: historyLen.redo > 0,
     mutate,
     addSection: (parentId, title, group) => {
       const id = uid('sec')
@@ -291,7 +333,7 @@ export function ApuntesProvider({ children }: { children: ReactNode }) {
     },
     // Al importar, se conserva el número de versión actual para que el guardado sea la más nueva.
     replaceAll: (next) => commit({ ...next, version: Math.max(next.version, dataRef.current.version) }),
-  }), [data, editMode, setEditMode, askPassword, login, saveState, saveMessage, save, mutate, commit])
+  }), [data, editMode, setEditMode, askPassword, login, saveState, saveMessage, save, undo, redo, historyLen, mutate, commit])
 
   return <ApuntesContext.Provider value={value}>{children}</ApuntesContext.Provider>
 }

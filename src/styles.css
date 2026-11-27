@@ -167,6 +167,7 @@ kbd {
 }
 .btn:hover { opacity: .88; }
 .btn--sm { padding: 6px 11px; font-size: 12.5px; }
+.btn:disabled { opacity: .4; cursor: default; }
 .btn--ghost { background: var(--card); color: var(--ink); border-color: var(--line); }
 .btn--ghost:hover { background: var(--bg); opacity: 1; }
 

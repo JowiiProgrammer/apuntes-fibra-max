@@ -1,4 +1,4 @@
-import { Check, Download, Menu, Plus, Printer, RotateCcw, Upload } from 'lucide-react'
+import { Check, Download, Menu, Plus, Printer, Redo2, RotateCcw, Undo2, Upload } from 'lucide-react'
 import { useEffect, useMemo, useRef, useState } from 'react'
 import { Novedades } from './components/Novedades'
 import { SearchBar } from './components/SearchBar'
@@ -42,7 +42,23 @@ function download(data: Apuntes) {
 }
 
 export default function App() {
-  const { data, editMode, saveState, saveMessage, retrySave, replaceAll, addSection } = useApuntes()
+  const { data, editMode, saveState, saveMessage, retrySave, replaceAll, addSection, undo, redo, canUndo, canRedo } = useApuntes()
+
+  // Ctrl+Z / Ctrl+Y (o Ctrl+Mayús+Z) en Modo edición, cuando no se está escribiendo en un campo
+  // (dentro de un campo, Ctrl+Z deshace lo que se está escribiendo, como siempre).
+  useEffect(() => {
+    if (!editMode) return
+    const onKey = (e: KeyboardEvent) => {
+      if (!(e.ctrlKey || e.metaKey)) return
+      const t = e.target
+      if (t instanceof HTMLElement && t.closest('input, textarea, select, [contenteditable="true"]')) return
+      const k = e.key.toLowerCase()
+      if (k === 'z' && !e.shiftKey) { e.preventDefault(); undo() }
+      else if (k === 'y' || (k === 'z' && e.shiftKey)) { e.preventDefault(); redo() }
+    }
+    window.addEventListener('keydown', onKey)
+    return () => window.removeEventListener('keydown', onKey)
+  }, [editMode, undo, redo])
   const contentRef = useRef<HTMLElement>(null)
   const [menuOpen, setMenuOpen] = useState(false)
 
@@ -87,6 +103,8 @@ export default function App() {
               </span>
             </div>
             <div className="edit-banner__actions">
+              <button className="btn btn--sm" onClick={undo} disabled={!canUndo} title="Deshacer el último cambio (Ctrl+Z)"><Undo2 size={14} /> Deshacer</button>
+              <button className="btn btn--sm btn--ghost" onClick={redo} disabled={!canRedo} title="Rehacer (Ctrl+Y)"><Redo2 size={14} /> Rehacer</button>
               <button className="btn btn--sm btn--ghost" onClick={() => download(data)} title="Descarga una copia de seguridad"><Download size={14} /> Copia</button>
               <label className="btn btn--sm btn--ghost">
                 <Upload size={14} /> Importar
