@@ -1,6 +1,6 @@
 {
   "title": "Apuntes de Recepción",
-  "version": 117,
+  "version": 118,
   "sections": [
     {
       "id": "tarifas",
@@ -894,6 +894,13 @@
               "type": "callout",
               "title": "Qué se cobra en el alta",
               "variant": "warning"
+            },
+            {
+              "id": "altas-n-dia-25",
+              "type": "callout",
+              "variant": "warning",
+              "title": "Altas mensuales del día 25 a fin de mes",
+              "md": "Si se da de alta **del día 25 al último día del mes** con tarifa **mensual**, el primer pago incluye **los días que quedan de este mes + el mes siguiente completo**. Por eso el primer pago sale más alto.\n\nEjemplo que da la web: Fitness Ilimitado, alta el **27/11**: parte proporcional del 27 al 30/11 (4 días) **8,50 €** + diciembre completo **62,00 €** = **70,50 €**. El **próximo cobro** es el **01/01**.\n\nEn Matchpoint: **Primera cuota** = ese total (sin matrícula) y **Fecha comienzo paso resto de cuotas** = la fecha de **próximo pago** del alta web (el día 1 del mes siguiente al mes completo)."
             },
             {
               "id": "altas-shot-calculadora",
