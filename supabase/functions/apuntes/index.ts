@@ -18,7 +18,8 @@ const MAX_BYTES = 15 * 1024 * 1024 // las capturas van dentro del JSON como data
 
 const SUPABASE_URL = Deno.env.get('SUPABASE_URL') ?? ''
 const SERVICE_KEY = Deno.env.get('SUPABASE_SERVICE_ROLE_KEY') ?? ''
-const EDIT_PASSWORD = Deno.env.get('EDIT_PASSWORD') ?? ''
+// Se lee en cada petición: si se cambia el secreto, la función usa la nueva sin reiniciar.
+const editPassword = () => Deno.env.get('EDIT_PASSWORD') ?? ''
 
 function cors(origin: string | null): Record<string, string> {
   const allowed = origin && (ALLOWED_ORIGINS.includes(origin) || /^https:\/\/apuntes-fibra-[a-z0-9-]+\.vercel\.app$/.test(origin))
@@ -43,8 +44,9 @@ async function sha256(text: string): Promise<Uint8Array> {
 
 /** Comparación en tiempo constante (se comparan los hash, de longitud fija). */
 async function passwordOk(given: unknown): Promise<boolean> {
-  if (typeof given !== 'string' || !EDIT_PASSWORD) return false
-  const [a, b] = await Promise.all([sha256(given), sha256(EDIT_PASSWORD)])
+  const expected = editPassword()
+  if (typeof given !== 'string' || !expected) return false
+  const [a, b] = await Promise.all([sha256(given.trim()), sha256(expected.trim())])
   let diff = 0
   for (let i = 0; i < a.length; i++) diff |= a[i] ^ b[i]
   return diff === 0
@@ -95,7 +97,7 @@ Deno.serve(async (req) => {
     return json({ error: 'JSON no válido' }, 400, origin)
   }
 
-  if (!EDIT_PASSWORD) return json({ error: 'Falta configurar la contraseña de edición' }, 503, origin)
+  if (!editPassword()) return json({ error: 'Falta configurar la contraseña de edición' }, 503, origin)
   if (!(await passwordOk(body.password))) {
     // Pequeña espera para frenar intentos de adivinar la contraseña.
     await new Promise((r) => setTimeout(r, 1500))
