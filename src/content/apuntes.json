@@ -1,6 +1,6 @@
 {
   "title": "Apuntes de Recepción",
-  "version": 123,
+  "version": 124,
   "sections": [
     {
       "id": "tarifas",
@@ -1941,7 +1941,7 @@
       "blocks": [
         {
           "id": "rn-cuando",
-          "md": "Cuando un abonado con **pago adelantado** (trimestral, semestral o anual) renueva. Puede renovar viniendo **antes del día 25 del último mes** que tiene cubierto y haciendo el pago de nuevo.\n\nSe renueva **solo en recepción**: por la web no se puede.",
+          "md": "Cuando un abonado con **pago adelantado** (trimestral, semestral o anual) renueva. Puede renovar viniendo **antes del día 25 del último mes** que tiene cubierto y haciendo el pago de nuevo.\n\nSe renueva **solo en recepción**: por la web no se puede.\n\nSi **no renueva**, al terminar el periodo **pasa a cuota mensual** (lo dicen las condiciones de la web).",
           "type": "callout",
           "title": "Cuándo",
           "variant": "info"
@@ -3705,15 +3705,15 @@
           "blocks": [
             {
               "id": "ep-lista",
-              "type": "text",
-              "md": "| Centro | Entrenadores |\n|---|---|\n| **Cabrera** | Adriano, Nil, Edgar y Natasha |\n| **Granollers** | Emilio, Carlos y Laura |\n| **Blanes** | De momento no sale ninguno en la web |\n| **Mataró** | Sergi |\n| **Mollet** | Laura |"
+              "md": "| Centro | Entrenadores |\n|---|---|\n| **Cabrera** | Adriano, Nil, Edgar y Natasha |\n| **Granollers** | Emilio, Carlos y Laura |\n| **Blanes** | De momento no sale ninguno en la web |\n| **Mataró** | Sergi |\n| **Mollet** | Laura |",
+              "type": "text"
             },
             {
               "id": "ep-como",
+              "md": "En [fibra-max.com](https://fibra-max.com/) → menú → **Entrenadores personales** → elige el centro. Cada entrenador tiene un botón **«Habla con…»** que abre un **WhatsApp** directo con él. Si alguien pregunta en recepción, enséñale dónde está o dale el contacto desde ahí.",
               "type": "callout",
-              "variant": "info",
               "title": "Cómo contactar con ellos",
-              "md": "En [fibra-max.com](https://fibra-max.com/) → menú → **Entrenadores personales** → elige el centro. Cada entrenador tiene un botón **«Habla con…»** que abre un **WhatsApp** directo con él. Si alguien pregunta en recepción, enséñale dónde está o dale el contacto desde ahí."
+              "variant": "info"
             }
           ],
           "children": [],
@@ -3727,6 +3727,19 @@
               "id": "rg-texto",
               "md": "La web invita a dejar una **reseña en Google** de cada centro ([fibra-max.com](https://fibra-max.com/) → **Tu opinión cuenta** → elegir centro). Si un cliente está contento, anímale a dejarla: ayuda mucho a que nos encuentren.",
               "type": "text"
+            }
+          ],
+          "children": [],
+          "updatedAt": "2026-11-27"
+        },
+        {
+          "id": "trabaja-con-nosotros",
+          "title": "Si alguien quiere trabajar con nosotros",
+          "blocks": [
+            {
+              "id": "tc-texto",
+              "type": "text",
+              "md": "Si alguien viene con su **currículum** o pregunta por trabajo, en recepción no se recogen candidaturas: se envían por el portal **FIBRA Talent**. Indícale: [fibra-max.com](https://fibra-max.com/) → pie de página → **Trabaja con nosotros** ([enlace directo](https://fibra-max.com/talent.html)). Ahí puede ver las vacantes o mandar una candidatura espontánea."
             }
           ],
           "children": [],
