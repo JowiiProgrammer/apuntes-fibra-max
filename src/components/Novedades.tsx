@@ -1,9 +1,10 @@
-import { Megaphone, Plus, Trash2, X } from 'lucide-react'
+import { ImagePlus, Megaphone, Plus, Trash2, X } from 'lucide-react'
 import { useEffect, useMemo, useState } from 'react'
 import { uid, useApuntes } from '../store'
 import type { Novedad } from '../types'
 import { Field } from './editors'
 import { RichField } from './RichField'
+import { fileToDataUrl } from './Screenshot'
 import { Markdown } from './Markdown'
 
 const KEY = 'fm-novedades-vistas'
@@ -96,12 +97,39 @@ export function Novedades() {
                 </div>
                 <Field value={n.title} placeholder="Título" onCommit={(title) => update(n.id, { title })} />
                 <RichField value={n.md} placeholder="Texto de la novedad" onCommit={(md) => update(n.id, { md })} />
+                {n.image && <img className="novedades__img" src={n.image} alt="" />}
+                <div className="field-row">
+                  <label className="btn btn--sm btn--ghost">
+                    <ImagePlus size={14} /> {n.image ? 'Cambiar imagen' : 'Añadir imagen'}
+                    <input
+                      type="file"
+                      accept="image/*"
+                      hidden
+                      onChange={async (e) => {
+                        const f = e.target.files?.[0]
+                        e.target.value = ''
+                        if (!f) return
+                        try {
+                          update(n.id, { image: await fileToDataUrl(f, 1000) })
+                        } catch {
+                          alert('No se ha podido leer la imagen.')
+                        }
+                      }}
+                    />
+                  </label>
+                  {n.image && (
+                    <button className="btn btn--sm btn--ghost" onClick={() => confirm('¿Quitar la imagen?') && update(n.id, { image: undefined })}>
+                      <Trash2 size={14} /> Quitar imagen
+                    </button>
+                  )}
+                </div>
               </article>
             ) : (
               <article key={n.id} className="novedades__item">
                 <p className="novedades__date">{fmt(n.date)}</p>
                 <p className="novedades__title">{n.title}</p>
                 <Markdown md={n.md} />
+                {n.image && <img className="novedades__img" src={n.image} alt={n.title} loading="lazy" />}
               </article>
             ))}
           </div>

@@ -1,6 +1,6 @@
 {
   "title": "Apuntes de Recepción",
-  "version": 104,
+  "version": 105,
   "sections": [
     {
       "id": "tarifas",
@@ -3595,9 +3595,10 @@
     },
     {
       "id": "black-friday-2026",
+      "md": "**Del 27 al 30 de noviembre (ambos incluidos)**, la **matrícula es gratis** en las altas de **cualquier centro**.\n\n- **Si alguien pregunta:** «Si te das de alta estos días en cualquiera de nuestros centros, no pagas matrícula».\n- En la **web** ya sale aplicado.\n- **Desde el 1 de diciembre** vuelve la matrícula normal.",
       "date": "2026-11-27",
       "title": "Black Friday: matrícula gratis del 27 al 30 de noviembre",
-      "md": "**Del 27 al 30 de noviembre (ambos incluidos)**, la **matrícula es gratis** en las altas de **cualquier centro**.\n\n- **Si alguien pregunta:** «Si te das de alta estos días en cualquiera de nuestros centros, no pagas matrícula».\n- En la **web** ya sale aplicado.\n- **Desde el 1 de diciembre** vuelve la matrícula normal.\n\n![Cartel Black Friday: matrícula gratis del 27 al 30 de noviembre](/novedades/black-friday-2026.jpg)"
+      "image": "/novedades/black-friday-2026.jpg"
     }
   ],
   "priceTables": [

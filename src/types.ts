@@ -74,6 +74,8 @@ export interface Novedad {
   date: string
   title: string
   md: string
+  /** Imagen opcional (cartel, captura…): ruta en public/ o data URL subida desde el Modo edición. */
+  image?: string
 }
 
 export interface Apuntes {

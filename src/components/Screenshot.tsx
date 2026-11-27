@@ -108,7 +108,7 @@ export function ScreenshotView({ block }: { block: ShotBlock }) {
 }
 
 // Reduce la imagen para que quepa en el almacenamiento del navegador.
-async function fileToDataUrl(file: File, maxW = 1600): Promise<string> {
+export async function fileToDataUrl(file: File, maxW = 1600): Promise<string> {
   const url = URL.createObjectURL(file)
   try {
     const img = await new Promise<HTMLImageElement>((res, rej) => {
