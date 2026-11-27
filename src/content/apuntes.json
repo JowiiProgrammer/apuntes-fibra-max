@@ -1,6 +1,6 @@
 {
   "title": "Apuntes de Recepción",
-  "version": 125,
+  "version": 126,
   "sections": [
     {
       "id": "tarifas",
@@ -3771,7 +3771,7 @@
         {
           "id": "fitness-unlimited",
           "note": "Entre semana 6–23 h · fines de semana 7–21 h y festivos",
-          "label": "Fitness Unlimited",
+          "label": "Fitness Ilimitado",
           "values": {
             "anual": 500,
             "mensual": 62,
@@ -3779,12 +3779,13 @@
             "trimestral": 175
           },
           "centros": "Todos",
-          "matricula": true
+          "matricula": true,
+          "alias": "Fitness Unlimited"
         },
         {
           "id": "fitness-sunrise",
           "note": "Entre semana 6–16 h (última entrada 16 h, salida 17 h) · fines de semana 7–21 h y festivos",
-          "label": "Fitness Sunrise",
+          "label": "Fitness de mañanas + fin de semana",
           "values": {
             "anual": 400,
             "mensual": 52,
@@ -3792,18 +3793,20 @@
             "trimestral": 150
           },
           "centros": "Todos",
-          "matricula": true
+          "matricula": true,
+          "alias": "Fitness Sunrise"
         },
         {
           "id": "fitness-weekend",
           "note": "Fines de semana 7–21 h y festivos · acceso fuera de horario: suplemento de 6 €",
-          "label": "Fitness Weekend",
+          "label": "Fin de semana",
           "values": {
             "anual": 250,
             "mensual": 29
           },
           "centros": "Todos",
-          "matricula": true
+          "matricula": true,
+          "alias": "Fitness Weekend"
         }
       ],
       "title": "Fitness",
@@ -3829,7 +3832,7 @@
         }
       ],
       "footnote": "La matrícula solo se cobra en el pago mensual.",
-      "updatedAt": "2026-11-23"
+      "updatedAt": "2026-11-27"
     },
     {
       "id": "fitness-padel",
@@ -3837,12 +3840,13 @@
         {
           "id": "fp-unlimited",
           "note": "Entre semana 6–23 h · fines de semana 7–21 h y festivos · pádel con reserva de pista",
-          "label": "Fitness & Pádel Unlimited",
+          "label": "Pádel + Gym",
           "values": {
             "mensual": 90
           },
           "centros": "Cabrera",
-          "matricula": true
+          "matricula": true,
+          "alias": "Fitness & Pádel Unlimited"
         }
       ],
       "title": "Fitness + Pádel",
@@ -3853,7 +3857,7 @@
         }
       ],
       "footnote": "La matrícula solo se cobra en el pago mensual.",
-      "updatedAt": "2026-11-23"
+      "updatedAt": "2026-11-27"
     },
     {
       "id": "hyrox",
@@ -3895,12 +3899,13 @@
         {
           "id": "fitness-unlimited-familias",
           "note": "Horario completo: entre semana 6–23 h · fines de semana 7–21 h y festivos",
-          "label": "Fitness Unlimited Familias",
+          "label": "Fitness Ilimitado Familias",
           "values": {
             "mensual": 49
           },
           "centros": "Todos",
-          "matricula": true
+          "matricula": true,
+          "alias": "Fitness Unlimited Familias"
         }
       ],
       "title": "Familias",
@@ -3911,7 +3916,7 @@
         }
       ],
       "footnote": "Mínimo 3 personas de la misma unidad familiar, todas con el mismo número de cuenta para domiciliar.",
-      "updatedAt": "2026-11-23"
+      "updatedAt": "2026-11-27"
     },
     {
       "id": "entradas",

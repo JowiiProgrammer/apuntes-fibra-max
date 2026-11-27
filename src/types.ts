@@ -47,6 +47,8 @@ export interface PriceColumn {
 export interface PriceRow {
   id: string
   label: string
+  /** Otro nombre de la cuota (p. ej. el de Matchpoint / Cuadro de mando), se ve en gris debajo. */
+  alias?: string
   note?: string
   /** Centros donde se vende (ej. "Todos", "Cabrera"). */
   centros?: string

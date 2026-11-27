@@ -50,6 +50,7 @@ export function PriceTableView({ tableId }: { tableId: string }) {
             <tr key={r.id}>
               <th scope="row">
                 <span className="price-label">{r.label}</span>
+                {r.alias && <span className="price-alias">En Matchpoint: {r.alias}</span>}
                 <RowMeta row={r} />
               </th>
               {table.columns.map((c) => (
@@ -140,6 +141,7 @@ function PriceTableEditor({ table, onChange }: { table: Table; onChange: (t: Tab
                   <th scope="row">
                     <div className="stack row-edit">
                       <input className="input input--sm" value={r.label} onChange={(e) => setRow({ label: e.target.value })} />
+                      <input className="input input--sm input--note" placeholder="Nombre en Matchpoint, sale en gris (opcional)" value={r.alias ?? ''} onChange={(e) => setRow({ alias: e.target.value || undefined })} />
                       <div className="field-row">
                         <input className="input input--sm grow" placeholder="Centros" value={r.centros ?? ''} onChange={(e) => setRow({ centros: e.target.value || undefined })} />
                         <label className="check"><input type="checkbox" checked={!!r.matricula} onChange={(e) => setRow({ matricula: e.target.checked || undefined })} /> Matrícula</label>
