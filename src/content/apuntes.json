@@ -1,6 +1,6 @@
 {
   "title": "Apuntes de Recepción",
-  "version": 100,
+  "version": 104,
   "sections": [
     {
       "id": "tarifas",
@@ -3592,6 +3592,12 @@
       "md": "**De momento no tenéis que hacer nada.**\n\n- El anuncio es para quien quiera (sea abonado o no): si se da de alta en **Revolut** con el enlace que hemos puesto, **recibe 20 €**.\n- Lo del **x5** de momento **no nos afecta**: hay que pagar con **Revolut Pay** y para eso necesitamos unos datáfonos que todavía no tenemos.\n\n**Resumen si te preguntan:** es para darse de alta en Revolut y llevarse 20 €.",
       "date": "2026-11-25",
       "title": "Anuncio de Revolut: qué decir si preguntan"
+    },
+    {
+      "id": "black-friday-2026",
+      "date": "2026-11-27",
+      "title": "Black Friday: matrícula gratis del 27 al 30 de noviembre",
+      "md": "**Del 27 al 30 de noviembre (ambos incluidos)**, la **matrícula es gratis** en las altas de **cualquier centro**.\n\n- **Si alguien pregunta:** «Si te das de alta estos días en cualquiera de nuestros centros, no pagas matrícula».\n- En la **web** ya sale aplicado.\n- **Desde el 1 de diciembre** vuelve la matrícula normal.\n\n![Cartel Black Friday: matrícula gratis del 27 al 30 de noviembre](/novedades/black-friday-2026.jpg)"
     }
   ],
   "priceTables": [
