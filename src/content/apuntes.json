@@ -1,6 +1,6 @@
 {
   "title": "Apuntes de Recepción",
-  "version": 120,
+  "version": 121,
   "sections": [
     {
       "id": "tarifas",
@@ -2131,10 +2131,18 @@
             }
           ],
           "start": 1
+        },
+        {
+          "id": "pe-plantilla-big",
+          "type": "download",
+          "title": "Plantilla de pedido BIG",
+          "href": "/documentos/plantilla-pedido-big.xlsx",
+          "fileName": "Plantilla pedido BIG.xlsx",
+          "note": "Excel · Elige el centro, pon la cantidad en las casillas rosas y añade observaciones si hace falta."
         }
       ],
       "children": [],
-      "updatedAt": "2026-11-24"
+      "updatedAt": "2026-11-27"
     },
     {
       "id": "venta-suplementacion",
