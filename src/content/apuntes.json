@@ -1,6 +1,6 @@
 {
   "title": "Apuntes de Recepción",
-  "version": 122,
+  "version": 123,
   "sections": [
     {
       "id": "tarifas",
@@ -39,10 +39,10 @@
             },
             {
               "id": "fit-horarios",
+              "md": "- **Fitness Ilimitado:** lunes a viernes de **6:00 a 23:00**. Sábados, domingos y festivos de **7:00 a 21:00**.\n- **Fitness de mañanas + fin de semana:** lunes a viernes, **entrada de 6:00 a 16:00** y **salida hasta las 17:00**. Sábados, domingos y festivos de **7:00 a 21:00**.\n- **Fin de semana:** sábados, domingos y festivos de **7:00 a 21:00**. Acceso fuera de horario: **suplemento de 6 €**.\n- **Pádel + Gym:** mismo horario que Ilimitado. El pádel, solo en **Cabrera** y con **reserva de pista**.\n\nTodas las cuotas son **por persona**. Matrícula: **50 €** en mensual; **gratis** en los abonos de pago anticipado.",
               "type": "callout",
-              "variant": "info",
               "title": "Horario de cada cuota",
-              "md": "- **Fitness Ilimitado:** lunes a viernes de **6:00 a 23:00**. Sábados, domingos y festivos de **7:00 a 21:00**.\n- **Fitness de mañanas + fin de semana:** lunes a viernes, **entrada de 6:00 a 16:00** y **salida hasta las 17:00**. Sábados, domingos y festivos de **7:00 a 21:00**.\n- **Fin de semana:** sábados, domingos y festivos de **7:00 a 21:00**. Acceso fuera de horario: **suplemento de 6 €**.\n- **Pádel + Gym:** mismo horario que Ilimitado. El pádel, solo en **Cabrera** y con **reserva de pista**.\n\nTodas las cuotas son **por persona**. Matrícula: **50 €** en mensual; **gratis** en los abonos de pago anticipado."
+              "variant": "info"
             }
           ],
           "children": [],
@@ -538,10 +538,10 @@
             },
             {
               "id": "awc-sin-acceso",
+              "md": "Aunque haya pagado con tarjeta, el pago solo deja la ficha guardada con su referencia. **No puede entrar hasta que recepción tramita el alta** en Matchpoint: [Pasar el alta a Matchpoint](#altas-normales).",
               "type": "callout",
-              "variant": "warning",
               "title": "Pagar en la web no da acceso por sí solo",
-              "md": "Aunque haya pagado con tarjeta, el pago solo deja la ficha guardada con su referencia. **No puede entrar hasta que recepción tramita el alta** en Matchpoint: [Pasar el alta a Matchpoint](#altas-normales)."
+              "variant": "warning"
             }
           ],
           "children": [],
@@ -3651,27 +3651,27 @@
     },
     {
       "id": "centros-servicios",
-      "title": "Centros, app y servicios",
-      "group": "Información general",
       "lead": "Lo que cuenta la web de Fibra Max y nos pueden preguntar en recepción.",
+      "group": "Información general",
+      "title": "Centros, app y servicios",
       "blocks": [],
       "children": [
         {
           "id": "centros",
-          "title": "Centros",
           "lead": "Cinco centros abiertos y dos próximas aperturas.",
+          "title": "Centros",
           "blocks": [
             {
               "id": "ce-lista",
-              "type": "text",
-              "md": "**Abiertos:**\n\n1. **Cabrera de Mar** (Maresme). Único centro con **pádel** y **Hyrox**.\n2. **Granollers** (Vallès Oriental).\n3. **Blanes** (La Selva).\n4. **Mataró** (Maresme).\n5. **Mollet** (Vallès Oriental). **Recién abierto**.\n\nCon la cuota se puede entrenar en **todos los centros** sin pagar más. Los **bonos** también valen en los cinco."
+              "md": "| Centro | Dirección | Teléfono de recepción |\n|---|---|---|\n| **Cabrera de Mar** (Maresme) · único con **pádel** y **Hyrox** | Camí del Mig, 92 · 08349 Cabrera de Mar | [636 163 117](tel:+34636163117) |\n| **Granollers** (Vallès Oriental) | Carrer Ronçana, 20 · 08401 Granollers | [608 634 111](tel:+34608634111) |\n| **Blanes** (La Selva) | Av. d’Europa, 43 · 17300 Blanes | [683 286 612](tel:+34683286612) |\n| **Mataró** (Maresme) | Carrer d’Iluro, 10 · 08302 Mataró | [679 968 476](tel:+34679968476) |\n| **Mollet** (Vallès Oriental) · **recién abierto** | C/ Antonia Canet, 15 · Local 4 · 08100 Mollet | [670 688 232](tel:+34670688232) |\n\nCon la cuota se puede entrenar en **todos los centros** sin pagar más. Los **bonos** también valen en los cinco. En la web, cada centro tiene su ficha con fotos y el botón **Cómo llegar** (Google Maps): [fibra-max.com](https://fibra-max.com/) → **Explora tu centro**.",
+              "type": "text"
             },
             {
               "id": "ce-aperturas",
+              "md": "Si alguien pregunta, en la web hay un apartado **«Llega antes»** para dejar sus datos y enterarse de la apertura. De momento es una **vista previa**: todavía no envía las preinscripciones.",
               "type": "callout",
-              "variant": "tip",
               "title": "Próximas aperturas: Premià y Sabadell",
-              "md": "Si alguien pregunta, en la web hay un apartado **«Llega antes»** para dejar sus datos y enterarse de la apertura. De momento es una **vista previa**: todavía no envía las preinscripciones."
+              "variant": "tip"
             }
           ],
           "children": [],
@@ -3679,20 +3679,20 @@
         },
         {
           "id": "app-pulse",
-          "title": "App FIBRA MAX Pulse",
           "lead": "La app que anuncia la web: rutina y evolución en el móvil.",
+          "title": "App FIBRA MAX Pulse",
           "blocks": [
             {
               "id": "pulse-distinta",
+              "md": "**FIBRA MAX Pulse es otra app distinta** de la app de Fibra Max con la que se entra al centro con el **QR**. Para entrar sigue haciendo falta la app de acceso.",
               "type": "callout",
-              "variant": "warning",
               "title": "No es la app de acceso",
-              "md": "**FIBRA MAX Pulse es otra app distinta** de la app de Fibra Max con la que se entra al centro con el **QR**. Para entrar sigue haciendo falta la app de acceso."
+              "variant": "warning"
             },
             {
               "id": "pulse-que",
-              "type": "text",
-              "md": "Qué ofrece, según la web:\n\n- **Rutinas personalizadas:** su planificación de entrenamiento, a mano mientras entrena.\n- **Registro de progresos:** guardar avances y ver su evolución.\n- **Peso y medidas:** control del peso y de las mediciones corporales.\n- **Pautas nutricionales:** junto al seguimiento del entrenamiento.\n\nEn la web: [fibra-max.com](https://fibra-max.com/) → **Abrir FIBRA MAX Pulse**."
+              "md": "Qué ofrece, según la web:\n\n- **Rutinas personalizadas:** su planificación de entrenamiento, a mano mientras entrena.\n- **Registro de progresos:** guardar avances y ver su evolución.\n- **Peso y medidas:** control del peso y de las mediciones corporales.\n- **Pautas nutricionales:** junto al seguimiento del entrenamiento.\n\nEn la web: [fibra-max.com](https://fibra-max.com/) → **Abrir FIBRA MAX Pulse**.",
+              "type": "text"
             }
           ],
           "children": [],
@@ -3700,13 +3700,20 @@
         },
         {
           "id": "entrenadores-personales",
+          "lead": "Los entrenadores que salen en la web, por centro.",
           "title": "Entrenadores personales",
-          "lead": "La web dice: «Pregunta en recepción por nuestros entrenadores personales».",
           "blocks": [
             {
-              "id": "ep-pend",
-              "type": "pending",
-              "note": "Por completar: quiénes son en cada centro, precios y cómo se reserva una sesión."
+              "id": "ep-lista",
+              "type": "text",
+              "md": "| Centro | Entrenadores |\n|---|---|\n| **Cabrera** | Adriano, Nil, Edgar y Natasha |\n| **Granollers** | Emilio, Carlos y Laura |\n| **Blanes** | De momento no sale ninguno en la web |\n| **Mataró** | Sergi |\n| **Mollet** | Laura |"
+            },
+            {
+              "id": "ep-como",
+              "type": "callout",
+              "variant": "info",
+              "title": "Cómo contactar con ellos",
+              "md": "En [fibra-max.com](https://fibra-max.com/) → menú → **Entrenadores personales** → elige el centro. Cada entrenador tiene un botón **«Habla con…»** que abre un **WhatsApp** directo con él. Si alguien pregunta en recepción, enséñale dónde está o dale el contacto desde ahí."
             }
           ],
           "children": [],
@@ -3718,8 +3725,8 @@
           "blocks": [
             {
               "id": "rg-texto",
-              "type": "text",
-              "md": "La web invita a dejar una **reseña en Google** de cada centro ([fibra-max.com](https://fibra-max.com/) → **Tu opinión cuenta** → elegir centro). Si un cliente está contento, anímale a dejarla: ayuda mucho a que nos encuentren."
+              "md": "La web invita a dejar una **reseña en Google** de cada centro ([fibra-max.com](https://fibra-max.com/) → **Tu opinión cuenta** → elegir centro). Si un cliente está contento, anímale a dejarla: ayuda mucho a que nos encuentren.",
+              "type": "text"
             }
           ],
           "children": [],
