@@ -1,6 +1,6 @@
 {
   "title": "Apuntes de Recepción",
-  "version": 124,
+  "version": 125,
   "sections": [
     {
       "id": "tarifas",
@@ -3691,7 +3691,7 @@
             },
             {
               "id": "pulse-que",
-              "md": "Qué ofrece, según la web:\n\n- **Rutinas personalizadas:** su planificación de entrenamiento, a mano mientras entrena.\n- **Registro de progresos:** guardar avances y ver su evolución.\n- **Peso y medidas:** control del peso y de las mediciones corporales.\n- **Pautas nutricionales:** junto al seguimiento del entrenamiento.\n\nEn la web: [fibra-max.com](https://fibra-max.com/) → **Abrir FIBRA MAX Pulse**.",
+              "md": "Qué ofrece, según la web:\n\n- **Rutinas personalizadas:** su planificación de entrenamiento, a mano mientras entrena.\n- **Registro de progresos:** guardar avances y ver su evolución.\n- **Peso y medidas:** control del peso y de las mediciones corporales.\n- **Pautas nutricionales:** sale en la web, pero **todavía no está activo**. Si preguntan, de momento no está disponible.\n\nEn la web: [fibra-max.com](https://fibra-max.com/) → **Abrir FIBRA MAX Pulse**.",
               "type": "text"
             }
           ],
@@ -3738,8 +3738,8 @@
           "blocks": [
             {
               "id": "tc-texto",
-              "type": "text",
-              "md": "Si alguien viene con su **currículum** o pregunta por trabajo, en recepción no se recogen candidaturas: se envían por el portal **FIBRA Talent**. Indícale: [fibra-max.com](https://fibra-max.com/) → pie de página → **Trabaja con nosotros** ([enlace directo](https://fibra-max.com/talent.html)). Ahí puede ver las vacantes o mandar una candidatura espontánea."
+              "md": "Si alguien viene con su **currículum** o pregunta por trabajo, en recepción no se recogen candidaturas: se envían por el portal **FIBRA Talent**. Indícale: [fibra-max.com](https://fibra-max.com/) → pie de página → **Trabaja con nosotros** ([enlace directo](https://fibra-max.com/talent.html)). Ahí puede ver las vacantes o mandar una candidatura espontánea.",
+              "type": "text"
             }
           ],
           "children": [],
