@@ -1,6 +1,6 @@
 {
   "title": "Apuntes de Recepción",
-  "version": 119,
+  "version": 120,
   "sections": [
     {
       "id": "tarifas",
@@ -725,7 +725,7 @@
             },
             {
               "id": "altas-n-familias",
-              "md": "**Primero** crea la **unidad familiar** (campo **Unidad Familiar** de la ficha, ver [Altas de familias](#altas-familias)).\n\nVe a **Información adicional**, pestaña **Personas relacionadas**: pulsa **Nuevo**, busca a la persona, pon la **relación** que tiene (cónyuge, hermano, hermana, hijo, hija…) y marca el check **Incluir en la unidad familiar**.\n\nAñade **todos los familiares** dentro de la misma ficha.\n\nRecuerda: todos tienen que tener el **mismo número de cuenta** para domiciliar (obligatorio en las cuotas nuevas).",
+              "md": "**Primero** crea la **unidad familiar**: está en el **mismo sitio**, **Información adicional → Personas relacionadas**, campo **Unidad Familiar** (ver [Altas de familias](#altas-familias)).\n\nVe a **Información adicional**, pestaña **Personas relacionadas**: pulsa **Nuevo**, busca a la persona, pon la **relación** que tiene (cónyuge, hermano, hermana, hijo, hija…) y marca el check **Incluir en la unidad familiar**.\n\nAñade **todos los familiares** dentro de la misma ficha.\n\nRecuerda: todos tienen que tener el **mismo número de cuenta** para domiciliar (obligatorio en las cuotas nuevas).",
               "type": "callout",
               "title": "Cuota de familias: un paso más",
               "variant": "warning"
@@ -996,44 +996,44 @@
                   "title": "Calcula el importe"
                 },
                 {
-                  "title": "Crea la unidad familiar",
-                  "md": "En Matchpoint, **antes de nada**, crea la **unidad familiar**: en la ficha, en el campo **Unidad Familiar**, pulsa el icono verde con la **+** (**1**). La **lupa** sirve para buscar una unidad familiar que ya exista."
+                  "md": "En Matchpoint, **antes de nada**, crea la **unidad familiar**. Está en el **mismo sitio que Personas relacionadas**: ficha del cliente → **Información adicional → Personas relacionadas**, campo **Unidad Familiar**. Pulsa el icono verde con la **+** (**1**). La **lupa** sirve para buscar una unidad familiar que ya exista.",
+                  "title": "Crea la unidad familiar"
                 }
               ],
               "start": 1
             },
             {
               "id": "af-shot-unidad",
-              "type": "screenshot",
-              "src": "/capturas/familias-unidad-familiar.png",
               "alt": "Campo Unidad Familiar de Matchpoint con sus botones",
-              "caption": "Matchpoint: campo Unidad Familiar. Icono para crear una nueva (1).",
+              "src": "/capturas/familias-unidad-familiar.png",
+              "type": "screenshot",
+              "caption": "Información adicional → Personas relacionadas: campo Unidad Familiar. Icono para crear una nueva (1).",
               "annotations": [
                 {
-                  "kind": "box",
+                  "h": 30,
+                  "w": 5.8,
                   "x": 53.3,
                   "y": 47,
-                  "w": 5.8,
-                  "h": 30
+                  "kind": "box"
                 },
                 {
-                  "kind": "marker",
                   "n": 1,
                   "x": 56.2,
-                  "y": 22
+                  "y": 22,
+                  "kind": "marker"
                 }
               ]
             },
             {
               "id": "af-pasos-2",
               "type": "steps",
-              "start": 4,
               "items": [
                 {
-                  "title": "Pásala a Matchpoint",
-                  "md": "Igual que en [Pasar el alta a Matchpoint](#altas-normales), copiando los datos del papel, con un paso más: en **Información adicional → Personas relacionadas** añade a todos los familiares. Al añadir cada familiar con **Nuevo**, marca el check **Incluir en la unidad familiar**. Cobra en recepción con **tarjeta** o **efectivo**."
+                  "md": "Igual que en [Pasar el alta a Matchpoint](#altas-normales), copiando los datos del papel, con un paso más: en **Información adicional → Personas relacionadas** añade a todos los familiares. Al añadir cada familiar con **Nuevo**, marca el check **Incluir en la unidad familiar**. Cobra en recepción con **tarjeta** o **efectivo**.",
+                  "title": "Pásala a Matchpoint"
                 }
-              ]
+              ],
+              "start": 4
             },
             {
               "id": "af-despues",
