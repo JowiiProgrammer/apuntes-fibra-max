@@ -1,6 +1,6 @@
 {
   "title": "Apuntes de Recepción",
-  "version": 121,
+  "version": 122,
   "sections": [
     {
       "id": "tarifas",
@@ -36,9 +36,17 @@
               "id": "precios-fitness",
               "type": "prices",
               "tableId": "fitness"
+            },
+            {
+              "id": "fit-horarios",
+              "type": "callout",
+              "variant": "info",
+              "title": "Horario de cada cuota",
+              "md": "- **Fitness Ilimitado:** lunes a viernes de **6:00 a 23:00**. Sábados, domingos y festivos de **7:00 a 21:00**.\n- **Fitness de mañanas + fin de semana:** lunes a viernes, **entrada de 6:00 a 16:00** y **salida hasta las 17:00**. Sábados, domingos y festivos de **7:00 a 21:00**.\n- **Fin de semana:** sábados, domingos y festivos de **7:00 a 21:00**. Acceso fuera de horario: **suplemento de 6 €**.\n- **Pádel + Gym:** mismo horario que Ilimitado. El pádel, solo en **Cabrera** y con **reserva de pista**.\n\nTodas las cuotas son **por persona**. Matrícula: **50 €** en mensual; **gratis** en los abonos de pago anticipado."
             }
           ],
-          "children": []
+          "children": [],
+          "updatedAt": "2026-11-27"
         },
         {
           "id": "tarifas-fitness-padel",
@@ -175,7 +183,7 @@
             },
             {
               "id": "mp-aviso-comprobante",
-              "md": "Las compras de la web llegan al Cuadro de mando: [erp.fibra-max.com](https://erp.fibra-max.com/) → **Control abonados → EP/Bonos**.\n\n- Pestaña **Vigentes** (las que están en vigor) e **Histórico** (las que ya han caducado). Puedes filtrar por **centro** y por **tipo** (entrada puntual o bono).\n- Búscala por **nombre, email, teléfono, producto o referencia**.\n- En cada compra ves el **producto**, la **vigencia** (desde → hasta), el **importe** y el **pago** («Pagado · comunicado por Web»).\n- El **ojo** (Detalle) abre todos sus datos: nombre, DNI, teléfono, correo, dirección… Te sirven para registrarla en Matchpoint.\n\nCompruébalo ahí antes de dar el acceso. Si sale **«Pendiente de pago · efectivo en recepción»**, cóbralo en el paso 11 y después marca el **check** que tiene al lado (**Cobro en efectivo recibido en recepción**).",
+              "md": "Las compras de la web llegan al Cuadro de mando: [erp.fibra-max.com](https://erp.fibra-max.com/) → **Control abonados → EP/Bonos**.\n\n- Pestaña **Vigentes** (las que están en vigor) e **Histórico** (las que ya han caducado). Puedes filtrar por **centro** y por **tipo** (entrada puntual o bono).\n- Búscala por **nombre, email, teléfono, producto o referencia**.\n- En cada compra ves el **producto**, la **vigencia** (desde → hasta), el **importe** y el **pago** («Pagado · comunicado por Web»).\n- El **ojo** (Detalle) abre todos sus datos: nombre, DNI, teléfono, correo, dirección… Te sirven para registrarla en Matchpoint.\n\nCompruébalo ahí antes de dar el acceso. Si sale **«Pendiente de pago · efectivo en recepción»**, cóbralo en el paso 11 y después marca el **check** que tiene al lado (**Cobro en efectivo recibido en recepción**).\n\nSi lo pagó con tarjeta, puede tener el bono en el móvil: después del pago la web le deja añadirlo a **Apple Wallet** o **Google Wallet**.",
               "type": "callout",
               "title": "Si lo compró por la web: EP/Bonos",
               "variant": "info"
@@ -471,10 +479,10 @@
             }
           ],
           "children": [],
-          "updatedAt": "2026-11-25"
+          "updatedAt": "2026-11-27"
         }
       ],
-      "updatedAt": "2026-11-23"
+      "updatedAt": "2026-11-27"
     },
     {
       "id": "altas",
@@ -527,6 +535,13 @@
               "type": "callout",
               "title": "Si eligió pagar en recepción",
               "variant": "danger"
+            },
+            {
+              "id": "awc-sin-acceso",
+              "type": "callout",
+              "variant": "warning",
+              "title": "Pagar en la web no da acceso por sí solo",
+              "md": "Aunque haya pagado con tarjeta, el pago solo deja la ficha guardada con su referencia. **No puede entrar hasta que recepción tramita el alta** en Matchpoint: [Pasar el alta a Matchpoint](#altas-normales)."
             }
           ],
           "children": [],
@@ -2134,11 +2149,11 @@
         },
         {
           "id": "pe-plantilla-big",
+          "href": "/documentos/plantilla-pedido-big.xlsx",
+          "note": "Excel · Elige el centro, pon la cantidad en las casillas rosas y añade observaciones si hace falta.",
           "type": "download",
           "title": "Plantilla de pedido BIG",
-          "href": "/documentos/plantilla-pedido-big.xlsx",
-          "fileName": "Plantilla pedido BIG.xlsx",
-          "note": "Excel · Elige el centro, pon la cantidad en las casillas rosas y añade observaciones si hace falta."
+          "fileName": "Plantilla pedido BIG.xlsx"
         }
       ],
       "children": [],
@@ -3633,6 +3648,85 @@
         }
       ],
       "updatedAt": "2026-11-24"
+    },
+    {
+      "id": "centros-servicios",
+      "title": "Centros, app y servicios",
+      "group": "Información general",
+      "lead": "Lo que cuenta la web de Fibra Max y nos pueden preguntar en recepción.",
+      "blocks": [],
+      "children": [
+        {
+          "id": "centros",
+          "title": "Centros",
+          "lead": "Cinco centros abiertos y dos próximas aperturas.",
+          "blocks": [
+            {
+              "id": "ce-lista",
+              "type": "text",
+              "md": "**Abiertos:**\n\n1. **Cabrera de Mar** (Maresme). Único centro con **pádel** y **Hyrox**.\n2. **Granollers** (Vallès Oriental).\n3. **Blanes** (La Selva).\n4. **Mataró** (Maresme).\n5. **Mollet** (Vallès Oriental). **Recién abierto**.\n\nCon la cuota se puede entrenar en **todos los centros** sin pagar más. Los **bonos** también valen en los cinco."
+            },
+            {
+              "id": "ce-aperturas",
+              "type": "callout",
+              "variant": "tip",
+              "title": "Próximas aperturas: Premià y Sabadell",
+              "md": "Si alguien pregunta, en la web hay un apartado **«Llega antes»** para dejar sus datos y enterarse de la apertura. De momento es una **vista previa**: todavía no envía las preinscripciones."
+            }
+          ],
+          "children": [],
+          "updatedAt": "2026-11-27"
+        },
+        {
+          "id": "app-pulse",
+          "title": "App FIBRA MAX Pulse",
+          "lead": "La app que anuncia la web: rutina y evolución en el móvil.",
+          "blocks": [
+            {
+              "id": "pulse-distinta",
+              "type": "callout",
+              "variant": "warning",
+              "title": "No es la app de acceso",
+              "md": "**FIBRA MAX Pulse es otra app distinta** de la app de Fibra Max con la que se entra al centro con el **QR**. Para entrar sigue haciendo falta la app de acceso."
+            },
+            {
+              "id": "pulse-que",
+              "type": "text",
+              "md": "Qué ofrece, según la web:\n\n- **Rutinas personalizadas:** su planificación de entrenamiento, a mano mientras entrena.\n- **Registro de progresos:** guardar avances y ver su evolución.\n- **Peso y medidas:** control del peso y de las mediciones corporales.\n- **Pautas nutricionales:** junto al seguimiento del entrenamiento.\n\nEn la web: [fibra-max.com](https://fibra-max.com/) → **Abrir FIBRA MAX Pulse**."
+            }
+          ],
+          "children": [],
+          "updatedAt": "2026-11-27"
+        },
+        {
+          "id": "entrenadores-personales",
+          "title": "Entrenadores personales",
+          "lead": "La web dice: «Pregunta en recepción por nuestros entrenadores personales».",
+          "blocks": [
+            {
+              "id": "ep-pend",
+              "type": "pending",
+              "note": "Por completar: quiénes son en cada centro, precios y cómo se reserva una sesión."
+            }
+          ],
+          "children": [],
+          "updatedAt": "2026-11-27"
+        },
+        {
+          "id": "resenas-google",
+          "title": "Reseñas en Google",
+          "blocks": [
+            {
+              "id": "rg-texto",
+              "type": "text",
+              "md": "La web invita a dejar una **reseña en Google** de cada centro ([fibra-max.com](https://fibra-max.com/) → **Tu opinión cuenta** → elegir centro). Si un cliente está contento, anímale a dejarla: ayuda mucho a que nos encuentren."
+            }
+          ],
+          "children": [],
+          "updatedAt": "2026-11-27"
+        }
+      ],
+      "updatedAt": "2026-11-27"
     }
   ],
   "novedades": [
