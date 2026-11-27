@@ -7,19 +7,18 @@ import type { Apuntes, Block, BlockType, PriceTable, Section } from './types'
 // con el número más alto entre la publicada en el código y la guardada en Supabase.
 // En "Modo edición" (solo con contraseña) cada cambio se guarda solo a los pocos segundos.
 const bundled = seed as Apuntes
-const PW_KEY = 'apuntes-fibramax:pw'
 const SAVE_DELAY = 1500
 
-// Restos del guardado antiguo en el navegador: ya no se usan.
-try { localStorage.removeItem('apuntes-fibramax:v1') } catch { /* sin almacenamiento */ }
+// Restos de versiones anteriores en el navegador: ya no se usan.
+try {
+  localStorage.removeItem('apuntes-fibramax:v1')
+  sessionStorage.removeItem('apuntes-fibramax:pw')
+} catch { /* sin almacenamiento */ }
 
-const readPw = () => { try { return sessionStorage.getItem(PW_KEY) } catch { return null } }
-const writePw = (pw: string | null) => {
-  try {
-    if (pw) sessionStorage.setItem(PW_KEY, pw)
-    else sessionStorage.removeItem(PW_KEY)
-  } catch { /* sin almacenamiento: habrá que volver a escribirla */ }
-}
+// La contraseña solo vive en memoria: al cerrar o recargar la pestaña se olvida y se vuelve a pedir.
+let editPassword: string | null = null
+const readPw = () => editPassword
+const writePw = (pw: string | null) => { editPassword = pw }
 
 export type SaveState = 'idle' | 'pending' | 'saving' | 'saved' | 'error'
 
