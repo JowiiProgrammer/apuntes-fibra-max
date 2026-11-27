@@ -71,7 +71,7 @@ export function BlockView({ block }: { block: Block }) {
             {block.note && <p className="muted small">{block.note}</p>}
           </div>
           {block.href && (
-            <a className="btn btn--sm" href={block.href} download data-search-skip>
+            <a className="btn btn--sm" href={block.href} download={block.fileName || ''} data-search-skip>
               <Download size={14} /> Descargar
             </a>
           )}

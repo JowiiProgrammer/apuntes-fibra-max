@@ -21,7 +21,7 @@ export type Block =
   | { id: string; type: 'message'; title?: string; /** Texto plano listo para copiar (WhatsApp, email). */ text: string }
   | { id: string; type: 'pending'; note?: string }
   /** Documento para descargar (PDF, plantilla…) servido desde public/. */
-  | { id: string; type: 'download'; title: string; href: string; note?: string }
+  | { id: string; type: 'download'; title: string; href: string; note?: string; /** Nombre del archivo al descargarlo. */ fileName?: string }
 
 export type BlockType = Block['type']
 

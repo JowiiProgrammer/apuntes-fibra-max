@@ -144,8 +144,12 @@ export function ApuntesProvider({ children }: { children: ReactNode }) {
     } catch (e) {
       dirtyRef.current = true
       setSaveState('error')
-      setSaveMessage(e instanceof RemoteError ? e.message : 'No se pudo guardar')
-      if (e instanceof RemoteError && e.status === 401) writePw(null)
+      if (e instanceof RemoteError && e.status === 401) {
+        writePw(null)
+        setSaveMessage('la contraseña no es correcta. Sal de Modo edición y vuelve a entrar con la buena; tus cambios siguen aquí.')
+      } else {
+        setSaveMessage(e instanceof RemoteError ? e.message : 'No se pudo guardar')
+      }
     } finally {
       savingRef.current = false
     }

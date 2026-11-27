@@ -143,7 +143,7 @@ export default function App() {
           <footer className="foot" data-search-skip>Fibra Max · Apuntes internos de recepción</footer>
         </main>
       </div>
-      <Novedades items={data.novedades ?? []} />
+      <Novedades />
       <PasswordDialog />
     </div>
   )

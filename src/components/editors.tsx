@@ -1,4 +1,4 @@
-import { ArrowDown, ArrowUp, Plus, Trash2 } from 'lucide-react'
+import { ArrowDown, ArrowUp, Plus, Trash2, Upload } from 'lucide-react'
 import { useEffect, useState, type ReactNode } from 'react'
 import { useApuntes } from '../store'
 import type { Block, BlockType, CalloutVariant } from '../types'
@@ -55,6 +55,17 @@ export function Field({ value, onCommit, multiline, className = '', ...rest }: {
       {...rest}
     />
   )
+}
+
+const MAX_DOC_BYTES = 4 * 1024 * 1024
+
+function readAsDataUrl(file: File): Promise<string> {
+  return new Promise((res, rej) => {
+    const r = new FileReader()
+    r.onload = () => res(String(r.result))
+    r.onerror = () => rej(new Error('No se pudo leer el archivo'))
+    r.readAsDataURL(file)
+  })
 }
 
 const MD_HINT = 'Admite Markdown: **negrita**, *cursiva*, - listas, 1. listas numeradas, [enlace](url)'
@@ -180,7 +191,26 @@ function BlockForm({ block, save }: { block: Block; save: (b: Block) => void }) 
       return (
         <>
           <Field value={block.title} placeholder="Nombre del documento" onCommit={(title) => save({ ...block, title })} />
-          <Field value={block.href} placeholder="Ruta del archivo (ej. /documentos/vacaciones.pdf)" onCommit={(href) => save({ ...block, href })} />
+          <div className="field-row">
+            <label className="btn btn--sm btn--ghost">
+              <Upload size={14} /> {block.href ? 'Cambiar archivo' : 'Subir archivo'}
+              <input
+                type="file"
+                hidden
+                accept=".pdf,.doc,.docx,.xls,.xlsx,.png,.jpg,.jpeg"
+                onChange={async (e) => {
+                  const f = e.target.files?.[0]
+                  e.target.value = ''
+                  if (!f) return
+                  if (f.size > MAX_DOC_BYTES) { alert('El archivo es demasiado grande (máximo 4 MB).'); return }
+                  const href = await readAsDataUrl(f)
+                  save({ ...block, href, fileName: f.name, title: block.title || f.name.replace(/\.[^.]+$/, '') })
+                }}
+              />
+            </label>
+            <span className="muted small grow">{block.fileName || (block.href ? block.href.split('/').pop() : 'Sin archivo')}</span>
+          </div>
+          <p className="muted small">Solo plantillas en blanco: la web es pública, nada con datos personales.</p>
           <Field value={block.note ?? ''} placeholder="Nota (opcional)" onCommit={(note) => save({ ...block, note })} />
         </>
       )
