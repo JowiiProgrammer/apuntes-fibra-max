@@ -1,6 +1,6 @@
 {
   "title": "Apuntes de Recepción",
-  "version": 118,
+  "version": 119,
   "sections": [
     {
       "id": "tarifas",
@@ -725,7 +725,7 @@
             },
             {
               "id": "altas-n-familias",
-              "md": "Ve a **Información adicional**, pestaña **Personas relacionadas**: pulsa **Nuevo**, busca a la persona y pon la **relación** que tiene (cónyuge, hermano, hermana, hijo, hija…).\n\nAñade **todos los familiares** dentro de la misma ficha.\n\nRecuerda: todos tienen que tener el **mismo número de cuenta** para domiciliar (obligatorio en las cuotas nuevas).",
+              "md": "**Primero** crea la **unidad familiar** (campo **Unidad Familiar** de la ficha, ver [Altas de familias](#altas-familias)).\n\nVe a **Información adicional**, pestaña **Personas relacionadas**: pulsa **Nuevo**, busca a la persona, pon la **relación** que tiene (cónyuge, hermano, hermana, hijo, hija…) y marca el check **Incluir en la unidad familiar**.\n\nAñade **todos los familiares** dentro de la misma ficha.\n\nRecuerda: todos tienen que tener el **mismo número de cuenta** para domiciliar (obligatorio en las cuotas nuevas).",
               "type": "callout",
               "title": "Cuota de familias: un paso más",
               "variant": "warning"
@@ -897,10 +897,10 @@
             },
             {
               "id": "altas-n-dia-25",
+              "md": "Si se da de alta **del día 25 al último día del mes** con tarifa **mensual**, el primer pago incluye **los días que quedan de este mes + el mes siguiente completo**. Por eso el primer pago sale más alto.\n\nEjemplo que da la web: Fitness Ilimitado, alta el **27/11**: parte proporcional del 27 al 30/11 (4 días) **8,50 €** + diciembre completo **62,00 €** = **70,50 €**. El **próximo cobro** es el **01/01**.\n\nEn Matchpoint: **Primera cuota** = ese total (sin matrícula) y **Fecha comienzo paso resto de cuotas** = la fecha de **próximo pago** del alta web (el día 1 del mes siguiente al mes completo).",
               "type": "callout",
-              "variant": "warning",
               "title": "Altas mensuales del día 25 a fin de mes",
-              "md": "Si se da de alta **del día 25 al último día del mes** con tarifa **mensual**, el primer pago incluye **los días que quedan de este mes + el mes siguiente completo**. Por eso el primer pago sale más alto.\n\nEjemplo que da la web: Fitness Ilimitado, alta el **27/11**: parte proporcional del 27 al 30/11 (4 días) **8,50 €** + diciembre completo **62,00 €** = **70,50 €**. El **próximo cobro** es el **01/01**.\n\nEn Matchpoint: **Primera cuota** = ese total (sin matrícula) y **Fecha comienzo paso resto de cuotas** = la fecha de **próximo pago** del alta web (el día 1 del mes siguiente al mes completo)."
+              "variant": "warning"
             },
             {
               "id": "altas-shot-calculadora",
@@ -996,11 +996,44 @@
                   "title": "Calcula el importe"
                 },
                 {
-                  "md": "Igual que en [Pasar el alta a Matchpoint](#altas-normales), copiando los datos del papel, con un paso más: en **Información adicional → Personas relacionadas** añade a todos los familiares. Cobra en recepción con **tarjeta** o **efectivo**.",
-                  "title": "Pásala a Matchpoint"
+                  "title": "Crea la unidad familiar",
+                  "md": "En Matchpoint, **antes de nada**, crea la **unidad familiar**: en la ficha, en el campo **Unidad Familiar**, pulsa el icono verde con la **+** (**1**). La **lupa** sirve para buscar una unidad familiar que ya exista."
                 }
               ],
               "start": 1
+            },
+            {
+              "id": "af-shot-unidad",
+              "type": "screenshot",
+              "src": "/capturas/familias-unidad-familiar.png",
+              "alt": "Campo Unidad Familiar de Matchpoint con sus botones",
+              "caption": "Matchpoint: campo Unidad Familiar. Icono para crear una nueva (1).",
+              "annotations": [
+                {
+                  "kind": "box",
+                  "x": 53.3,
+                  "y": 47,
+                  "w": 5.8,
+                  "h": 30
+                },
+                {
+                  "kind": "marker",
+                  "n": 1,
+                  "x": 56.2,
+                  "y": 22
+                }
+              ]
+            },
+            {
+              "id": "af-pasos-2",
+              "type": "steps",
+              "start": 4,
+              "items": [
+                {
+                  "title": "Pásala a Matchpoint",
+                  "md": "Igual que en [Pasar el alta a Matchpoint](#altas-normales), copiando los datos del papel, con un paso más: en **Información adicional → Personas relacionadas** añade a todos los familiares. Al añadir cada familiar con **Nuevo**, marca el check **Incluir en la unidad familiar**. Cobra en recepción con **tarjeta** o **efectivo**."
+                }
+              ]
             },
             {
               "id": "af-despues",
@@ -1013,7 +1046,7 @@
             }
           ],
           "children": [],
-          "updatedAt": "2026-11-23"
+          "updatedAt": "2026-11-27"
         },
         {
           "id": "altas-speech",
