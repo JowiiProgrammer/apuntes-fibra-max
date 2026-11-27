@@ -1,6 +1,6 @@
 {
   "title": "Apuntes de Recepción",
-  "version": 105,
+  "version": 116,
   "sections": [
     {
       "id": "tarifas",
@@ -507,7 +507,7 @@
                   "title": "Rellena sus datos"
                 },
                 {
-                  "md": "**Tarjeta** (pago online) o **Efectivo en recepción**.",
+                  "md": "- **Tarjeta online:** paga en ese momento por la pasarela de pago.\n- **Pagar en recepción:** viene al centro y paga en **efectivo** o con **tarjeta**.",
                   "title": "Elige cómo paga"
                 },
                 {
@@ -515,7 +515,7 @@
                   "title": "Firma"
                 },
                 {
-                  "md": "- **Tarjeta:** paga en la pasarela segura de **Getnet**. Queda pagado.\n- **Efectivo:** la web le da una **referencia** para pagar en recepción.",
+                  "md": "- **Tarjeta online:** paga en la pasarela segura de **Getnet**. Queda pagado.\n- **En recepción:** la web le da una **referencia** para pagar en el centro, en **efectivo** o con **tarjeta**.",
                   "title": "Paga"
                 }
               ],
@@ -523,14 +523,14 @@
             },
             {
               "id": "awc-efectivo",
-              "md": "Si eligió **efectivo**, tiene que venir a recepción con la **referencia** y pagar el importe. **Hasta entonces no está pagado ni activo: no puede entrar.**",
+              "md": "Tiene que venir a recepción con la **referencia** y pagar el importe en **efectivo** o con **tarjeta**. **Hasta entonces no está pagado ni activo: no puede entrar.**",
               "type": "callout",
-              "title": "Pago en efectivo",
+              "title": "Si eligió pagar en recepción",
               "variant": "danger"
             }
           ],
           "children": [],
-          "updatedAt": "2026-11-23"
+          "updatedAt": "2026-11-27"
         },
         {
           "id": "altas-normales",
@@ -600,14 +600,14 @@
               "id": "altas-n-tarjeta",
               "md": "Ya está pagado. Al cobrarlo en Matchpoint (paso 10) el método de pago es siempre **transferencia**, nunca tarjeta.",
               "type": "callout",
-              "title": "Si pagó con tarjeta en la web",
+              "title": "Si pagó con tarjeta online (pasarela)",
               "variant": "warning"
             },
             {
               "id": "altas-n-efectivo",
-              "md": "Todavía no ha pagado. En Matchpoint haz **todo igual**, pero al final pulsa **Dar de alta** (**sin cobrar**): el importe queda como deuda.\n\nCuando venga a pagar con la **referencia**, cóbralo en su ficha: **Facturación y Cobro → Deudas**, en **efectivo**.",
+              "md": "Todavía no ha pagado. En Matchpoint haz **todo igual**, pero al final pulsa **Dar de alta** (**sin cobrar**): el importe queda como deuda.\n\nCuando venga a pagar con la **referencia**, cóbralo en su ficha: **Facturación y Cobro → Deudas**, en **efectivo** o con **tarjeta**, según cómo pague.",
               "type": "callout",
-              "title": "Si sale «Efectivo · Pendiente de pago en recepción»",
+              "title": "Si sale «Pendiente de pago en recepción»",
               "variant": "danger"
             },
             {
@@ -659,7 +659,7 @@
             },
             {
               "id": "altas-n-ficha-revisar",
-              "md": "- Rellena **todos los datos**, añade la **foto** y guarda el **teléfono**.\n- Usa **Observaciones** para anotar promoción, baja médica, pago en efectivo u otra información útil.\n- Revisa **Acceso Usuario**: el **email** tiene que ser correcto.\n- Si cambias el email: cámbialo en la hoja **General**, ve a **Información adicional**, quita el acceso y vuelve a darlo con el email correcto.",
+              "md": "- Rellena **todos los datos**, añade la **foto** y guarda el **teléfono**.\n- Usa **Observaciones** para anotar promoción, baja médica, pago en recepción u otra información útil.\n- Revisa **Acceso Usuario**: el **email** tiene que ser correcto.\n- Si cambias el email: cámbialo en la hoja **General**, ve a **Información adicional**, quita el acceso y vuelve a darlo con el email correcto.",
               "type": "callout",
               "title": "Revisa en la ficha",
               "variant": "info"
@@ -801,7 +801,7 @@
                   "title": "Configura el importe"
                 },
                 {
-                  "md": "- **Pagó con tarjeta en la web:** pulsa **Dar de alta y cobrar** (**5**) y elige **transferencia**.\n- **Paga en efectivo en recepción:** pulsa **Dar de alta**, sin cobrar. Cuando pague, se cobra en **Facturación y Cobro → Deudas**.",
+                  "md": "- **Pagó con tarjeta online en la web:** pulsa **Dar de alta y cobrar** (**5**) y elige **transferencia**.\n- **Paga en recepción (efectivo o tarjeta):** pulsa **Dar de alta**, sin cobrar. Cuando pague, se cobra en **Facturación y Cobro → Deudas** con el método que use.",
                   "title": "Dar de alta"
                 }
               ],
@@ -969,7 +969,7 @@
             }
           ],
           "children": [],
-          "updatedAt": "2026-11-24"
+          "updatedAt": "2026-11-27"
         },
         {
           "id": "altas-familias",
@@ -1093,7 +1093,7 @@
           "updatedAt": "2026-10-08"
         }
       ],
-      "updatedAt": "2026-11-23"
+      "updatedAt": "2026-11-27"
     },
     {
       "id": "bajas",
@@ -3493,7 +3493,8 @@
               "md": "Si **Alex o Xevi** lo **autorizan**, el **aviso por escrito** (aviso 2) o la **sanción** (aviso 3) se lo **enviamos nosotros directamente** desde recepción. Sin su autorización, no se envía.",
               "title": "Avisos 2 y 3: los enviamos nosotros"
             }
-          ]
+          ],
+          "start": 1
         },
         {
           "id": "ca-sistema",
@@ -3504,7 +3505,7 @@
         }
       ],
       "children": [],
-      "updatedAt": "2026-11-26"
+      "updatedAt": "2026-11-27"
     },
     {
       "id": "protocolos",
@@ -3597,8 +3598,8 @@
       "id": "black-friday-2026",
       "md": "**Del 27 al 30 de noviembre (ambos incluidos)**, la **matrícula es gratis** en las altas de **cualquier centro**.\n\n- **Si alguien pregunta:** «Si te das de alta estos días en cualquiera de nuestros centros, no pagas matrícula».\n- En la **web** ya sale aplicado.\n- **Desde el 1 de diciembre** vuelve la matrícula normal.",
       "date": "2026-11-27",
-      "title": "Black Friday: matrícula gratis del 27 al 30 de noviembre",
-      "image": "/novedades/black-friday-2026.jpg"
+      "image": "/novedades/black-friday-2026.jpg",
+      "title": "Black Friday: matrícula gratis del 27 al 30 de noviembre"
     }
   ],
   "priceTables": [
