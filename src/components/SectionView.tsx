@@ -5,6 +5,27 @@ import { BlockView } from './blocks'
 import { AddBlockMenu, BlockEditor, Field } from './editors'
 import { fmtDate } from './PriceTable'
 
+/** Niveles de apartados que cuelgan de una sección (0 = no tiene). */
+const height = (s: Section): number => (s.children.length ? 1 + Math.max(...s.children.map(height)) : 0)
+
+/** Dónde se puede llevar un apartado: capítulos o apartados donde quepa sin pasar de 3 niveles. */
+function moveTargets(sections: Section[], moving: Section, num: Map<string, string>) {
+  const out: { id: string; label: string }[] = []
+  const h = height(moving)
+  const walk = (list: Section[], depth: number) => {
+    for (const s of list) {
+      if (s.id === moving.id) continue // ni en sí mismo ni dentro de sus apartados
+      const isCurrentParent = s.children.some((c) => c.id === moving.id)
+      if (depth + 1 + h <= 2 && !isCurrentParent) {
+        out.push({ id: s.id, label: `${'  '.repeat(depth * 2)}${num.get(s.id) ?? ''} ${s.title}` })
+      }
+      if (depth < 1) walk(s.children, depth + 1)
+    }
+  }
+  walk(sections, 0)
+  return out
+}
+
 interface Props {
   section: Section
   depth: number
@@ -14,7 +35,7 @@ interface Props {
 }
 
 export function SectionView({ section, depth, num, index, siblings }: Props) {
-  const { editMode, mutate, moveSection, removeSection, addSection } = useApuntes()
+  const { data, editMode, mutate, moveSection, moveSectionTo, removeSection, addSection } = useApuntes()
   const n = num.get(section.id) ?? ''
   const isChapter = depth === 0
   const Heading = isChapter ? 'h2' : depth === 1 ? 'h3' : 'h4'
@@ -51,6 +72,19 @@ export function SectionView({ section, depth, num, index, siblings }: Props) {
           <div className="section-tools" data-search-skip>
             <button className="icon-btn" title="Subir" disabled={index === 0} onClick={() => moveSection(section.id, -1)}><ArrowUp size={15} /></button>
             <button className="icon-btn" title="Bajar" disabled={index === siblings - 1} onClick={() => moveSection(section.id, 1)}><ArrowDown size={15} /></button>
+            {!isChapter && (
+              <select
+                className="move-select"
+                value=""
+                title="Mover este apartado a otro capítulo o apartado"
+                onChange={(e) => e.target.value && moveSectionTo(section.id, e.target.value)}
+              >
+                <option value="">Mover a…</option>
+                {moveTargets(data.sections, section, num).map((t) => (
+                  <option key={t.id} value={t.id}>{t.label}</option>
+                ))}
+              </select>
+            )}
             <button
               className="icon-btn icon-btn--danger"
               title="Borrar apartado"

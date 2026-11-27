@@ -463,6 +463,20 @@ kbd {
   .price-card:not(.is-editing) .price-val { flex-direction: row; gap: 8px; align-items: baseline; }
 }
 
+.move-select { max-width: 170px; height: 30px; padding: 0 6px; border: 1px solid var(--line); border-radius: 6px; background: var(--card); color: var(--ink); font: inherit; font-size: 12.5px; }
+
+/* ---------- Barra de formato de los textos ---------- */
+.rich { display: flex; flex-direction: column; border: 1px solid var(--line); border-radius: var(--radius-sm); background: var(--card); }
+.rich.is-focused { border-color: var(--ink); }
+.rich__bar { display: flex; flex-wrap: wrap; align-items: center; gap: 2px; padding: 4px 6px; border-bottom: 1px solid var(--line-2); background: var(--bg); border-radius: var(--radius-sm) var(--radius-sm) 0 0; }
+.rich__btn { display: grid; place-items: center; width: 30px; height: 28px; border: 0; border-radius: 6px; background: transparent; color: var(--ink); cursor: pointer; }
+.rich__btn:hover { background: var(--card); box-shadow: inset 0 0 0 1px var(--line); }
+.rich__sep { width: 1px; height: 18px; margin: 0 4px; background: var(--line); }
+.rich__select { max-width: 190px; height: 28px; padding: 0 6px; border: 1px solid var(--line); border-radius: 6px; background: var(--card); color: var(--ink); font: inherit; font-size: 12.5px; }
+.rich__input { border: 0 !important; border-radius: 0; box-shadow: none !important; }
+.rich__preview { padding: 8px 12px 10px; border-top: 1px dashed var(--line); font-size: 14px; }
+.rich__preview-tag { display: block; margin-bottom: 4px; font-size: 10.5px; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; color: var(--muted); }
+
 /* ---------- Guardado compartido ---------- */
 .save-state { display: inline-flex; align-items: center; gap: 4px; margin-left: 6px; font-weight: 700; font-size: 12.5px; }
 .save-state--saved { color: #15803d; }

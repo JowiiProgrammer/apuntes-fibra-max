@@ -4,6 +4,7 @@ import { useApuntes } from '../store'
 import type { Block, BlockType, CalloutVariant } from '../types'
 import { CALLOUTS } from './blocks'
 import { PriceTableView } from './PriceTable'
+import { RichField } from './RichField'
 import { ScreenshotEditor } from './Screenshot'
 
 export const BLOCK_LABELS: Record<BlockType, string> = {
@@ -68,7 +69,7 @@ function readAsDataUrl(file: File): Promise<string> {
   })
 }
 
-const MD_HINT = 'Admite Markdown: **negrita**, *cursiva*, - listas, 1. listas numeradas, [enlace](url)'
+const MD_HINT = 'Escribe el texto. Para dar formato, selecciónalo y usa los botones de arriba.'
 
 export function BlockEditor({ sectionId, block, index, total }: { sectionId: string; block: Block; index: number; total: number }) {
   const { updateBlock, removeBlock, moveBlock } = useApuntes()
@@ -95,7 +96,7 @@ function BlockForm({ block, save }: { block: Block; save: (b: Block) => void }) 
 
   switch (block.type) {
     case 'text':
-      return <Field multiline value={block.md} placeholder={MD_HINT} onCommit={(md) => save({ ...block, md })} />
+      return <RichField value={block.md} placeholder={MD_HINT} onCommit={(md) => save({ ...block, md })} />
 
     case 'callout':
       return (
@@ -108,7 +109,7 @@ function BlockForm({ block, save }: { block: Block; save: (b: Block) => void }) 
             ))}
           </div>
           <Field value={block.title ?? ''} placeholder="Título (opcional)" onCommit={(title) => save({ ...block, title })} />
-          <Field multiline value={block.md} placeholder={MD_HINT} onCommit={(md) => save({ ...block, md })} />
+          <RichField value={block.md} placeholder={MD_HINT} onCommit={(md) => save({ ...block, md })} />
         </>
       )
 
@@ -116,7 +117,7 @@ function BlockForm({ block, save }: { block: Block; save: (b: Block) => void }) 
       return (
         <>
           <Field value={block.title ?? ''} placeholder="Título (ej. Cómo arrancar)" onCommit={(title) => save({ ...block, title })} />
-          <Field multiline value={block.md} placeholder="Lo que se le dice al cliente, tal cual." onCommit={(md) => save({ ...block, md })} />
+          <RichField value={block.md} placeholder="Lo que se le dice al cliente, tal cual." onCommit={(md) => save({ ...block, md })} />
         </>
       )
 
@@ -137,7 +138,7 @@ function BlockForm({ block, save }: { block: Block; save: (b: Block) => void }) 
               <span className="sub-item__n">{i + 1}</span>
               <div className="grow stack">
                 <Field value={s.title} placeholder="Título del paso" onCommit={(title) => save({ ...block, items: block.items.map((x, j) => (j === i ? { ...x, title } : x)) })} />
-                <Field multiline value={s.md} placeholder="Detalle del paso" onCommit={(md) => save({ ...block, items: block.items.map((x, j) => (j === i ? { ...x, md } : x)) })} />
+                <RichField value={s.md} placeholder="Detalle del paso" onCommit={(md) => save({ ...block, items: block.items.map((x, j) => (j === i ? { ...x, md } : x)) })} />
               </div>
               <button className="icon-btn" title="Quitar paso" onClick={() => save({ ...block, items: block.items.filter((_, j) => j !== i) })}><Trash2 size={14} /></button>
             </div>

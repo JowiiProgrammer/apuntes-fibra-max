@@ -77,6 +77,8 @@ interface Ctx {
   addSection: (parentId: string | null, title: string, group?: string) => string
   removeSection: (id: string) => void
   moveSection: (id: string, dir: -1 | 1) => void
+  /** Lleva un apartado (con todo su contenido) dentro de otro capítulo o apartado, al final. */
+  moveSectionTo: (id: string, parentId: string) => void
   addBlock: (sectionId: string, type: BlockType) => void
   updateBlock: (sectionId: string, block: Block) => void
   removeBlock: (sectionId: string, blockId: string) => void
@@ -239,6 +241,18 @@ export function ApuntesProvider({ children }: { children: ReactNode }) {
       const j = i + dir
       if (j < 0 || j >= list.length) return
       ;[list[i], list[j]] = [list[j], list[i]]
+    }),
+    moveSectionTo: (id, parentId) => mutate((d) => {
+      const target = findSection(d.sections, parentId)
+      const hit = findParentList(d.sections, id)
+      if (!target || !hit || id === parentId) return
+      const [moving] = hit[0].splice(hit[1], 1)
+      // Por si acaso: nunca dentro de sí mismo.
+      if (findSection([moving], parentId)) { hit[0].splice(hit[1], 0, moving); return }
+      delete moving.group
+      moving.updatedAt = today()
+      target.children.push(moving)
+      target.updatedAt = today()
     }),
     addBlock: (sectionId, type) => mutate((d) => {
       findSection(d.sections, sectionId)?.blocks.push(newBlock(type))

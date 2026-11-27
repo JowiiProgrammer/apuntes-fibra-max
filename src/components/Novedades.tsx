@@ -3,6 +3,7 @@ import { useEffect, useMemo, useState } from 'react'
 import { uid, useApuntes } from '../store'
 import type { Novedad } from '../types'
 import { Field } from './editors'
+import { RichField } from './RichField'
 import { Markdown } from './Markdown'
 
 const KEY = 'fm-novedades-vistas'
@@ -94,7 +95,7 @@ export function Novedades() {
                   <button className="icon-btn icon-btn--danger" title="Borrar novedad" onClick={() => remove(n.id)}><Trash2 size={14} /></button>
                 </div>
                 <Field value={n.title} placeholder="Título" onCommit={(title) => update(n.id, { title })} />
-                <Field multiline value={n.md} placeholder="Texto. Admite **negrita**, - listas y [enlaces](url)" onCommit={(md) => update(n.id, { md })} />
+                <RichField value={n.md} placeholder="Texto de la novedad" onCommit={(md) => update(n.id, { md })} />
               </article>
             ) : (
               <article key={n.id} className="novedades__item">
